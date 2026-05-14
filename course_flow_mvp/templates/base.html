@@ -1,0 +1,64 @@
+<!-- templates/base.html -->
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{{ BRAND_PRODUCT }} · {{ BRAND_NAME }}{% endblock %}</title>
+
+  <!-- Favicons / app icons (optional placeholders; safe to keep even if missing in dev) -->
+  <link rel="icon" href="{% static 'favicon.ico' %}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{% static 'icons/favicon-32.png' %}">
+  <link rel="apple-touch-icon" href="{% static 'icons/apple-touch-icon.png' %}">
+  <meta name="theme-color" content="#0057ff">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ BRAND_PRODUCT }} · {{ BRAND_NAME }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ request.build_absolute_uri|default:'' }}">
+  <meta property="og:image" content="{% static 'images/pil-og.png' %}">
+
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}?v=2">
+
+</head>
+<body>
+<header class="header">
+  <a href="{{ BRAND_URL }}" class="brand-link" title="{{ BRAND_NAME }}">
+    <img src="{% static 'images/pil-logo.png' %}" alt="{{ BRAND_SHORT }} logo" class="logo">
+    <div class="brand-text">
+      <div class="product">{{ BRAND_PRODUCT }}</div>
+      <div class="company">{{ BRAND_NAME }}</div>
+    </div>
+  </a>
+  <nav class="nav">
+    <a href="{% url 'courses:course_list' %}">Courses</a>
+    <a href="{% url 'courses:profile' %}">Profile</a>
+    {% if user.is_authenticated and user.is_superuser %}
+      <a href="/admin/">Admin</a>
+    {% endif %}
+    {% if user.is_authenticated %}
+      <a href="{% url 'logout' %}">Logout</a>
+    {% else %}
+      <a href="{% url 'login' %}">Login</a>
+    {% endif %}
+  </nav>
+</header>
+
+<main class="container">
+  {% if messages %}
+    <div class="messages">
+      {% for message in messages %}
+        <div class="msg">{{ message }}</div>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  {% block content %}{% endblock %}
+</main>
+
+<footer class="footer">
+  © {{ now|date:"Y" }} {{ BRAND_NAME }}. All rights reserved.
+</footer>
+</body>
+</html>

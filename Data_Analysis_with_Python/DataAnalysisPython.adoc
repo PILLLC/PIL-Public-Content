@@ -1,0 +1,49 @@
+= Data Analytics with Python
+
+== Data Visualization
+
+=== Plotly
+
+=== Matplotlip
+
+=== Seborn
+
+== Data Manipulation
+
+=== NumPy
+
+=== Pandas
+
+=== Polars
+
+== Statistical Analysis
+
+=== Statsmodels
+
+=== Pingouin
+
+=== SciPy
+
+== Web Scraping
+
+=== Scrapy
+
+=== Selenium
+
+=== BeautifulSoup
+
+== Natual Language Processing
+
+=== TextBlob
+
+=== NLTK
+
+=== BERT
+
+== Time Series Analysis
+
+=== Darts
+
+=== Kats
+
+=== Tsfresh

@@ -1,0 +1,186 @@
+== Module {module-number}: Bidding Basics
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+ifdef::logo[]
+image::{logo}[align="left", pdfwidth=25%]
+endif::[]
+
+{SP}
+{SP}
+
+[discrete]
+=== Learning Objectives
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::agenda.svg[align="left",pdfwidth=50%]|
+ifeval::["{artifact-type}" != "SLIDE"]
+Upon completion of this module, learners will be able to:
+
+* Describe Overview
+
+* Explain Introduction to Bidding
+
+* Understand Bidding Systems
+
+endif::[]
+
+ifeval::["{artifact-type}" == "SLIDE"]
+
+* Describe Overview
+
+* Explain Introduction to Bidding
+
+endif::[]
+|===
+
+<<<
+
+
+=== Overview
+
+ifeval::["{artifact-type}" == "IG"]
+*Instructor Note:* 
+endif::[]
+
+ifeval::["{artifact-type}" != "SLIDE"]
+Learn the principles of bidding and how to communicate with your partner.
+
+
+endif::[]
+
+ifeval::["{artifact-type}" == "SLIDE"]
+
+* Learn the principles of bidding and how to communicate with your partner.
+
+endif::[]
+
+
+
+<<<
+
+=== Introduction to Bidding
+
+ifeval::["{artifact-type}" == "IG"]
+*Instructor Note:* 
+endif::[]
+
+ifeval::["{artifact-type}" != "SLIDE"]
+Understand the importance of bidding in bridge and its role in the game.
+
+
+endif::[]
+
+ifeval::["{artifact-type}" == "SLIDE"]
+
+* Understand the importance of bidding in bridge and its role in the game.
+
+endif::[]
+
+
+
+<<<
+
+=== Bidding Systems
+
+ifeval::["{artifact-type}" == "IG"]
+*Instructor Note:* 
+endif::[]
+
+ifeval::["{artifact-type}" != "SLIDE"]
+Explore different bidding systems and their applications.
+
+
+endif::[]
+
+ifeval::["{artifact-type}" == "SLIDE"]
+
+* Explore different bidding systems and their applications.
+
+endif::[]
+
+
+
+<<<
+
+=== Opening Bids
+
+ifeval::["{artifact-type}" == "IG"]
+*Instructor Note:* 
+endif::[]
+
+ifeval::["{artifact-type}" != "SLIDE"]
+Learn how to make opening bids and the criteria for doing so.
+
+
+endif::[]
+
+ifeval::["{artifact-type}" == "SLIDE"]
+
+* Learn how to make opening bids and the criteria for doing so.
+
+endif::[]
+
+
+
+<<<
+
+=== Responding to Bids
+
+ifeval::["{artifact-type}" == "IG"]
+*Instructor Note:* 
+endif::[]
+
+ifeval::["{artifact-type}" != "SLIDE"]
+Understand how to respond to your partner&#39;s bids effectively.
+
+
+endif::[]
+
+ifeval::["{artifact-type}" == "SLIDE"]
+
+* Understand how to respond to your partner&#39;s bids effectively.
+
+endif::[]
+
+
+
+<<<
+
+=== Basic Bidding Conventions
+
+ifeval::["{artifact-type}" == "IG"]
+*Instructor Note:* 
+endif::[]
+
+ifeval::["{artifact-type}" != "SLIDE"]
+Get introduced to common bidding conventions used in bridge.
+
+
+endif::[]
+
+ifeval::["{artifact-type}" == "SLIDE"]
+
+* Get introduced to common bidding conventions used in bridge.
+
+endif::[]
+
+
+
+<<<
+
+
+[appendix]
+=== Glossary
+ifeval::["{artifact-type}" != "SLIDE"]
+ifdef::glossary[]
+- {glossary}
+endif::[]
+endif::[]
+
+[discrete]
+=== Additional Notes
+ifeval::["{artifact-type}" == "IG"]
+*Instructor Tip:* Reinforce cross-module connections or common pitfalls.
+endif::[]

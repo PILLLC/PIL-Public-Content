@@ -1,0 +1,544 @@
+== Module {module-number}: Data Manipulation
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+{SP}
+
+[discrete]
+=== Learning Objectives
+
+
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::agenda.svg[align="left",pdfwidth=50%]|Upon completion of this module, students should be able to:
+
+* Understand the fundamentals of data manipulation using NumPy.
+* Perform data manipulation and analysis tasks using Pandas.
+* Explore the features and advantages of the Polars library for efficient data manipulation.
+|
+|===
+
+<<<
+    
+=== Lesson {module-number}.1: Fundamentals of Data Manipulation using NumPy
+
+[grid=none,frame=none,cols="1a,2a,2a"]
+|===
+|image::bullseye.svg[align="left",pdfwidth=50%]|NumPy is a fundamental package for scientific computing in Python, providing support for multidimensional arrays, mathematical functions, and linear algebra operations.
+
+In this lesson, we'll explore the fundamentals of data manipulation using NumPy and learn how to perform common data manipulation tasks efficiently.
+|image::Fundamentals of Data Manipulation using NumPy.png[align="center", pdfwidth=80%, pdfheight=80%]
+|===
+
+{SP}
+
+
+
+ifeval::["{artifact-type}" == "IG"]
+---
+*Instructor note:* The image shows a code snippet in Python that utilizes the NumPy library to create, reshape, and access elements of a NumPy array. See the exercise guide for this course for the full code and detailed explanation.
+endif::[]
+
+ifdef::artifact-type[]
+
+---
+* NumPy serves as a cornerstone package for scientific computing in Python, offering robust support for multidimensional arrays, mathematical functions, and linear algebra operations.
+* This lesson delves into the fundamental principles of data manipulation using NumPy, providing a solid foundation for performing various data manipulation tasks efficiently.
+* Alongside basic array creation and manipulation, learners will also delve into advanced functionalities such as broadcasting, slicing, and reshaping arrays to suit specific analytical needs.
+* NumPy's vectorized operations and optimized routines contribute to enhanced computational efficiency, making it a preferred choice for handling large datasets and complex mathematical computations.
+
+endif::artifact-type[]
+
+
+
+<<<
+
+==== Introduction to NumPy
+
+[cols="50%a,50%a", frame="none", grid="none"]
+|===
+|* NumPy, short for Numerical Python, is a powerful library for numerical computing in Python. 
+* It provides support for creating and manipulating multidimensional arrays (ndarrays), which are the foundation for many data manipulation and analysis tasks. 
+* NumPy arrays are more efficient than Python lists for storing and manipulating large datasets, making them well-suited for numerical computations and data processing tasks.|image::Introduction to NumPy.png[]
+|===
+
+ifeval::["{artifact-type}" == "IG"]
+---
+*Instructor note:* The image features a textual explanation and a visual representation of a NumPy array, which is a core data structure of the NumPy library used for efficient storage and manipulation of numerical data in Python.
+
+The text in the image states, "NumPy arrays store numeric data in a row-and-column structure." Below the text, there's a depiction of a 3x4 NumPy array, which means it has 3 rows and 4 columns. The values within the array are as follows:
+
+```
+4  12  0  4
+6  11  8  4
+18 14 13  7
+```
+
+This type of data structure is particularly useful in scientific computing and data analysis for various reasons, such as:
+- It requires less memory than traditional Python lists.
+- It provides efficient vectorized operations, enabling complex computations without the need for explicit loops.
+- It allows various mathematical functions to be applied at the element level or across entire rows and columns.
+
+NumPy arrays are foundational to Python's data science stack, and understanding how to work with them is essential for anyone looking to perform numerical analysis with Python.
+endif::[]
+
+ifdef::artifact-type[]
+
+---
+* NumPy is widely used in scientific computing, machine learning, data analysis, and other fields due to its efficiency and versatility.
+* In addition to arrays, NumPy offers a wide range of mathematical functions and operations for performing advanced numerical computations.
+* NumPy arrays support broadcasting, a powerful feature that simplifies operations on arrays with different shapes by automatically aligning them.
+
+endif::artifact-type[]
+
+<<<
+
+==== Creating NumPy Arrays
+
+* NumPy arrays can be created from Python lists or tuples using the `np.array()` function. 
+* NumPy also provides functions for generating arrays with specific shapes and values, such as `np.zeros()`, `np.ones()`, `np.arange()`, and `np.linspace()`. 
+* These functions allow users to create arrays quickly and easily for various purposes, including numerical computations, data analysis, and machine learning.|image::Creating NumPy Arrays.png[]
+
+ifeval::["{artifact-type}" == "IG"]
+---
+*Instructor note:* The image contains a graphical explanation of how the `np.append` function works in the NumPy library. It shows an operation where new values are being appended to an existing NumPy array.
+
+Here's a breakdown of the visual elements:
+
+1. **The Original Array**: There's an array with three elements, all of which are the number 1.
+
+2. **The Values to Append**: A separate array is shown with the elements 6, 7, and 8.
+
+3. **The Append Operation**: The function call is `np.append(base_array_1d, [6,7,8])`, indicating that the elements 6, 7, and 8 are to be appended to `base_array_1d`.
+
+4. **The Output Array**: The result of the append operation is shown as a new array with the elements 1, 1, 1, 6, 7, 8, demonstrating that the new values are added to the end of the original array.
+
+This process is a common operation in NumPy, used to combine arrays or add new elements to an array. It's important to note that `np.append` does not modify the original array but instead creates and returns a new array with the appended values.
+endif::[]
+
+ifdef::artifact-type[]
+
+---
+* NumPy arrays offer efficient storage and manipulation of homogeneous data, making them ideal for numerical computations and data analysis tasks.
+* In addition to basic creation methods, NumPy provides functions like `np.random.rand()` and `np.random.randn()` for generating arrays with random values.
+* NumPy arrays support multidimensional data structures, enabling representation of matrices, tensors, and higher-dimensional arrays.
+
+endif::artifact-type[]
+
+<<<
+
+==== Indexing and Slicing
+
+[cols="1a,1a", frame="none", grid="none"]
+|===
+|* NumPy arrays support indexing and slicing operations for accessing and modifying elements within arrays. 
+* Array elements can be accessed using square brackets `[ ]`, and array slices can be obtained using colon `:` notation. 
+* NumPy also supports advanced indexing techniques, such as boolean indexing and fancy indexing, for selecting subsets of array elements based on specific conditions or criteria.|image::Indexing and Slicing.png[]
+|===
+
+ifeval::["{artifact-type}" == "IG"]
+---
+*Instructor note:* 
+
+1. **Slicing**: `a[0, 3:5]` - This code snippet is showing how to slice a NumPy array to get elements from the 0th row and columns 3 to 4 (since slicing is exclusive at the end). The resulting output is an array with elements `[3, 4]`, highlighted in red in the visual.
+
+2. **Fancy Indexing**: `a[4:, 4:]` - Here, the code is using fancy indexing to retrieve the last two rows and columns of the array. The resulting output is `[[44, 55], [54, 55]]`, highlighted in blue.
+
+3. **Integer Array Indexing**: `a[:, 2]` - This example demonstrates selecting the entire second column of the array. The resulting array is `[2, 12, 22, 32, 42, 52]`, highlighted in purple.
+
+4. **Strided Slicing**: `a[2::2, ::2]` - This is an example of strided slicing, which skips every other element.
+
+These slicing operations are fundamental for data manipulation in NumPy, as they allow for efficient selection and extraction of data from larger datasets.
+endif::[]
+
+ifdef::artifact-type[]
+
+---
+* Indexing and slicing operations in NumPy arrays enable efficient access to and modification of array elements.
+* NumPy arrays support multidimensional indexing and slicing, allowing for manipulation of subarrays along different axes.
+* Array elements can be modified directly using indexing and slicing operations, facilitating in-place updates and transformations.
+
+endif::artifact-type[]
+
+<<<
+
+==== Array Operations
+
+[cols="1a,1a", frame="none", grid="none"]
+|===
+|* NumPy arrays support various mathematical and statistical operations, including element-wise arithmetic operations, array broadcasting, and linear algebra operations. 
+* NumPy provides a wide range of built-in functions for performing mathematical operations on arrays, such as addition, subtraction, multiplication, division, exponentiation, trigonometric and statistical functions.|image::Array Operations.png[pdfheight="50%", pdfwidth="50%"]
+|===
+
+ifeval::["{artifact-type}" == "IG"]
+---
+*Instructor note:* 
+
+The script defines two matrices, A and B:
+
+-Matrix A
+-Matrix B
+
+And then it shows the result of "Matrix A after submatrix multiplication" with Matrix B. 
+
+See the exercise guide for this course for the full code and detailed explanation.
+endif::[]
+
+ifdef::artifact-type[]
+
+---
+* NumPy arrays facilitate efficient mathematical and statistical operations, empowering users with capabilities like element-wise arithmetic operations, array broadcasting, and linear algebra computations.
+* Beyond basic arithmetic, NumPy boasts an extensive library of built-in functions tailored for array manipulation, encompassing arithmetic operations, exponentiation, trigonometric calculations, and a plethora of statistical functions.
+* The array broadcasting feature in NumPy enables the automatic alignment and computation of operations between arrays of different shapes, enhancing flexibility and ease of use in array operations.
+* NumPy's support for linear algebra operations enables users to perform matrix multiplication, inversion, eigenvalue computations, and other advanced mathematical operations efficiently.
+
+endif::artifact-type[]
+
+<<<
+
+==== Conclusion
+
+In conclusion, NumPy is a fundamental library for data manipulation and numerical computing in Python. 
+
+By mastering the basics of NumPy arrays and operations, analysts can efficiently perform common data manipulation tasks and conduct numerical computations for various applications.
+
+
+[NOTE]
+**Hands-On Exercise:**
+For hands-on experience, review and complete _Exercise 2A_ in the exercise guide for this course.
+
+
+ifdef::artifact-type[]
+
+---
+
+===== Additional Resources
+
+- NumPy Documentation: https://numpy.org/doc/
+- NumPy Quickstart Tutorial: https://numpy.org/doc/stable/user/quickstart.html
+
+endif::artifact-type[]
+
+ifeval::["{artifact-type}" == "IG"]
+---
+*Instructor note:* After allowing time for the hands-on exercise, transition to the next lesson in the module.
+
+endif::[]
+
+<<<
+
+=== Lesson {module-number}.2: Data Manipulation and Analysis using Pandas
+
+
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::bullseye.svg[align="left",pdfwidth=50%]|Pandas is a powerful Python library for data manipulation and analysis, built on top of NumPy. 
+
+In this lesson, we'll explore the capabilities of Pandas and learn how to use it to perform various data manipulation and analysis tasks efficiently.
+|
+|===
+
+{SP}
+
+[frame="none", grid="none, "cols="a,a"]
+|===
+|image::Data Manipulation and Analysis using Pandasi.png[align="right"]|image::Data Manipulation and Analysis using Pandasii.png[align="left"]
+|===
+
+ifeval::["{artifact-type}" == "IG"]
+---
+*Instructor note:* The image shows Python code for data manipulation and visualization. The first part of the code uses NumPy to generate a sample dataset of 1000 normally distributed random numbers and Matplotlib to create a histogram. It demonstrates setting the figure size, histogram color, and edge color, along with labeling the axes and displaying the plot.
+
+The second part of the code snippet displays a small dataset in a Pandas DataFrame and calculates the total sales amount by product category for the 'North' region.
+endif::[]
+
+ifdef::artifact-type[]
+
+---
+* Pandas offers high-level data structures and functions designed for efficient data manipulation and analysis, providing a user-friendly interface for working with structured data.
+* Leveraging its DataFrame and Series data structures, Pandas facilitates tasks such as data cleaning, transformation, aggregation, and exploration.
+* In addition to basic data manipulation operations, Pandas supports advanced functionality including handling missing data, merging and joining datasets, and time series analysis.
+* The lesson covers various Pandas functionalities and methods, including indexing and selection, groupby operations, reshaping data, and working with datetime objects.
+
+endif::artifact-type[]
+
+<<<
+
+==== Introduction to Pandas
+
+[frame="none", grid="none, "cols="a,a"]
+|===
+|* Pandas provides data structures and functions for working with structured data, making it ideal for tasks such as data cleaning, transformation, exploration, and analysis. 
+* The two main data structures in Pandas are Series and DataFrame, which represent one-dimensional and two-dimensional labeled arrays, respectively. 
+* Pandas simplifies common data manipulation tasks by providing intuitive and expressive syntax for performing operations on data.|image::Introduction to Pandas.png[]
+|===
+
+ifeval::["{artifact-type}" == "IG"]
+---
+*Instructor note:* The image is an educational comparison between different formats of displaying data using the Pandas library in Python. On the left is a Pandas DataFrame in Jupyter Notebook format, with highlighted column labels and a highlighted individual data point, which is part of the DataFrame's data. In the center is the DataFrame displayed in a standard Python console format, with the index and data point similarly highlighted. On the right, a Pandas Series is shown, which is a single column from a DataFrame, with annotations pointing out the index, data, column label, and data type of the Series. This visual aid is likely used to teach how data is structured and represented in Pandas, which is a crucial library for data analysis in Python.
+endif::[]
+
+ifdef::artifact-type[]
+
+---
+* Pandas offers a wide range of functions and methods for working with structured data, facilitating tasks such as data cleaning, transformation, exploration, and analysis with ease and efficiency.
+* In addition to Series and DataFrame, Pandas provides other data structures such as Index and Panel, expanding its capabilities for handling various types of data.
+* Its robust indexing capabilities enable users to access, manipulate, and analyze data efficiently, whether through label-based, integer-based, or boolean-based indexing.
+* Pandas integrates seamlessly with other Python libraries and tools commonly used in data analysis workflows, such as NumPy, Matplotlib, and scikit-learn, enhancing its versatility and interoperability.
+* Its extensive documentation and vibrant community support provide resources and guidance for users at all levels, from beginners to advanced practitioners, fostering learning and collaboration within the data science community.
+
+endif::artifact-type[]
+
+<<<
+
+==== Key Features of Pandas
+
+[frame="none", grid="none, "cols="a,a"]
+|===
+|- **Data Structures**
+- **Data Alignment**
+- **Indexing and Selection**
+- **Data Cleaning and Transformation**
+- **Data Analysis and Visualization**|image::Key Features of Pandas.png[]
+|===
+
+ifeval::["{artifact-type}" == "IG"]
+---
+*Instructor note:* The image outlines various features of the Python Pandas library. These features include data handling, data cleaning, alignment and indexing, support for multiple file formats, handling missing data, powerful data grouping tools, and merging and joining of datasets. Other highlighted features are time series analysis, data visualization, performance optimization, working with unique data, and masking data. These capabilities make Pandas a versatile and widely-used tool for data analysis and manipulation in Python.
+endif::[]
+
+ifdef::artifact-type[]
+
+---
+* **Efficient Computation**: Pandas leverages vectorized operations and optimized algorithms to perform computations efficiently, even on large datasets.
+* **Time Series Functionality**: Pandas offers robust support for working with time series data, including date/time indexing, resampling, and time zone handling.
+* **Flexible I/O Tools**: Pandas provides versatile tools for reading and writing data from various file formats, including CSV, Excel, SQL databases, JSON, and more.
+* **Integration with Database Systems**: Pandas seamlessly integrates with database systems like SQL databases, enabling users to query, manipulate, and analyze data directly from databases.
+* **Powerful GroupBy Functionality**: Pandas' GroupBy functionality allows for flexible data aggregation and analysis by grouping data based on one or more keys and applying functions to each group.
+
+
+endif::artifact-type[]
+
+<<<
+
+==== Working with Pandas
+
+In this section, we'll cover some common data manipulation and analysis tasks using Pandas:
+
+**Loading and Reading Data**
+
+**Data Cleaning and Transformation**
+
+**Data Analysis and Visualization**
+
+[frame="none", grid="none, "cols="a,a"]
+|===
+|- Calculate descriptive statistics for data using functions like `mean()`, `median()`, `std()`, and `describe()`.
+- Create visualizations and plots directly from Pandas data structures using libraries like Matplotlib and Seaborn|image::Working with Pandas.png[]
+|===
+
+ifeval::["{artifact-type}" == "IG"]
+---
+*Instructor note:* The image illustrates the concept of stacking and unstacking in Pandas with MultiIndex DataFrames. The left side of the image shows a 'stacked' DataFrame where the 'second' level of the index is pivoted into the innermost level of the row labels. On the right side, the DataFrame has been 'unstacked' on the 'second' level, which pivots it back out into the column labels, showing how one can transition from a stacked (long) format to an unstacked (wide) format. 
+endif::[]
+
+ifdef::artifact-type[]
+
+---
+* Pandas provides extensive support for loading data from various file formats, including CSV, Excel, JSON, and SQL databases, making it versatile for diverse data sources.
+* When loading data with Pandas, users can customize the process by specifying column names, data types, and parsing dates, ensuring flexibility and accuracy in data ingestion.
+* In addition to handling missing data with methods like `dropna()` or `fillna()`, Pandas offers advanced techniques such as interpolation and imputation to address missing values effectively.
+* Pandas' `drop_duplicates()` function allows users to remove duplicate rows from datasets, ensuring data integrity and consistency.
+* Beyond basic data manipulation tasks, Pandas empowers users to perform complex data transformations such as sorting, filtering, and grouping with ease, facilitating comprehensive data analysis workflows.
+
+
+endif::artifact-type[]
+
+<<<
+
+==== Conclusion
+
+In conclusion, Pandas is a powerful tool for data manipulation and analysis in Python. 
+
+By mastering the capabilities of Pandas and practicing with real-world datasets, analysts can efficiently perform data manipulation tasks, conduct exploratory data analysis, and derive valuable insights from data.
+
+[NOTE]
+**Hands-On Exercise:**
+For hands-on experience, review and complete _Exercise 2B_ in the exercise guide for this course.
+
+
+ifdef::artifact-type[]
+
+---
+
+===== Additional Resources
+
+- Pandas Documentation: https://pandas.pydata.org/docs/
+- Pandas User Guide: https://pandas.pydata.org/docs/user_guide/index.html
+
+endif::artifact-type[]
+
+ifeval::["{artifact-type}" == "IG"]
+---
+*Instructor note:* After allowing time for the hands-on exercise, transition to the next lesson in the module.
+
+endif::[]
+
+<<<
+
+=== Lesson {module-number}.3: Features of Polars for Efficient Data Manipulation
+
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::bullseye.svg[align="left",pdfwidth=50%]|Polars is a fast and efficient data manipulation library for Python and Rust, designed for processing large-scale tabular data. 
+
+In this lesson, we'll explore the key features of Polars and learn how to leverage them for efficient data manipulation tasks.
+|
+|===
+
+{SP}
+
+image::Features of Polars for Efficient Data Manipulation.png[pdfheight="40%", pdfwidth="40%"]
+
+ifeval::["{artifact-type}" == "IG"]
+---
+*Instructor note:* The image contains benchmarking results comparing the performance of data loading, filtering, and aggregation operations in Pandas, NumPy, and Polars. Polars appears to have the fastest loading and aggregation times, indicating its efficiency in handling large datasets or computationally intensive operations. The results suggest that Polars could be a suitable library for performance-critical data manipulation tasks.
+endif::[]
+
+ifdef::artifact-type[]
+
+---
+* Polars is not only a Python library but also has Rust bindings, offering performance benefits by leveraging Rust's speed and memory safety.
+* It excels in handling large-scale tabular data efficiently, making it suitable for processing massive datasets with ease.
+* Polars provides a wide range of operations for data manipulation tasks, including filtering, aggregation, joining, and transformation, enabling users to perform complex data transformations effortlessly.
+* With its DataFrame abstraction, Polars simplifies data manipulation tasks by providing a familiar and intuitive interface similar to pandas DataFrames.
+* Polars supports parallel and vectorized processing, utilizing multi-threading and SIMD (Single Instruction, Multiple Data) instructions to accelerate computations and enhance performance.
+
+endif::artifact-type[]
+
+<<<
+
+==== Introduction to Polars
+
+[frame="none", grid="none, "cols="a,a"]
+|===
+|* Polars is built with a focus on performance, scalability, and ease of use, making it suitable for handling large datasets with millions or even billions of rows. 
+* It provides a DataFrame abstraction similar to Pandas but with optimizations for speed and memory efficiency. 
+* Polars is implemented in Rust, with a Python API for seamless integration with the Python ecosystem.|image::Introduction to Polars.png[]
+|===
+
+ifeval::["{artifact-type}" == "IG"]
+---
+*Instructor note:* The image displays two radar charts, one labeled "Have" and the other "Want". Radar charts are a graphical method of displaying multivariate data in the form of a two-dimensional chart of three or more quantitative variables represented on axes starting from the same point. The chart on the left seems to represent data points without any fill, while the chart on the right has colored filled areas representing different levels or thresholds for the variables. This type of visualization is often used to compare multiple variables to see which areas need improvement or are performing well.
+endif::[]
+
+ifdef::artifact-type[]
+
+---
+* Polars emphasizes performance, scalability, and ease of use, making it adept at processing large datasets comprising millions or even billions of rows.
+* It offers a DataFrame abstraction akin to Pandas, yet distinguishes itself with optimizations geared towards accelerating computations and enhancing memory efficiency.
+* Implemented in Rust, Polars provides a Python API for effortless integration within the Python ecosystem, enabling seamless interoperability with other Python libraries and tools.
+* Polars boasts advanced functionalities, including parallel processing capabilities and support for lazy evaluation, further enhancing its performance and scalability for data processing tasks.
+
+endif::artifact-type[]
+
+<<<
+
+==== Key Features of Polars
+
+[frame="none", grid="none, "cols="a,a"]
+|===
+|
+- **Lazy Evaluation** 
+- **Columnar Storage** 
+- **Parallel Processing** 
+- **Out-of-Core Processing**
+- **API Compatibility** 
+- **Integration with Arrow**|image::Key Features of Polars.png[]
+|===
+
+ifeval::["{artifact-type}" == "IG"]
+---
+*Instructor note:* The image shows two 3D plots, likely generated using a Python visualization library such as Matplotlib. Both plots depict complex, flower-like structures, possibly mathematical functions or parametric equations rendered in three dimensions. 
+endif::[]
+
+ifdef::artifact-type[]
+
+---
+* **Lazy Evaluation**: Polars employs lazy evaluation to optimize query execution and minimize memory usage. Operations are deferred until necessary, enabling efficient processing of large datasets without loading the entire dataset into memory.
+* **Columnar Storage**: Polars stores data in a columnar format, enhancing cache locality and facilitating vectorized processing. 
+* **Parallel Processing**: Leveraging multi-threading and SIMD instructions, Polars executes data processing operations in parallel. This parallelism harnesses modern multi-core processors, resulting in high throughput for data manipulation tasks.
+* **Out-of-Core Processing**: Polars supports out-of-core processing, accommodating datasets that exceed available memory by spilling data to disk. 
+* **API Compatibility**: Polars provides a Pandas-like API, easing the transition for users familiar with Pandas.
+* **Integration with Arrow**: Polars integrates with Apache Arrow, facilitating interoperability with other Arrow-compatible libraries and ecosystems such as PyArrow and Arrow Flight.
+
+endif::artifact-type[]
+
+<<<
+
+==== Working with Polars
+
+[frame="none", grid="none, "cols="a,a"]
+|===
+|
+
+**Loading and Reading Data**
+
+**Data Manipulation and Transformation:**
+
+**Parallel Processing and Optimization:**|image::Working with Polars.png[]
+|===
+
+ifeval::["{artifact-type}" == "IG"]
+---
+*Instructor note:* The image shows a simple Python code snippet used to create a line plot with Matplotlib. The code block imports Matplotlib's `pyplot` module and the `random` module, generates a list of 20 random integers between 0 and 100, and then creates a line plot of this data.
+endif::[]
+
+ifdef::artifact-type[]
+
+---
+* **Loading and Reading Data:**
+  - Polars offers versatile capabilities for loading data from various file formats such as CSV, Parquet, Arrow, and Apache Avro.
+  - Users can customize data loading options in Polars, including specifying column types, delimiters, and compression methods, to suit their specific requirements.
+  
+* **Data Manipulation and Transformation:**
+  - With Polars' DataFrame API, users can seamlessly perform common data manipulation tasks such as filtering, selecting, aggregating, and joining datasets.
+  - Polars leverages lazy evaluation and out-of-core processing techniques, enabling efficient handling of large datasets that surpass available memory constraints.
+  
+* **Parallel Processing and Optimization:**
+  - Polars leverages multi-threading and SIMD (Single Instruction, Multiple Data) instructions for parallel execution of data processing operations, enhancing throughput and performance.
+  - Users can optimize data processing pipelines in Polars by employing techniques like predicate pushdown and columnar processing to minimize computational overhead and improve efficiency.
+
+endif::artifact-type[]
+
+<<<
+
+==== Conclusion
+
+In conclusion, Polars is a powerful library for efficient data manipulation and processing in Python and Rust. 
+
+By leveraging its key features and optimizations, analysts can efficiently handle large-scale datasets and perform complex data manipulation tasks with ease.
+
+[NOTE]
+**Hands-On Exercise:**
+For hands-on experience, review and complete _Exercise 2C_ in the exercise guide for this course.
+
+ifdef::artifact-type[]
+
+---
+
+===== Additional Resources
+
+- Polars Documentation: https://pola.rs/
+- Polars GitHub Repository: https://github.com/pola-rs/polars
+
+endif::artifact-type[]
+
+ifeval::["{artifact-type}" == "IG"]
+---
+*Instructor note:* After allowing time for the hands-on exercise, transition to the next lesson in the module.
+
+endif::[]

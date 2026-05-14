@@ -1,0 +1,98 @@
+== Module {module-number}: Course Overview
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+ifdef::logo[]
+image::{logo}[align="left", pdfwidth=25%]
+endif::[]
+
+{SP}
+{SP}
+
+[discrete]
+=== Learning Objectives
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::agenda.svg[align="left",pdfwidth=50%]|
+ifeval::["{artifact-type}" != "SLIDE"]
+Upon completion of this module, learners will be able to:
+
+* Understand Objective
+
+* Understand Description
+
+endif::[]
+
+ifeval::["{artifact-type}" == "SLIDE"]
+
+* Understand Objective
+
+* Understand Description
+
+endif::[]
+|===
+
+<<<
+
+
+=== Objective
+
+ifeval::["{artifact-type}" == "IG"]
+*Instructor Note:* Connect objectives to expected outcomes.
+endif::[]
+
+ifeval::["{artifact-type}" != "SLIDE"]
+To empower divorced dads to embrace a fulfilling lifestyle that balances leisure, personal growth, and financial stability.
+
+
+endif::[]
+
+ifeval::["{artifact-type}" == "SLIDE"]
+
+* To empower divorced dads to embrace a fulfilling lifestyle that balances leisure, personal growth, and financial stability.
+
+endif::[]
+
+
+
+<<<
+
+=== Description
+
+ifeval::["{artifact-type}" == "IG"]
+*Instructor Note:* Set expectations for scope and depth.
+endif::[]
+
+ifeval::["{artifact-type}" != "SLIDE"]
+This course provides practical strategies and insights for divorced fathers to transition into a life of leisure and luxury. Participants will learn how to manage their time, finances, and personal well-being while enjoying the benefits of their new lifestyle.
+
+
+endif::[]
+
+ifeval::["{artifact-type}" == "SLIDE"]
+
+* This course provides practical strategies and insights for divorced fathers to transition into a life of leisure and luxury
+
+* Participants will learn how to manage their time, finances, and personal well-being while enjoying the benefits of their new lifestyle.
+
+endif::[]
+
+
+
+<<<
+
+
+[appendix]
+=== Glossary
+ifeval::["{artifact-type}" != "SLIDE"]
+ifdef::glossary[]
+- {glossary}
+endif::[]
+endif::[]
+
+[discrete]
+=== Additional Notes
+ifeval::["{artifact-type}" == "IG"]
+*Instructor Tip:* Reinforce cross-module connections or common pitfalls.
+endif::[]

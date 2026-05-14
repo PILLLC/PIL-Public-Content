@@ -1,0 +1,186 @@
+== Module {module-number}: Playing the Hand
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+ifdef::logo[]
+image::{logo}[align="left", pdfwidth=25%]
+endif::[]
+
+{SP}
+{SP}
+
+[discrete]
+=== Learning Objectives
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::agenda.svg[align="left",pdfwidth=50%]|
+ifeval::["{artifact-type}" != "SLIDE"]
+Upon completion of this module, learners will be able to:
+
+* Describe Overview
+
+* Describe Understanding Tricks
+
+* Understand Card Play Techniques
+
+endif::[]
+
+ifeval::["{artifact-type}" == "SLIDE"]
+
+* Describe Overview
+
+* Describe Understanding Tricks
+
+endif::[]
+|===
+
+<<<
+
+
+=== Overview
+
+ifeval::["{artifact-type}" == "IG"]
+*Instructor Note:* 
+endif::[]
+
+ifeval::["{artifact-type}" != "SLIDE"]
+Master the techniques for playing your hand and making the most of your cards.
+
+
+endif::[]
+
+ifeval::["{artifact-type}" == "SLIDE"]
+
+* Master the techniques for playing your hand and making the most of your cards.
+
+endif::[]
+
+
+
+<<<
+
+=== Understanding Tricks
+
+ifeval::["{artifact-type}" == "IG"]
+*Instructor Note:* 
+endif::[]
+
+ifeval::["{artifact-type}" != "SLIDE"]
+Learn how tricks are played and the importance of winning them.
+
+
+endif::[]
+
+ifeval::["{artifact-type}" == "SLIDE"]
+
+* Learn how tricks are played and the importance of winning them.
+
+endif::[]
+
+
+
+<<<
+
+=== Card Play Techniques
+
+ifeval::["{artifact-type}" == "IG"]
+*Instructor Note:* 
+endif::[]
+
+ifeval::["{artifact-type}" != "SLIDE"]
+Explore various techniques for effective card play.
+
+
+endif::[]
+
+ifeval::["{artifact-type}" == "SLIDE"]
+
+* Explore various techniques for effective card play.
+
+endif::[]
+
+
+
+<<<
+
+=== Defensive Strategies
+
+ifeval::["{artifact-type}" == "IG"]
+*Instructor Note:* 
+endif::[]
+
+ifeval::["{artifact-type}" != "SLIDE"]
+Understand how to play defensively and counter your opponents.
+
+
+endif::[]
+
+ifeval::["{artifact-type}" == "SLIDE"]
+
+* Understand how to play defensively and counter your opponents.
+
+endif::[]
+
+
+
+<<<
+
+=== Endgame Strategies
+
+ifeval::["{artifact-type}" == "IG"]
+*Instructor Note:* 
+endif::[]
+
+ifeval::["{artifact-type}" != "SLIDE"]
+Learn strategies for playing in the endgame phase of a hand.
+
+
+endif::[]
+
+ifeval::["{artifact-type}" == "SLIDE"]
+
+* Learn strategies for playing in the endgame phase of a hand.
+
+endif::[]
+
+
+
+<<<
+
+=== Reading Opponents
+
+ifeval::["{artifact-type}" == "IG"]
+*Instructor Note:* 
+endif::[]
+
+ifeval::["{artifact-type}" != "SLIDE"]
+Develop skills to read opponents&#39; plays and anticipate their moves.
+
+
+endif::[]
+
+ifeval::["{artifact-type}" == "SLIDE"]
+
+* Develop skills to read opponents&#39; plays and anticipate their moves.
+
+endif::[]
+
+
+
+<<<
+
+
+[appendix]
+=== Glossary
+ifeval::["{artifact-type}" != "SLIDE"]
+ifdef::glossary[]
+- {glossary}
+endif::[]
+endif::[]
+
+[discrete]
+=== Additional Notes
+ifeval::["{artifact-type}" == "IG"]
+*Instructor Tip:* Reinforce cross-module connections or common pitfalls.
+endif::[]

@@ -1,0 +1,142 @@
+== Module {module-number}: Embracing Change
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+ifdef::logo[]
+image::{logo}[align="left", pdfwidth=25%]
+endif::[]
+
+{SP}
+{SP}
+
+[discrete]
+=== Learning Objectives
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::agenda.svg[align="left",pdfwidth=50%]|
+ifeval::["{artifact-type}" != "SLIDE"]
+Upon completion of this module, learners will be able to:
+
+* Describe Overview
+
+* Understand Navigating Emotions
+
+* Understand Building a New Identity
+
+endif::[]
+
+ifeval::["{artifact-type}" == "SLIDE"]
+
+* Describe Overview
+
+* Understand Navigating Emotions
+
+endif::[]
+|===
+
+<<<
+
+
+=== Overview
+
+ifeval::["{artifact-type}" == "IG"]
+*Instructor Note:* 
+endif::[]
+
+ifeval::["{artifact-type}" != "SLIDE"]
+Understanding the emotional and practical aspects of life after divorce.
+
+
+endif::[]
+
+ifeval::["{artifact-type}" == "SLIDE"]
+
+* Understanding the emotional and practical aspects of life after divorce.
+
+endif::[]
+
+
+
+<<<
+
+=== Navigating Emotions
+
+ifeval::["{artifact-type}" == "IG"]
+*Instructor Note:* 
+endif::[]
+
+ifeval::["{artifact-type}" != "SLIDE"]
+Explore the emotional journey post-divorce and strategies for coping.
+
+
+endif::[]
+
+ifeval::["{artifact-type}" == "SLIDE"]
+
+* Explore the emotional journey post-divorce and strategies for coping.
+
+endif::[]
+
+
+
+<<<
+
+=== Building a New Identity
+
+ifeval::["{artifact-type}" == "IG"]
+*Instructor Note:* 
+endif::[]
+
+ifeval::["{artifact-type}" != "SLIDE"]
+Learn how to redefine yourself and embrace your new role as a divorced dad.
+
+
+endif::[]
+
+ifeval::["{artifact-type}" == "SLIDE"]
+
+* Learn how to redefine yourself and embrace your new role as a divorced dad.
+
+endif::[]
+
+
+
+<<<
+
+=== Setting Goals for the Future
+
+ifeval::["{artifact-type}" == "IG"]
+*Instructor Note:* 
+endif::[]
+
+ifeval::["{artifact-type}" != "SLIDE"]
+Establish personal and financial goals to guide your new lifestyle.
+
+
+endif::[]
+
+ifeval::["{artifact-type}" == "SLIDE"]
+
+* Establish personal and financial goals to guide your new lifestyle.
+
+endif::[]
+
+
+
+<<<
+
+
+[appendix]
+=== Glossary
+ifeval::["{artifact-type}" != "SLIDE"]
+ifdef::glossary[]
+- {glossary}
+endif::[]
+endif::[]
+
+[discrete]
+=== Additional Notes
+ifeval::["{artifact-type}" == "IG"]
+*Instructor Tip:* Reinforce cross-module connections or common pitfalls.
+endif::[]

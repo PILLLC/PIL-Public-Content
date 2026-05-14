@@ -1,0 +1,98 @@
+== Module {module-number}: Course Overview
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+ifdef::logo[]
+image::{logo}[align="left", pdfwidth=25%]
+endif::[]
+
+{SP}
+{SP}
+
+[discrete]
+=== Learning Objectives
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::agenda.svg[align="left",pdfwidth=50%]|
+ifeval::["{artifact-type}" != "SLIDE"]
+Upon completion of this module, learners will be able to:
+
+* Understand Objective
+
+* Understand Description
+
+endif::[]
+
+ifeval::["{artifact-type}" == "SLIDE"]
+
+* Understand Objective
+
+* Understand Description
+
+endif::[]
+|===
+
+<<<
+
+
+=== Objective
+
+ifeval::["{artifact-type}" == "IG"]
+*Instructor Note:* Connect objectives to expected outcomes.
+endif::[]
+
+ifeval::["{artifact-type}" != "SLIDE"]
+To equip players with the skills and strategies necessary to play bridge at an advanced level.
+
+
+endif::[]
+
+ifeval::["{artifact-type}" == "SLIDE"]
+
+* To equip players with the skills and strategies necessary to play bridge at an advanced level.
+
+endif::[]
+
+
+
+<<<
+
+=== Description
+
+ifeval::["{artifact-type}" == "IG"]
+*Instructor Note:* Set expectations for scope and depth.
+endif::[]
+
+ifeval::["{artifact-type}" != "SLIDE"]
+This course provides a comprehensive guide to mastering bridge, covering fundamental concepts, advanced strategies, and practical tips to enhance gameplay. Participants will engage in lessons that combine theory with practical exercises to solidify their understanding of the game.
+
+
+endif::[]
+
+ifeval::["{artifact-type}" == "SLIDE"]
+
+* This course provides a comprehensive guide to mastering bridge, covering fundamental concepts, advanced strategies, and practical tips to en
+
+* Participants will engage in lessons that combine theory with practical exercises to solidify their understanding of the game.
+
+endif::[]
+
+
+
+<<<
+
+
+[appendix]
+=== Glossary
+ifeval::["{artifact-type}" != "SLIDE"]
+ifdef::glossary[]
+- {glossary}
+endif::[]
+endif::[]
+
+[discrete]
+=== Additional Notes
+ifeval::["{artifact-type}" == "IG"]
+*Instructor Tip:* Reinforce cross-module connections or common pitfalls.
+endif::[]

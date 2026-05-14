@@ -1,0 +1,29 @@
+:module-number: 0
+
+
+:module-number: 1
+include::ds_for_dm_understanding_role_of_data_in_bus_strat.adoc[]
+
+:module-number: 2
+include::ds_for_dm_foundations_of_data_science.adoc[]
+
+:module-number: 3
+include::ds_for_dm_data_visualization_and_communication.adoc[]
+
+:module-number: 4
+include::ds_for_dm_data_predictive_analytics_and_machine_learning.adoc[]
+
+:module-number: 5
+include::ds_for_dm_building_a_data_driven_culture.adoc[]
+
+:module-number: 6
+include::ds_for_dm_data_ethical_considerations_in_data_science.adoc[]
+
+:module-number: 7
+include::ds_for_dm_case_studies_in_data_driven_success.adoc[]
+
+:module-number: 8
+include::ds_for_dm_future_of_data_analytics.adoc[]
+
+:module-number: 9
+include::ds_for_dm_getting_started_with_data_analytics_development.adoc[]

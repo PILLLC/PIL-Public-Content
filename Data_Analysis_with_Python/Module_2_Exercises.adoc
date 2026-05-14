@@ -1,0 +1,170 @@
+== Module {module-number}: Data Manipulation
+
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::agenda.svg[align="left",pdfwidth=50%]|Upon completion of these exercises, students should be able to:
+
+* Create NumPy arrays and perform basic array manipulations such as reshaping and indexing. _(Exercise {module-number}A)_ 
+* Use Pandas to load, clean, and analyze a dataset, performing tasks such as data filtering and aggregation. _(Exercise {module-number}B)_ 
+* Explore the features of the Polars library by performing data manipulation tasks and comparing their efficiency with NumPy and Pandas. _(Exercise {module-number}C)_ 
+|===
+
+<<<
+
+=== Exercise {module-number}A - Create NumPy arrays and perform basic array manipulations such as reshaping and indexing.
+
+Below is an example of creating NumPy arrays and performing basic array manipulations such as reshaping and indexing:
+
+[source,python]
+----
+import numpy as np
+
+# Create a NumPy array
+arr = np.array([1, 2, 3, 4, 5])
+
+# Print the array
+print("Original array:")
+print(arr)
+
+# Reshape the array to a 2x3 matrix
+reshaped_arr = arr.reshape(2, 3)
+
+# Print the reshaped array
+print("\nReshaped array:")
+print(reshaped_arr)
+
+# Indexing: Accessing elements of the array
+print("\nAccessing elements of the array:")
+print("Element at index 0:", arr[0])  # Accessing the first element
+print("Element at index 2:", arr[2])  # Accessing the third element
+
+# Slicing: Accessing a subset of the array
+print("\nAccessing a subset of the array:")
+print("Elements from index 1 to 3:", arr[1:4])  # Accessing elements from index 1 to 3
+----
+
+This code demonstrates the creation of a NumPy array, reshaping it into a matrix, and performing indexing and slicing operations to access elements and subsets of the array. You can run this code to see the output and understand how basic array manipulations work in NumPy.
+
+<<<
+    
+=== Exercise {module-number}B - Use Pandas to load, clean, and analyze a dataset, performing tasks such as data filtering and aggregation.
+
+Below is an example of how you can use Pandas to load, clean, and analyze a dataset, performing tasks such as data filtering and aggregation:
+
+[source,python]
+----
+import pandas as pd
+
+# Step 1: Load the dataset
+# Let's assume we have a CSV file named 'sales_data.csv' containing sales data
+# Replace 'sales_data.csv' with the actual path to your dataset
+df = pd.read_csv('module_2_lesson_2_sampledata.csv')    
+
+# Step 2: Display the first few rows of the dataset to understand its structure
+print("First few rows of the dataset:")
+print(df.head())
+
+# Step 3: Data cleaning (if necessary)
+# For example, handling missing values or converting data types
+
+# Step 4: Data filtering
+# Let's filter the dataset to include only sales data from a specific region
+region_filter = df['Region'] == 'North'
+sales_data_north = df[region_filter]
+
+# Step 5: Data aggregation
+# Let's calculate the total sales amount for each product category in the North region
+sales_by_category = sales_data_north.groupby('Product Category')['Sales Amount'].sum()
+
+# Step 6: Display the aggregated data
+print("\nTotal sales amount by product category in the North region:")
+print(sales_by_category)
+----
+
+In this example, we first load the dataset using `pd.read_csv()`, then display the first few rows to understand its structure. We apply data filtering to extract sales data from a specific region ('North') and then perform data aggregation to calculate the total sales amount for each product category in that region using the `groupby()` and `sum()` functions. Finally, we display the aggregated data. You can adapt this example to your dataset and perform various other analysis tasks using Pandas.
+
+<<<
+    
+=== Exercise {module-number}C - Explore the features of the Polars library by performing data manipulation tasks and comparing their efficiency with NumPy and Pandas.
+
+Exploring the features of the Polars library and comparing its efficiency with NumPy and Pandas involves performing various data manipulation tasks such as data loading, filtering, aggregation, and computation. Below, I'll demonstrate some basic data manipulation tasks using Polars, NumPy, and Pandas, and then compare their efficiency:
+
+1. Data loading: Load a CSV file into each library's data structure.
+2. Data filtering: Filter rows based on a condition.
+3. Data aggregation: Group data by a column and calculate the sum of another column.
+4. Efficiency comparison: Measure the execution time for each task.
+
+First, you'll need to install the Polars library (`pip install polars`) if you haven't already. Then, let's proceed with the comparison:
+
+[source,python]
+----
+import time
+import pandas as pd
+import numpy as np
+import polars as pl
+
+# Data loading
+start_time = time.time()
+# Pandas
+pandas_df = pd.read_csv('module_2_lesson_3_sampledata.csv')
+pandas_loading_time = time.time() - start_time
+
+start_time = time.time()
+# NumPy
+numpy_arr = np.genfromtxt('module_2_lesson_3_sampledata.csv', delimiter=',', names=True, dtype=None, encoding=None)
+numpy_loading_time = time.time() - start_time
+
+start_time = time.time()
+# Polars
+polars_df = pl.read_csv('module_2_lesson_3_sampledata.csv')
+polars_loading_time = time.time() - start_time
+
+# Data filtering
+# Assuming we want to filter rows where a column 'value' is greater than 100
+start_time = time.time()
+# Pandas
+pandas_filtered_df = pandas_df[pandas_df['value'] > 100]
+pandas_filtering_time = time.time() - start_time
+
+start_time = time.time()
+# NumPy
+numpy_filtered_arr = numpy_arr[numpy_arr['value'] > 100]
+numpy_filtering_time = time.time() - start_time
+
+start_time = time.time()
+# Polars
+polars_filtered_df = polars_df.filter(pl.col('value') > 100)
+polars_filtering_time = time.time() - start_time
+
+# Data aggregation
+# Assuming we want to group by 'category' and sum the 'value' column
+start_time = time.time()
+# Pandas
+pandas_aggregated_df = pandas_df.groupby('category')['value'].sum()
+pandas_aggregation_time = time.time() - start_time
+
+start_time = time.time()
+# NumPy
+numpy_aggregated_arr = np.sum(numpy_arr['value'][numpy_arr['category'] == b'category'])
+numpy_aggregation_time = time.time() - start_time
+
+start_time = time.time()
+# Polars
+polars_aggregated_df = polars_df.groupby('category').agg(pl.sum('value'))
+polars_aggregation_time = time.time() - start_time
+
+# Print loading, filtering, and aggregation times
+print("Loading time (Pandas):", pandas_loading_time)
+print("Loading time (NumPy):", numpy_loading_time)
+print("Loading time (Polars):", polars_loading_time)
+
+print("\nFiltering time (Pandas):", pandas_filtering_time)
+print("Filtering time (NumPy):", numpy_filtering_time)
+print("Filtering time (Polars):", polars_filtering_time)
+
+print("\nAggregation time (Pandas):", pandas_aggregation_time)
+print("Aggregation time (NumPy):", numpy_aggregation_time)
+print("Aggregation time (Polars):", polars_aggregation_time)
+----
+
+In this comparison, we load a CSV file, filter rows based on a condition, and perform data aggregation using Pandas, NumPy, and Polars. We measure the execution time for each task and compare their efficiency. Note that the actual execution time may vary depending on the size of the dataset and the complexity of the operations performed.
