@@ -1,0 +1,4 @@
+Django==4.2.14
+python-dotenv==1.0.1
+openai>=1.30.0
+python-slugify>=8.0.4

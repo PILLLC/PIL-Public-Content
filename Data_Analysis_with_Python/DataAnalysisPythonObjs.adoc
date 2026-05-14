@@ -1,0 +1,81 @@
+= Course Level Objectives
+
+* To equip students with a comprehensive understanding of data analytics concepts and techniques using Python.
+* To provide students with practical skills in data manipulation, visualization, statistical analysis, web scraping, natural language processing, and time series analysis.
+* To enable students to apply their knowledge and skills to real-world data analysis projects.
+* To prepare students for careers in data analysis, data science, and related fields.
+
+== Module Level Objectives
+
+=== Module 1: Data Visualization
+* Understand the importance of data visualization in data analysis.
+* Learn to create interactive visualizations using Plotly.
+* Master the creation of static plots using Matplotlib.
+* Explore advanced visualization techniques with Seaborn.
+
+=== Module 2: Data Manipulation
+* Understand the fundamentals of data manipulation using NumPy.
+* Learn to perform data manipulation and analysis tasks using Pandas.
+* Explore the features and advantages of the Polars library for efficient data manipulation.
+
+=== Module 3: Statistical Analysis
+* Understand the principles of statistical analysis.
+* Learn to use Statsmodels for regression analysis, hypothesis testing, and other statistical tasks.
+* Explore advanced statistical analysis techniques using Pingouin.
+* Learn to use SciPy for statistical computations and hypothesis testing.
+
+=== Module 4: Web Scraping
+* Understand the basics of web scraping and its applications.
+* Learn to use Scrapy for structured web scraping.
+* Master web scraping techniques for dynamic websites using Selenium.
+* Explore HTML parsing and scraping with BeautifulSoup.
+
+=== Module 5: Natural Language Processing
+* Understand the basics of natural language processing.
+* Learn to perform text processing tasks using TextBlob.
+* Explore advanced text analysis techniques using NLTK.
+* Learn to implement state-of-the-art NLP models like BERT for text classification and sentiment analysis.
+
+=== Module 6: Time Series Analysis
+* Understand the characteristics of time series data.
+* Learn to use Darts for time series forecasting and modeling.
+* Explore time series analysis techniques using Kats.
+* Learn to extract features from time series data using Tsfresh.
+
+== Lesson Level Objectives
+
+=== Lesson 1: Introduction to Data Visualization with Python
+* Understand the importance of data visualization in data analysis.
+* Learn the basics of Plotly and how to create interactive visualizations.
+* Practice creating basic plots using Matplotlib.
+* Explore the features and advantages of Seaborn for statistical data visualization.
+
+=== Lesson 2: Introduction to NumPy
+* Understand the fundamentals of NumPy arrays.
+* Learn to perform basic array operations and manipulations.
+* Practice using NumPy for numerical computations and data manipulation tasks.
+
+=== Lesson 3: Introduction to Pandas
+* Understand the basics of Pandas data structures - Series and DataFrame.
+* Learn to perform data manipulation, cleaning, and analysis tasks using Pandas.
+* Practice loading, exploring, and summarizing datasets with Pandas.
+
+=== Lesson 4: Introduction to Statsmodels
+* Understand the capabilities and applications of Statsmodels.
+* Learn to perform linear regression analysis using Statsmodels.
+* Practice hypothesis testing and statistical modeling with Statsmodels.
+
+=== Lesson 5: Introduction to Scrapy
+* Understand the basics of web scraping and the Scrapy framework.
+* Learn to create a Scrapy project and define spiders for scraping websites.
+* Practice scraping data from static websites using Scrapy.
+
+=== Lesson 6: Introduction to TextBlob
+* Understand the features and capabilities of TextBlob for text processing.
+* Learn to perform basic text processing tasks such as tokenization, part-of-speech tagging, and sentiment analysis.
+* Practice analyzing text data using TextBlob.
+
+=== Lesson 7: Introduction to Darts
+* Understand the features and capabilities of the Darts library for time series analysis.
+* Learn to create and manipulate time series objects in Darts.
+* Practice time series forecasting using Darts models.

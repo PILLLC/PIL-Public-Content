@@ -1,0 +1,5 @@
+{% for m in modules -%}
+:module-number: {{ "%02d"|format(loop.index) }}
+include::module-{{ "%02d"|format(loop.index) }}.adoc[]
+
+{% endfor -%}

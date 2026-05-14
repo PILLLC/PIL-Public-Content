@@ -1,0 +1,741 @@
+== Module {module-number}: Data Visualization
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+{SP}
+
+[discrete]
+=== Learning Objectives
+
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::agenda.svg[align="left",pdfwidth=50%]|Upon completion of this module, students should be able to:
+
+* Understand the importance of data visualization in data analysis.
+
+* Create interactive visualizations using Plotly.
+
+* Master the creation of static plots using Matplotlib.
+
+* Explore advanced visualization techniques with Seaborn
+|
+|===
+
+<<<
+
+=== Lesson {module-number}.1: Importance of Data Visualization in Data Analysis
+
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::bullseye.svg[align="left",pdfwidth=50%]|Data visualization plays a crucial role in the field of data analysis, serving as a powerful tool for understanding, interpreting, and communicating insights derived from data. 
+
+In this lesson, we'll explore the significance of data visualization and its impact on the data analysis process.
+|
+|===
+
+image::Importance of Data Visualization in Data Analysisiii.png[pdfheight="60%", pdfwidth="60%"]
+
+ifeval::["{artifact-type}" == "IG"]
+---
+*Instructor note:* A simple line graph titled "Trends Over Time," which plots a 'Value' over a series of dates, specifically from January 1, 2023, to January 5, 2023. The line is upward sloping, indicating a positive trend in the 'Value' as time progresses.
+
+This kind of visualization is fundamental in data analysis for communicating trends and patterns in data across time intervals. Illustrates a variety of trends (e.g. sales growth, temperature changes, stock price movements, etc.)
+
+endif::[]
+
+ifdef::artifact-type[]
+
+---
+
+* Data visualization is a crucial component of data analysis, aiding in the interpretation and communication of insights derived from data.
+* Effective data visualization enhances understanding by presenting complex information in a clear and intuitive manner.
+* Visualizations can reveal patterns, trends, and relationships in data that may not be apparent from raw numbers alone.
+* Different visualization techniques serve various purposes, from exploratory analysis to presentation of findings to stakeholders.
+* Interactive visualizations allow users to explore data dynamically and gain deeper insights through exploration and interaction.
+
+endif::artifact-type[]
+
+<<<
+
+==== Understanding Data Visualization
+
+[cols="50%a,50%a", grid="none", frame="none"]
+|===
+|* Data visualization refers to the graphical representation of data using charts, graphs, maps, and other visual elements. 
+* It involves transforming raw data into visual formats that are easy to interpret and understand. 
+* By visualizing data, analysts can identify patterns, trends, and relationships that may not be apparent from raw data alone.|image::Understanding Data Visualization.png[]
+|===
+
+ifeval::["{artifact-type}" == "IG"]
+---
+*Instructor note:* Source file, python snippet, and out put from corresponding hands-on exercise. Take a moment to discuss the exercise guide and associated exercises.
+endif::[]
+
+ifdef::artifact-type[]
+
+---
+* Data visualization encompasses the graphical representation of data through charts, graphs, maps, and other visual elements.
+* Its purpose is to convert raw data into visually comprehensible formats that facilitate interpretation and understanding.
+* Through data visualization, analysts can uncover patterns, trends, and correlations that might be obscured within raw data.
+
+endif::artifact-type[]
+
+<<<
+
+==== Principles of Data Visualization
+
+[cols="50%a,50%a", frame="none", grid="none"]
+|===
+|
+Effective data visualization is guided by a set of principles and best practices to ensure clarity, accuracy, and relevance, including:
+
+- **Clarity and Simplicity:** Visualizations should be clear and easy to understand, avoiding unnecessary complexity.
+
+- **Accuracy and Precision:** Ensure that visualizations accurately represent the underlying data without distorting information.
+
+- **Relevance:** Focus on presenting relevant information that addresses specific objectives or questions.
+
+- **Interactivity:** Incorporate interactive features to allow users to explore data dynamically.
+
+- **Accessibility:** Ensure that visualizations are accessible to all users, including those with disabilities.|image::Principles of Data Visualization.png[pdfheight="75%", pdfwidth="75%"]
+|===
+
+ifeval::["{artifact-type}" == "IG"]
+
+---
+*Instructor note:* Explain to students that most slides in the following modules and lessons will contain a visualization and/or code snippet to illustrate and evolve hte topic presented in the lesson. Those same topics are also presented in the corresponding hands-on exercises.
+endif::[]
+
+ifdef::artifact-type[]
+
+---
+* **Clarity and Simplicity:** Visualizations should prioritize clarity and simplicity, avoiding unnecessary complexity that may hinder understanding.
+* **Accuracy and Precision:** Ensure that visualizations accurately depict the underlying data without introducing distortions or misrepresentations.
+* **Relevance:** Focus on presenting information that is directly relevant to the intended audience and addresses specific objectives or questions.
+* **Interactivity:** Incorporate interactive elements into visualizations to allow users to explore data dynamically and gain deeper insights.
+* **Accessibility:** Ensure that visualizations are accessible to all users, including those with disabilities, by following accessibility guidelines and standards.
+
+endif::artifact-type[]
+
+<<<
+
+==== Benefits of Data Visualization
+
+[cols="50%a,50%a, grid="none", frame="none"]
+|===
+|- **Improved Understanding**
+- **Insight Discovery**
+- **Communication and Collaboration**
+- **Decision Making**
+- **Identification of Data Quality Issues**
+- **Presentation and Reporting**|image::Benefits of Data Visualization.png[]
+|===
+
+ifeval::["{artifact-type}" == "IG"]
+---
+*Instructor note:* The image is an example of a data visualization technique used to represent a large dataset. This type of visualization is often referred to as a "scatter plot" or "point cloud," and it is used to show the distribution and range of data across different variables.
+
+endif::[]
+
+ifdef::artifact-type[]
+
+---
+* **Improved Understanding:** Visual representations of data enhance comprehension by simplifying complex information and making it more accessible.
+* **Insight Discovery:** Data visualizations aid in the discovery of patterns, trends, and relationships within datasets, leading to valuable insights.
+* **Communication and Collaboration:** Visualizations serve as powerful communication tools, enabling effective sharing of findings with stakeholders and fostering collaboration.
+* **Decision Making:** Data visualizations empower decision-makers to make informed and data-driven decisions by presenting insights in a clear and actionable format.
+* **Identification of Data Quality Issues:** Visualizations help in identifying data quality issues such as outliers and inconsistencies, facilitating data cleaning and preprocessing efforts.
+* **Presentation and Reporting:** Visualizations enhance the effectiveness of presentations and reports by providing visually engaging representations of data that are easier to understand and interpret.
+
+endif::artifact-type[]
+
+<<<
+
+==== Conclusion
+
+In conclusion, data visualization is a critical aspect of data analysis, enabling analysts to gain insights, communicate findings, and make informed decisions. 
+
+By following principles of effective data visualization and leveraging its benefits, analysts can unlock the full potential of data to drive business outcomes and innovation.
+
+[NOTE]
+**Hands-On Exercise:**
+For hands-on experience, review and complete _Exercise 1A_ in the exercise guide for this course.
+
+ifdef::artifact-type[]
+
+---
+
+===== Additional Resources
+
+- "The Visual Display of Quantitative Information" by Edward R. Tufte
+- "Storytelling with Data: A Data Visualization Guide for Business Professionals" by Cole Nussbaumer Knaflic
+- Data Visualization Society: https://www.datavisualizationsociety.com/
+
+endif::artifact-type[]
+
+ifeval::["{artifact-type}" == "IG"]
+---
+*Instructor note:* After allowing time for the hands-on exercise, transition to the next lesson in the module.
+
+endif::[]
+
+<<<
+
+=== Lesson {module-number}.2: Interactive Visualizations Using Plotly
+
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::bullseye.svg[align="left",pdfwidth=50%]|Plotly is a powerful Python library for creating interactive and visually appealing data visualizations. 
+
+In this lesson, we'll explore the capabilities of Plotly and learn how to create interactive visualizations to enhance data exploration and analysis.
+|
+|===
+
+{SP}
+
+image::Interactive Visualizations Using Plotly.png[pdfwidth=75%]
+
+ifdef::artifact-type[]
+
+ifeval::["{artifact-type}" == "IG"]
+---
+*Instructor note:* This image showcases an interactive histogram created with a data visualization software in Plotly. The histogram displays the distribution of a numerical variable, with the frequency of values on the y-axis and the value of the variable on the x-axis. To the right, interactive sliders allow the user to adjust subplot parameters, such as the margins and spacing of the plot, providing a hands-on way to customize the visualization for clearer analysis or presentation. A reset button is available to revert to the original settings. This interactivity can greatly enhance the learning experience by allowing you to explore how changes in the visualization's layout can affect the readability and interpretation of the data.
+
+endif::[]
+
+---
+
+* Plotly is a powerful Python library renowned for its ability to generate interactive and visually compelling data visualizations.
+* In this lesson, we delve into Plotly's extensive capabilities, discovering how to leverage its features to create interactive visualizations that enrich data exploration and analysis.
+
+endif::artifact-type[]
+
+<<<
+
+==== Introduction to Plotly
+
+[cols="1a,1a", frame="none", grid="none"]
+|===
+|* Plotly is an open-source library that allows users to create interactive visualizations in Python. 
+* It provides a wide range of chart types and customization options, making it suitable for various data visualization tasks. 
+*  Key features of Plotly include support for static and interactive plots, compatibility with Jupyter notebooks, and ability to export plots in various formats.|image::Introduction to Plotly.png[]
+|===
+
+ifeval::["{artifact-type}" == "IG"]
+---
+*Instructor note:* 
+This image is a scatter plot, a type of data visualization that represents individual data points on a two-dimensional graph. On the x-axis, we have what appears to be a variable labeled 'exp_inf', and on the y-axis, we have 'cnt'. The data points are colored based on another variable, as indicated by the color scale on the right, which could represent a proportion or intensity of a certain attribute, labeled 'pLT'.
+
+The plot shows a concentration of data points towards the lower left corner and some scattered points extending towards the upper right. The color gradient suggests that the attribute represented by 'pLT' changes across the dataset, with higher values likely corresponding to higher 'exp_inf' and/or 'cnt' values. 
+endif::[]
+
+ifdef::artifact-type[]
+
+---
+* Plotly offers a vast array of chart types and customization options, catering to diverse data visualization needs.
+* Its robust support for interactivity includes hover effects, tooltips, zooming capabilities, and animations, enhancing user engagement with data.
+* Plotly seamlessly integrates with Jupyter notebooks, providing an intuitive environment for interactive visualization development and experimentation.
+* Additionally, Plotly facilitates the export of visualizations in various formats, ensuring compatibility with different platforms and applications.
+* Plotly visualizations foster accessibility and collaboration by enabling easy sharing and embedding in web applications, online platforms, and reports.
+* Plotly's continuous evolution and commitment to innovation drive exploration and experimentation in the realm of data visualization.
+
+endif::artifact-type[]
+
+<<<
+
+==== Basic Plotting with Plotly
+
+[cols="50%a,50%a", frame="none", grid="none"]
+|===
+|* Plotly allows users to create a variety of basic plots, including line plots, scatter plots, and bar charts. 
+* These plots can be generated using simple Python code, making it easy to create visualizations from data stored in Python data structures such as lists or NumPy arrays. 
+* Basic plotting functions in Plotly provide options for customizing the appearance of plots, including specifying colors, markers, and axis labels.|image::Basic Plotting with Plotly.png[]
+|===
+
+ifeval::["{artifact-type}" == "IG"]
+---
+*Instructor note:* 
+The image is a scatter plot created using a plotting library Plotly, which depicts various data points differentiated by both color and symbol. The x-axis ranges from 0 to approximately 12, and the y-axis from 0 to 6. Each point is represented by a unique combination of color and symbol, indicating multiple categories or groups within the dataset. For example, green circles, red squares, and gray crosses represent different groups or variables.
+
+The legend on the right side correlates specific symbols and colors with categorical variables, labeled from 'A' to 'E'. This type of plot is useful for visualizing the relationship between two quantitative variables while also being able to segment the data by one or more categorical variables. It can provide insights into the distribution, concentration, and potential correlations within the dataset. This visualization technique is often employed in exploratory data analysis to help identify trends, outliers, and patterns across different groups within the data.
+endif::[]
+
+ifdef::artifact-type[]
+
+---
+* Plotly's basic plotting capabilities extend beyond traditional chart types like line plots, scatter plots, and bar charts to include more specialized visualizations such as bubble charts, box plots, and histograms.
+* In addition to Python data structures like lists or NumPy arrays, Plotly seamlessly integrates with Pandas DataFrames, allowing users to create visualizations directly from DataFrame objects.
+* Basic plotting functions in Plotly offer advanced customization options such as adding trendlines, error bars, and annotations to enhance the clarity and insights of visualizations.
+ with Pandas DataFrames, and advanced customization options beyond what was initially provided.
+
+endif::artifact-type[]
+
+{SP}
+
+
+<<<
+
+==== Enhancing Interactivity
+
+[cols="1a,1a", frame="none", grid="none"]
+|===
+|* One of the key advantages of Plotly is its support for interactivity, which allows users to interact with plots and explore data dynamically. 
+* Plotly visualizations can include hover effects, tooltips, and interactive controls such as sliders and dropdown menus. 
+* These features enhance the usability of visualizations by providing additional information and enabling users to adjust parameters and explore different aspects of the data|image::Enhancing Interactivity.png[]
+|===
+
+ifeval::["{artifact-type}" == "IG"]
+---
+*Instructor note:* The image is a clustered bar chart representing election results. Such charts are commonly used to compare multiple categories of data side by side, in this case, likely across different political parties or election years. Each color in the chart represents a different political party or group, which allows for a quick visual comparison of their performance across different periods.
+
+For instance, the 'Conservative' category is shown in blue, 'Labour' in red, 'Liberal' in yellow, and 'Other' in grey. This allows viewers to quickly assess which party won more seats in each period and how the distribution of seats changes over time. A label on one of the bars indicates a specific significant result, "Seats 329 (won)," which could be an important historical election outcome.
+
+When teaching students about this chart, you might highlight the importance of color coding for clarity, the use of labels for emphasizing specific data points, and the effectiveness of bar charts for displaying categorical data that changes over time. This visualization is a great example of how data can be presented interactively and engagingly to enhance understanding of complex information, such as election results.
+endif::[]
+
+ifdef::artifact-type[]
+
+---
+* Plotly excels in its support for interactivity, empowering users to interact with plots dynamically and explore data in-depth.
+* Beyond standard interactions, Plotly visualizations can incorporate advanced features like hover effects, tooltips, and interactive controls such as sliders and dropdown menus.
+* These interactive elements enrich the user experience by providing supplementary information and enabling users to manipulate parameters, facilitating comprehensive data exploration and analysis.
+
+
+endif::artifact-type[]
+
+<<<
+
+
+==== Creating Complex Visualizations
+
+[cols="1a,1a", frame="none", grid="none"]
+|===
+|* In addition to basic chart types, Plotly supports the creation of more complex visualizations, including heatmaps, choropleth maps, and 3D plots. 
+* Heatmaps are useful for visualizing matrix data, while choropleth maps are used to display geographical data on maps. 
+* Plotly also allows users to create 3D plots for visualizing multidimensional data, such as surface plots and scatter plots in three-dimensional space.|image::Creating Complex Visualizations.png[]
+|===
+
+ifeval::["{artifact-type}" == "IG"]
+---
+*Instructor note:* This graph represents sentiment analysis over a set period, as shown on the x-axis, which is likely date-stamped. There are two main types of data represented:
+
+Line Graphs: The orange and blue lines track two different sentiment scores, 'Total Positive Tweets' and 'Total Negative Tweets', respectively. These lines show the trend of sentiment over time and allow us to observe patterns, such as spikes in positive or negative sentiment on particular dates.
+
+Bar Graphs: The green and orange bars represent the daily counts of 'Total Negative Tweets' and 'Total Positive Tweets'. The height of each bar correlates with the frequency of tweets for that day.
+
+The y-axes on the left and right sides represent different scales, one for the count of tweets and the other for the sentiment score. This dual-axis approach allows for a direct comparison of sentiment trends with the actual volume of tweets.
+
+Such visualizations are useful for analyzing public opinion on social media, understanding the impact of specific events on public sentiment, and identifying potential correlations between the number of tweets and their sentiment.
+endif::[]
+
+ifdef::artifact-type[]
+
+---
+* Plotly extends its capabilities beyond basic chart types to support the creation of more intricate visualizations, encompassing heatmaps, choropleth maps, and 3D plots.
+* Heatmaps serve as effective tools for visualizing matrix data, providing a comprehensive overview of patterns and relationships within the data.
+* Choropleth maps are particularly useful for displaying geographical data on maps, allowing users to visualize spatial distributions and variations across regions.
+* Plotly's 3D plotting functionality enables users to visualize multidimensional data in three-dimensional space, facilitating the exploration of complex relationships and structures.
+
+
+endif::artifact-type[]
+
+<<<
+
+==== Conclusion
+
+In conclusion, Plotly is a versatile library for creating interactive visualizations in Python. 
+
+By leveraging its features and capabilities, analysts can create engaging and informative visualizations to explore and communicate insights from data effectively.
+
+
+[NOTE]
+**Hands-On Exercise:**
+For hands-on experience, review and complete _Exercise 1B_ in the exercise guide for this course.
+
+ifdef::artifact-type[]
+
+---
+
+
+===== Additional Resources
+
+- Plotly Documentation: https://plotly.com/python/
+- Plotly Graphing Libraries: https://plotly.com/graphing-libraries/
+
+endif::artifact-type[]
+
+ifeval::["{artifact-type}" == "IG"]
+---
+*Instructor note:* After allowing time for the hands-on exercise, transition to the next lesson in the module.
+
+endif::[]
+
+
+
+<<<
+
+=== Lesson {module-number}.3: Static Plots Using Matplotlib
+
+
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::bullseye.svg[align="left",pdfwidth=50%]|Matplotlib is a popular Python library for creating static, publication-quality plots. 
+
+In this lesson, we'll explore the fundamentals of Matplotlib and learn how to create static plots for data visualization and analysis.
+|
+|===
+
+{SP}
+
+image::Static Plots Using Matplotlib.png[pdfheight="40%", pdfwidth="40%"]
+
+ifdef::artifact-type[]
+
+ifeval::["{artifact-type}" == "IG"]
+---
+*Instructor note:* 
+The image depicts a histogram, a common graphical representation used in statistics to show the distribution of a numerical variable. The x-axis represents the range of the variable, divided into intervals, while the y-axis represents the frequency of observations within each interval.
+
+This particular histogram is bell-shaped and symmetric around its center, suggesting that the underlying distribution of the numerical variable might be normally distributed, which is often an assumption in many statistical methods. The peak of the histogram indicates the mode, which is the most frequently occurring value range.
+
+In teaching, this visualization can be used to discuss concepts such as central tendency (mean, median, mode), variability, and the properties of normal distribution. It is also a good example of how data can be visually represented to make interpretations about the dataset's overall shape and spread.
+endif::[]
+
+---
+* Matplotlib is renowned for its versatility and ability to generate static, publication-quality plots in Python.
+* In this lesson, participants will delve into the fundamentals of Matplotlib, gaining insight into its extensive capabilities for creating visually appealing plots.
+* Through hands-on exercises, learners will master the art of crafting static plots using Matplotlib, honing their skills in data visualization and analysis.
+
+endif::artifact-type[]
+
+<<<
+
+==== Introduction to Matplotlib
+
+[cols="1a,1a", frame="none", grid="none"]
+|===
+|* Matplotlib is a comprehensive library for creating static, interactive, and animated plots in Python. 
+* It provides a wide range of plotting functions and customization options, making it suitable for various data visualization tasks. 
+* Matplotlib is widely used in scientific computing, data analysis, and exploratory data analysis.|image::Introduction to Matplotlib.png[]
+|===
+
+
+ifeval::["{artifact-type}" == "IG"]
+---
+*Instructor note:* The image shows a set of four line graphs, each representing temperature data across different seasons – Winter, Spring, Summer, and Fall. The x-axis indicates time (dates) and the y-axis shows temperature values in degrees Celsius. Each graph uses a different color to represent the season: blue for Winter, orange for Spring, green for Summer, and red for Fall, which could also symbolically represent the typical temperatures or feel of the seasons.
+
+From a teaching perspective, this image can be used to illustrate how temperature changes over the course of a year and how data can be segmented into categories (seasons, in this case) for more detailed analysis. It's also a good example of how colors can be meaningfully applied to enhance understanding and the readability of data. Students can learn about trends, seasonal patterns, and the importance of visual aesthetics in presenting data effectively.
+endif::[]
+
+
+ifdef::artifact-type[]
+
+---
+* Matplotlib offers extensive support for creating static, interactive, and animated plots in Python, catering to diverse visualization needs across different domains.
+* In addition to its rich set of plotting functions, Matplotlib provides a plethora of customization options, empowering users to fine-tune the appearance and style of their plots to suit specific requirements.
+* Beyond its utility in scientific computing and data analysis, Matplotlib is a popular choice for exploratory data analysis (EDA), enabling users to visualize and explore datasets efficiently.
+* Matplotlib's versatility extends to its integration with other Python libraries and frameworks, allowing seamless interoperability and expanding its capabilities for data visualization and analysis tasks.
+
+endif::artifact-type[]
+
+<<<
+
+==== Basic Plotting with Matplotlib
+
+[cols="1a,1a", frame="none", grid="none"]
+|===
+|* Matplotlib provides a MATLAB-like interface for creating plots using a combination of functions and object-oriented methods. 
+* Some of the basic plot types supported by Matplotlib include line plots, scatter plots, bar charts, histograms, and pie charts. 
+* These plots can be customized with various parameters to control aspects such as colors, markers, labels, and axes.|image::Basic Plotting with Matplotlib.png[]
+|===
+
+ifeval::["{artifact-type}" == "IG"]
+---
+*Instructor note:* The image presents a scatter plot created with a plotting library, likely Matplotlib, which is a plotting library for the Python programming language. The x-axis and y-axis represent two different numerical variables, although their specific labels or units are not shown.
+
+The scatter plot displays individual data points with their values on the x-axis and y-axis, represented by blue dots of varying sizes. The spread of the points suggests there could be a positive correlation between the variables, as higher values on the x-axis seem to be associated with higher values on the y-axis.
+
+For educational purposes, this plot can be used to explain how scatter plots help in visualizing the relationship between two variables, identifying trends, and possibly detecting clusters or outliers. Students can learn how to interpret such plots, assess relationships between variables, and understand the importance of labeling and scaling on graphs for clear communication of data.
+endif::[]
+
+ifdef::artifact-type[]
+
+---
+* Matplotlib offers extensive documentation and a rich ecosystem of resources, including tutorials, examples, and community support, making it accessible to users of all levels.
+* In addition to basic plot types, Matplotlib provides advanced visualization capabilities for creating complex plots such as 3D plots, contour plots, and heatmaps.
+* Matplotlib integrates seamlessly with other Python libraries and frameworks, including NumPy, Pandas, and SciPy, enabling seamless data visualization and analysis workflows.
+* The object-oriented approach in Matplotlib allows for fine-grained control over plot elements, making it suitable for creating publication-quality visualizations and customizing plots to meet specific requirements.
+
+
+endif::artifact-type[]
+
+<<<
+
+==== Customizing Plots
+
+[cols="1a,1a", frame="none", grid="none"]
+|===
+|* Matplotlib allows users to customize plots extensively to meet specific requirements and preferences. 
+* Customization options include changing plot styles, adding annotations and text, adjusting axis limits and ticks, modifying colors and line styles, and incorporating legends and titles. 
+* Matplotlib provides fine-grained control over every aspect of plot appearance, enabling users to create visually appealing and informative plots.|image::Customizing Plots.png[]
+|===
+
+ifeval::["{artifact-type}" == "IG"]
+---
+*Instructor note:* 
+
+**Bar Chart:**
+The bar chart at the top shows different categories of marital status with corresponding frequencies. The lengths of the bars represent the number of entries in each category. For instance, the 'Married' category has the highest frequency, followed by 'Never married', and so on. The colors likely signify the different categories, with 'Married' in yellow, 'Never married' in red, and the rest in varying shades of orange to yellow.
+
+**Data Table:**
+Below the bar chart is a data table displaying a subset of the dataset being analyzed. The columns include 'year', 'marital', 'age', 'race', 'income', 'partyid', 'relig', 'denom', 'tvhours', and there's a search bar on the right-hand side that allows for filtering the data. Each row corresponds to an individual record.
+
+endif::[]
+
+ifdef::artifact-type[]
+
+---
+
+* Matplotlib offers a plethora of customization options beyond basic styling, empowering users to tailor plots to their precise needs and preferences.
+* Users can add annotations and text to highlight key features or provide additional context within plots, enhancing their communicative power.
+* Fine-tuning axis limits and ticks allows for precise control over the scale and appearance of plots, ensuring clarity and readability.
+* Matplotlib's extensive palette of colors and line styles, along with the ability to create custom color maps, provides flexibility in designing visually appealing plots.
+* Incorporating legends and titles into plots helps users convey information effectively and guide interpretation.
+* Modular architecture and object-oriented interface offer granular control over plot elements, facilitating the creation of complex and highly customized visualizations.
+
+
+endif::artifact-type[]
+
+<<<
+
+==== Saving Plots
+
+[cols="50%a,50%a", frame="none", grid="none"]
+|===
+|* Once a plot is created, Matplotlib provides options for saving the plot in various formats, including PNG, PDF, SVG, and EPS. 
+* Users can specify the desired file format and resolution when saving plots, ensuring compatibility with different output formats and quality requirements. 
+* Saved plots can be used for presentations, reports, publications, and other purposes.|image::Saving Plots.png[]
+|===
+
+ifeval::["{artifact-type}" == "IG"]
+---
+*Instructor note:* The image is a line chart with three different lines, each representing a series labeled as TK104, TK105, and TK107. The x-axis is labeled "Sequence order," suggesting a sequential or time-series data, while the y-axis, though not labeled, appears to represent a numerical value, which could be anything from sales figures to scientific measurements, depending on the context of the data.
+
+Each line's peaks and troughs correspond to changes in the value of the variable being measured against the sequence order. The fact that there are three lines allows for a comparison between the different series over the same sequence intervals.
+
+Discuss topics such as trend analysis, comparison of different data sets over a common scale, and the importance of legibility in choosing colors for different lines when plotting multiple series on the same chart. It also serves as an example of how visualizations can help identify patterns or anomalies in data across different series.
+endif::[]
+
+ifdef::artifact-type[]
+
+---
+* Matplotlib offers a range of options for saving plots in different formats, such as PNG, PDF, SVG, and EPS, providing flexibility for various output requirements.
+* Users can specify parameters like file format and resolution when saving plots, allowing for customization and optimization based on specific needs.
+* Saved plots serve multiple purposes, including integration into presentations, inclusion in reports, publication in academic papers, and sharing with collaborators or stakeholders.
+
+endif::artifact-type[]
+
+<<<
+
+==== Conclusion
+
+In conclusion, Matplotlib is a powerful library for creating static plots in Python. 
+
+By mastering the fundamentals of Matplotlib and exploring its customization options, analysts can create visually appealing and informative plots for data visualization and analysis.
+
+
+[NOTE]
+**Hands-On Exercise:**
+For hands-on experience, review and complete _Exercise 1C_ in the exercise guide for this course.
+
+ifdef::artifact-type[]
+
+---
+
+===== Additional Resources
+
+- Matplotlib Documentation: https://matplotlib.org/
+- Matplotlib Gallery: https://matplotlib.org/stable/gallery/index.html
+
+endif::artifact-type[]
+
+ifeval::["{artifact-type}" == "IG"]
+---
+*Instructor note:* After allowing time for the hands-on exercise, transition to the next lesson in the module.
+
+endif::[]
+
+{SP}
+
+
+<<<
+
+=== Lesson {module-number}.4: Advanced Visualization Techniques with Seaborn
+
+
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::bullseye.svg[align="left",pdfwidth=50%]|Seaborn is a Python data visualization library based on Matplotlib that provides a high-level interface for creating attractive and informative statistical graphics. 
+
+In this lesson, we'll explore advanced visualization techniques with Seaborn and learn how to create visually appealing plots for data analysis.
+|
+|===
+
+image::Advanced Visualization Techniques with Seaborn.png[pdfwidth="30%", pdfheight="25%"]
+
+ifeval::["{artifact-type}" == "IG"]
+---
+*Instructor note:* A pair plot, also known as a scatterplot matrix, useful for exploring relationships between multiple variables at once.
+
+The pair plot shows scatterplots for each pair of 'feature1', 'feature2', and 'numerical_feature' variables, allowing us to see how each variable is distributed with respect to the others. The diagonal of the matrix shows the distribution of each variable, represented as kernel density estimates (KDE) and histograms.
+
+endif::[]
+
+ifdef::artifact-type[]
+
+---
+* Seaborn offers a higher-level interface compared to Matplotlib, simplifying the process of creating complex statistical graphics.
+* It provides a wide range of built-in themes and color palettes, allowing users to create visually appealing plots effortlessly.
+* Seaborn seamlessly integrates with Pandas DataFrames, making it convenient for visualizing data directly from DataFrame objects.
+* Advanced visualization techniques covered in this lesson may include visualizing distributions, relationships between variables, and multivariate patterns using Seaborn's specialized functions.
+* Through hands-on exercises, participants will gain proficiency in leveraging Seaborn's capabilities to produce insightful and aesthetically pleasing visualizations for data analysis.
+
+endif::artifact-type[]
+
+<<<
+
+==== Introduction to Seaborn
+
+[cols="50%a,50%a", frame="none", grid="none"]
+|===
+|* Seaborn builds on top of Matplotlib and provides a simplified interface for creating complex statistical visualizations. 
+* It offers a wide range of built-in functions for creating various plot types, including scatter plots, bar plots, box plots, violin plots, heatmaps, and pair plots. 
+* Seaborn's default aesthetics are designed to produce visually appealing plots with minimal customization.|image::Introduction to Seaborn.png[]
+|===
+
+ifeval::["{artifact-type}" == "IG"]
+---
+*Instructor note:* Plots commonly created using Seaborn useful for data analysis and statistical exploration.
+
+1. **Pair Plot (far left)**: This shows relationships between multiple variables through scatter plots and distributions. Each point represents an observation in the dataset, and the colors typically represent different categories.
+
+2. **KDE Plot (second from left)**: The Kernel Density Estimate plot shows the distribution of a single variable and can be layered with multiple variables to compare their distributions.
+
+3. **Regression Plot (second from right)**: This type of plot is useful for visualizing the relationship between two variables with a scatter plot, and often includes a regression line that indicates the trend.
+
+4. **Box Plot (far right)**: The box plot is a standardized way of displaying the distribution of data based on a five-number summary: minimum, first quartile (Q1), median, third quartile (Q3), and maximum. It can show outliers and the spread of the data.
+
+These visualizations are integral to exploratory data analysis as they provide insights into the structure and relationships within the data. 
+endif::[]
+
+ifdef::artifact-type[]
+
+---
+* Seaborn is built on top of Matplotlib, extending its capabilities by providing a simplified interface for generating complex statistical visualizations.
+* In addition to its integration with Matplotlib, Seaborn offers a rich assortment of built-in functions tailored for creating diverse plot types, such as scatter plots, bar plots, box plots, violin plots, heatmaps, and pair plots.
+* Seaborn's default aesthetics are carefully crafted to produce visually appealing plots with minimal customization, allowing users to create attractive visualizations effortlessly.
+* Beyond its default settings, Seaborn provides extensive options for customization, enabling users to fine-tune plots according to specific requirements or preferences.
+
+
+endif::artifact-type[]
+
+<<<
+
+==== Styling and Aesthetics
+
+[cols="50%a,50%a", frame="none", grid="none"]
+|===
+|* One of Seaborn's key features is its support for easily customizing plot aesthetics to improve readability and visual appeal. 
+* Seaborn provides functions for changing plot styles, color palettes, font sizes, grid styles, and other visual elements. 
+* By adjusting these parameters, users can create plots that match their preferences and meet specific design requirements|image::Styling and Aesthetics.png[]
+|===
+
+ifeval::["{artifact-type}" == "IG"]
+---
+*Instructor note:* The image is a scatter plot depicting two different times of day: "Lunch" and "Dinner," differentiated by the vertical position of the points. The x-axis represents 'total_bill' and the y-axis represents 'tip', suggesting this is data from a restaurant or similar service industry.
+
+Different colors are used to represent different days of the week, and the size of each point varies, possibly indicating the size of the dining party. For example, larger points during 'Dinner' could suggest bigger groups dining in the evening.
+
+This type of plot is valuable for seeing patterns or correlations in data. Here, it might show if there's a tendency for larger tips at certain meal times, on specific days, or for larger parties. It also helps to identify if any outliers exist, such as unusually large tips for a given bill amount. This visualization can be particularly useful in the hospitality industry for analyzing customer behavior and service performance.
+endif::[]
+
+ifdef::artifact-type[]
+
+---
+* Seaborn's versatility extends to its ability to effortlessly customize plot aesthetics, enhancing readability and visual appeal.
+* Beyond basic customization, Seaborn offers functions for fine-tuning plot styles, color palettes, font sizes, grid styles, and various other visual elements.
+* With Seaborn's extensive parameter adjustment options, users can create visually stunning plots that align with their preferences and adhere to specific design standards.
+* Seaborn's intuitive API allows for seamless exploration and experimentation with different aesthetic configurations, empowering users to find the perfect visual representation for their data.
+
+endif::artifact-type[]
+
+<<<
+
+==== Complex Plot Types
+
+[cols="50%a,50%a", frame="none", grid="none"]
+|===
+|* Seaborn excels at creating complex statistical plots that visualize relationships between variables and highlight patterns in data. 
+* Some of the advanced plot types supported by Seaborn include:
+** Pair plots
+** Violin plots
+** Facet grids
+** Heatmaps|image::Complex Plot Types.png[]
+|===
+
+ifeval::["{artifact-type}" == "IG"]
+---
+*Instructor note:* The image depicts a histogram overlaid with a line that represents a kernel density estimate (KDE). The histogram shows the distribution of 'total bill' values, likely from a dataset related to restaurant bills. The x-axis represents the bill amount, and the y-axis represents the density, which is the probability distribution of the data—essentially, how often a bill amount appears relative to other amounts.
+
+The histogram's bins show the frequency of bill amounts within specific ranges, and the KDE line smooths these frequencies into a continuous curve, giving a clearer picture of the data's distribution shape. The most frequent values cluster around 10-20 units on the x-axis, indicating this is where most of the data points fall.
+
+This type of plot is useful for understanding the central tendency, spread, and skewness of the data. In teaching, one would use this graph to explain how to interpret the distribution of a single variable and to discuss concepts such as normal distribution, outliers, and measures of central tendency.
+endif::[]
+
+ifdef::artifact-type[]
+
+---
+- **Pair Plots:** Pair plots visualize pairwise relationships between variables in a dataset, making them useful for exploring multivariate data.
+
+- **Violin Plots:** Violin plots display the distribution of data across different categories, combining aspects of box plots and kernel density estimation.
+
+- **Facet Grids:** Facet grids allow users to create multiple plots arranged in a grid layout, with each plot showing a different subset of the data based on categorical variables.
+
+- **Heatmaps:** Heatmaps visualize data in a tabular format using colors to represent values, making them effective for displaying correlation matrices and other structured data.
+
+endif::artifact-type[]
+
+<<<
+
+==== Conclusion
+
+In conclusion, Seaborn is a powerful library for creating advanced statistical visualizations in Python. 
+
+By leveraging its built-in functions and customization options, analysts can create visually appealing and informative plots to gain insights from data.
+
+[NOTE]
+**Hands-On Exercise:**
+For hands-on experience, review and complete _Exercise 1D_ in the exercise guide for this course.
+
+ifdef::artifact-type[]
+
+---
+
+===== Additional Resources
+
+- Seaborn Documentation: https://seaborn.pydata.org/
+- Seaborn Gallery: https://seaborn.pydata.org/examples/index.html
+
+endif::artifact-type[]
+
+ifeval::["{artifact-type}" == "IG"]
+---
+*Instructor note:* After allowing time for the hands-on exercise, transition to the next lesson in the module.
+
+endif::[]
+{SP}
+
+<<<

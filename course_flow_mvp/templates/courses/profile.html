@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}Profile{% endblock %}
+{% block content %}
+<h2>Welcome, {{ user.username }}!</h2>
+
+<div class="cta-grid">
+  <a class="btn btn-primary" href="{% url 'courses:create_course' %}">
+    ➕ Create Course (manual)
+  </a>
+
+  <a class="btn btn-outline" href="{% url 'courses:generate_course' %}">
+    ✨ Generate Course (ChatGPT)
+  </a>
+</div>
+
+<hr style="margin: 1.5rem 0;">
+
+<p class="muted">Use “Create” to build a course by hand, or “Generate” to draft one automatically from a prompt.</p>
+{% endblock %}

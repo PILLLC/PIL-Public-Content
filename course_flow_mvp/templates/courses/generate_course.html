@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %}Generate Course{% endblock %}
+{% block content %}
+<h2>Generate a Course</h2>
+<form method="post">
+  {% csrf_token %}
+  <p><label>Prompt<br>
+  <textarea name="prompt" rows="8" style="width:100%;" placeholder="e.g., Create a beginner-friendly Python course for high school students focusing on problem solving and small projects."></textarea></label></p>
+  <button type="submit" class="btn">Generate</button>
+</form>
+{% endblock %}

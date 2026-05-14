@@ -1,0 +1,164 @@
+== Module {module-number}: Financial Freedom
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+ifdef::logo[]
+image::{logo}[align="left", pdfwidth=25%]
+endif::[]
+
+{SP}
+{SP}
+
+[discrete]
+=== Learning Objectives
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::agenda.svg[align="left",pdfwidth=50%]|
+ifeval::["{artifact-type}" != "SLIDE"]
+Upon completion of this module, learners will be able to:
+
+* Describe Overview
+
+* Understand Budgeting for Leisure
+
+* Understand Investing Wisely
+
+endif::[]
+
+ifeval::["{artifact-type}" == "SLIDE"]
+
+* Describe Overview
+
+* Understand Budgeting for Leisure
+
+endif::[]
+|===
+
+<<<
+
+
+=== Overview
+
+ifeval::["{artifact-type}" == "IG"]
+*Instructor Note:* 
+endif::[]
+
+ifeval::["{artifact-type}" != "SLIDE"]
+Managing finances effectively to support a luxurious lifestyle.
+
+
+endif::[]
+
+ifeval::["{artifact-type}" == "SLIDE"]
+
+* Managing finances effectively to support a luxurious lifestyle.
+
+endif::[]
+
+
+
+<<<
+
+=== Budgeting for Leisure
+
+ifeval::["{artifact-type}" == "IG"]
+*Instructor Note:* 
+endif::[]
+
+ifeval::["{artifact-type}" != "SLIDE"]
+Create a budget that allows for both responsibilities and leisure activities.
+
+
+endif::[]
+
+ifeval::["{artifact-type}" == "SLIDE"]
+
+* Create a budget that allows for both responsibilities and leisure activities.
+
+endif::[]
+
+
+
+<<<
+
+=== Investing Wisely
+
+ifeval::["{artifact-type}" == "IG"]
+*Instructor Note:* 
+endif::[]
+
+ifeval::["{artifact-type}" != "SLIDE"]
+Learn about investment options that can grow your wealth over time.
+
+
+endif::[]
+
+ifeval::["{artifact-type}" == "SLIDE"]
+
+* Learn about investment options that can grow your wealth over time.
+
+endif::[]
+
+
+
+<<<
+
+=== Maximizing Child Support and Alimony
+
+ifeval::["{artifact-type}" == "IG"]
+*Instructor Note:* 
+endif::[]
+
+ifeval::["{artifact-type}" != "SLIDE"]
+Understand your rights and how to manage these financial aspects.
+
+
+endif::[]
+
+ifeval::["{artifact-type}" == "SLIDE"]
+
+* Understand your rights and how to manage these financial aspects.
+
+endif::[]
+
+
+
+<<<
+
+=== Creating Passive Income Streams
+
+ifeval::["{artifact-type}" == "IG"]
+*Instructor Note:* 
+endif::[]
+
+ifeval::["{artifact-type}" != "SLIDE"]
+Explore ways to generate income without active involvement.
+
+
+endif::[]
+
+ifeval::["{artifact-type}" == "SLIDE"]
+
+* Explore ways to generate income without active involvement.
+
+endif::[]
+
+
+
+<<<
+
+
+[appendix]
+=== Glossary
+ifeval::["{artifact-type}" != "SLIDE"]
+ifdef::glossary[]
+- {glossary}
+endif::[]
+endif::[]
+
+[discrete]
+=== Additional Notes
+ifeval::["{artifact-type}" == "IG"]
+*Instructor Tip:* Reinforce cross-module connections or common pitfalls.
+endif::[]

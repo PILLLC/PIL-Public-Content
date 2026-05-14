@@ -1,0 +1,22 @@
+:module-number: 0
+
+:module-number: 1
+include::Module_1.adoc[]
+
+:module-number: 2
+include::Module_2.adoc[]
+
+:module-number: 3
+include::Module_3.adoc[]
+
+//Exercises
+
+:module-number: 1
+include::Module_1_Exercises.adoc[]
+
+:module-number: 2
+include::Module_2_Exercises.adoc[]
+
+:module-number: 3
+include::Module_3_Exercises.adoc[]
+

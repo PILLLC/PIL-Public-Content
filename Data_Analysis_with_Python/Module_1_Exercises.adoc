@@ -1,0 +1,166 @@
+== Module {module-number}: Data Visualization
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+[discrete]
+=== Learning Objectives
+
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::agenda.svg[align="left",pdfwidth=50%]|Upon completion of these exercises, students should be able to:
+
+* Create an interactive Plotly visualization displaying trends in a dataset. _(Exercise {module-number}A)_ 
+* Generate a static Matplotlib plot illustrating the distribution of a numerical variable.  _(Exercise {module-number}B)_
+* Use Seaborn to visualize the relationship between multiple variables in a dataset.  _(Exercise {module-number}C)_ 
+* Combine Plotly, Matplotlib, and Seaborn to create a comprehensive dashboard showcasing various aspects of a dataset.  _(Exercise {module-number}D)_ 
+|===
+
+<<<
+
+=== Exercise {module-number}A - Create an interactive Plotly visualization displaying trends in a dataset.
+
+[source,python]
+----
+import pandas as pd
+import plotly.express as px
+
+# Load your dataset
+df = pd.read_csv('your_dataset.csv')
+
+# Create the Plotly visualization
+fig = px.line(df, x='date_column', y='value_column', title='Trends Over Time')
+
+# Customize the visualization
+fig.update_layout(xaxis_title='Date', yaxis_title='Value')
+
+# Show the visualization
+fig.show()
+----
+
+* Again, replace `'your_dataset.csv'` with the path to your dataset file. 
+* Ensure that your dataset has columns with appropriate names (like `'date_column'` and `'value_column'`) that you want to visualize. 
+* You can modify the code according to your dataset structure and the type of visualization you want to create.
+
+<<<
+
+=== Exercise {module-number}B - Generate a static Matplotlib plot illustrating the distribution of a numerical variable.
+Below is an example of generating a static Matplotlib plot illustrating the distribution of a numerical variable:
+
+[source,python]
+----
+# Step 1: Import necessary libraries
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Step 2: Generate some sample data
+# For this example, let's generate 1000 random numbers from a normal distribution
+data = np.random.normal(loc=0, scale=1, size=1000)
+
+# Step 3: Create the Matplotlib histogram plot
+plt.figure(figsize=(8, 6))
+plt.hist(data, bins=30, color='skyblue', edgecolor='black')
+
+# Step 4: Customize the plot (optional)
+plt.title('Distribution of a Numerical Variable')
+plt.xlabel('Value')
+plt.ylabel('Frequency')
+
+# Step 5: Show the plot
+plt.show()
+----
+
+This code will generate a static histogram plot illustrating the distribution of a numerical variable using Matplotlib. You can adjust parameters such as the number of bins, colors, and labels to customize the plot according to your preferences.
+
+
+<<<
+    
+=== Exercise {module-number}C - Use Seaborn to visualize the relationship between multiple variables in a dataset.
+Seaborn is a high-level interface for drawing attractive statistical graphics built on top of Matplotlib. Below is an example of how you can use Seaborn to visualize the distribution of a numerical variable:
+
+[source,python]
+----
+# Step 1: Import necessary libraries
+import seaborn as sns
+import numpy as np
+
+# Step 2: Generate some sample data
+# For this example, let's generate 1000 random numbers from a normal distribution
+data = np.random.normal(loc=0, scale=1, size=1000)
+
+# Step 3: Create the Seaborn histogram plot
+sns.histplot(data, bins=30, color='skyblue', edgecolor='black')
+
+# Step 4: Customize the plot (optional)
+plt.title('Distribution of a Numerical Variable')
+plt.xlabel('Value')
+plt.ylabel('Frequency')
+
+# Step 5: Show the plot
+plt.show()
+----
+
+This code will generate a histogram plot illustrating the distribution of a numerical variable using Seaborn. Seaborn provides additional functionalities and a more visually appealing default style compared to Matplotlib, making it a preferred choice for many data visualization tasks. You can further customize the plot using various Seaborn functions and parameters to suit your needs.
+
+<<<
+    
+=== Exercise {module-number}D - Combine Plotly, Matplotlib, and Seaborn to create a comprehensive dashboard showcasing various aspects of a dataset.
+
+Combining Plotly, Matplotlib, and Seaborn in a single dashboard can provide a comprehensive and visually appealing way to explore various aspects of a dataset. Below is an example of how you can create such a dashboard:
+
+[source,python]
+----
+# Step 1: Import necessary libraries
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+import plotly.express as px
+
+# Step 2: Load your dataset
+# For this example, let's use a sample dataset
+# Replace 'your_dataset.csv' with the path to your dataset
+df = pd.read_csv('your_dataset.csv')
+
+# Step 3: Preprocess your data if necessary
+
+# Step 4: Create visualizations using different libraries
+# Plotly scatter plot
+fig1 = px.scatter(df, x='feature1', y='feature2', color='target', title='Plotly Scatter Plot')
+
+# Matplotlib histogram
+plt.figure(figsize=(8, 6))
+plt.hist(df['numerical_feature'], bins=30, color='skyblue', edgecolor='black')
+plt.title('Matplotlib Histogram')
+plt.xlabel('Value')
+plt.ylabel('Frequency')
+
+# Seaborn pairplot
+plt.figure(figsize=(8, 6))
+sns.pairplot(df, hue='target')
+plt.suptitle('Seaborn Pairplot')
+
+# Step 5: Show the visualizations
+# Plotly scatter plot
+fig1.show()
+
+# Matplotlib histogram
+plt.show()
+
+# Seaborn pairplot doesn't need explicit show as it automatically shows the plot
+
+# Step 6: Combine the visualizations into a single dashboard (optional)
+# You can combine them using HTML layout or use specific dashboard frameworks like Dash for Plotly
+
+# Step 7: Save the dashboard or display it in a web application (optional)
+# You can save the dashboard as HTML or display it using a web framework like Flask or Django
+
+# For more interactivity and customization, consider using Dash framework for Plotly
+----
+
+This example demonstrates how to create visualizations using Plotly, Matplotlib, and Seaborn separately and then display them together. You can further enhance this dashboard by adding more visualizations, customizing the appearance, and combining them into a single layout using HTML or a dedicated dashboarding framework like Dash for Plotly.
+
+<<<
+    

@@ -1,0 +1,13 @@
+= A Divorced Dad&#39;s Guide to a Life of Leisure and Luxury
+:doctype: book
+:toc: left
+:icons: font
+:source-highlighter: rouge
+:imagesdir: images
+
+:artifact-type: handbook
+
+:logo: PIL_Logo_2023.png
+:SP: pass:[<br><br>]
+
+include::z.content.adoc[]

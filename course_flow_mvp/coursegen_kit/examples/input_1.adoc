@@ -1,0 +1,68 @@
+= Building Applications with Python and Django
+:toc:
+
+== Objective
+To equip learners with the skills to develop web applications using Python and the Django framework.
+
+== Description
+This course provides a comprehensive introduction to web development using Python and Django. Participants will learn how to set up a Django project, create models, views, and templates, and deploy their applications.
+
+== Introduction to Python and Django
+An overview of Python programming and the Django framework.
+
+=== Getting Started with Python
+Introduction to Python syntax, data types, and control structures.
+
+=== Introduction to Django
+Overview of the Django framework, its architecture, and installation.
+
+=== Setting Up a Django Project
+Creating a new Django project and understanding its structure.
+
+== Models and Databases
+Learn how to create and manage database models in Django.
+
+=== Understanding Django Models
+Introduction to Django models and how they map to database tables.
+
+=== Database Migrations
+How to create and apply migrations to manage database schema changes.
+
+=== Querying the Database
+Using Django's ORM to retrieve and manipulate data.
+
+== Views and Templates
+Learn how to create views and templates to render dynamic content.
+
+=== Creating Views
+Introduction to function-based and class-based views in Django.
+
+=== Using Django Templates
+How to create and use templates for rendering HTML.
+
+=== Template Inheritance
+Understanding template inheritance for reusable design.
+
+== Forms and User Input
+Handling user input and form submissions in Django applications.
+
+=== Creating Forms
+How to create and display forms in Django.
+
+=== Validating Form Data
+Implementing form validation and error handling.
+
+=== Processing Form Submissions
+How to handle form submissions and save data to the database.
+
+== Deployment and Best Practices
+Learn how to deploy Django applications and follow best practices.
+
+=== Preparing for Deployment
+Configuring settings for production and security best practices.
+
+=== Deploying to Heroku
+Step-by-step guide to deploying a Django application to Heroku.
+
+=== Monitoring and Maintenance
+Best practices for monitoring and maintaining Django applications.
