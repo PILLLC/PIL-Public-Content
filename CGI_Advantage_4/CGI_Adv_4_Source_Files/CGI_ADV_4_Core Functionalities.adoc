@@ -1,0 +1,158 @@
+== Module {module-number}: Core Functionalities
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+{SP}
+{SP}
+
+[discrete]
+=== Learning Objectives
+
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::agenda.svg[align="left",pdfwidth=50%]|Upon completion of this module, students should be able to:
+
+* Master the setup and management of the General Ledger, Accounts Payable, and Accounts Receivable modules.
+* Learn how to create and manage budgets and forecasts within CGI Advantage 4.
+* Gain proficiency in managing procurement processes, including vendor management and contract creation.
+* Understand the functionalities of the HR and Payroll modules, including employee data management and payroll processing.
+|===
+
+<<<
+
+=== Financial Management
+
+==== General Ledger Setup and Management
+The General Ledger (GL) is the central repository for financial data in CGI Advantage 4. It tracks all financial transactions and provides the foundation for financial reporting. Proper setup and management of the GL are essential for accurate financial records.
+
+- *Setting Up the General Ledger:*
+  * Chart of Accounts: Define the structure of accounts and categories.
+  * Financial Periods: Set up fiscal year, periods, and accounting calendar.
+  * Journal Entries: Configure rules for automated and manual journal entries.
+
+- *Managing the General Ledger:*
+  * Posting Transactions: Ensure timely and accurate posting of transactions.
+  * Reconciliation: Perform regular reconciliations to maintain accuracy.
+  * Financial Reporting: Generate trial balances, balance sheets, and income statements.
+
+<<<
+
+==== Accounts Payable and Receivable
+Accounts Payable (AP) and Accounts Receivable (AR) are critical components of financial management. AP manages outgoing payments to vendors, while AR tracks incoming payments from customers or other entities.
+
+- *Accounts Payable:*
+  * Vendor Setup: Configure vendor profiles and payment terms.
+  * Invoice Processing: Automate and manage invoice approvals and payments.
+  * Payment Runs: Schedule and execute payment batches.
+
+- *Accounts Receivable:*
+  * Customer Setup: Define customer profiles and payment terms.
+  * Invoice Generation: Automate the creation and distribution of invoices.
+  * Collections Management: Track overdue payments and manage collections.
+
+<<<
+
+==== Budgeting and Forecasting
+Budgeting and forecasting are vital for financial planning and control. CGI Advantage 4 provides tools to create, manage, and analyze budgets and forecasts, helping organizations to allocate resources efficiently.
+
+- *Budget Setup:*
+  * Budget Structures: Define budget categories and hierarchies.
+  * Budget Entry: Input budget amounts for various departments and projects.
+
+- *Forecasting:*
+  * Revenue and Expense Forecasting: Use historical data to predict future financial performance.
+  * Scenario Analysis: Create multiple budget scenarios for different assumptions.
+
+- *Monitoring and Reporting:*
+  * Budget vs. Actual: Track actual performance against the budget.
+  * Variance Analysis: Identify and analyze discrepancies between budgeted and actual figures.
+
+<<<
+
+=== Procurement Management
+
+==== Procurement Process Overview
+Procurement management in CGI Advantage 4 involves acquiring goods and services to meet the organization's needs. This process includes requisitioning, vendor selection, contract management, and purchase order creation.
+
+- *Procurement Lifecycle:*
+  * Requisitioning: Request goods and services through requisition forms.
+  * Vendor Selection: Evaluate and select vendors based on predefined criteria.
+  * Contract Management: Manage contracts, including terms, renewals, and compliance.
+  * Purchase Orders: Generate and manage purchase orders (POs) for approved requisitions.
+
+<<<
+
+==== Vendor Management
+Effective vendor management ensures that the organization works with reliable vendors, gets the best value, and maintains strong supplier relationships.
+
+- *Vendor Registration and Approval:*
+  * Register new vendors in the system.
+  * Perform vendor due diligence and approval processes.
+
+- *Vendor Performance Monitoring:*
+  * Track vendor performance metrics, including delivery times and quality.
+  * Manage vendor ratings and feedback for continuous improvement.
+
+- *Vendor Compliance:*
+  * Ensure vendors meet compliance requirements, such as certifications and insurance.
+  * Manage documentation and audits for vendor compliance.
+
+<<<
+
+==== Contract and Purchase Order Management
+Managing contracts and purchase orders effectively is crucial for controlling procurement costs and ensuring compliance with organizational policies.
+
+- *Contract Management:*
+  * Contract Creation: Draft and approve contracts using standardized templates.
+  * Contract Monitoring: Track contract performance, renewals, and amendments.
+
+- *Purchase Order Management:*
+  * PO Creation: Automate the creation of POs from approved requisitions.
+  * PO Tracking: Monitor the status of POs from issuance to fulfillment.
+  * Invoice Matching: Match POs with invoices for accurate payment processing.
+
+<<<
+  
+=== Human Resources and Payroll
+
+==== HR Module Overview
+The Human Resources (HR) module in CGI Advantage 4 is designed to manage employee data, streamline HR processes, and ensure compliance with employment regulations. It covers employee lifecycle management, benefits administration, and compliance reporting.
+
+- *HR Module Components:*
+  * Employee Data Management: Centralized repository for employee information.
+  * Benefits Administration: Manage employee benefits, including health, retirement, and other perks.
+  * Compliance Reporting: Generate reports to ensure compliance with labor laws and regulations.
+
+<<<
+
+==== Employee Data Management
+Effective employee data management is essential for accurate HR operations and compliance. This topic covers the setup and maintenance of employee records, including personal information, employment history, and job classifications.
+
+- *Employee Record Setup:*
+  * Create and update employee profiles with personal and job-related information.
+  * Manage employment status, job classifications, and department assignments.
+
+- *Employee Lifecycle Management:*
+  * Onboarding: Automate the onboarding process, including document collection and training.
+  * Transfers and Promotions: Manage employee transfers, promotions, and job reclassifications.
+  * Offboarding: Handle employee exits, including exit interviews and final pay processing.
+
+<<<
+
+==== Payroll Processing and Compliance
+Payroll processing involves calculating employee wages, withholding taxes, and ensuring compliance with labor laws. CGI Advantage 4 automates these processes, reducing errors and ensuring timely payments.
+
+- *Payroll Setup:*
+  * Pay Schedules: Define pay periods and pay dates for different employee groups.
+  * Payroll Elements: Configure earnings, deductions, and benefits components.
+
+- *Payroll Processing:*
+  * Calculate gross and net pay, including overtime, bonuses, and deductions.
+  * Generate payroll reports for auditing and compliance purposes.
+
+- *Compliance and Reporting:*
+  * Ensure payroll processes comply with local, state, and federal regulations.
+  * Generate required tax forms, such as W-2s and 1099s, for employees and contractors.

@@ -1,0 +1,107 @@
+
+== Module {module-number}: Inventory and Relationship Matrix
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+{SP}
+{SP}
+
+
+=== 1. Financial Management Module
+
+[cols="3,2,3,4,3", options="header"]
+|===
+| Component              | Type         | Key Tables/Transactions          | Dependencies/Relationships                                     | Baseline Artifacts/Data 
+
+| General Ledger (GL)    | Core Module  | GL Account (GAC), GL Journal (GLJ) | Relies on Chart of Accounts (COA), Fund Codes, Department Codes | COA setup, Fiscal Year, Fund Codes 
+| Accounts Payable (AP)  | Submodule    | AP Invoice (API), Vendor (VEN)     | Linked to Vendor Management, Cash Management                    | Vendor Profiles, Payment Terms 
+| Accounts Receivable (AR) | Submodule  | AR Invoice (ARI), AR Payment (ARP) | Interfaces with Revenue Management                              | Customer Profiles, Payment Methods 
+| Budgeting              | Submodule    | Budget Structure (BST), Budget Entry (BJE) | Relies on Fiscal Periods, GL Account Hierarchy | Budget Profiles, Budget Control Setup 
+| Asset Management       | Submodule    | Asset Master (ASM), Depreciation (DEP) | Links to GL for asset transactions and depreciation             | Asset Categories, Depreciation Policies 
+|===
+
+=== 2. Procurement and Vendor Management Module
+
+[cols="3,2,3,4,3", options="header"]
+|===
+| Component               | Type         | Key Tables/Transactions          | Dependencies/Relationships                                     | Baseline Artifacts/Data 
+
+| Vendor Management (VCC) | Core Module  | Vendor Profile (VEN), Vendor Address (VAD) | Used by AP, Procurement | Vendor Types, Vendor Addresses 
+| Purchase Orders (PO)    | Transaction  | Purchase Order (POD), PO Line (POL) | Linked to Budgeting, AP for encumbrances | Item Catalog, PO Approval Workflow 
+| Contract Management (CM) | Submodule   | Contract (CON), Contract Amendment (CAM) | Links to Vendor, Procurement, Budgeting | Contract Types, Contract Templates 
+| Sourcing and Bids       | Submodule    | Bid Solicitation (BID), Bid Response (BIR) | Relates to Vendor, PO, and Contract | Bid Evaluation Criteria, Bidder Information 
+|===
+
+=== 3. Human Resources and Payroll Module
+
+[cols="3,2,3,4,3", options="header"]
+|===
+| Component               | Type         | Key Tables/Transactions          | Dependencies/Relationships                                     | Baseline Artifacts/Data 
+
+| Employee Management     | Core Module  | Employee Profile (EMP), Employee Address (EAD) | Integrated with Payroll, Benefits, and Training | Employee Roles, Job Codes, Pay Grades 
+| Payroll                 | Submodule    | Payroll Run (PRR), Pay Calculation (PAY) | Relies on Employee, Job, Time and Attendance | Payroll Calendar, Tax Withholding Tables 
+| Benefits Administration | Submodule    | Benefits Plan (BEN), Enrollment (ENR) | Linked to Employee and Payroll | Benefits Plans, Employee Benefits Eligibility 
+| Time and Attendance     | Submodule    | Time Entry (TME), Leave Request (LVR) | Connects to Payroll, Employee for attendance tracking | Time Codes, Leave Policies 
+|===
+
+=== 4. Revenue and Accounts Receivable Module
+
+[cols="3,2,3,4,3", options="header"]
+|===
+| Component               | Type         | Key Tables/Transactions          | Dependencies/Relationships                                     | Baseline Artifacts/Data 
+
+| Revenue Entry (RE)      | Core Module  | Revenue Entry (RE), Revenue Line (REL) | Links to AR, Customer Billing Profiles | Customer Profiles, Revenue Codes 
+| Customer Billing Profiles | Transaction | Billing Profile (BP), Customer Account (CA) | Used by AR for third-party billing | Customer Account Types, Payment Terms 
+| Cash Receipts           | Submodule    | Cash Receipt (CR), Payment Application (PA) | Relies on AR, Banking for cash management | Payment Methods, Bank Accounts 
+|===
+
+=== 5. Budget Management Module
+
+[cols="3,2,3,4,3", options="header"]
+|===
+| Component               | Type         | Key Tables/Transactions          | Dependencies/Relationships                                     | Baseline Artifacts/Data 
+
+| Budget Structure (BS)   | Core Module  | Budget Control (BC), Budget Allocation (BA) | Related to GL, used by all modules requiring budget information | Budget Structure Codes, Budget Levels 
+| Budget Adjustment       | Transaction  | Budget Adjustment Entry (BAE)    | Adjustments impact GL, Procurement, and other budget-reliant modules | Budget Transfer Rules, Budget Approval Workflow 
+|===
+
+=== 6. Reporting and Inquiry Tools
+
+[cols="3,2,3,4,3", options="header"]
+|===
+| Component               | Type         | Key Reports/Inquiries            | Dependencies/Relationships                                     | Baseline Artifacts/Data 
+
+| Financial Reports       | Core Module  | Trial Balance, Income Statement  | Linked to GL, AR, AP | Reporting Periods, GL Account Groups 
+| Budget Reports          | Core Module  | Budget Inquiry (BI), Available Budget Report (ABR) | Relates to Budget Structure, Control Tables | Budget Control Settings, Fiscal Periods 
+| Procurement Reports     | Core Module  | PO Status, Contract Usage        | Linked to Vendor, Contract, and PO | Report Templates, Approval Workflow Definitions 
+|===
+
+=== 7. System Administration and Security
+
+[cols="3,2,3,4,3", options="header"]
+|===
+| Component               | Type         | Key Tables/Configurations        | Dependencies/Relationships                                     | Baseline Artifacts/Data 
+
+| User Management         | Core Module  | User Profile (USR), Role Assignment (ROL) | Linked to module access and transaction security | Role Definitions, Access Control Rules 
+| Workflow and Approvals  | Configuration | Workflow Setup (WFL), Approval Routing (APR) | Workflows define approval paths for financial transactions | Workflow Rules, Approval Levels 
+| System Configuration    | Core Module  | System Options (SYS), Control Codes (CC) | Control settings across modules for consistent configurations | Fiscal Year Setup, Module-Specific Parameters 
+|===
+
+=== Relationship Matrix Overview
+
+[cols="3,3,3", options="header"]
+|===
+| Modules | Primary Transactions and Tables | Dependent Components 
+
+| General Ledger (GL) | GL Account (GAC), GL Journal (GLJ) | Accounts Payable, Revenue Entry, Asset Management, Reporting 
+| Accounts Payable (AP) | AP Invoice (API), Vendor (VEN) | GL for expenditure tracking, Vendor Management 
+| Accounts Receivable (AR) | AR Invoice (ARI), AR Payment (ARP) | Linked to Customer, Revenue Entry for collection purposes 
+| Budgeting | Budget Structure (BST), Budget Control (BC) | Impacts GL, Procurement, Revenue transactions 
+| Procurement | Purchase Order (POD), Vendor Management (VCC) | Budget Control, AP for encumbrance management 
+| Revenue | Revenue Entry (RE), Customer Profile (CP) | Linked to Budgeting, AR, and Customer Billing Profiles 
+| Payroll | Payroll Run (PRR), Employee Profile (EMP) | Dependent on HR employee setup, Budgeting for payroll expense 
+|===
+x

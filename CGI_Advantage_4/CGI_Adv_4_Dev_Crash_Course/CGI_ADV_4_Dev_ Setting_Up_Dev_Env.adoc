@@ -1,0 +1,150 @@
+== Module {module-number}: Setting Up the Development Environment
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+{SP}
+{SP}
+
+[discrete]
+=== Learning Objectives
+
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::agenda.svg[align="left",pdfwidth=50%]|Upon completion of this module, students should be able to:
+
+* Install and configure the necessary tools and software for CGI Advantage 4 development.
+* Set up project repositories for effective collaboration and version control.
+* Establish and validate database connections to access required schemas.
+* Configure and manage build scripts to automate development tasks.
+|===
+
+<<<
+
+=== Installing Required Software
+
+Setting up the development environment begins with installing the necessary software tools. Each tool plays a critical role in supporting the development, testing, and deployment processes for CGI Advantage 4.
+
+==== Key Software Tools
+- **Java Development Kit (JDK):**
+  * Install JDK 1.8 or higher, as CGI Advantage 4 is built on Java.
+  * Set the `JAVA_HOME` environment variable to point to the JDK installation directory.
+  * Verify installation with the `java -version` command.
+
+- **Apache Ant and Maven:**
+  * Ant: A build automation tool for running tasks such as compilation and deployment.
+  * Maven: A project management and build tool for managing dependencies and lifecycle.
+  * Add Ant and Maven to your system's `PATH` environment variable.
+
+- **Integrated Development Environment (IDE):**
+  * Recommended IDEs: Eclipse or IntelliJ IDEA for Java development.
+  * Install plugins for XML editing and version control integration (e.g., Git, SVN).
+
+- **Database Client:**
+  * Tools such as Oracle SQL Developer or DBeaver for managing database connections and queries.
+  * Ensure the client is compatible with Oracle databases used by CGI Advantage 4.
+
+*Activity Suggestion:* Have students install the software and share their configurations in class for troubleshooting and discussion.
+
+<<<
+
+=== Setting Up Project Repositories
+
+Using version control systems ensures efficient collaboration and tracking of changes in your CGI Advantage 4 project.
+
+==== Steps to Set Up Repositories
+1. **Access the Repository:**
+   * Identify the version control system (e.g., Git, SVN) used for the project.
+   * Obtain the repository URL and access credentials from your project administrator.
+
+2. **Clone or Check Out the Repository:**
+   * For Git: Use the `git clone <repository-url>` command to clone the repository locally.
+   * For SVN: Use a command like `svn checkout <repository-url>`.
+
+3. **Set Up Your Workspace:**
+   * Open the project in your IDE and configure workspace settings (e.g., project-specific JDK version).
+   * Ensure proper branch or revision selection for development tasks.
+
+==== Best Practices
+- Use meaningful commit messages to describe changes made to the codebase.
+- Regularly pull updates from the repository to stay in sync with the latest changes.
+- Create branches for feature development or bug fixes to keep the main branch stable.
+
+<<<
+
+=== Configuring Database Connections
+
+Database configuration is essential for accessing tables and schemas used by CGI Advantage 4 during development.
+
+==== Steps to Configure Database Connection
+1. **Locate Configuration Files:**
+   * Look for database configuration files in the `config` or `resources` directory of your project.
+
+2. **Update Connection Strings:**
+   * Update the database connection URL, username, and password in the configuration file.
+   * Example:
+     ```
+     jdbc:oracle:thin:@localhost:1521:XE
+     username=admin
+     password=yourpassword
+     ```
+
+3. **Test Database Connection:**
+   * Use your database client (e.g., Oracle SQL Developer) to connect with the same credentials.
+   * Verify access to tables, views, and stored procedures required for development.
+
+==== Troubleshooting Tips
+- Ensure the database service is running and accessible over the network.
+- Check for firewall rules that might block database access.
+- Use logs or error messages to identify and resolve connection issues.
+
+<<<
+
+=== Setting Up Build Scripts
+
+Build scripts automate development tasks, reducing errors and saving time.
+
+==== Configuring Build Scripts
+1. **Ant Build Scripts:**
+   * Locate the `build.xml` file in your project directory.
+   * Define targets such as `clean`, `compile`, `package`, and `deploy`.
+   * Example target:
+     ```xml
+     <target name="compile">
+       <javac srcdir="src" destdir="build/classes" />
+     </target>
+     ```
+
+2. **Maven Build Scripts:**
+   * Edit the `pom.xml` file to include dependencies and plugins.
+   * Configure lifecycle phases like `clean`, `install`, and `deploy`.
+   * Example dependency:
+     ```xml
+     <dependency>
+       <groupId>javax.servlet</groupId>
+       <artifactId>javax.servlet-api</artifactId>
+       <version>4.0.1</version>
+     </dependency>
+     ```
+
+3. **Test Build Scripts:**
+   * Run commands like `ant compile` or `mvn clean install` to ensure the scripts execute without errors.
+
+==== Best Practices
+- Modularize build scripts to separate tasks for easy maintenance.
+- Use property files for environment-specific configurations.
+- Document build targets and their purposes for team collaboration.
+
+<<<
+
+[appendix]
+=== Glossary
+- *Ant:* A Java-based build automation tool.
+- *Maven:* A project management tool used for dependency management and build automation.
+- *JDK (Java Development Kit):* Software development tools for building Java applications.
+
+[discrete]
+=== Additional Notes
+*Instructor Tip:* Demonstrate the configuration of a build script and database connection in real time to help students follow along and resolve potential issues.

@@ -1,0 +1,35 @@
+== Module {module-number}: Continuous Monitoring and Improvement
+
+=== Summary
+Strategies for maintaining ongoing compliance with NIST 800-53.
+
+=== Objectives
+
+- Define continuous monitoring and its importance.
+- Discuss how to update controls based on evolving threats.
+
+=== Content
+Continuous monitoring helps organizations respond to new cybersecurity threats and regulatory changes. It involves the regular assessment of systems, integration of threat intelligence, and timely updates to controls to maintain a secure environment.
+
+**Key Steps in Continuous Monitoring:**
+
+1. **Define Monitoring Scope:** Identify the systems, data, and controls that require ongoing monitoring. This includes critical infrastructure, sensitive data repositories, and high-risk applications.
+   
+2. **Collect Security Data:** Utilize automated tools such as log management systems, intrusion detection systems (IDS), and performance monitoring tools to gather logs, performance metrics, and threat intelligence data.
+
+3. **Analyze and Correlate Data:** Apply data analytics to identify patterns, anomalies, and potential security threats. Use correlation engines to link related events and provide a comprehensive view of security incidents.
+
+4. **Respond to Incidents:** Implement incident response procedures to quickly contain and remediate threats. This includes isolating affected systems, mitigating risks, and performing forensic analysis.
+
+5. **Update Controls:** Adjust and strengthen controls based on new findings, evolving risks, and regulatory changes. Conduct periodic control reviews to ensure they remain effective against emerging threats.
+
+**Benefits of Continuous Monitoring:**
+
+- **Proactive Threat Detection:** Detect and respond to threats in real time, minimizing the impact of incidents.
+- **Regulatory Compliance:** Maintain compliance with industry standards and regulatory requirements through ongoing control assessments.
+- **Improved Security Posture:** Strengthen the organization’s ability to adapt to dynamic threat landscapes and reduce security gaps.
+
+ifeval::["{artifact-type}" == "IG"]
+
+*Instructor note:* Discuss the importance of automation in continuous monitoring and the role of security information and event management (SIEM) systems. Highlight the benefits of integrating machine learning and threat intelligence in monitoring processes. Encourage participants to share their experiences with continuous monitoring tools and techniques.
+endif::[]

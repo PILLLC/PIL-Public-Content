@@ -1,0 +1,153 @@
+== Module {module-number}: Financial Management in CGI Advantage 4
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+{SP}
+{SP}
+
+[discrete]
+=== Learning Objectives
+
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::agenda.svg[align="left",pdfwidth=50%]|Upon completion of this module, users will be able to:
+
+* Navigate and utilize the Financial Management module in CGI Advantage 4.
+* Understand the key functionalities of the General Ledger, Accounts Payable, and Accounts Receivable.
+* Perform essential tasks, such as entering journal entries, processing invoices, and reconciling accounts.
+* Generate financial reports and analyze budget performance.
+|===
+
+<<<
+
+=== Overview of Financial Management
+
+The Financial Management module is the backbone of CGI Advantage 4, enabling organizations to manage finances, ensure compliance, and maintain transparency.
+
+- *Key Features:*
+  * General Ledger (GL) for tracking financial transactions.
+  * Accounts Payable (AP) for managing vendor payments.
+  * Accounts Receivable (AR) for tracking incoming payments.
+  * Budgeting for financial planning and monitoring.
+
+*Instructor Note:* Emphasize the importance of accurate data entry to ensure reliable financial reporting.
+
+<<<
+
+=== General Ledger (GL)
+
+==== Purpose of the General Ledger
+The General Ledger serves as the central repository for all financial transactions, providing the foundation for accurate reporting and compliance.
+
+- *Key Functions:*
+  * Record financial transactions through journal entries.
+  * Maintain the chart of accounts (COA) for categorizing transactions.
+  * Generate financial statements, such as income statements and balance sheets.
+
+==== Performing Common Tasks
+- **Entering Journal Entries:**
+  1. Navigate to the "Journal Entries" page.
+  2. Select "New Entry" and complete the required fields (e.g., account, amount, and description).
+  3. Save and post the entry.
+
+- **Reconciliation:**
+  * Compare system transactions with bank statements to ensure accuracy.
+  * Use the reconciliation tool to match entries and resolve discrepancies.
+
+*Activity:* Practice entering and posting a sample journal entry in a training environment.
+
+<<<
+
+=== Accounts Payable (AP)
+
+==== Managing Vendor Payments
+Accounts Payable tracks outgoing payments to vendors, ensuring timely and accurate processing.
+
+- *Key Tasks:*
+  * **Invoice Processing:**
+    1. Create a new invoice by entering vendor details, amounts, and payment terms.
+    2. Attach supporting documentation, such as purchase orders or contracts.
+    3. Submit the invoice for approval.
+  * **Payment Processing:**
+    1. Generate payment batches for approved invoices.
+    2. Print checks or process electronic fund transfers (EFTs).
+    3. Record payment details in the system.
+
+==== Vendor Management
+- Maintain vendor profiles, including payment terms, contact information, and compliance documentation.
+- Monitor vendor performance using system-generated metrics and reports.
+
+*Activity:* Process a sample invoice and generate a payment batch for review.
+
+<<<
+
+=== Accounts Receivable (AR)
+
+==== Tracking Incoming Payments
+Accounts Receivable ensures that all payments owed to the organization are tracked and processed accurately.
+
+- *Key Tasks:*
+  * **Invoice Creation:**
+    1. Generate customer invoices based on services rendered or goods provided.
+    2. Include due dates and payment terms in the invoice.
+  * **Payment Application:**
+    1. Record payments received via checks, EFTs, or other methods.
+    2. Match payments to corresponding invoices to close balances.
+
+==== Collections Management
+- Monitor overdue accounts and generate follow-up notices.
+- Implement escalation workflows for unresolved payments.
+
+*Activity:* Create a customer invoice and apply a payment in a training environment.
+
+<<<
+
+=== Budgeting and Reporting
+
+==== Budget Management
+The Budgeting feature allows users to plan, monitor, and adjust financial resources effectively.
+
+- *Creating Budgets:*
+  1. Navigate to the "Budget Setup" page.
+  2. Define budget categories, such as departments or projects.
+  3. Enter initial budget amounts and save the configuration.
+
+- *Monitoring Performance:*
+  * Use the "Budget vs. Actual" report to compare planned and actual expenditures.
+  * Analyze variances to identify areas for adjustment.
+
+*Activity:* Set up a departmental budget and generate a variance report.
+
+<<<
+
+==== Financial Reporting
+Generate detailed reports to provide insights into financial performance and compliance.
+
+- *Common Reports:*
+  * Trial Balance
+  * Income Statement
+  * Budget vs. Actual Analysis
+  * Vendor Payment Summary
+
+- *Steps to Generate a Report:*
+  1. Navigate to the "Reports" section in the Financial Management module.
+  2. Select the desired report type and apply filters (e.g., date range, account).
+  3. Generate and export the report in the desired format (PDF, Excel, etc.).
+
+*Activity:* Generate and review a Trial Balance report.
+
+<<<
+
+[appendix]
+=== Glossary
+- *General Ledger (GL):* A system for recording all financial transactions.
+- *Accounts Payable (AP):* Manages outgoing payments to vendors.
+- *Accounts Receivable (AR):* Tracks incoming payments from customers or other entities.
+- *Budget vs. Actual Report:* Compares planned expenditures against actual spending.
+
+[discrete]
+=== Additional Notes
+*Instructor Tip:* Use real-world examples to illustrate the importance of accurate financial management and reporting.

@@ -1,0 +1,19 @@
+:module-number: 00
+
+:module-number: 01
+include::CGI_ADV_4_End_User_End_Users.adoc[]
+
+:module-number: 02
+include::CGI_ADV_4_End_User_Fin_Mgmt.adoc[]
+
+:module-number: 03
+include::CGI_ADV_4_End_User_PB.adoc[]
+
+:module-number: 04
+include::CGI_ADV_4_End_User_Procure_Mgmt.adoc[]
+
+:module-number: 05
+include::CGI_ADV_4_End_User_HR_Mgmt.adoc[]
+
+:module-number: 06
+include::CGI_ADV_4_End_User_Cheat_Sheet.adoc[]

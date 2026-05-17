@@ -1,0 +1,110 @@
+== Module {module-number}: System Setup and Configuration
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+{SP}
+{SP}
+
+[discrete]
+=== Learning Objectives
+
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::agenda.svg[align="left",pdfwidth=50%]|Upon completion of this module, students should be able to:
+
+* Learn how to prepare for the installation of CGI Advantage 4 by understanding system requirements.
+* Gain the ability to install CGI Advantage 4 and perform initial configurations.
+* Understand how to configure system settings, modules, and user roles to align with organizational needs.
+|===
+
+<<<
+ 
+=== Initial Setup and Installation
+
+==== System Requirements and Pre-installation Checklist
+Before installing CGI Advantage 4, it is crucial to ensure that your environment meets the system requirements. This includes both hardware and software prerequisites, which are essential for the smooth operation of the software.
+
+- *Hardware Requirements:*
+  * Processor: Minimum of 4-core CPU (8-core recommended)
+  * Memory: At least 16 GB RAM (32 GB recommended)
+  * Storage: SSD with at least 500 GB of free space
+
+- *Software Requirements:*
+  * Operating System: Windows Server 2016 or higher, or Linux (Red Hat/CentOS preferred)
+  * Database: Oracle 19c, SQL Server 2019, or PostgreSQL 12+
+  * Web Server: Apache Tomcat 9.x or higher
+
+- *Pre-installation Checklist:*
+  * Verify hardware and software requirements
+  * Ensure network configurations are in place
+  * Backup existing data and systems
+  * Prepare a rollback plan in case of issues during installation
+
+<<<
+ 
+==== Installation Procedures
+The installation of CGI Advantage 4 involves several steps, from preparing the environment to executing the installation scripts. Follow the detailed procedures below to ensure a successful installation.
+
+- *Step-by-Step Installation Guide:*
+  1. Prepare the environment: Install necessary software (e.g., database, web server).
+  2. Extract the CGI Advantage 4 installation package.
+  3. Run the installation wizard or execute installation scripts.
+  4. Configure the database connection and perform initial data load.
+  5. Set up the web server and deploy the application.
+  6. Verify the installation by accessing the system and checking logs.
+
+<<<
+ 
+==== Post-Installation Configuration
+After the initial installation, several configuration steps are necessary to tailor the system to your organization's needs. This involves configuring modules, setting up user roles, and fine-tuning system settings.
+
+- *Post-Installation Tasks:*
+  * Configure system settings: Time zones, language, currency, etc.
+  * Set up user roles and permissions.
+  * Configure email notifications and alerts.
+  * Perform a system health check to ensure all components are functioning properly.
+
+<<<
+ 
+=== System Configuration
+
+==== Basic Configuration Settings
+Basic configuration settings are critical to ensuring the system operates correctly and efficiently. These settings include general system preferences, user interface options, and core module configurations.
+
+- *Configuring Basic Settings:*
+  * System Preferences: Configure general settings like date format, number formats, and currency.
+  * User Interface: Customize the UI to meet user needs (themes, layouts, etc.).
+  * Module Configuration: Adjust settings for core modules like Financial Management, HR, and Procurement.
+
+<<<
+ 
+==== Configuring Modules and Features
+Each module within CGI Advantage 4 offers a range of configurable features that can be tailored to meet specific business requirements. This section covers the configuration of key modules.
+
+- *Financial Management Configuration:*
+  * Set up General Ledger accounts and financial periods.
+  * Configure budget controls and financial reporting structures.
+
+- *Procurement Management Configuration:*
+  * Define procurement policies and approval workflows.
+  * Set up vendor profiles and contract management rules.
+
+- *HR and Payroll Configuration:*
+  * Configure employee classifications, pay schedules, and benefits.
+  * Set up payroll processing rules and compliance requirements.
+
+<<<
+ 
+==== User Role and Permission Management
+Managing user roles and permissions is crucial to maintaining system security and ensuring that users have the appropriate access levels. CGI Advantage 4 provides a robust role-based access control (RBAC) system.
+
+- *User Role Management:*
+  * Define roles based on job functions (e.g., Finance Manager, HR Specialist).
+  * Assign permissions to roles based on required access to modules and features.
+
+- *Permission Management:*
+  * Create custom permission sets for specific tasks.
+  * Regularly review and audit user permissions to ensure compliance.

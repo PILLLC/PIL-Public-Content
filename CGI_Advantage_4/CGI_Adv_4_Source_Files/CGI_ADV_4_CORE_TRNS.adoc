@@ -1,0 +1,132 @@
+== Module {module-number}: Core Transaction Documentation for CGI Advantage 4
+
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+{SP}
+{SP}
+
+=== Template Overview
+
+This document provides a template for documenting core transactions in CGI Advantage 4. Each core transaction section includes setup requirements, dependencies, processing steps, validation checks, and any key reporting or monitoring requirements.
+
+=== Transaction Documentation Template
+
+[NOTE]
+====
+Replace placeholders (e.g., `<<Transaction Name>>`) with specific transaction details for each core transaction.
+====
+
+==== 1. Transaction Overview: <<Transaction Name>>
+
+* **Module**: <<Module Name>>
+* **Purpose**: Briefly describe the purpose of the transaction, e.g., "The `AP Invoice` transaction is used to record payable invoices within the Accounts Payable module."
+* **Usage**: Specify the typical use cases and departments that commonly use this transaction.
+
+==== 2. Prerequisites and Dependencies
+
+===== Required Configurations
+
+* **Chart of Accounts (COA)**: Ensure all relevant GL accounts are established for this transaction type.
+* **Customer/Vendor Profiles**: Make sure customers/vendors are correctly set up in the VCC table.
+* **Fiscal Year Setup**: Confirm the fiscal period is open for transaction processing.
+
+===== Related Tables and Codes
+
+[cols="3,3", options="header"]
+|===
+| Table | Description
+
+| `<<Primary Table Name>>`
+| This table holds the primary data for the transaction, such as `AP Invoice (API)` or `Revenue Entry (RE)`.
+
+| `<<Related Table 1>>`
+| Contains related data, such as `Vendor Profile` or `Customer Account`.
+
+| `<<Related Table 2>>`
+| Stores related settings, such as `Billing Profile` or `Budget Control`.
+
+|===
+
+==== 3. Key Fields and Data Elements
+
+This section outlines the most critical fields in the transaction form and their respective requirements.
+
+[cols="3,3,4", options="header"]
+|===
+| Field Name | Required/Optional | Description
+
+| Transaction ID
+| Required
+| Unique identifier for each transaction, usually system-generated.
+
+| Transaction Date
+| Required
+| The date the transaction is recorded in the system.
+
+| Account Code
+| Required
+| GL account used for the transaction, must match entries in the COA.
+
+| Amount
+| Required
+| The total amount of the transaction.
+
+| Customer/Vendor ID
+| Required
+| Links the transaction to the correct customer/vendor profile.
+
+| Approval Workflow
+| Optional
+| Indicates if approval is needed before posting.
+|===
+
+==== 4. Step-by-Step Process for Creating and Processing <<Transaction Name>>
+
+. **Navigate to Transaction**: Go to `<<Module>>` > `<<Submodule>>` > `<<Transaction Name>>`.
+. **Enter Transaction Header Information**:
+  .. Enter the `Transaction Date`.
+  .. Provide a `Description` of the transaction.
+  .. Enter the `Transaction Amount`.
+. **Enter Line Items**:
+  .. Specify each line item, including `Account Code`, `Amount`, and any necessary `Service Codes`.
+. **Link to Customer/Vendor**:
+  .. Enter the `Customer/Vendor ID` to associate the transaction with the relevant party.
+. **Save and Validate**: Click **Save** to validate the entries. Resolve any validation errors that arise.
+. **Submit for Approval** (if applicable): If approval is required, submit the transaction through the workflow.
+. **Post Transaction**: Once approved, post the transaction to update financial records.
+
+==== 5. Key Validation Checks and Error Messages
+
+* **Missing Account Code**: Ensure that all account codes are linked to the COA.
+* **Budget Availability**: Confirm sufficient budget exists for expense-related transactions.
+* **Customer/Vendor Profile Missing**: Verify that the Customer/Vendor ID is active and complete.
+* **Address ID Required**: When using third-party billing, the Address ID must be set in the CACT.
+
+==== 6. Reporting and Monitoring Requirements
+
+* **Transaction Inquiry (TI)**: Use this to track and monitor the transaction status.
+* **Approval History**: Check the approval workflow for transaction history and status.
+* **Custom Reports**: If needed, custom reports can be configured to show specific transaction data (e.g., Vendor Reports for AP transactions).
+
+==== 7. Related Transactions and Follow-Up Actions
+
+[cols="3,3", options="header"]
+|===
+| Related Transaction | Description
+
+| `<<Related Transaction 1>>`
+| For example, `AP Payment` following an `AP Invoice`.
+
+| `<<Related Transaction 2>>`
+| For example, `AR Payment` after an `AR Invoice`.
+|===
+
+==== 8. Troubleshooting Common Issues
+
+* **Budget Errors**: Verify the budget setup and ensure sufficient funds.
+* **Approval Delays**: Check workflow configurations and confirm approver assignments.
+* **Data Validation Errors**: Ensure all required fields are populated and formatted correctly.

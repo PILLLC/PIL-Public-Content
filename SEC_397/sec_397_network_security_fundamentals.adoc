@@ -1,0 +1,67 @@
+== Module 2: Network Security Fundamentals
+:artifact-type: IG
+
+=== Lesson 2.1: Network Architecture and Protocols
+
+==== Key Components of Secure Networks
+
+A secure network architecture provides a strong foundation for protecting organizational data and systems. Critical components include:
+
+- **Demilitarized Zone (DMZ)**: A buffer zone that isolates public-facing services from internal systems.
+- **Virtual Private Network (VPN)**: Ensures encrypted communication over public networks.
+- **Network Segmentation**: Dividing a network into smaller segments to limit lateral movement of threats.
+- **Secure Access Points**: Ensuring physical and logical security of access points.
+- **Redundant Systems**: High-availability designs to mitigate single points of failure.
+
+==== TCP/IP and Common Network Vulnerabilities
+
+The Transmission Control Protocol/Internet Protocol (TCP/IP) suite is the foundation of most networks. However, it introduces several vulnerabilities:
+
+- **Man-in-the-Middle Attacks (MITM)**: Interception of communications between two parties.
+- **IP Spoofing**: Impersonating a trusted IP address.
+- **Packet Sniffing**: Capturing unencrypted network traffic.
+- **DNS Spoofing**: Redirecting users to malicious websites.
+- **DDoS Attacks**: Flooding a network with excessive traffic.
+
+Mitigation techniques include:
+- Using encryption protocols (e.g., TLS, HTTPS).
+- Implementing robust access controls.
+- Regularly monitoring network traffic for anomalies.
+
+<<<
+  
+=== Lesson 2.2: Firewalls and Intrusion Detection Systems (IDS)
+
+==== Introduction to Firewall Configuration
+
+Firewalls serve as the first line of defense by filtering network traffic based on pre-defined rules. Key aspects of firewall configuration include:
+
+- **Types of Firewalls**:
+  - **Packet-Filtering Firewalls**: Filter traffic based on IP, ports, and protocols.
+  - **Stateful Firewalls**: Monitor active sessions and allow traffic based on connection state.
+  - **Next-Generation Firewalls (NGFWs)**: Include advanced features like application awareness and intrusion prevention.
+- **Best Practices**:
+  - Regularly update firewall rules to reflect changing network needs.
+  - Block unused ports and protocols.
+  - Enable logging to track unauthorized access attempts.
+
+==== Overview of IDS and IPS Systems
+
+Intrusion Detection Systems (IDS) and Intrusion Prevention Systems (IPS) are essential tools for monitoring and protecting networks from threats:
+
+- **Intrusion Detection Systems (IDS)**:
+  - **Signature-Based Detection**: Identifies threats by matching known attack patterns.
+  - **Anomaly-Based Detection**: Flags deviations from normal network behavior.
+  - **Limitation**: IDS are passive systems that alert but do not block attacks.
+
+- **Intrusion Prevention Systems (IPS)**:
+  - **Active Protection**: Detects and automatically blocks malicious traffic.
+  - **Deployment Modes**:
+    - **Inline Mode**: Directly processes and blocks traffic.
+    - **Promiscuous Mode**: Monitors traffic without blocking.
+  - **Best Practices**:
+    - Update signature databases regularly.
+    - Fine-tune detection rules to minimize false positives.
+
+Implementing firewalls, IDS, and IPS in combination creates a layered defense strategy that reduces the risk of network breaches.
+

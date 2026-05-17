@@ -1,0 +1,279 @@
+== Module {module-number}: Introduction to NIST and the RMF
+
+:imagesdir: ./images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+{SP}
+
+[discrete]
+=== Learning Objectives
+
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::agenda.svg[align="left",pdfwidth=50%]|Upon completion of this module, participants will be able to:
+
+- Introduce the history and role of NIST in cybersecurity.
+- Explain the RMF and its significance.
+- Demonstrate the application of RMF in achieving compliance and security improvements.
+|===
+
+<<<
+
+=== Lesson {module-number}.1: The History of NIST and its Impact on Global Cybersecurity Standards
+
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::bullseye.svg[align="left",pdfwidth=50%]|In this lesson, we'll introduce the history and role of NIST in cybersecurity, including:
+
+* NIST's Evolution in Cybersecurity
+* Impact on Global Cybersecurity Standards
+* Contribution to Cybersecurity Best Practice
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+
+The National Institute of Standards and Technology (NIST), established in 1901 as the National Bureau of Standards (NBS), has played a pivotal role in shaping global cybersecurity standards and practices. Initially focused on physical measurement standards, NIST's role expanded over the decades to include technology, cybersecurity, and privacy standards critical for national security and economic stability.
+
+endif::artifact-type[]
+
+<<<
+
+==== NIST's Evolution in Cybersecurity
+
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- Early Involvement
+- FISMA Guidance
+|image::NIST Evolution in Cybersecurity.png[pdfwidth=50%, pdfheight=50%]
+||
+|===
+
+ifdef::artifact-type[]
+
+---
+- *Early Involvement*: NIST began its involvement in computer security standards in the 1970s, with the publication of the Data Encryption Standard (DES).
+- *FISMA Guidance*: In the 21st century, NIST developed key guidelines under the Federal Information Security Management Act (FISMA) of 2002, significantly influencing how federal agencies manage cybersecurity.
+
+endif::artifact-type[]
+
+<<<
+
+==== Impact on Global Cybersecurity Standards
+
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- Framework Development
+- International Collaboration
+|image:Impact on Global Cybersecurity Standards.png[pdfwidth=50%, pdfheight=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+- *Framework Development*: NIST's frameworks, especially the Cybersecurity Framework, have been widely adopted by private and public sectors worldwide, guiding organizations in managing and reducing cybersecurity risk.
+- *International Collaboration*: Through collaboration with international bodies, NIST has contributed to the development of global cybersecurity standards, ensuring a unified approach to securing information technology systems against evolving threats.
+
+endif::artifact-type[]
+
+<<<
+
+==== Contribution to Cybersecurity Best Practices
+
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- Best Practices and Guidelines
+- Research and Development
+|image::Contribution to Cybersecurity Best Practices.png[pdfwidth=50%, pdfheight=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+NIST's commitment to advancing cybersecurity standards and practices underscores its critical role in enhancing global information security. Through ongoing research, standardization, and guidance, NIST contributes significantly to the resilience and security of digital infrastructure worldwide.
+
+- *Best Practices and Guidelines*: NIST Special Publications (SP) series, including SP 800-53 and SP 800-37, offer comprehensive guidelines on security controls, risk management, and incident response, shaping cybersecurity policies and practices across industries.
+- *Research and Development*: NIST continues to lead in cybersecurity research, developing new technologies and methodologies that address current and emerging cybersecurity challenges.
+
+endif::artifact-type[]
+
+<<<
+
+=== Lesson {module-number}.2: An Overview of the RMF Process and its Components
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::bullseye.svg[align="left",pdfwidth=50%]|In this lesson, we'll explain the RMF and its significance, including: 
+
+* The Six Steps of the RMF Process
+* Key Components of the RMF
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+The Risk Management Framework (RMF) is a comprehensive process designed by the National Institute of Standards and Technology (NIST) to help organizations manage security and privacy risks associated with information systems. The RMF process is detailed in NIST Special Publication 800-37, "Guide for Applying the Risk Management Framework to Federal Information Systems," and consists of a series of structured steps to ensure that IT systems are implemented with robust security measures from the start and continuously monitored and improved over time.
+
+endif::artifact-type[]
+
+<<<
+
+==== The Six Steps of the RMF Process
+
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- Step 1: Prepare
+- Step 2: Categorize Information Systems
+- Step 3: Select Security Controls
+- Step 4: Implement Security Controls
+- Step 5: Assess Security Controls
+- Step 6: Authorize Information Systems
+- Step 7: Monitor Security Controls
+|image::The Six Steps of the RMF Process.png[pdfheight=50%,pdfwidth=50%]
+|===
+
+ifdef::artifact-type[]
+
+---
+- *Step 1: Prepare*: Establishes the context and priorities for risk management efforts across the organization.
+- *Step 2: Categorize Information Systems*: Identifies the system and the information processed, determining the impact level for security categorization.
+- *Step 3: Select Security Controls*: Chooses appropriate safeguards to protect the system based on the categorization.
+- *Step 4: Implement Security Controls*: Puts the selected controls into action within the system.
+- *Step 5: Assess Security Controls*: Evaluates the effectiveness of the controls to ensure they are functioning correctly.
+- *Step 6: Authorize Information Systems*: Makes a risk-based decision on whether to operate the system.
+- *Step 7: Monitor Security Controls*: Continuously oversees security controls to address any changes and to maintain an acceptable level of risk.
+
+endif::artifact-type[]
+
+<<<
+
+==== Key Components of the RMF
+
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- Security and Privacy Controls
+- System Security Plan (SSP)
+- Risk Assessment Reports*
+- Plan of Actions and Milestones (POA&M)
+|image::Key Components of the RMF.png[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+The RMF process is integral to developing a culture of continuous monitoring, assessment, and authorization of information systems, ensuring that organizations can adapt to new threats and vulnerabilities while maintaining compliance with relevant security standards and regulations.
+
+- *Security and Privacy Controls*: These are the safeguards and countermeasures prescribed by NIST SP 800-53, "Security and Privacy Controls for Federal Information Systems and Organizations," tailored to protect systems and the information they process from a diverse set of threats.
+- *System Security Plan (SSP)*: A document that outlines the security requirements and controls implementation for a system, providing a comprehensive overview of the security posture.
+- *Risk Assessment Reports*: Documents that detail the findings from the assessment of the security controls, identifying vulnerabilities and the effectiveness of the controls in mitigating risk.
+- *Plan of Actions and Milestones (POA&M)*: A tool that outlines plans for addressing weaknesses and deficiencies in security controls and for reducing or eliminating known vulnerabilities.
+
+endif::artifact-type[]
+
+<<<
+
+=== Lesson {module-number}.3: The Importance of RMF in Various Sectors and its Role in Regulatory Compliance
+
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::bullseye.svg[align="left",pdfwidth=50%]|In this lesson, we'll demonstrate the application of RMF in achieving compliance and security improvements, including:
+
+* RMF Across Different Sectors
+* RMF and Regulatory Compliance
+* The Strategic Advantage of RMF
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+The Risk Management Framework (RMF) developed by the National Institute of Standards and Technology (NIST) has transcended its original federal mandate to become a cornerstone of cybersecurity and risk management practices across various sectors. This lesson explores the widespread applicability of the RMF, emphasizing its critical role in ensuring regulatory compliance and enhancing the security posture of organizations worldwide.
+
+endif::artifact-type[]
+
+<<<
+
+==== RMF Across Different Sectors
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- Government and Defense
+- Healthcare
+- Finance
+- Education
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+- *Government and Defense*: For federal agencies, RMF is not just recommended but required, underlining the framework's importance in protecting national security information and infrastructure.
+- *Healthcare*: In a sector where patient data privacy is paramount, RMF provides a structured approach to securing electronic health records (EHRs) and complying with regulations like HIPAA.
+- *Finance*: Financial institutions leverage RMF to safeguard sensitive financial data against cyber threats, aligning with industry regulations such as GLBA and SOX.
+- *Education*: Universities and educational institutions apply RMF to protect student information and research data, ensuring privacy and integrity while fostering an open academic environment.
+
+endif::artifact-type[]
+
+<<<
+
+==== RMF and Regulatory Compliance
+
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- Comprehensive Risk Assessment
+- Tailored Security Controls
+- Continuous Monitoring
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+RMF not only helps organizations manage cybersecurity risks but also ensures compliance with a broad spectrum of regulatory requirements, including:
+
+- *Comprehensive Risk Assessment*: RMF's emphasis on categorizing information systems and assessing risks aligns with many regulatory frameworks' requirements for thorough risk analyses.
+- *Tailored Security Controls*: By selecting and implementing security controls based on specific risk profiles, organizations can meet the stringent security measures mandated by various compliance standards.
+- *Continuous Monitoring*: RMF's focus on ongoing monitoring and assessment of security controls supports compliance with regulations that demand regular review and updating of security measures.
+
+endif::artifact-type[]
+
+<<<
+    
+==== The Strategic Advantage of RMF
+
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- Enhanced Security Posture
+- Regulatory Agility
+- Competitive Edge
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+The RMF's relevance across different sectors and its role in facilitating regulatory compliance underscore its value beyond the federal domain. By adopting RMF, organizations in various industries can not only achieve compliance with existing regulations but also establish a robust foundation for managing cybersecurity risks in an increasingly complex and dynamic threat environment.
+
+- *Enhanced Security Posture*: RMF's holistic approach to risk management helps organizations build resilient systems that can withstand emerging threats, thereby enhancing their overall security posture.
+- *Regulatory Agility*: Organizations that implement RMF are better positioned to adapt to new and evolving regulatory requirements, thanks to the framework's flexible and scalable nature.
+- *Competitive Edge*: In sectors where cybersecurity is a significant concern, adherence to RMF can serve as a competitive differentiator, signaling a commitment to best practices in information security.
+
+endif::artifact-type[]

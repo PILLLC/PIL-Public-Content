@@ -1,0 +1,152 @@
+== Module {module-number}: System Administration and Maintenance
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+{SP}
+{SP}
+
+[discrete]
+=== Learning Objectives
+
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::agenda.svg[align="left",pdfwidth=50%]|Upon completion of this module, students should be able to:
+
+* Develop skills in user account management, including the setup of roles, permissions, and authentication.
+* Learn best practices for maintaining system security and compliance with regulatory standards.
+* Understand how to monitor system performance, troubleshoot common issues, and optimize performance for efficiency.
+|===
+
+<<<
+
+=== System Administration
+
+==== User Account Management
+Effective user account management ensures that only authorized personnel access the system, reducing the risk of security breaches and unauthorized data manipulation.
+
+- *Creating User Accounts:*
+  * Configure default user templates to streamline account creation.
+  * Set role-based access profiles to assign appropriate permissions automatically.
+
+- *Advanced Role Management:*
+  * Use role hierarchy to define access levels and inheritance.
+  * Implement departmental roles for segregated access to specific modules or data sets.
+
+- *User Authentication:*
+  * Enforce multi-factor authentication (MFA) for all users.
+  * Regularly rotate credentials and implement single sign-on (SSO) for streamlined access.
+
+*Activity Suggestion:* Have participants set up a new user with restricted permissions and test access to various modules.
+
+<<<
+
+==== Security and Compliance
+Security is the cornerstone of system administration, especially for ERP systems handling sensitive public-sector data.
+
+- *Advanced Security Measures:*
+  * Enable IP whitelisting to restrict access to trusted networks.
+  * Audit system logs daily to detect unauthorized access attempts.
+
+- *Regulatory Compliance:*
+  * Automate compliance reporting for standards like GDPR, HIPAA, or FISMA.
+  * Use built-in tools to schedule and track data security audits.
+
+- *Incident Management:*
+  * Develop pre-configured incident response templates for faster resolution.
+  * Use forensic tools to analyze and prevent future security breaches.
+
+*Instructor Tip:* Emphasize real-world compliance challenges and how CGI Advantage 4 helps mitigate risks.
+
+<<<
+
+==== Backup and Recovery Procedures
+Robust backup and recovery procedures protect organizational data against potential loss from hardware failures, cyberattacks, or human error.
+
+- *Comprehensive Backup Plans:*
+  * Establish incremental, differential, and full backup schedules to optimize storage usage.
+  * Use encryption for backup data to secure sensitive information.
+
+- *Automated Backup Tools:*
+  * Configure automated backup jobs with monitoring and alerts for failed backups.
+  * Store backups in geographically diverse locations for disaster recovery.
+
+- *Disaster Recovery Testing:*
+  * Conduct regular drills to test recovery times and data integrity.
+  * Maintain an up-to-date disaster recovery guide for quick reference.
+
+*Case Study:* A government agency recovered 95% of operations within 24 hours of a ransomware attack due to an effective backup strategy.
+
+<<<
+
+=== Performance Monitoring
+
+==== Monitoring System Performance
+System performance monitoring is essential to maintaining uptime and ensuring smooth operations across all modules.
+
+- *Advanced Monitoring Tools:*
+  * Configure dashboards for real-time performance tracking.
+  * Use predictive analytics to forecast potential bottlenecks.
+
+- *Critical Metrics:*
+  * Measure system uptime, response times, and user load distribution.
+  * Monitor disk I/O and network bandwidth to identify bottlenecks.
+
+- *Alert Systems:*
+  * Set alerts for key thresholds, such as 90% CPU usage or database query latency above 5 seconds.
+  * Automate escalation workflows for unresolved alerts.
+
+*Activity Suggestion:* Simulate a system monitoring scenario and have participants identify and resolve performance issues.
+
+<<<
+
+==== Troubleshooting Common Issues
+Troubleshooting involves identifying and resolving technical issues to minimize downtime and maintain system integrity.
+
+- *Common Issues and Solutions:*
+  * **Slow System Performance:** Optimize queries, clear cache, and allocate additional resources.
+  * **Database Connectivity Problems:** Check database server status and review connection strings.
+  * **Login Failures:** Reset user credentials and verify authentication configurations.
+
+- *Diagnostic Tools:*
+  * Use system logs to pinpoint root causes of errors.
+  * Implement third-party tools for deep packet inspection and network diagnostics.
+
+- *Preventative Maintenance:*
+  * Schedule downtime for system checks and updates.
+  * Regularly review logs for recurring errors or anomalies.
+
+*Instructor Note:* Highlight the importance of proactive monitoring to prevent recurring issues.
+
+<<<
+
+==== Optimizing System Performance
+Optimization ensures the system runs efficiently under varying loads while minimizing costs and resource usage.
+
+- *Database Optimization:*
+  * Index frequently accessed tables for faster query performance.
+  * Archive old data to reduce database size and improve speed.
+
+- *Load Balancing Techniques:*
+  * Use server clustering to distribute workloads evenly.
+  * Employ auto-scaling features in cloud environments for dynamic resource allocation.
+
+- *Scheduled Upgrades:*
+  * Plan upgrades to incorporate new features and resolve known issues.
+  * Test upgrades in sandbox environments before applying them to production.
+
+*Practical Exercise:* Configure a test environment to evaluate database indexing improvements.
+
+<<<
+
+[appendix]
+=== Glossary
+- **MFA (Multi-Factor Authentication):** A security method requiring multiple forms of verification.
+- **RBAC (Role-Based Access Control):** A system of assigning user permissions based on roles.
+- **Disaster Recovery Plan (DRP):** A documented process for recovering systems after a disaster.
+
+[discrete]
+=== Additional Notes
+*Instructor Tip:* Stress the importance of a proactive approach to system maintenance, including predictive analytics and advanced monitoring.

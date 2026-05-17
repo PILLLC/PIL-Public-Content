@@ -1,0 +1,113 @@
+== Module {module-number}: Introduction to CGI Advantage 4 for End Users
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+{SP}
+{SP}
+
+[discrete]
+=== Learning Objectives
+
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::agenda.svg[align="left",pdfwidth=50%]|Upon completion of this module, users will be able to:
+
+* Understand the purpose and capabilities of CGI Advantage 4 as an ERP system.
+* Identify the key modules and their functionalities.
+* Navigate the user interface and access the features relevant to their roles.
+* Recognize the value of CGI Advantage 4 in streamlining public sector operations.
+|===
+
+<<<
+
+=== Overview of CGI Advantage 4
+
+==== What is CGI Advantage 4?
+CGI Advantage 4 is an Enterprise Resource Planning (ERP) system designed for government agencies and public sector organizations. It integrates critical business functions, such as financial management, procurement, and human resources, into a single, cohesive platform.
+
+- *Key Benefits for End Users:*
+  * Consolidates multiple functions into one system.
+  * Enhances accuracy through automation.
+  * Supports compliance with public sector regulations.
+
+*Example Scenario:* A budget officer uses CGI Advantage 4 to track expenditures against the approved budget in real-time.
+
+<<<
+
+==== Core Modules for End Users
+The system includes various modules, each tailored to specific business functions:
+
+- **Financial Management:** Manage budgets, track expenses, and ensure accurate financial reporting.
+- **Procurement:** Streamline requisition, vendor management, and purchase orders.
+- **Human Resources (HR):** Oversee employee data, payroll, and benefits administration.
+- **Reporting and Analytics:** Generate reports and access dashboards for data-driven decisions.
+
+*Instructor Note:* Highlight how each module addresses common public sector challenges, such as transparency and accountability.
+
+<<<
+
+=== Navigating the User Interface
+
+==== Accessing the System
+- *Login Process:*
+  * Use secure login credentials provided by your system administrator.
+  * Enable multi-factor authentication (if applicable).
+
+- *Home Screen Overview:*
+  * Dashboard: Displays key performance indicators (KPIs) and shortcuts.
+  * Navigation Menu: Provides access to modules and features based on user roles.
+
+*Activity:* Have users log in and explore the navigation menu to identify modules relevant to their roles.
+
+<<<
+
+==== Common Features and Navigation Tips
+Understanding the common features of CGI Advantage 4 helps users navigate the system efficiently.
+
+- *Search Bar:* Quickly find records, transactions, or reports.
+- *Favorites:* Bookmark frequently accessed pages or reports.
+- *Help and Support:* Access user guides and troubleshooting tips from the help menu.
+
+- *Example Navigation Path:* Locate and view a budget summary:
+  1. Navigate to the Financial Management module.
+  2. Select "Budget Summary" from the menu.
+  3. Filter the data using the fiscal year and department.
+
+<<<
+
+=== Understanding Your Role in CGI Advantage 4
+
+==== Role-Based Access
+Access to CGI Advantage 4 features is determined by your role within the organization. Common roles include:
+
+- **Budget Officer:** Responsible for managing budgets and ensuring adherence to financial plans.
+- **Procurement Specialist:** Oversees vendor relationships and purchase order approvals.
+- **HR Coordinator:** Manages employee records and processes payroll.
+- **System Administrator:** Configures and maintains the system for all users.
+
+*Activity:* Discuss how role-based access impacts the data and features users can view and edit.
+
+<<<
+
+=== Value of CGI Advantage 4 for the Public Sector
+
+- *Transparency:* Provides detailed tracking of expenditures and approvals.
+- *Efficiency:* Automates manual tasks, reducing processing times and errors.
+- *Compliance:* Ensures adherence to regulations and policies through built-in checks and audit trails.
+
+*Instructor Note:* Encourage users to think about how CGI Advantage 4 aligns with their organization’s mission and goals.
+
+<<<
+
+[appendix]
+=== Glossary
+- *ERP (Enterprise Resource Planning):* A system that integrates core business functions into one platform.
+- *Dashboard:* A user interface that displays key information at a glance.
+- *Role-Based Access:* A security model that restricts system access based on user roles.
+
+[discrete]
+=== Additional Notes
+*Instructor Tip:* Use the navigation exercise to help users feel confident accessing and using the system.

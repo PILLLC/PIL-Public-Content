@@ -1,0 +1,160 @@
+== Module {module-number}: Database Management and Table Customization
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+{SP}
+{SP}
+
+[discrete]
+=== Learning Objectives
+
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::agenda.svg[align="left",pdfwidth=50%]|Upon completion of this module, students should be able to:
+
+* Understand the principles of database management in CGI Advantage 4.
+* Create and manage custom tables to meet specific business requirements.
+* Modify core tables responsibly while adhering to CGI protocols.
+* Optimize database performance through effective indexing and query optimization.
+|===
+
+<<<
+
+=== Database Management in CGI Advantage 4
+
+Effective database management is crucial for maintaining the integrity, performance, and scalability of CGI Advantage 4. This system relies on Oracle databases (or other supported platforms) to store and manage all operational data.
+
+==== Key Considerations
+- **Data Integrity:** Ensure that changes to the database maintain referential integrity.
+- **Scalability:** Plan for future growth by designing databases that can handle increased data volumes.
+- **Compliance:** Follow organizational and regulatory guidelines for data handling and security.
+
+*Instructor Note:* Emphasize the importance of thorough testing and adherence to best practices when modifying databases.
+
+<<<
+
+=== Creating Custom Tables
+
+Custom tables allow organizations to store and manage data that is unique to their processes or requirements.
+
+==== Steps for Creating Custom Tables
+- **Design the Table:**
+  * Identify the purpose of the table and define its schema (columns, data types, and constraints).
+  * Ensure the table design aligns with existing database conventions.
+
+- **Write SQL Scripts:**
+  * Use SQL `CREATE TABLE` statements to define the table structure.
+  * Example:
+    ```sql
+    CREATE TABLE CUSTOM_INVOICE (
+        INVOICE_ID NUMBER PRIMARY KEY,
+        CUSTOMER_ID NUMBER NOT NULL,
+        AMOUNT NUMBER(10, 2),
+        INVOICE_DATE DATE
+    );
+    ```
+
+- **Apply Naming Conventions:**
+  * Prefix custom table names with `CUSTOM_` to differentiate them from core tables.
+  * Use descriptive names for columns to enhance readability and maintainability.
+
+- **Test the Table:**
+  * Insert test data and run queries to verify functionality.
+  * Ensure that the table integrates seamlessly with the application.
+
+<<<
+
+=== Modifying Core Tables
+
+Core tables store essential data for CGI Advantage 4 modules, such as financial transactions, vendor information, and employee records. Modifications to these tables should be approached with caution.
+
+==== Guidelines for Modifying Core Tables
+- **Gain Approval:**
+  * Obtain approval from system administrators and follow CGI protocols before making changes.
+  * Document all proposed changes and their potential impact.
+
+- **Use SQL Scripts:**
+  * Use `ALTER TABLE` statements to add, modify, or remove columns.
+  * Example:
+    ```sql
+    ALTER TABLE GL_ACCOUNT ADD COLUMN ACCOUNT_TYPE VARCHAR2(50);
+    ```
+
+- **Perform Impact Analysis:**
+  * Assess how changes will affect existing workflows, reports, and integrations.
+  * Test changes in a staging environment before applying them to production.
+
+- **Backup Data:**
+  * Create a backup of the affected tables to prevent data loss in case of errors.
+
+<<<
+
+=== Database Indexing
+
+Indexing is a critical technique for optimizing database performance. Proper indexing can significantly reduce query execution times by allowing the database to quickly locate the required data.
+
+==== Types of Indexes
+- **Primary Key Indexes:**
+  * Automatically created for primary key columns.
+- **Unique Indexes:**
+  * Enforce uniqueness for columns where duplicate values are not allowed.
+- **Composite Indexes:**
+  * Combine multiple columns into a single index for complex queries.
+
+==== Best Practices for Indexing
+- **Choose Frequently Queried Columns:**
+  * Identify columns used in `WHERE`, `JOIN`, or `ORDER BY` clauses and index them.
+- **Avoid Over-Indexing:**
+  * Limit the number of indexes to prevent unnecessary overhead during `INSERT`, `UPDATE`, or `DELETE` operations.
+- **Monitor Index Performance:**
+  * Use database tools to evaluate index effectiveness and remove unused indexes.
+
+==== Creating an Index
+- **SQL Syntax:**
+  ```sql
+  CREATE INDEX IDX_CUSTOMER_NAME ON CUSTOMER_PROFILE (LAST_NAME, FIRST_NAME);
+  ```
+
+*Instructor Note:* Discuss the trade-offs between faster query performance and the additional storage overhead introduced by indexing.
+
+<<<
+
+=== Query Optimization
+
+Efficient SQL queries are essential for maintaining database performance and reducing system load.
+
+==== Tips for Optimizing Queries
+
+Use Specific Columns:
+Avoid SELECT * in queries; specify only the columns you need.
+Filter Data Early:
+Use WHERE clauses to limit the number of rows processed by the query.
+Leverage Joins Effectively:
+Use indexed columns in JOIN conditions to speed up query execution.
+==== Example Query Optimization
+
+Unoptimized Query:
+```sql
+SELECT * FROM CUSTOMER_PROFILE WHERE UPPER(LAST_NAME) = 'SMITH';
+```
+
+Optimized Query:
+```sql
+SELECT CUSTOMER_ID, FIRST_NAME FROM CUSTOMER_PROFILE 
+WHERE LAST_NAME = 'SMITH';
+```
+<<<
+
+[appendix] 
+=== Glossary
+
+*Index:* A database object that improves query performance by providing quick access to rows in a table.
+*Schema:* The structure of a database, including tables, columns, data types, and relationships.
+*Query Optimization:* The process of improving SQL queries to enhance database performance.
+
+[discrete] 
+=== Additional Notes Instructor Tip: 
+Encourage developers to use database profiling tools to analyze query performance and identify areas for improvement.

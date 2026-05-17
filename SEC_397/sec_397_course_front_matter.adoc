@@ -1,0 +1,10 @@
+== Course Overview
+SEC 397 is an intermediate-level course tailored for professionals seeking to enhance their foundational cybersecurity knowledge before advancing to more sophisticated topics covered in SEC497. Through theoretical and hands-on modules, students will gain the skills necessary to understand core cybersecurity concepts, tools, and practices essential for defending against common threats.
+
+== Objectives
+Upon completion, participants will be able to:
+
+- Identify and mitigate common cyber threats.
+- Understand core principles of network security and cryptography.
+- Use industry-standard tools for vulnerability assessment and monitoring.
+- Develop basic incident response and risk management plans.

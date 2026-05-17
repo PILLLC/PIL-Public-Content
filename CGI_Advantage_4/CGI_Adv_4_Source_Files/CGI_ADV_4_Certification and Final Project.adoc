@@ -1,0 +1,136 @@
+== Module {module-number}: Certification and Final Project
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+{SP}
+{SP}
+
+[discrete]
+=== Learning Objectives
+
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::agenda.svg[align="left",pdfwidth=50%]|Upon completion of this module, students should be able to:
+
+* Prepare for CGI Advantage 4 certification by understanding the exam format and key topics.
+* Develop a study plan and utilize practice exams to assess readiness for certification.
+* Complete a final project that demonstrates mastery of CGI Advantage 4, including configuration, reporting, and workflow automation.
+* Present the final project and participate in peer and instructor reviews to refine skills and knowledge.
+|===
+
+<<<
+
+=== Preparation for CGI Advantage Certification
+
+==== Overview of Certification Requirements
+Earning certification in CGI Advantage 4 demonstrates proficiency and expertise in using the system effectively. This topic provides an overview of the certification process, including the requirements, exam format, and topics covered.
+
+- *Certification Overview:*
+  * Description of the certification program, including the levels of certification available (e.g., Associate, Professional).
+  * Outline of the certification process, including prerequisites, exam registration, and scheduling.
+
+- *Exam Format:*
+  * Details on the format of the certification exam, including the number of questions, types of questions (e.g., multiple choice, simulation), and time limit.
+  * Explanation of the scoring system and the passing criteria.
+
+- *Key Exam Topics:*
+  * Overview of the key topics covered in the exam, such as financial management, procurement, HR, system configuration, and reporting.
+  * Emphasis on the importance of hands-on experience and practical knowledge in addition to theoretical understanding.
+
+<<<
+
+==== Exam Preparation Tips
+Preparing effectively for the CGI Advantage 4 certification exam is crucial for success. This topic offers tips and strategies to help candidates study and prepare for the exam.
+
+- *Study Plan:*
+  * Develop a personalized study plan that outlines the topics to cover, study materials to use, and timelines for preparation.
+  * Allocate sufficient time for each topic, focusing more on areas where additional review is needed.
+
+- *Study Resources:*
+  * Utilize official CGI Advantage 4 documentation, user guides, and training materials to prepare for the exam.
+  * Engage in hands-on practice by performing tasks in a test environment or using simulation tools.
+
+- *Practice Exams:*
+  * Take advantage of practice exams to familiarize yourself with the exam format and question types.
+  * Review incorrect answers to understand areas of weakness and focus on improving those areas.
+
+- *Time Management:*
+  * Practice managing your time during the exam to ensure you can complete all questions within the allotted time.
+  * Prioritize answering questions you are confident in first, then return to more challenging ones.
+
+<<<
+
+==== Practice Exams and Sample Questions
+Practice exams and sample questions are valuable tools for assessing your readiness for the certification exam. This topic provides access to practice exams and discusses how to use them effectively.
+
+- *Accessing Practice Exams:*
+  * Information on how to access official practice exams and sample questions provided by CGI or other authorized providers.
+  * Recommendations for third-party resources that offer additional practice exams and study materials.
+
+- *Using Practice Exams Effectively:*
+  * Take practice exams under exam-like conditions to simulate the actual testing experience.
+  * Review your performance on practice exams to identify areas that need further study.
+
+- *Sample Questions:*
+  * Example questions that cover key exam topics, such as configuring the General Ledger, setting up user roles, and creating custom reports.
+  * Discussion of the rationale behind each correct answer to reinforce learning.
+
+<<<
+  
+=== Final Project
+
+==== Project Guidelines and Expectations
+The final project is an opportunity for learners to demonstrate their mastery of CGI Advantage 4 by applying the skills and knowledge acquired throughout the course. This topic outlines the guidelines, expectations, and evaluation criteria for the final project.
+
+- *Project Objectives:*
+  * Define the goals of the final project, such as configuring a complete module, creating a comprehensive report, or designing a workflow automation process.
+  * Emphasize the importance of showcasing both technical skills and problem-solving abilities.
+
+- *Project Scope:*
+  * Determine the scope of the project, including the specific tasks to be completed and the modules or features to be used.
+  * Provide flexibility for learners to choose a project that aligns with their interests and professional goals.
+
+- *Submission Requirements:*
+  * Outline the format for project submission, including documentation, screenshots, and any supporting materials.
+  * Specify the deadline for project submission and the preferred method for submitting the project (e.g., online portal, email).
+
+<<<
+
+==== Submission and Evaluation Criteria
+Understanding the submission process and evaluation criteria is crucial for successfully completing the final project. This topic provides detailed instructions on how to submit the project and what evaluators will be looking for.
+
+- *Submission Process:*
+  * Step-by-step instructions for submitting the final project, including file formats, required documentation, and any additional information needed.
+  * Recommendations for ensuring that all components of the project are included and properly formatted.
+
+- *Evaluation Criteria:*
+  * Explanation of the criteria used to evaluate the final project, including technical accuracy, completeness, creativity, and adherence to project guidelines.
+  * Breakdown of how the project will be scored, with emphasis on key areas such as configuration accuracy, problem-solving, and documentation quality.
+
+- *Feedback and Revisions:*
+  * Information on how feedback will be provided to learners after the project is evaluated.
+  * Guidelines for making revisions if needed and resubmitting the project for final approval.
+
+<<<
+
+==== Final Presentation and Review
+The final presentation and review provide an opportunity for learners to showcase their work and receive constructive feedback from instructors and peers. This topic covers the process for presenting the final project and participating in a review session.
+
+- *Presentation Guidelines:*
+  * Instructions for preparing and delivering a presentation of the final project, including key points to cover and visual aids to use.
+  * Tips for effectively communicating project objectives, challenges faced, and solutions implemented.
+
+- *Peer Review and Feedback:*
+  * Overview of the peer review process, where learners can present their projects to classmates and receive feedback.
+  * Guidelines for providing constructive and supportive feedback to peers.
+
+- *Instructor Review:*
+  * Explanation of the instructor’s role in reviewing the final project and providing detailed feedback.
+  * Information on how the final project grade will be determined, based on the presentation, project quality, and adherence to guidelines.
+
+- *Celebration of Achievement:*
+  * Recognition of learners who have successfully completed the course and achieved certification.
+  * Discussion of next steps for learners, including career opportunities and further learning paths in CGI Advantage 4 and related technologies.

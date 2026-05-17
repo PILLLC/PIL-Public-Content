@@ -1,0 +1,70 @@
+== Module 3: Cryptography Basics
+:artifact-type: IG
+
+=== Lesson 3.1: Symmetric and Asymmetric Encryption
+
+==== Fundamentals of Encryption Techniques
+
+Encryption is the process of converting plain text into unreadable ciphertext to protect data. It relies on algorithms and keys to secure communication.
+
+- **Symmetric Encryption**:
+  - Uses the same key for encryption and decryption.
+  - Faster and suitable for encrypting large datasets.
+  - Examples: AES (Advanced Encryption Standard), DES (Data Encryption Standard).
+  - Limitation: Requires secure key exchange between parties.
+
+- **Asymmetric Encryption**:
+  - Uses a key pair: a public key for encryption and a private key for decryption.
+  - Eliminates the need for secure key exchange.
+  - Examples: RSA, ECC (Elliptic Curve Cryptography).
+  - Limitation: Slower than symmetric encryption, making it less suitable for large data.
+
+<<<
+
+==== Use Cases of Symmetric vs. Asymmetric Encryption
+
+- **Symmetric Encryption**:
+  - File storage encryption (e.g., BitLocker, VeraCrypt).
+  - Securing database records.
+  - Bulk data transfer over secure channels.
+
+- **Asymmetric Encryption**:
+  - Secure email communication (e.g., PGP).
+  - Establishing secure connections (e.g., SSL/TLS handshake).
+  - Digital signatures for verifying data authenticity.
+
+<<<
+
+=== Lesson 3.2: Digital Signatures and Certificates
+
+==== Importance of Digital Certificates in Securing Communications
+
+Digital certificates are essential for verifying the identity of entities and enabling secure communication.
+
+- **Digital Signatures**:
+  - Ensure message authenticity and integrity.
+  - Generated using a sender’s private key and verified with their public key.
+  - Common standards: DSA (Digital Signature Algorithm), RSA.
+
+- **Digital Certificates**:
+  - Issued by Certificate Authorities (CAs) to bind public keys to entities.
+  - Components include entity information, public key, expiration date, and CA signature.
+  - Common protocols: X.509 standard.
+
+<<<
+
+==== Lab: Implementing SSL/TLS Certificates
+
+This hands-on lab guides students through the process of implementing SSL/TLS certificates for secure communication.
+
+1. **Objective**: Secure a web server using an SSL/TLS certificate.
+2. **Steps**:
+   - Generate a private key and a Certificate Signing Request (CSR).
+   - Submit the CSR to a Certificate Authority (CA).
+   - Install the issued certificate on the web server.
+   - Configure the server to enforce HTTPS connections.
+3. **Tools**: OpenSSL, Apache/Nginx web server.
+4. **Expected Outcome**:
+   - Understand how SSL/TLS certificates work.
+   - Successfully configure a secure web server.
+

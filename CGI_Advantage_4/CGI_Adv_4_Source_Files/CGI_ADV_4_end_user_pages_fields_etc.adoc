@@ -1,0 +1,264 @@
+== Module {module-number}: Comprehensive Guide to End-User Pages, Fields, Screens, and Functions in CGI Advantage 4
+
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+{SP}
+{SP}
+
+=== Overview
+This guide outlines the baseline, end-user-facing pages, fields, and screens in CGI Advantage 4. It is structured by module, focusing on **Financial Management (FIN)** and **Human Resources Management (HRM)** functionalities. Each section details key pages, their purpose, and the user-interactive fields available.
+
+=== 1. System Overview and Navigation
+
+==== 1.1 Main Navigation
+- **Purpose**: Provides access to all modules, transactions, and reports.
+- **Features**:
+  - **Modules**: Organized into categories such as Financials, HRM, Procurement, and Reporting.
+  - **Global Search**: Quickly locate pages, transactions, or records using keywords or transaction IDs.
+  - **Favorites**: Users can bookmark frequently accessed pages.
+  
+- **Key User Actions**:
+  - Navigate via menu paths or use the search bar.
+  - Add pages to favorites for quick access.
+
+==== 1.2 Dashboard
+- **Purpose**: Displays a personalized overview of user-specific tasks and key metrics.
+- **Widgets**:
+  - Pending Approvals
+  - Notifications
+  - Key Financial Metrics (e.g., budgets, revenue)
+  
+- **User Actions**:
+  - Configure dashboard widgets.
+  - Click notifications to navigate directly to the relevant page.
+
+---
+
+=== 2. Financial Management (FIN) Module
+
+==== 2.1 General Ledger (GL)
+
+===== Key Pages and Screens
+- **Journal Entry (GLJ)**:
+  - **Purpose**: Create, edit, and post journal entries.
+  - **Fields**:
+    - Journal ID
+    - Fiscal Period
+    - Account Code
+    - Debit Amount
+    - Credit Amount
+  - **Actions**:
+    - Validate entry, Save draft, Submit for approval.
+
+- **Trial Balance Inquiry**:
+  - **Purpose**: View account balances for selected periods.
+  - **Fields**:
+    - Fiscal Year
+    - Period Range
+    - Fund
+  - **Actions**:
+    - Generate Trial Balance, Export to Excel.
+
+===== Screens
+- **GL Dashboard**:
+  - Highlights open journal entries, posted transactions, and period-end tasks.
+
+==== 2.2 Accounts Payable (AP)
+
+===== Key Pages and Screens
+- **AP Invoice Entry (API)**:
+  - **Purpose**: Enter vendor invoices for payment processing.
+  - **Fields**:
+    - Invoice Number
+    - Vendor ID
+    - Invoice Date
+    - Due Date
+    - Payment Terms
+    - Amount
+  - **Actions**:
+    - Validate invoice, Submit for approval, Post.
+
+- **AP Payment (APP)**:
+  - **Purpose**: Process payments for approved invoices.
+  - **Fields**:
+    - Payment ID
+    - Payment Method
+    - Vendor ID
+    - Amount
+  - **Actions**:
+    - Generate payment, Print check.
+
+===== Screens
+- **AP Dashboard**:
+  - Displays pending invoices, payment batches, and vendor balances.
+
+==== 2.3 Accounts Receivable (AR)
+
+===== Key Pages and Screens
+- **Receivable Entry (RE)**:
+  - **Purpose**: Record revenue transactions, including customer billing.
+  - **Fields**:
+    - Receivable ID
+    - Customer ID
+    - Revenue Code
+    - Amount
+  - **Actions**:
+    - Save draft, Validate, Submit.
+
+- **Cash Receipt (CR)**:
+  - **Purpose**: Apply customer payments to outstanding receivables.
+  - **Fields**:
+    - Receipt ID
+    - Payment Method
+    - Amount Received
+    - Applied Amount
+  - **Actions**:
+    - Apply payment, Post.
+
+===== Screens
+- **AR Dashboard**:
+  - Shows outstanding receivables, payments applied, and aged receivables.
+
+==== 2.4 Budgeting
+
+===== Key Pages and Screens
+- **Budget Entry (BJE)**:
+  - **Purpose**: Enter and adjust budget allocations.
+  - **Fields**:
+    - Budget ID
+    - Fiscal Year
+    - Department
+    - Original Budget
+    - Adjustments
+  - **Actions**:
+    - Validate, Submit for approval.
+
+- **Budget Control (BC)**:
+  - **Purpose**: Monitor budget compliance and spending limits.
+  - **Fields**:
+    - Control Group
+    - Fund Code
+    - Budget Balance
+  - **Actions**:
+    - View budget compliance reports.
+
+===== Screens
+- **Budget Dashboard**:
+  - Displays budget summary, overages, and unspent funds.
+
+---
+
+=== 3. Human Resources Management (HRM) Module
+
+==== 3.1 Employee Management
+
+===== Key Pages and Screens
+- **Employee Profile (EMP)**:
+  - **Purpose**: Maintain employee records.
+  - **Fields**:
+    - Employee ID
+    - Name
+    - Department
+    - Job Title
+    - Status
+  - **Actions**:
+    - Create, Edit, Terminate employee.
+
+- **Employee Address**:
+  - **Purpose**: Record employee addresses.
+  - **Fields**:
+    - Address Type (Home, Work)
+    - Address Line 1
+    - City, State, Zip Code
+  - **Actions**:
+    - Add, Update, Delete.
+
+===== Screens
+- **Employee Dashboard**:
+  - Summarizes employee counts, pending actions, and recent updates.
+
+==== 3.2 Payroll Processing
+
+===== Key Pages and Screens
+- **Payroll Run (PRR)**:
+  - **Purpose**: Process employee payroll.
+  - **Fields**:
+    - Pay Period Start
+    - Pay Period End
+    - Gross Pay
+    - Deductions
+    - Net Pay
+  - **Actions**:
+    - Calculate, Validate, Submit.
+
+- **Pay History**:
+  - **Purpose**: View historical payroll data for employees.
+  - **Fields**:
+    - Employee ID
+    - Pay Period
+    - Gross Pay
+  - **Actions**:
+    - Generate reports.
+
+===== Screens
+- **Payroll Dashboard**:
+  - Displays payroll runs, errors, and pending approvals.
+
+==== 3.3 Benefits Administration
+
+===== Key Pages and Screens
+- **Benefit Plan Entry**:
+  - **Purpose**: Define benefits plans available to employees.
+  - **Fields**:
+    - Plan ID
+    - Description
+    - Coverage Type
+    - Premium Amount
+  - **Actions**:
+    - Add, Edit, Delete.
+
+- **Benefits Enrollment**:
+  - **Purpose**: Enroll employees in benefit plans.
+  - **Fields**:
+    - Employee ID
+    - Benefit Plan ID
+    - Coverage Level
+  - **Actions**:
+    - Enroll, Update, Terminate.
+
+===== Screens
+- **Benefits Dashboard**:
+  - Summarizes plan enrollments, coverage levels, and premium totals.
+
+---
+
+=== 4. Workflow and Approvals
+
+==== Key Pages and Screens
+- **Approval Queue**:
+  - **Purpose**: Manage and process approvals.
+  - **Fields**:
+    - Transaction ID
+    - Approver Name
+    - Status
+  - **Actions**:
+    - Approve, Reject, Forward.
+
+- **Workflow Configuration**:
+  - **Purpose**: Define approval workflows.
+  - **Fields**:
+    - Workflow ID
+    - Steps
+    - Rules
+  - **Actions**:
+    - Activate, Edit, Deactivate.
+
+---
+
+=== Summary
+
+This guide provides an end-to-end overview of the baseline, end-user-facing pages, fields, screens, and functionalities in CGI Advantage 4. Use it as a reference for system training, operational onboarding, or troubleshooting common user tasks.

@@ -1,0 +1,83 @@
+== Module {module-number}: Creating a CR (Cash Receipt) transaction in CGI Advantage 4 that references an RE (Receivable) 
+
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+{SP}
+{SP}
+
+=== Overview
+This guide provides a step-by-step process for creating a **CR (Cash Receipt)** transaction in CGI Advantage 4 that references an **RE (Receivable Entry)** event. Follow these instructions to apply payments against receivable entries accurately.
+
+==== Step 1: Verify the RE (Receivable Entry) Event
+
+. **Navigate to Receivable Entry (RE)**
+  - Go to **Financials** > **Revenue** > **Receivable Entry (RE)**.
+. **Search for the RE Transaction**
+  - Enter relevant search criteria, such as **Transaction ID**, **Customer ID**, or **Date**.
+  - Click **Search** to locate the RE transaction you want to reference.
+. **Verify the RE Details**
+  - Open the RE transaction and verify details like **Customer ID**, **Amount Due**, **Outstanding Balance**, and **Payment Terms**.
+  - Note the **Transaction ID** and **Line Item IDs** (if applicable) for later reference in the CR transaction.
+
+==== Step 2: Create the Cash Receipt (CR) Transaction
+
+. **Navigate to Cash Receipt (CR)**
+  - Go to **Financials** > **Cash Management** > **Cash Receipt (CR)**.
+. **Create New CR Transaction**
+  - Click **Create New** to start a new Cash Receipt transaction.
+. **Enter Header Information**
+  - **Transaction Date**: Enter the date the payment was received.
+  - **Receipt Number**: Assign a unique receipt number, or use the system-generated one if available.
+  - **Customer ID**: Enter the **Customer ID** that matches the one used in the RE transaction.
+  - **Payment Method**: Choose the payment method, such as **Check**, **ACH**, or **Cash**.
+  - **Amount Received**: Enter the total amount received from the customer.
+  - **Bank Account**: Select the bank account where the funds will be deposited.
+
+==== Step 3: Reference the RE Transaction in CR Line Items
+
+. **Add Line Item for the Cash Receipt**
+  - In the **Line Items** section, click **Add Line Item**.
+. **Enter Line Item Details**
+  - **Receivable Event ID**: Enter the **Transaction ID** of the RE event that this payment will apply to.
+  - **Line Item ID (if applicable)**: If the RE transaction includes multiple line items, specify the exact **Line Item ID** to which this payment should apply.
+  - **Amount Applied**: Enter the amount to be applied to the RE event. This amount can match the outstanding balance or be a partial payment.
+. **Add Additional Line Items (if needed)**
+  - If the payment applies to multiple RE events or line items, repeat the process for each line item by referencing the appropriate **Receivable Event ID** and **Line Item ID**.
+
+==== Step 4: Review and Validate the Cash Receipt Transaction
+
+. **Validate the Cash Receipt (CR) Entry**
+  - Ensure that the **Amount Received** matches the total of all line items.
+  - Double-check that each **Receivable Event ID** and **Amount Applied** aligns with the correct RE transactions.
+. **Check for Errors or Warnings**
+  - CGI Advantage 4 will display any validation errors or warnings. Address these before proceeding.
+
+==== Step 5: Submit or Approve the CR Transaction
+
+. **Save the Transaction**
+  - Click **Save** to save the transaction details.
+. **Submit the Cash Receipt (CR) for Approval**
+  - If your organization requires approval for cash receipts, submit the CR transaction by clicking **Submit**.
+  - The transaction will then be routed through the approval workflow as per your organization’s configuration.
+. **Finalize the Transaction**
+  - Once approved (if required), the CR transaction will be posted, and the payment will be applied against the RE receivable, reducing the outstanding balance on the customer’s account.
+
+==== Step 6: Verify Application of Payment
+
+. **Check the RE Transaction Status**
+  - After posting, return to the **Receivable Entry (RE)** module.
+  - Search for the original RE transaction and open it to verify that the payment has been applied correctly.
+. **Confirm Updated Balance**
+  - Review the **Outstanding Balance** on the RE transaction. The applied payment should reduce this balance accordingly.
+. **Generate or Print Receipt (if needed)**
+  - If your organization requires a printed receipt, use the **Print Receipt** option in the CR transaction or generate a report to send to the customer.
+
+==== Additional Notes
+
+- **Partial Payments**: If a partial payment is applied, the outstanding balance on the RE transaction will reflect the remaining amount due.
+- **Overpayments**: If the payment exceeds the amount due, the system may generate a credit balance or an adjustment, depending on configuration.
+- **Audit and Review**: Ensure that all CR and RE transactions align with the customer’s account details for accurate reporting and audit purposes.

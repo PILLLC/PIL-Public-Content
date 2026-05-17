@@ -1,0 +1,129 @@
+== Module {module-number}: System Administration and Maintenance
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+{SP}
+{SP}
+
+[discrete]
+=== Learning Objectives
+
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::agenda.svg[align="left",pdfwidth=50%]|Upon completion of this module, students should be able to:
+
+* Develop skills in user account management, including the setup of roles, permissions, and authentication.
+* Learn best practices for maintaining system security and compliance with regulatory standards.
+* Understand how to monitor system performance, troubleshoot common issues, and optimize performance for efficiency.
+|===
+
+<<<
+
+=== System Administration
+
+==== User Account Management
+User account management is a critical aspect of system administration, ensuring that only authorized personnel have access to the system. CGI Advantage 4 provides robust tools for managing user accounts, roles, and permissions.
+
+- *Creating User Accounts:*
+  * Set up new user accounts with appropriate access rights.
+  * Define user roles based on job responsibilities.
+
+- *Managing User Roles:*
+  * Assign roles to users, determining their access to different modules and features.
+  * Modify or revoke roles as needed to reflect changes in job duties.
+
+- *User Authentication:*
+  * Implement multi-factor authentication (MFA) for added security.
+  * Manage password policies, including complexity requirements and expiration periods.
+
+<<<
+  
+==== Security and Compliance
+Ensuring the security of the CGI Advantage 4 system is paramount, especially given the sensitive nature of the data managed by public sector organizations. This topic covers best practices for securing the system and ensuring compliance with relevant regulations.
+
+- *System Security Measures:*
+  * Implement role-based access control (RBAC) to limit user access based on roles.
+  * Use encryption for data at rest and in transit to protect sensitive information.
+
+- *Compliance Management:*
+  * Ensure the system meets government regulations, such as HIPAA, GDPR, or FISMA.
+  * Generate compliance reports for audits and regulatory reviews.
+
+- *Incident Response:*
+  * Develop and implement an incident response plan to address security breaches.
+  * Regularly update the system and apply security patches to mitigate vulnerabilities.
+
+<<<
+  
+==== Backup and Recovery Procedures
+Backup and recovery procedures are essential to safeguard data against loss due to hardware failures, natural disasters, or cyber-attacks. CGI Advantage 4 provides tools and best practices for creating and managing backups.
+
+- *Backup Strategy:*
+  * Determine the backup frequency based on the organization’s data retention policy.
+  * Use incremental and full backups to optimize storage and recovery times.
+
+- *Data Backup Process:*
+  * Schedule automated backups to ensure regular data protection.
+  * Store backups securely, both on-site and off-site, to prevent data loss.
+
+- *Recovery Procedures:*
+  * Test backup files regularly to ensure they can be restored successfully.
+  * Develop a disaster recovery plan outlining steps to restore operations after data loss.
+
+<<<
+  
+=== Performance Monitoring
+
+==== Monitoring System Performance
+Monitoring system performance is crucial for ensuring the smooth operation of CGI Advantage 4. This topic covers the tools and techniques for tracking system health and performance metrics.
+
+- *Key Performance Metrics:*
+  * Track CPU and memory usage to identify resource bottlenecks.
+  * Monitor database performance, including query response times and transaction throughput.
+
+- *Performance Monitoring Tools:*
+  * Use built-in monitoring tools to view real-time performance data.
+  * Set up alerts for critical performance thresholds, such as high CPU usage or slow query execution.
+
+- *Performance Analysis:*
+  * Analyze historical performance data to identify trends and potential issues.
+  * Use performance data to inform capacity planning and system scaling decisions.
+
+<<<
+ 
+==== Troubleshooting Common Issues
+Troubleshooting common issues quickly and effectively is essential to maintaining system uptime and user satisfaction. This topic covers common issues that may arise in CGI Advantage 4 and provides strategies for resolving them.
+
+- *Common System Issues:*
+  * Slow system performance due to high resource usage.
+  * Database connectivity issues causing application downtime.
+  * Errors in data processing or report generation.
+
+- *Troubleshooting Strategies:*
+  * Use system logs to identify the root cause of issues.
+  * Apply patches or updates to fix known bugs or vulnerabilities.
+  * Collaborate with vendor support for complex issues that require expert assistance.
+
+- *Preventative Maintenance:*
+  * Perform regular system audits to identify potential issues before they escalate.
+  * Update system documentation to reflect changes in configuration or usage patterns.
+
+<<<
+ 
+==== Optimizing System Performance
+Optimizing system performance is an ongoing task that involves fine-tuning various components of CGI Advantage 4 to ensure it operates at peak efficiency. This topic provides best practices for optimizing system performance.
+
+- *System Optimization Techniques:*
+  * Optimize database queries to reduce load times and improve response rates.
+  * Allocate system resources based on workload requirements, ensuring that critical processes have sufficient CPU and memory.
+
+- *Load Balancing:*
+  * Implement load balancing to distribute traffic evenly across servers.
+  * Use redundancy to ensure high availability and minimize downtime.
+
+- *System Upgrades:*
+  * Plan and execute system upgrades to take advantage of new features and performance improvements.
+  * Test upgrades in a staging environment before applying them to the production system.

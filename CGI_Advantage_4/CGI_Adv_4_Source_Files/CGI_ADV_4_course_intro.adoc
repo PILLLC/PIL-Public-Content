@@ -1,0 +1,63 @@
+== Introduction to Mastering CGI Advantage 4
+
+Welcome to the course **Mastering CGI Advantage 4**. This comprehensive course is designed to equip you with the knowledge and skills necessary to effectively navigate and utilize CGI Advantage 4, a leading enterprise resource planning (ERP) solution tailored for government agencies and public sector organizations.
+
+<<<
+
+=== Course Overview
+
+CGI Advantage 4 is a powerful, integrated ERP system that supports a wide range of functions, including financial management, procurement, human resources, and more. This course will take you on a journey through the various modules and features of CGI Advantage 4, providing you with the practical knowledge needed to manage your organization’s operations efficiently.
+
+Throughout this course, you will engage in hands-on exercises, explore real-world case studies, and learn best practices for implementing and maintaining CGI Advantage 4 in a public sector environment. By the end of the course, you will be well-prepared to apply these skills in your role, whether you are a system administrator, financial manager, procurement specialist, or HR professional.
+
+<<<
+
+=== Who Should Take This Course?
+
+This course is ideal for:
+
+- Public sector professionals who are responsible for managing or overseeing ERP systems.
+- System administrators and IT professionals tasked with implementing and maintaining CGI Advantage 4.
+- Financial managers, procurement officers, and HR professionals who use CGI Advantage 4 in their daily operations.
+- Anyone preparing for certification in CGI Advantage 4 or seeking to enhance their ERP expertise.
+
+<<<
+
+=== Learning Objectives
+
+By the end of this course, you will be able to:
+
+- Understand the architecture and components of CGI Advantage 4.
+- Configure and manage the core functionalities, including financial management, procurement, and HR modules.
+- Implement and optimize advanced features such as workflow automation, reporting, and system integration.
+- Apply best practices for system administration, security, and compliance.
+- Prepare for CGI Advantage 4 certification through practical exercises and exam preparation tips.
+- Complete a final project that demonstrates your mastery of the system.
+
+<<<
+
+=== Course Structure
+
+The course is divided into nine modules, each focusing on a specific aspect of CGI Advantage 4:
+
+1. Introduction to CGI Advantage 4
+2. System Setup and Configuration
+3. Core Functionalities
+4. Advanced Functionalities
+5. System Administration and Maintenance
+6. Reporting and Analytics
+7. Practical Applications and Case Studies
+8. Best Practices and Future Directions
+9. Certification and Final Project
+
+Each module includes lessons and topics that delve into the details of the system, with a mix of theoretical knowledge and practical exercises. You’ll have the opportunity to apply what you learn through hands-on activities and case studies that mirror real-world scenarios.
+
+<<<
+
+=== Getting Started
+
+Before you begin, ensure you have access to a CGI Advantage 4 environment for practice and hands-on exercises. This will allow you to apply the concepts discussed in each module directly within the system, reinforcing your learning and building your confidence.
+
+We encourage you to actively participate in all exercises, take notes, and engage with any additional resources provided throughout the course. Your success in this course will be measured not only by your understanding of the material but also by your ability to apply what you’ve learned in practical settings.
+
+Thank you for enrolling in **Mastering CGI Advantage 4**. Let’s get started on your journey to becoming an expert in this powerful ERP system!

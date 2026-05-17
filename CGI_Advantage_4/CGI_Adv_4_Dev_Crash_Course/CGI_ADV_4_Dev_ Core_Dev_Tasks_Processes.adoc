@@ -1,0 +1,169 @@
+== Module {module-number}: Core Development Tasks and Processes
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+{SP}
+{SP}
+
+[discrete]
+=== Learning Objectives
+
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::agenda.svg[align="left",pdfwidth=50%]|Upon completion of this module, students should be able to:
+
+* Customize the CGI Advantage 4 user interface using JSP, JavaScript, and CSS.
+* Modify and create business rules using XML configurations and Java classes.
+* Configure and enhance workflow and approval processes to meet organizational requirements.
+|===
+
+<<<
+
+=== Working with Pages and UI Components
+
+The CGI Advantage 4 user interface (UI) is highly customizable, allowing developers to adapt the system to meet specific organizational needs. The UI is based on JavaServer Pages (JSP), HTML templates, and CSS styling.
+
+==== Page Customizations
+Customizing pages involves modifying JSP files to alter the layout and functionality of CGI Advantage 4 interfaces.
+
+- **Locating JSP Files:**
+  * JSP files are stored in the `webapps` directory within the application structure.
+  * Each module typically has its own set of JSP files organized by functionality.
+
+- **Modifying Pages:**
+  * Update HTML elements to change the structure and content of pages.
+  * Add dynamic elements using JSP tags to retrieve and display data from the backend.
+
+- **Best Practices:**
+  * Maintain a backup of original files before making changes.
+  * Document all customizations for future reference and troubleshooting.
+
+*Activity Suggestion:* Have students customize a sample JSP file to add a new field to a form.
+
+<<<
+
+==== JavaScript Validation
+JavaScript plays a key role in enhancing UI interactivity and validating user inputs.
+
+- **Using JavaScript for Validation:**
+  * Create custom JavaScript files or update existing ones to add field-level validations.
+  * Use client-side validation to provide immediate feedback to users.
+
+- **Examples of Validations:**
+  * Ensure required fields are not left empty.
+  * Validate formats for dates, phone numbers, and email addresses.
+
+- **Integration with JSP:**
+  * Link JavaScript files to JSP pages using `<script>` tags.
+  * Trigger validation scripts during form submission.
+
+<<<
+
+==== CSS Styling
+Customizing CSS allows developers to create themes and align the UI with organizational branding.
+
+- **Modifying CSS Files:**
+  * Locate CSS files in the `styles` or `themes` directory.
+  * Update styles for elements such as buttons, forms, and tables.
+
+- **Custom Themes:**
+  * Create a custom CSS file for a unique look and feel.
+  * Apply custom themes globally or to specific pages.
+
+- **Best Practices:**
+  * Use class and ID selectors to target specific elements.
+  * Avoid inline styles for better maintainability.
+
+*Instructor Note:* Demonstrate how small CSS changes can significantly alter the UI appearance.
+
+<<<
+
+=== Customizing Business Rules
+
+Business rules in CGI Advantage 4 dictate system behavior for specific transactions or processes. These rules are configurable through XML files and Java classes, enabling organizations to align the system with their policies.
+
+==== Business Rule XMLs
+XML configurations define the parameters for business rules, making it easy to customize system behavior without extensive coding.
+
+- **Locating XML Files:**
+  * XML files are stored in the `config` or `rules` directories, depending on the module.
+  * Each XML file corresponds to a specific business rule or process.
+
+- **Modifying XML Rules:**
+  * Update parameters, such as thresholds, conditions, or validation criteria.
+  * Add new rules by creating a custom XML file and linking it to the appropriate module.
+
+- **Validation and Testing:**
+  * Use test environments to validate changes before deploying them to production.
+  * Monitor logs for errors related to XML rule modifications.
+
+<<<
+
+==== Java Classes for Business Rules
+When XML configurations are insufficient, Java classes can be used to extend or override business rules.
+
+- **Creating Custom Logic:**
+  * Develop Java classes in the service layer to implement complex business logic.
+  * Use existing classes as templates for creating custom functionality.
+
+- **Integrating Custom Classes:**
+  * Register custom classes in the configuration files to ensure the system recognizes them.
+  * Test the integration thoroughly to avoid runtime errors.
+
+*Activity Suggestion:* Assign students to create a simple Java class that overrides a default business rule.
+
+<<<
+
+=== Workflow and Approval Processes
+
+Workflows in CGI Advantage 4 automate tasks such as approvals, notifications, and escalations. They are essential for streamlining business processes and maintaining compliance.
+
+==== Workflow Configuration
+Workflows are configured using XML files, which define the routing and approval hierarchies.
+
+- **Key Configuration Elements:**
+  * *Triggers:* Events that initiate the workflow (e.g., submitting a purchase order).
+  * *Conditions:* Criteria that determine the path the workflow should follow.
+  * *Actions:* Tasks performed by the workflow, such as sending notifications or updating records.
+
+- **Defining Workflows:**
+  * Locate workflow XML files in the `workflow` directory.
+  * Modify or create XML files to define custom workflows for specific processes.
+
+- **Best Practices:**
+  * Use meaningful names for workflows and steps to simplify troubleshooting.
+  * Test workflows in a staging environment to ensure accuracy.
+
+<<<
+
+==== Approval Process Customization
+Approval processes ensure that transactions are reviewed and authorized before execution. These processes can be customized to meet organizational requirements.
+
+- **Customizing Approval Hierarchies:**
+  * Define approval levels based on roles, departments, or transaction types.
+  * Use workflow rules to route tasks to the appropriate approvers.
+
+- **Enhancing Approval Processes:**
+  * Automate notifications to inform approvers of pending tasks.
+  * Implement escalation rules to handle overdue approvals.
+
+- **Monitoring Approvals:**
+  * Use system dashboards to track approval status and identify bottlenecks.
+  * Generate reports to analyze workflow efficiency.
+
+*Instructor Note:* Demonstrate how workflows and approval processes can be visualized and optimized using real-world examples.
+
+<<<
+
+[appendix]
+=== Glossary
+- *JSP (JavaServer Pages):* A technology used to create dynamic web pages.
+- *CSS (Cascading Style Sheets):* A styling language for describing the presentation of web pages.
+- *Workflow:* An automated sequence of tasks that are carried out to complete a business process.
+
+[discrete]
+=== Additional Notes
+*Instructor Tip:* Highlight the importance of documentation and version control for all customizations to facilitate future updates and troubleshooting.

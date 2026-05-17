@@ -1,0 +1,142 @@
+== Module {module-number}: Understanding CGI Advantage 4 Architecture
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+{SP}
+{SP}
+
+[discrete]
+=== Learning Objectives
+
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::agenda.svg[align="left",pdfwidth=50%]|Upon completion of this module, students should be able to:
+
+* Understand the modular architecture of CGI Advantage 4.
+* Describe the core frameworks and technologies underlying CGI Advantage 4.
+* Explain the role of the data layer and its customization for different clients.
+* Recognize the system’s capacity for supporting configurable business rules and workflows.
+|===
+
+<<<
+
+=== Overview of CGI Advantage 4 Architecture
+
+CGI Advantage 4 is a modular, flexible ERP system specifically designed to address the unique needs of government and public sector organizations. The system’s architecture is built for scalability, extensibility, and integration, making it a robust platform for managing complex organizational operations.
+
+==== Key Components of the Architecture
+The architecture of CGI Advantage 4 is organized into distinct layers and components, each serving a specific purpose in delivering enterprise-grade functionality:
+
+- **Modules**:
+  * Financial Management (FIN): General Ledger, Accounts Payable/Receivable, Budgeting.
+  * Human Resources Management (HRM): Employee data, payroll, and benefits administration.
+  * Budgeting: Tools for creating, monitoring, and adjusting budgets.
+  * Procurement: Vendor management, contract creation, and purchase order processing.
+
+- **Frameworks**:
+  * Built on the Java EE platform for enterprise-grade scalability and security.
+  * Utilizes JSP (JavaServer Pages) for dynamic web content.
+  * Employs servlets and Enterprise JavaBeans (EJBs) for backend logic processing.
+
+- **Data Layer**:
+  * Relies primarily on Oracle databases, with schemas tailored to meet client-specific requirements.
+  * Data tables store financial, HR, and operational data, facilitating seamless reporting and analysis.
+
+- **Customizations**:
+  * Business logic and workflows can be customized through XML, scripts, and templates.
+  * Supports the development of client-specific reports, interfaces, and automation workflows.
+
+<<<
+
+=== Modular Design
+
+==== Role of Modules in CGI Advantage 4
+The modular design of CGI Advantage 4 allows organizations to implement only the functionalities they need, with the option to add more modules as requirements evolve. Each module integrates seamlessly with others, creating a unified system.
+
+- *Advantages of Modular Design:*
+  * Scalability: Organizations can start with core modules and expand as needed.
+  * Flexibility: Modules can be configured independently to meet specific operational needs.
+  * Cost-Effectiveness: Focused implementation reduces initial deployment costs.
+
+- *Example Use Case:* 
+  * A state government agency implements Financial Management and Procurement modules initially, later adding HRM to streamline payroll and benefits.
+
+<<<
+
+=== Frameworks and Technologies
+
+==== Java EE Platform
+CGI Advantage 4’s reliance on the Java EE platform ensures it is robust, secure, and adaptable for enterprise environments.
+
+- **Core Technologies**:
+  * JSP (JavaServer Pages): Generates dynamic web content.
+  * Servlets: Handles requests and responses between the client and server.
+  * EJBs (Enterprise JavaBeans): Manages the backend logic and ensures high performance for complex transactions.
+
+- **Benefits of Java EE**:
+  * Scalability to handle growing organizational needs.
+  * Security features to protect sensitive public sector data.
+  * Support for distributed and multi-tier applications.
+
+<<<
+
+=== Data Layer and Customizations
+
+==== Database Design and Integration
+The data layer of CGI Advantage 4 is typically implemented using Oracle databases, known for their reliability and performance in enterprise settings.
+
+- **Key Features**:
+  * Pre-defined schemas for financial, HR, and operational data.
+  * Support for large-scale data storage and fast query execution.
+  * Integration with reporting tools for real-time analytics.
+
+- **Client-Specific Customization**:
+  * Tables and fields can be added or modified to reflect unique organizational requirements.
+  * Data integrity is maintained through validation rules and database triggers.
+
+==== Customization Capabilities
+CGI Advantage 4 supports extensive customization to meet diverse organizational needs without altering the core software.
+
+- **Customizable Features**:
+  * Business Rules: Define workflows, validations, and notifications.
+  * Reports: Create and customize reports using XML-based templates.
+  * User Interface: Adjust themes, layouts, and menus for a personalized user experience.
+
+- **Configuration Tools**:
+  * XML Scripts: Enable fine-tuned customization of workflows and processes.
+  * Template Editors: Simplify the creation of client-specific forms and reports.
+
+<<<
+
+=== Integration and Scalability
+
+==== Integration Capabilities
+CGI Advantage 4 is designed to integrate seamlessly with other enterprise systems, enabling interoperability and consistent data flow.
+
+- *Integration Features:*
+  * API Support: RESTful and SOAP APIs for real-time data exchange.
+  * ETL Processes: For bulk data migration and synchronization with external databases.
+  * Third-Party Compatibility: Connects with tax systems, payroll services, and analytics tools.
+
+==== Scalability and Performance
+The architecture of CGI Advantage 4 is built to scale with organizational growth, ensuring that performance remains optimal even as user numbers and data volumes increase.
+
+- *Scaling Strategies:*
+  * Horizontal Scaling: Add more servers to distribute load.
+  * Vertical Scaling: Increase resources such as CPU and memory for existing servers.
+
+<<<
+
+[appendix]
+=== Glossary
+- *Java EE:* A platform for developing enterprise applications using Java.
+- *JSP (JavaServer Pages):* A technology for creating dynamic web pages.
+- *Servlet:* A Java program that handles requests and responses on a web server.
+- *EJB (Enterprise JavaBeans):* A server-side software component that encapsulates business logic.
+
+[discrete]
+=== Additional Notes
+*Instructor Tip:* Use diagrams to illustrate the modular structure and layered architecture of CGI Advantage 4, helping learners visualize the system’s components and their interactions.

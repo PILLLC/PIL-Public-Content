@@ -1,0 +1,1367 @@
+= Advantage 4 Video Scripts
+
+== Create an AP Voucher (APRV)
+
+*Objective:*
+Complete the transaction: Create an AP Voucher (APRV).
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Create an AP Voucher (APRV) has been completed and submitted according to standard Advantage 4 procedures.
+
+== Submit Voucher for Approval
+
+*Objective:*
+Complete the transaction: Submit Voucher for Approval.
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Submit Voucher for Approval has been completed and submitted according to standard Advantage 4 procedures.
+
+== Cancel or Void a Voucher (APCN)
+
+*Objective:*
+Complete the transaction: Cancel or Void a Voucher (APCN).
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Cancel or Void a Voucher (APCN) has been completed and submitted according to standard Advantage 4 procedures.
+
+== Record a Manual Check (CH)
+
+*Objective:*
+Complete the transaction: Record a Manual Check (CH).
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Record a Manual Check (CH) has been completed and submitted according to standard Advantage 4 procedures.
+
+== Run and Review Disbursement Register
+
+*Objective:*
+Complete the transaction: Run and Review Disbursement Register.
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Run and Review Disbursement Register has been completed and submitted according to standard Advantage 4 procedures.
+
+== Resolve a Disbursement Error
+
+*Objective:*
+Complete the transaction: Resolve a Disbursement Error.
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Resolve a Disbursement Error has been completed and submitted according to standard Advantage 4 procedures.
+
+== Enter a Receivable (RE)
+
+*Objective:*
+Complete the transaction: Enter a Receivable (RE).
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Enter a Receivable (RE) has been completed and submitted according to standard Advantage 4 procedures.
+
+== Adjust a Receivable Entry (RE)
+
+*Objective:*
+Complete the transaction: Adjust a Receivable Entry (RE).
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Adjust a Receivable Entry (RE) has been completed and submitted according to standard Advantage 4 procedures.
+
+== Apply Payment to RE (CR)
+
+*Objective:*
+Complete the transaction: Apply Payment to RE (CR).
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Apply Payment to RE (CR) has been completed and submitted according to standard Advantage 4 procedures.
+
+== Issue Refund for Overpayment (CRAD)
+
+*Objective:*
+Complete the transaction: Issue Refund for Overpayment (CRAD).
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Issue Refund for Overpayment (CRAD) has been completed and submitted according to standard Advantage 4 procedures.
+
+== Write Off Uncollectible RE
+
+*Objective:*
+Complete the transaction: Write Off Uncollectible RE.
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Write Off Uncollectible RE has been completed and submitted according to standard Advantage 4 procedures.
+
+== Create a Purchase Requisition (RQ)
+
+*Objective:*
+Complete the transaction: Create a Purchase Requisition (RQ).
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Create a Purchase Requisition (RQ) has been completed and submitted according to standard Advantage 4 procedures.
+
+== Convert RQ to Purchase Order (PO)
+
+*Objective:*
+Complete the transaction: Convert RQ to Purchase Order (PO).
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Convert RQ to Purchase Order (PO) has been completed and submitted according to standard Advantage 4 procedures.
+
+== Amend a Purchase Order (POCN)
+
+*Objective:*
+Complete the transaction: Amend a Purchase Order (POCN).
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Amend a Purchase Order (POCN) has been completed and submitted according to standard Advantage 4 procedures.
+
+== Close a Purchase Order (POCL)
+
+*Objective:*
+Complete the transaction: Close a Purchase Order (POCL).
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Close a Purchase Order (POCL) has been completed and submitted according to standard Advantage 4 procedures.
+
+== Process a Contract Entry (CT)
+
+*Objective:*
+Complete the transaction: Process a Contract Entry (CT).
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Process a Contract Entry (CT) has been completed and submitted according to standard Advantage 4 procedures.
+
+== Enter an Invoice Encumbrance (IENC)
+
+*Objective:*
+Complete the transaction: Enter an Invoice Encumbrance (IENC).
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Enter an Invoice Encumbrance (IENC) has been completed and submitted according to standard Advantage 4 procedures.
+
+== Process Internal Transfer In (ITI)
+
+*Objective:*
+Complete the transaction: Process Internal Transfer In (ITI).
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Process Internal Transfer In (ITI) has been completed and submitted according to standard Advantage 4 procedures.
+
+== Process Internal Transfer Adjustment (ITA)
+
+*Objective:*
+Complete the transaction: Process Internal Transfer Adjustment (ITA).
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Process Internal Transfer Adjustment (ITA) has been completed and submitted according to standard Advantage 4 procedures.
+
+== Create a Journal Entry (JEV)
+
+*Objective:*
+Complete the transaction: Create a Journal Entry (JEV).
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Create a Journal Entry (JEV) has been completed and submitted according to standard Advantage 4 procedures.
+
+== Reverse or Adjust a JEV
+
+*Objective:*
+Complete the transaction: Reverse or Adjust a JEV.
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Reverse or Adjust a JEV has been completed and submitted according to standard Advantage 4 procedures.
+
+== Process a Budget Control Document (BGCN)
+
+*Objective:*
+Complete the transaction: Process a Budget Control Document (BGCN).
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Process a Budget Control Document (BGCN) has been completed and submitted according to standard Advantage 4 procedures.
+
+== Create a Budget Line Adjustment (LDA)
+
+*Objective:*
+Complete the transaction: Create a Budget Line Adjustment (LDA).
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Create a Budget Line Adjustment (LDA) has been completed and submitted according to standard Advantage 4 procedures.
+
+== Submit a LDA for Approval
+
+*Objective:*
+Complete the transaction: Submit a LDA for Approval.
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Submit a LDA for Approval has been completed and submitted according to standard Advantage 4 procedures.
+
+== Perform a Budget Pre-Encumbrance (LDPR)
+
+*Objective:*
+Complete the transaction: Perform a Budget Pre-Encumbrance (LDPR).
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Perform a Budget Pre-Encumbrance (LDPR) has been completed and submitted according to standard Advantage 4 procedures.
+
+== Process Budget Control Roll-Up (BGCN)
+
+*Objective:*
+Complete the transaction: Process Budget Control Roll-Up (BGCN).
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Process Budget Control Roll-Up (BGCN) has been completed and submitted according to standard Advantage 4 procedures.
+
+== Perform Budget Forecast Adjustments
+
+*Objective:*
+Complete the transaction: Perform Budget Forecast Adjustments.
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Perform Budget Forecast Adjustments has been completed and submitted according to standard Advantage 4 procedures.
+
+== Create Local Chart of Accounts Roll Request (LCRR)
+
+*Objective:*
+Complete the transaction: Create Local Chart of Accounts Roll Request (LCRR).
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Create Local Chart of Accounts Roll Request (LCRR) has been completed and submitted according to standard Advantage 4 procedures.
+
+== Review and Submit Budget to Legislature
+
+*Objective:*
+Complete the transaction: Review and Submit Budget to Legislature.
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Review and Submit Budget to Legislature has been completed and submitted according to standard Advantage 4 procedures.
+
+== Create a Grant Award (GRA)
+
+*Objective:*
+Complete the transaction: Create a Grant Award (GRA).
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Create a Grant Award (GRA) has been completed and submitted according to standard Advantage 4 procedures.
+
+== Link Grant to Chart of Accounts
+
+*Objective:*
+Complete the transaction: Link Grant to Chart of Accounts.
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Link Grant to Chart of Accounts has been completed and submitted according to standard Advantage 4 procedures.
+
+== Submit a Drawdown Request (GRDR)
+
+*Objective:*
+Complete the transaction: Submit a Drawdown Request (GRDR).
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Submit a Drawdown Request (GRDR) has been completed and submitted according to standard Advantage 4 procedures.
+
+== Approve or Reject GRDR
+
+*Objective:*
+Complete the transaction: Approve or Reject GRDR.
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Approve or Reject GRDR has been completed and submitted according to standard Advantage 4 procedures.
+
+== Track Grant Spending via Report
+
+*Objective:*
+Complete the transaction: Track Grant Spending via Report.
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Track Grant Spending via Report has been completed and submitted according to standard Advantage 4 procedures.
+
+== Close a Grant Award (GRCL)
+
+*Objective:*
+Complete the transaction: Close a Grant Award (GRCL).
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Close a Grant Award (GRCL) has been completed and submitted according to standard Advantage 4 procedures.
+
+== Submit a Personnel Action Request (PAR)
+
+*Objective:*
+Complete the transaction: Submit a Personnel Action Request (PAR).
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Submit a Personnel Action Request (PAR) has been completed and submitted according to standard Advantage 4 procedures.
+
+== Approve a PAR
+
+*Objective:*
+Complete the transaction: Approve a PAR.
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Approve a PAR has been completed and submitted according to standard Advantage 4 procedures.
+
+== Create New Position (POS)
+
+*Objective:*
+Complete the transaction: Create New Position (POS).
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Create New Position (POS) has been completed and submitted according to standard Advantage 4 procedures.
+
+== Enter Payroll Adjustment (PYADJ)
+
+*Objective:*
+Complete the transaction: Enter Payroll Adjustment (PYADJ).
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Enter Payroll Adjustment (PYADJ) has been completed and submitted according to standard Advantage 4 procedures.
+
+== Process Off-Cycle Pay (PYOF)
+
+*Objective:*
+Complete the transaction: Process Off-Cycle Pay (PYOF).
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Process Off-Cycle Pay (PYOF) has been completed and submitted according to standard Advantage 4 procedures.
+
+== Generate Payroll Register
+
+*Objective:*
+Complete the transaction: Generate Payroll Register.
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Generate Payroll Register has been completed and submitted according to standard Advantage 4 procedures.
+
+== Enroll Employee in Benefit Plan
+
+*Objective:*
+Complete the transaction: Enroll Employee in Benefit Plan.
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Enroll Employee in Benefit Plan has been completed and submitted according to standard Advantage 4 procedures.
+
+== Update Deduction Codes
+
+*Objective:*
+Complete the transaction: Update Deduction Codes.
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Update Deduction Codes has been completed and submitted according to standard Advantage 4 procedures.
+
+== Vendor Registers through VSS
+
+*Objective:*
+Complete the transaction: Vendor Registers through VSS.
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Vendor Registers through VSS has been completed and submitted according to standard Advantage 4 procedures.
+
+== Update Vendor Banking Info
+
+*Objective:*
+Complete the transaction: Update Vendor Banking Info.
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Update Vendor Banking Info has been completed and submitted according to standard Advantage 4 procedures.
+
+== View VSS Payment History
+
+*Objective:*
+Complete the transaction: View VSS Payment History.
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction View VSS Payment History has been completed and submitted according to standard Advantage 4 procedures.
+
+== Submit a Bid via VSS
+
+*Objective:*
+Complete the transaction: Submit a Bid via VSS.
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Submit a Bid via VSS has been completed and submitted according to standard Advantage 4 procedures.
+
+== Upload Compliance Documents
+
+*Objective:*
+Complete the transaction: Upload Compliance Documents.
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Upload Compliance Documents has been completed and submitted according to standard Advantage 4 procedures.
+
+== Navigate Advantage 4 Home & Modules
+
+*Objective:*
+Complete the transaction: Navigate Advantage 4 Home & Modules.
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Navigate Advantage 4 Home & Modules has been completed and submitted according to standard Advantage 4 procedures.
+
+== Use the Document Catalog to Search by Doc ID
+
+*Objective:*
+Complete the transaction: Use the Document Catalog to Search by Doc ID.
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Use the Document Catalog to Search by Doc ID has been completed and submitted according to standard Advantage 4 procedures.
+
+== Track Approval Status by Transaction Code
+
+*Objective:*
+Complete the transaction: Track Approval Status by Transaction Code.
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Track Approval Status by Transaction Code has been completed and submitted according to standard Advantage 4 procedures.
+
+== Create and Save Queries
+
+*Objective:*
+Complete the transaction: Create and Save Queries.
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Create and Save Queries has been completed and submitted according to standard Advantage 4 procedures.
+
+== Generate Workflow History Report
+
+*Objective:*
+Complete the transaction: Generate Workflow History Report.
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Generate Workflow History Report has been completed and submitted according to standard Advantage 4 procedures.
+
+== View Transaction Lifecycle (AP to Payment)
+
+*Objective:*
+Complete the transaction: View Transaction Lifecycle (AP to Payment).
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction View Transaction Lifecycle (AP to Payment) has been completed and submitted according to standard Advantage 4 procedures.
+
+== Export Search Results to Excel
+
+*Objective:*
+Complete the transaction: Export Search Results to Excel.
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Export Search Results to Excel has been completed and submitted according to standard Advantage 4 procedures.
+
+== Bookmark Frequent Documents
+
+*Objective:*
+Complete the transaction: Bookmark Frequent Documents.
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Bookmark Frequent Documents has been completed and submitted according to standard Advantage 4 procedures.
+
+== Setup My Workspace
+
+*Objective:*
+Complete the transaction: Setup My Workspace.
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Setup My Workspace has been completed and submitted according to standard Advantage 4 procedures.
+
+== Adjust Encumbrances (ENCADJ)
+
+*Objective:*
+Complete the transaction: Adjust Encumbrances (ENCADJ).
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Adjust Encumbrances (ENCADJ) has been completed and submitted according to standard Advantage 4 procedures.
+
+== Review Encumbrance vs. Expenditure (ENCREP)
+
+*Objective:*
+Complete the transaction: Review Encumbrance vs. Expenditure (ENCREP).
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Review Encumbrance vs. Expenditure (ENCREP) has been completed and submitted according to standard Advantage 4 procedures.
+
+== Run Fund Balance Report
+
+*Objective:*
+Complete the transaction: Run Fund Balance Report.
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Run Fund Balance Report has been completed and submitted according to standard Advantage 4 procedures.
+
+== Perform Year-End Encumbrance Rollover
+
+*Objective:*
+Complete the transaction: Perform Year-End Encumbrance Rollover.
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Perform Year-End Encumbrance Rollover has been completed and submitted according to standard Advantage 4 procedures.
+
+== Run Ledger Reconciliation (LDREC)
+
+*Objective:*
+Complete the transaction: Run Ledger Reconciliation (LDREC).
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Run Ledger Reconciliation (LDREC) has been completed and submitted according to standard Advantage 4 procedures.
+
+== Process Ledger Distribution Rules (LDR)
+
+*Objective:*
+Complete the transaction: Process Ledger Distribution Rules (LDR).
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Process Ledger Distribution Rules (LDR) has been completed and submitted according to standard Advantage 4 procedures.
+
+== Set Up Ledger Control Flags
+
+*Objective:*
+Complete the transaction: Set Up Ledger Control Flags.
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Set Up Ledger Control Flags has been completed and submitted according to standard Advantage 4 procedures.
+
+== Create Custom Ledger Report Filters
+
+*Objective:*
+Complete the transaction: Create Custom Ledger Report Filters.
+
+*Steps to Complete the Transaction:*
+
+1. Access the relevant module from the main menu.
+2. Select 'Create New Document' or locate the existing one.
+3. Fill in required document header fields.
+4. Add necessary line items or accounting entries.
+5. Validate the document for errors.
+6. Resolve any issues flagged by the system.
+7. Submit the document for approval or finalization.
+
+*Cautionary Note:*
+Ensure all chart of accounts codes are accurate before submission.
+
+*Summary:*
+The transaction Create Custom Ledger Report Filters has been completed and submitted according to standard Advantage 4 procedures.
+

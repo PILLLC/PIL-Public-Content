@@ -1,0 +1,144 @@
+== Module 1: Introduction to NIST and the RMF
+
+.Objectives:
+- To introduce the history and role of NIST in cybersecurity.
+- To explain the RMF and its significance.
+- To demonstrate the application of RMF in achieving compliance and security improvements.
+
+.Lessons:
+- The history of NIST and its impact on global cybersecurity standards.
+- An overview of the RMF process and its components.
+- The importance of RMF in various sectors and its role in regulatory compliance.
+
+== Module 2: Understanding the RMF Process
+
+.Objectives:
+- To detail the steps involved in the RMF process.
+- To illustrate RMF's integration into system development.
+- To highlight the role of each RMF step in risk mitigation.
+
+.Lessons:
+- Explanation of the RMF's seven-step process.
+- Application of RMF throughout the system development lifecycle.
+- Real-world applications and benefits of the RMF process.
+
+== Module 3: Preparing for RMF
+
+.Objectives:
+- To prepare organizations and systems for RMF.
+- To outline roles and responsibilities in RMF.
+- To establish a risk management context.
+
+.Lessons:
+- Steps for organizational and system-level RMF preparation.
+- Overview of key roles and responsibilities in the RMF process.
+- Techniques for establishing and understanding the risk management context.
+
+== Module 4: Categorizing Information Systems
+
+.Objectives:
+- To understand system categorization criteria.
+- To apply FIPS 199 and NIST SP 800-60 for categorization.
+- To assess the impact of system categorization on security controls.
+
+.Lessons:
+- Criteria and significance of information system categorization.
+- Guidelines for using FIPS 199 and NIST SP 800-60.
+- Impact of categorization on the selection of security controls.
+
+== Module 5: Selecting Security Controls
+
+.Objectives:
+- To identify appropriate security controls.
+- To tailor controls to organizational needs.
+- To document control selections effectively.
+
+.Lessons:
+- Process for selecting baseline security controls.
+- Strategies for tailoring and supplementing security controls.
+- Documentation practices for security control selection.
+
+== Module 6: Implementing Security Controls
+
+.Objectives:
+- To strategize effective control implementation.
+- To meet documentation requirements for control implementation.
+- To incorporate security engineering principles.
+
+.Lessons:
+- Best practices for security control implementation.
+- Documentation guidelines and tools for implemented controls.
+- Applying security engineering principles in control implementation.
+
+== Module 7: Assessing Security Controls
+
+.Objectives:
+- To plan and conduct control assessments.
+- To understand assessment types and evidence requirements.
+- To document findings and plan for remediation.
+
+.Lessons:
+- Methodologies for security control assessments.
+- Types of assessments and evidence evaluation.
+- Documentation of assessment findings and remediation planning.
+
+== Module 8: Authorizing Information Systems
+
+.Objectives:
+- To comprehend the ATO process.
+- To make informed risk determination and acceptance decisions.
+- To understand the AO's role in system authorization.
+
+.Lessons:
+- Steps and documentation required for ATO.
+- Risk determination, acceptance, and criteria for authorization decisions.
+- Insights into the AO's decision-making process.
+
+== Module 9: Monitoring Security Controls
+
+.Objectives:
+- To master continuous monitoring strategies.
+- To respond effectively to environmental changes.
+- To conduct ongoing risk assessments and maintain authorization.
+
+.Lessons:
+- Implementation of continuous monitoring programs.
+- Adaptation strategies for technological and threat landscape changes.
+- Processes for ongoing risk assessment and system reauthorization.
+
+== Module 10: RMF Tools and Resources
+
+.Objectives:
+- To overview tools that support RMF.
+- To identify NIST and other cybersecurity resources.
+- To integrate third-party tools with RMF processes.
+
+.Lessons:
+- NIST tools and popular third-party tools for RMF.
+- Key NIST publications and additional cybersecurity resources.
+- Best practices for integrating third-party tools into RMF.
+
+== Module 11: Case Studies and Real-World Applications
+
+.Objectives:
+- To analyze real-world RMF applications.
+- To derive lessons from RMF implementations.
+- To engage in discussions on RMF challenges and solutions.
+
+.Lessons:
+- Detailed analysis of RMF implementation case studies.
+- Key lessons learned from real-world RMF applications.
+- Group discussions on overcoming RMF challenges.
+
+== Module 12: Course Conclusion and Next Steps
+
+.Objectives:
+- To review RMF concepts and steps.
+- To prepare for relevant certification exams.
+- To guide continuing education in cybersecurity.
+
+.Lessons:
+- Recap of key RMF concepts and the importance of each step.
+- Overview of certifications and preparation tips.
+- Opportunities for continued learning and professional development in cybersecurity.
+

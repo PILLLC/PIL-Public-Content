@@ -1,0 +1,133 @@
+== Module {module-number}: Deployment and Testing
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+{SP}
+{SP}
+
+[discrete]
+=== Learning Objectives
+
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::agenda.svg[align="left",pdfwidth=50%]|Upon completion of this module, students should be able to:
+
+* Use build scripts to package and deploy applications to staging and production environments.
+* Perform thorough User Acceptance Testing (UAT) to ensure functionality aligns with business requirements.
+* Plan and execute production releases with minimal system disruption.
+|===
+
+<<<
+
+=== Deployment Process
+
+==== Building and Packaging the Application
+Deployment begins with building and packaging the application, ensuring all necessary components are included for a smooth release.
+
+- *Build Scripts:*
+  * Use tools like Apache Ant, Maven, or Gradle to automate build processes.
+  * Typical build targets include `compile`, `test`, `package`, and `deploy`.
+
+- *Packaging:*
+  * Create WAR (Web Application Archive) files for web applications or EAR (Enterprise Archive) files for enterprise solutions.
+  * Verify that configuration files (e.g., `application.properties`, XML configurations) are correctly included.
+
+- *Example Maven Command:*
+  ```bash
+  mvn clean package
+Best Practices:
+Validate the build process in a local or development environment before proceeding to staging.
+Maintain version control for build scripts to ensure consistency across deployments.
+<<<
+
+==== Deploying to Staging Environment The staging environment is used to simulate the production environment as closely as possible, enabling comprehensive testing.
+
+Deployment Steps:
+
+Transfer build artifacts (e.g., WAR files) to the staging server.
+Deploy the artifacts to the application server (e.g., Apache Tomcat, JBoss).
+Update database schemas if required, using SQL scripts or migrations.
+Testing in Staging:
+
+Perform smoke testing to validate that the core application features are functional.
+Verify integrations with external systems, such as APIs or third-party services.
+Instructor Note: Emphasize the importance of keeping the staging environment aligned with the production environment for accurate testing.
+
+<<<
+
+=== User Acceptance Testing (UAT)
+
+==== Importance of UAT User Acceptance Testing ensures that the application meets the end-user’s business requirements and is ready for deployment.
+
+UAT Objectives:
+
+Validate functionality against business scenarios and use cases.
+Identify any usability issues or gaps in requirements.
+Involving End-Users:
+
+Engage key stakeholders and representative end-users to perform testing.
+Provide clear instructions and scenarios for testing.
+Example UAT Scenario:
+
+Scenario: Approve a purchase order through the new workflow.
+Steps: Submit a requisition, route for approval, and confirm final approval notification.
+<<<
+
+==== Conducting UAT Conducting structured UAT sessions ensures thorough validation of application functionality.
+
+UAT Steps:
+
+Define test cases and acceptance criteria for each feature or module.
+Distribute UAT scripts to testers with detailed instructions.
+Record test results, including any bugs or issues encountered.
+Prioritize and resolve identified issues before production deployment.
+Tools for UAT:
+
+Use issue tracking tools (e.g., Jira, Bugzilla) to manage and track bugs.
+Leverage feedback forms or surveys for testers to share detailed insights.
+<<<
+
+=== Production Release
+
+==== Planning the Production Deployment Releasing to production requires careful planning to minimize downtime and ensure a smooth transition.
+
+Pre-Deployment Tasks:
+
+Schedule deployment during maintenance windows to reduce impact on end-users.
+Notify stakeholders and users about planned downtime or changes.
+Back up the production environment, including databases and configurations.
+Deployment Steps:
+
+Deploy application artifacts to the production server.
+Apply database updates or migrations.
+Restart the application server and perform basic smoke tests.
+<<<
+
+==== Post-Deployment Validation After deploying to production, verify that the application is functioning as expected.
+
+Validation Steps:
+
+Conduct basic functionality tests for critical modules (e.g., financial transactions, workflows).
+Monitor system logs for any errors or warnings.
+Ensure integrations with external systems are operational.
+Monitoring and Feedback:
+
+Monitor performance metrics, such as response times and error rates.
+Gather feedback from end-users to identify any overlooked issues.
+<<<
+
+=== Summary and Best Practices Recap
+
+Build and Deploy: Use reliable build scripts to automate packaging and deployment.
+User Acceptance Testing: Involve end-users to validate that the application meets business requirements.
+Production Release: Plan deployments carefully to minimize disruptions and ensure smooth transitions.
+Post-Deployment Monitoring: Monitor the system and gather user feedback to address any post-release issues.
+[appendix] === Glossary
+
+Build Script: Automated script for compiling and packaging application code.
+User Acceptance Testing (UAT): Final phase of testing to validate application functionality from an end-user perspective.
+Production Release: Deployment of the application to the live environment used by end-users.
+[discrete] === Additional Notes Instructor Tip: Encourage learners to document deployment processes and testing results for future reference and continuous improvement.

@@ -1,0 +1,166 @@
+== Module {module-number}: System Setup and Configuration
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+{SP}
+{SP}
+
+[discrete]
+=== Learning Objectives
+
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::agenda.svg[align="left",pdfwidth=50%]|Upon completion of this module, students should be able to:
+
+* Understand and meet the system requirements for CGI Advantage 4 installation.
+* Perform a complete installation and initial configuration of CGI Advantage 4.
+* Tailor system settings, modules, and user roles to meet organizational needs.
+* Troubleshoot common installation and configuration issues.
+|===
+
+<<<
+
+=== Initial Setup and Installation
+
+==== System Requirements and Pre-installation Checklist
+A successful installation begins with ensuring the environment meets both hardware and software prerequisites. Failing to address these requirements can lead to system instability and performance issues.
+
+- *Hardware Requirements:*
+  * Processor: 4-core CPU minimum (8-core recommended for optimal performance).
+  * Memory: 16 GB RAM minimum (32 GB recommended).
+  * Storage: SSD with at least 500 GB of free space, configured for RAID for redundancy.
+
+- *Software Requirements:*
+  * Operating System: Windows Server 2016 or higher, or Linux (Red Hat/CentOS preferred).
+  * Database: Oracle 19c, SQL Server 2019, or PostgreSQL 12+.
+  * Web Server: Apache Tomcat 9.x or higher.
+
+- *Pre-installation Checklist:*
+  * Verify hardware meets or exceeds specifications.
+  * Ensure network configurations, such as static IPs and firewall rules, are in place.
+  * Back up existing data and systems in case of rollback.
+  * Confirm access credentials for required software (e.g., database admin accounts).
+
+*Instructor Note:* Emphasize proactive planning to prevent delays during installation.
+
+*Example Scenario:* A state agency prepares its infrastructure by upgrading storage and verifying network firewall rules before installation.
+
+<<<
+
+==== Installation Procedures
+Installation is a critical step in ensuring that CGI Advantage 4 functions as intended. This section outlines a structured approach.
+
+- *Step-by-Step Installation Guide:*
+  1. Prepare the environment:
+     * Install prerequisite software (e.g., database drivers, Java Development Kit).
+     * Configure virtual machines if using a virtualized setup.
+  2. Extract and review the CGI Advantage 4 installation package.
+  3. Execute the installation wizard or custom installation scripts:
+     * Choose modules to install.
+     * Set database connection details.
+  4. Load initial configuration data into the database.
+  5. Deploy application files to the web server.
+  6. Conduct system verification tests:
+     * Access system logs to verify successful deployment.
+     * Run health checks on the database and application layers.
+
+*Activity Suggestion:* Provide a simulated environment where students perform a dry-run installation.
+
+*Instructor Note:* Discuss potential pitfalls, such as insufficient disk space or missing software dependencies.
+
+<<<
+
+==== Post-Installation Configuration
+After installation, the system must be customized to reflect the organization’s operational and compliance needs.
+
+- *Post-Installation Tasks:*
+  * Configure global settings (e.g., currency, language, and regional formats).
+  * Establish user roles and permissions.
+  * Configure email servers for notification functionality.
+  * Set up monitoring tools to ensure system health and security.
+
+- *Common Issues:*
+  * Database connection errors due to misconfigured parameters.
+  * Inadequate permissions for accessing application files.
+
+*Example Activity:* Assign students to configure a test instance and verify functionality with sample user logins.
+
+<<<
+
+=== System Configuration
+
+==== Basic Configuration Settings
+The effectiveness of CGI Advantage 4 depends on precise configuration of its foundational settings.
+
+- *System Preferences:*
+  * Define general settings like date formats, fiscal year periods, and default modules.
+  * Configure backup schedules for both application data and logs.
+
+- *User Interface Customization:*
+  * Adjust themes and layouts for user accessibility.
+  * Configure dashboards for role-specific views.
+
+*Instructor Note:* Highlight the importance of consistency in settings to minimize user confusion.
+
+<<<
+
+==== Configuring Modules and Features
+Each module in CGI Advantage 4 offers extensive configurability to suit diverse organizational requirements.
+
+- *Examples of Module Configuration:*
+  * **Financial Management:** 
+    - Establish chart of accounts and fiscal calendars.
+    - Define budget approval rules.
+  * **Procurement Management:**
+    - Create workflows for vendor approval and procurement requests.
+    - Set thresholds for automated procurement approvals.
+  * **HR and Payroll:**
+    - Configure payroll cycles, tax rules, and employee benefits.
+
+*Practical Exercise:* Students simulate the configuration of procurement policies and workflows based on a sample organizational policy.
+
+<<<
+
+==== User Role and Permission Management
+Role-based access control (RBAC) ensures that only authorized users can access sensitive data and perform critical tasks.
+
+- *Defining Roles:*
+  * Map roles such as Finance Manager, HR Specialist, and Procurement Officer.
+  * Assign permissions to enable or restrict module-specific access.
+
+- *Maintaining Security:*
+  * Audit user roles regularly for compliance.
+  * Monitor logs for unauthorized access attempts.
+
+*Instructor Note:* Provide a list of sample roles and discuss the implications of incorrect role assignments.
+
+<<<
+
+==== Troubleshooting and Optimization
+Configuring a system effectively requires proactive troubleshooting and optimization for long-term efficiency.
+
+- *Common Challenges and Solutions:*
+  * **Slow System Performance:** Optimize database indexing and review server load.
+  * **Access Issues:** Check role permissions and resolve misconfigurations.
+  * **Workflow Errors:** Debug automation steps to identify broken links or conditions.
+
+- *Optimization Tips:*
+  * Schedule periodic performance reviews.
+  * Implement redundancy to ensure high availability.
+
+*Case Study:* A city government identifies misconfigured user roles causing delays in purchase order approvals. Students analyze the problem and propose solutions.
+
+<<<
+
+[appendix]
+=== Glossary
+- **RBAC (Role-Based Access Control):** A security model for managing user permissions based on roles.
+- **SOA (Service-Oriented Architecture):** A design paradigm that enables modular application components to communicate.
+- **Database Indexing:** A method to improve the speed of database queries.
+
+[discrete]
+=== Additional Notes
+*Instructor Tip:* Encourage learners to document configuration changes meticulously for easier troubleshooting and audits.

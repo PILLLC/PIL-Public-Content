@@ -1,0 +1,435 @@
+= CGI Advantage 4 – Grant Lifecycle Management (GLM)
+:doctype: book
+:icons: font
+:toc: left
+:toclevels: 3
+:sectnums:
+:sectnumlevels: 3
+:chapter-label:
+:page-layout: portrait
+
+Trainer Delivery Companion  
+4 × 45-Minute GLM Demonstrations
+
+---
+
+== How to Use This Document
+
+This document is a *trainer reference*, not a slide script.
+
+It is designed to:
+- Sit beside the delivery deck during live demos
+- Provide exact transaction/page intent and business rules
+- Support unscripted questions without derailing flow
+- Preserve institutional knowledge across GLM stages
+
+GLM should be positioned as the **system of record for grant intent, decisions, and compliance**, distinct from budgeting, accounting, and payments.
+
+---
+
+== GLM Lifecycle Overview
+
+GLM tracks the full lifecycle of a grant from *opportunity awareness* through *close-out and audit*.
+
+The lifecycle progresses through seven stages:
+
+. Opportunity Identification
+. Response Decision
+. Application
+. Award
+. Post-Award Alignment
+. Amendment
+. Close-Out / Audit
+
+The lifecycle is anchored by the *Grant ID*, which is created at application and persists through award, amendment, and close-out.
+
+All stages roll up into the *Grant Tracking Summary (GRNTSUM)* inquiry.
+
+---
+
+= SESSION 1 (45 Minutes)
+== GLM Overview + Stage 1: Opportunity Identification
+
+=== Session Purpose
+
+Introduce GLM as a lifecycle tracking system that answers:
+- Why a grant exists
+- Who made decisions
+- When actions occurred
+- What obligations were created
+
+Emphasize that GLM:
+- Does *not* create budgets
+- Does *not* post accounting entries
+- Does provide authoritative audit context
+
+---
+
+== Stage 1 – Opportunity Identification
+
+=== GTAOD – Available Grant Opportunity Detail
+
+Purpose::
+Stores grant opportunity data imported from Grants.gov.
+
+Key Characteristics::
+- Loaded via batch (Update Grant Opportunity)
+- Read-only reference
+- External data source
+- Not a lifecycle object
+
+Trainer Emphasis::
+This is *intelligence ingestion*, not internal decision-making.
+
+---
+
+=== GTAOS – Available Grant Opportunity Summary
+
+Purpose::
+Search and summarize available opportunities.
+
+Key Characteristics::
+- Search/filter entry point
+- Launch point for creating GTOP
+- Used by agencies to triage opportunities
+
+Trainer Emphasis::
+This is where agencies decide *whether* to engage.
+
+---
+
+=== GTOP – Grant Opportunity (Document)
+
+Purpose::
+Creates the internal representation of a grant opportunity.
+
+Creates / Updates::
+- GTOPSF (Opportunity Status Folder)
+- GTNTSF (Notification Status Folder)
+
+Key Characteristics::
+- Captures opportunity ownership
+- Establishes internal accountability
+- Enables notifications and alerts
+
+---
+
+=== GTOPSF – Grant Opportunity Status Folder
+
+Core Sections::
+- General Information
+- Funding Agency
+- Funding Agency Contact
+- Pass-Through Agency
+- Comments
+
+Business Rules::
+- Department required
+- Opportunity ID must be unique
+- Funding agency data drives downstream award context
+
+Trainer Emphasis::
+GTOPSF is where an opportunity becomes *institutional knowledge*.
+
+---
+
+=== GTNTSF – Grant Notification Status Folder
+
+Purpose::
+Identifies who is notified about the opportunity.
+
+Key Characteristics::
+- Uses Grant Users or Alert User Groups
+- Drives alerts and reminders
+- Supports governance and accountability
+
+Trainer Emphasis::
+Notifications are not just emails—they drive workflow discipline.
+
+---
+
+=== Batch Process – Update Grant Opportunity
+
+Purpose::
+Imports Grants.gov XML into Advantage.
+
+Key Characteristics::
+- Updates GTAOD and GTAOS
+- Typically centrally scheduled
+- Does not create lifecycle records
+
+---
+
+=== Session 1 Demo Flow (Suggested)
+
+. Search GTAOS
+. Drill into GTAOD
+. Create GTOP
+. Walk GTOPSF tabs
+. Review GTNTSF recipients
+. Preview lifecycle in GRNTSUM
+
+---
+
+= SESSION 2 (45 Minutes)
+== Stage 2: Response + Stage 3: Application
+
+=== Session Framing
+
+Stages 2 and 3 answer:
+- Are we applying?
+- What did we submit?
+
+This is where *governance* turns into *execution*.
+
+---
+
+== Stage 2 – Response
+
+=== GTRE – Grant Response (Document)
+
+Purpose::
+Records the agency’s decision to apply or not apply.
+
+Updates::
+- GTRESF
+
+---
+
+=== GTRESF – Grant Response Status Folder
+
+Tracks::
+- Apply / Not Apply decision
+- Decline reason
+- Decision date
+
+Business Rules::
+- Decision required
+- Decline reason required if “Not Apply”
+- Completion date required once response entered
+
+Trainer Emphasis::
+GTRESF preserves decision history and prevents silent drop-off.
+
+---
+
+== Stage 3 – Application
+
+=== GTAP – Grant Application (Document)
+
+Purpose::
+Creates the formal grant application record.
+
+Updates::
+- GTAPSF
+
+Critical Concept::
+The *Grant ID is created here* and persists for the full lifecycle.
+
+---
+
+=== GTAPSF – Grant Application Status Folder
+
+Core Sections::
+- General Information
+- Contact Information
+- Pre-Application Information
+- Application Information
+- Supporting Agencies
+- Application Dates
+- Comments
+
+Key Business Rules::
+- Grant ID is mandatory and persistent
+- Contact information is required
+- Date rows require a grant date code
+- Date templates reduce audit risk
+
+Trainer Emphasis::
+Opportunity ID and Grant ID are not the same—and serve different purposes.
+
+---
+
+=== Session 2 Demo Flow (Suggested)
+
+. Open GTRESF and record Apply decision
+. Create GTAP
+. Walk GTAPSF sections
+. Emphasize Grant ID continuity
+. Review lifecycle status in GRNTSUM
+
+---
+
+= SESSION 3 (45 Minutes)
+== Stage 4: Award + Stage 5: Post-Award Alignment
+
+=== Session Framing
+
+Stage 4 converts intent into obligation.  
+Stage 5 positions GLM as the authoritative context provider.
+
+---
+
+== Stage 4 – Award
+
+=== GTAW – Grant Award (Document)
+
+Purpose::
+Records award details and acceptance.
+
+Updates::
+- GTAWSF
+
+---
+
+=== GTAWSF – Grant Award Status Folder
+
+Core Sections::
+- General Information
+- Grant Award Information
+- Agreement Information
+- Award Administrator Contact
+- Award Dates
+- Comments
+
+Critical Business Rules::
+- Awarded Amount required
+- Award Notification Date required
+- Awarded amount becomes amendment baseline
+
+Trainer Emphasis::
+Awards lock history; amendments layer changes.
+
+---
+
+== Stage 5 – Post-Award Alignment
+
+What GLM Does Not Do::
+- Create budgets
+- Distribute funds
+- Post accounting transactions
+
+What GLM Does::
+- Maintain authoritative award record
+- Provide reporting and audit context
+- Integrate with Cost Accounting and compliance processes
+
+Trainer Positioning::
+GLM explains *why* money exists—not how it moves.
+
+---
+
+=== Session 3 Demo Flow (Suggested)
+
+. Create GTAW from application
+. Walk GTAWSF tabs
+. Highlight awarded amount rules
+. Explain downstream integration
+. Review GRNTSUM award status
+
+---
+
+= SESSION 4 (45 Minutes)
+== Stage 6: Amendment + Stage 7: Close-Out / Audit
+
+=== Session Framing
+
+Most grant risk lives in change management and closure.
+
+---
+
+== Stage 6 – Amendment
+
+=== GTAM – Grant Amendment (Document)
+
+Purpose::
+Records changes to an awarded grant.
+
+Updates::
+- GTAMSF
+
+---
+
+=== GTAMSF – Grant Amendment Status Folder
+
+Amendment Types::
+- Dollar change
+- End date change
+- Scope change
+- Termination
+- Return of funds
+
+Business Rules::
+- Amendment type drives required fields
+- Amendments do not overwrite award history
+- Awarded amount becomes cumulative
+
+Trainer Emphasis::
+Amendments preserve intent and chronology.
+
+---
+
+== Stage 7 – Close-Out and Audit
+
+=== GTCO – Grant Close-Out / Audit (Document)
+
+Purpose::
+Records audit completion and closes the grant.
+
+Updates::
+- GTCOSF
+
+---
+
+=== GTCOSF – Grant Close-Out / Audit Status Folder
+
+Tracks::
+- Audit status
+- Final reporting
+- Grant closure
+
+System Behavior::
+- Close Grant may inactivate grant-related accounting codes
+- Opportunity lifecycle is finalized
+
+Trainer Emphasis::
+Close-out is a control point, not paperwork.
+
+---
+
+=== Alerts and Governance
+
+=== Generate Alerts (Batch)
+
+Purpose::
+Sends reminders for:
+- Missing responses
+- Incomplete applications
+- Reporting deadlines
+- Pending close-outs
+
+Trainer Emphasis::
+Alerts reduce institutional risk and reliance on memory.
+
+---
+
+=== Session 4 Demo Flow (Suggested)
+
+. Open GTAMSF and apply amendment
+. Show cumulative impact
+. Create GTCO
+. Walk GTCOSF
+. Review alert generation
+. Final GRNTSUM walkthrough
+
+---
+
+== Final Trainer Reminder
+
+GLM is the system of record for:
+- Grant intent
+- Decisions
+- Obligations
+- Compliance
+
+It provides auditability, governance, and continuity across administrations, staff turnover, and funding cycles.

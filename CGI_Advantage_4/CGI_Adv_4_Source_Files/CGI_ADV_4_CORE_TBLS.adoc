@@ -1,0 +1,135 @@
+== Module {module-number}: Core Tables in HRM and FIN Modules for CGI Advantage 4
+
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+{SP}
+{SP}
+
+=== HRM Core Tables
+
+==== 1. Employee Profile (EMP)
+
+[cols="1,1,1,1,1,1,1", options="header"]
+|===
+| Employee ID | First Name | Last Name | Department Code | Job Code | Pay Grade | Status
+
+| 1001        | John       | Doe       | HR01            | HRMGR    | P5        | Active
+| 1002        | Jane       | Smith     | FIN02           | FINACCT  | P3        | Active
+| 1003        | Alice      | Johnson   | IT03            | ITDEV    | P4        | Inactive
+| 1004        | Bob        | Lee       | HR01            | HRASST   | P2        | Active
+|===
+
+==== 2. Employee Address (EAD)
+
+[cols="1,1,2,1,1,1", options="header"]
+|===
+| Employee ID | Address Type | Address Line 1       | City       | State | Zip Code
+
+| 1001        | Home         | 123 Elm St.          | Anytown    | CA    | 90001
+| 1002        | Work         | 456 Oak Ave.         | Big City   | NY    | 10010
+| 1003        | Home         | 789 Pine Rd.         | Smallville | TX    | 75001
+| 1004        | Work         | 321 Maple Blvd.      | Capital    | DC    | 20001
+|===
+
+==== 3. Payroll Run (PRR)
+
+[cols="1,1,1,1,1", options="header"]
+|===
+| Payroll Run ID | Pay Period Start | Pay Period End | Pay Date   | Status
+
+| PR202401       | 2024-01-01       | 2024-01-15    | 2024-01-20 | Closed
+| PR202402       | 2024-01-16       | 2024-01-31    | 2024-02-05 | Closed
+| PR202403       | 2024-02-01       | 2024-02-15    | 2024-02-20 | Pending
+| PR202404       | 2024-02-16       | 2024-02-29    | 2024-03-05 | Scheduled
+|===
+
+==== 4. Benefits Enrollment (ENR)
+
+[cols="1,1,1,1,1", options="header"]
+|===
+| Employee ID | Benefit Plan ID | Enrollment Date | Coverage Level | Status
+
+| 1001        | MED01           | 2023-01-01      | Family         | Active
+| 1002        | DEN01           | 2023-02-15      | Individual     | Active
+| 1003        | VSN01           | 2023-03-01      | Family         | Inactive
+| 1004        | MED01           | 2023-04-01      | Individual     | Active
+|===
+
+==== 5. Time Entry (TME)
+
+[cols="1,1,1,1,1,1", options="header"]
+|===
+| Time Entry ID | Employee ID | Date       | Hours Worked | Time Code | Approval Status
+
+| TE10001       | 1001        | 2024-01-10 | 8            | REG       | Approved
+| TE10002       | 1002        | 2024-01-11 | 8            | REG       | Pending
+| TE10003       | 1003        | 2024-01-12 | 6            | SICK      | Approved
+| TE10004       | 1004        | 2024-01-13 | 4            | VAC       | Rejected
+|===
+
+=== FIN Core Tables
+
+==== 1. General Ledger Account (GAC)
+
+[cols="1,2,1,1,1", options="header"]
+|===
+| Account ID | Account Name        | Account Type | Fund Code | Department Code
+
+| 5000       | Salaries Expense     | Expense      | GF01      | HR01
+| 6000       | Office Supplies      | Expense      | GF02      | FIN02
+| 7000       | IT Equipment         | Expense      | GF03      | IT03
+| 8000       | Training Budget      | Expense      | GF01      | HR01
+|===
+
+==== 2. Accounts Payable Invoice (API)
+
+[cols="1,1,1,1,1,1", options="header"]
+|===
+| Invoice ID | Vendor ID | Invoice Date | Due Date   | Amount   | Status
+
+| INV1001    | VEND001   | 2024-01-01   | 2024-01-15 | 1000.00  | Paid
+| INV1002    | VEND002   | 2024-01-10   | 2024-01-25 | 500.00   | Pending
+| INV1003    | VEND003   | 2024-01-12   | 2024-01-30 | 750.00   | Approved
+| INV1004    | VEND004   | 2024-01-15   | 2024-01-31 | 200.00   | Rejected
+|===
+
+==== 3. Accounts Receivable Invoice (ARI)
+
+[cols="1,1,1,1,1,1", options="header"]
+|===
+| Invoice ID | Customer ID | Invoice Date | Due Date   | Amount   | Status
+
+| ARINV1001  | CUST001     | 2024-01-05   | 2024-01-20 | 1500.00  | Open
+| ARINV1002  | CUST002     | 2024-01-07   | 2024-01-22 | 2500.00  | Closed
+| ARINV1003  | CUST003     | 2024-01-10   | 2024-01-25 | 1800.00  | Open
+| ARINV1004  | CUST004     | 2024-01-15   | 2024-01-30 | 3000.00  | Pending
+|===
+
+==== 4. Budget Structure (BST)
+
+[cols="1,1,1,1,1,1,1", options="header"]
+|===
+| Budget ID | Fiscal Year | Fund Code | Department Code | Original Budget | Adjustments | Available Budget
+
+| BUD2024A  | 2024        | GF01      | HR01            | 50000.00        | 0.00        | 50000.00
+| BUD2024B  | 2024        | GF02      | FIN02           | 75000.00        | 5000.00     | 80000.00
+| BUD2024C  | 2024        | GF03      | IT03            | 100000.00       | -10000.00   | 90000.00
+| BUD2024D  | 2024        | GF01      | HR01            | 30000.00        | 0.00        | 30000.00
+|===
+
+==== 5. Cash Receipt (CR)
+
+[cols="1,1,1,1,1,1", options="header"]
+|===
+| Receipt ID | Customer ID | Receipt Date | Payment Amount | Payment Method | Status
+
+| CR1001     | CUST001     | 2024-01-05   | 1500.00       | Check          | Applied
+| CR1002     | CUST002     | 2024-01-10   | 2000.00       | ACH            | Pending
+| CR1003     | CUST003     | 2024-01-12   | 1800.00       | Credit Card    | Applied
+| CR1004     | CUST004     | 2024-01-15   | 3000.00       | Check          | Rejected
+|===
+

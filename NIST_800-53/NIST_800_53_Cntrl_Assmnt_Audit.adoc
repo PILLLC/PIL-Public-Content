@@ -1,0 +1,34 @@
+== Module {module-number}: Control Assessment and Auditing
+
+=== Summary
+An overview of the process for assessing and auditing NIST 800-53 controls.
+
+=== Objectives
+
+- Explain the purpose of control assessments.
+- Outline the steps for conducting a NIST control audit.
+
+=== Evaluate Design and Effectiveness
+Assessing controls involves evaluating their design and effectiveness to ensure they are appropriately mitigating risks. Control assessments are a critical part of maintaining ongoing compliance and improving the security posture of an organization. These assessments help identify gaps, weaknesses, or areas for improvement in control implementation.
+
+==== Steps in the Control Assessment Process
+
+1. **Preparation:** Define the scope of the assessment, including the controls to be evaluated and the assessment methods.
+2. **Documentation Review:** Examine relevant policies, procedures, and system documentation to ensure they align with control requirements.
+3. **Interviews and Observations:** Conduct interviews with key personnel and observe control implementation in practice to gather qualitative insights.
+4. **Technical Testing:** Perform technical tests, such as vulnerability scans or security audits, to verify the operational effectiveness of controls.
+5. **Assessment Reporting:** Document findings, including identified gaps, recommendations for improvement, and an action plan to address deficiencies.
+
+=== Purpose of Control Assessments
+
+- To verify that controls are functioning as intended.
+- To assess whether controls align with organizational risk management strategies.
+- To provide evidence of compliance with regulatory and security frameworks.
+
+**Audits vs. Assessments:**
+While assessments are often internal and continuous, audits can be formal, periodic evaluations conducted by external parties to validate control compliance. Both approaches are essential for ensuring a robust security posture.
+
+ifeval::["{artifact-type}" == "IG"]
+
+*Instructor note:* Discuss best practices for preparing for audits, including documentation readiness and conducting pre-audit assessments. Encourage participants to share experiences from past audits and lessons learned.
+endif::[]

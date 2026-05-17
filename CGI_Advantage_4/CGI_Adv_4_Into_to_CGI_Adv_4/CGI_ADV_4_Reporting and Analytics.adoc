@@ -1,0 +1,157 @@
+== Module {module-number}: Reporting and Analytics
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+{SP}
+{SP}
+
+[discrete]
+=== Learning Objectives
+
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::agenda.svg[align="left",pdfwidth=50%]|Upon completion of this module, students should be able to:
+
+* Master the use of reporting tools within CGI Advantage 4 to create, customize, and distribute reports.
+* Gain skills in data analytics and business intelligence to drive data-driven decision-making.
+* Learn how to implement and utilize data visualization techniques to effectively present business insights.
+* Understand advanced data modeling and reporting techniques for strategic decision-making.
+* Optimize data integration for enhanced reporting and analytics across multiple systems.
+|===
+
+<<<
+
+=== Reporting Tools and Features
+
+==== Overview of Reporting Tools
+CGI Advantage 4 provides robust reporting tools that cater to standard and customized reporting needs, ensuring that organizations can generate insightful reports efficiently.
+
+- *Comprehensive Reporting Ecosystem:*
+  * Standard Reports: Pre-built reports for financial, procurement, HR, and operational metrics.
+  * Custom Reports: Flexible tools to design reports that meet unique organizational needs.
+  * Ad Hoc Reporting: Real-time query capabilities for immediate insights.
+
+- *Report Automation:*
+  * Schedule periodic reports for automated generation and distribution.
+  * Configure custom triggers to generate reports based on specific events.
+
+- *Enhanced Distribution Features:*
+  * Control access levels for shared reports to maintain data security.
+  * Automate notifications and delivery through email, system portals, or external integration.
+
+*Activity Suggestion:* Create a custom financial report and schedule it for automated weekly delivery.
+
+<<<
+
+==== Creating and Customizing Reports
+Tailored reporting ensures that stakeholders have the right insights at the right time. This section provides a step-by-step guide to report customization.
+
+- *Report Creation Workflow:*
+  1. Select Data Sources: Use multiple tables or APIs as input.
+  2. Define Fields: Choose and customize fields to display in the report.
+  3. Apply Filters: Segment data using parameters, such as time periods or departments.
+
+- *Advanced Customization:*
+  * Introduce conditional formatting for highlighting key metrics (e.g., budget variances).
+  * Create dynamic fields for real-time data aggregation and calculation.
+
+- *Template Libraries:*
+  * Save frequently used report structures as templates.
+  * Share templates across departments to standardize reporting practices.
+
+*Instructor Note:* Demonstrate how to balance performance optimization with report complexity.
+
+<<<
+
+==== Scheduled and Ad Hoc Reporting
+Efficient reporting strategies often involve a mix of scheduled and on-demand (ad hoc) reporting.
+
+- *Scheduled Reporting:*
+  * Automate recurring reports to ensure timely insights.
+  * Use dependencies to trigger reports after data imports or key processes.
+
+- *Ad Hoc Reporting:*
+  * Leverage query builders for immediate access to live data.
+  * Save ad hoc queries for reuse and modification as needs evolve.
+
+- *Centralized Monitoring:*
+  * Track the status and success of scheduled reports via the system dashboard.
+  * Receive alerts for failed report jobs or incomplete processes.
+
+*Case Study:* A state finance department uses automated monthly budget reports to streamline fiscal reviews.
+
+<<<
+
+=== Data Analytics and Business Intelligence
+
+==== Introduction to Data Analytics
+Advanced analytics tools in CGI Advantage 4 enable organizations to derive actionable insights from large and complex datasets.
+
+- *Types of Analytics:*
+  * Descriptive Analytics: Historical data trends and summaries.
+  * Diagnostic Analytics: Identify root causes of observed trends.
+  * Predictive Analytics: Forecast future trends using AI and statistical models.
+  * Prescriptive Analytics: Recommend actions based on analytics.
+
+- *Data Sources and Preparation:*
+  * Integrate data from CGI Advantage 4 modules and external systems.
+  * Clean and standardize data to enhance analysis accuracy.
+
+- *Analytics Dashboards:*
+  * Set up interactive dashboards that provide drill-down capabilities.
+  * Customize dashboards for specific roles or decision-making contexts.
+
+*Activity Suggestion:* Create a dashboard summarizing procurement data, including vendor performance metrics.
+
+<<<
+
+==== Implementing Business Intelligence Solutions
+Business Intelligence (BI) bridges the gap between raw data and actionable insights, enabling organizations to make informed decisions.
+
+- *BI Platform Integration:*
+  * Link CGI Advantage 4 to BI tools like Tableau, Power BI, or Qlik.
+  * Use APIs to ensure seamless data flow between systems.
+
+- *Custom KPIs and Metrics:*
+  * Define KPIs aligned with organizational goals (e.g., on-time payments, procurement savings).
+  * Create scorecards to visualize progress toward targets.
+
+- *Advanced Techniques:*
+  * Incorporate trend analysis and predictive analytics for strategic planning.
+  * Automate alerts for anomalies, such as sudden budget overages.
+
+*Case Study:* A municipality uses KPI dashboards to improve vendor management and achieve cost reductions.
+
+<<<
+
+==== Data Visualization Techniques
+Visual storytelling transforms data into actionable insights by presenting complex data in intuitive formats.
+
+- *Effective Visualization Design:*
+  * Choose visualization types based on the data: bar charts for comparisons, line graphs for trends, heatmaps for distribution.
+  * Use consistent color schemes and annotations for clarity.
+
+- *Advanced Visualization Tools:*
+  * Enable interactivity with filters and drill-downs.
+  * Highlight outliers or anomalies with conditional formatting.
+
+- *Exporting and Sharing Visualizations:*
+  * Embed visualizations in presentations or reports.
+  * Use APIs to integrate visuals into external systems for broader access.
+
+*Activity Suggestion:* Task participants with designing a visualization that highlights department-level spending trends.
+
+<<<
+
+[appendix]
+=== Glossary
+- **KPI (Key Performance Indicator):** A measurable value that indicates how effectively an organization achieves objectives.
+- **ETL (Extract, Transform, Load):** A process for preparing and migrating data.
+- **Ad Hoc Reporting:** Custom reports created for immediate or specific needs.
+
+[discrete]
+=== Additional Notes
+*Instructor Tip:* Emphasize the importance of linking analytics to actionable decisions to maximize impact.

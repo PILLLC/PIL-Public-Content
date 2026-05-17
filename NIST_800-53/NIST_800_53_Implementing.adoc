@@ -1,0 +1,36 @@
+== Module {module-number}: Implementing NIST Controls
+
+=== Summary
+Guidelines for implementing security and privacy controls effectively.
+
+=== Objectives
+
+- Describe the process of implementing NIST controls.
+- Discuss common challenges in implementation and how to overcome them.
+
+=== Structured Approach
+The successful implementation of NIST 800-53 controls requires a structured approach that includes risk assessment, control selection, and control validation. Organizations must tailor controls to their unique risk profiles and operational needs.
+
+==== Implementation Steps
+
+1. **Conduct a Risk Assessment:** Identify threats, vulnerabilities, and the potential impact of security incidents to determine which controls are necessary.
+2. **Select Appropriate Controls:** Use the NIST control catalog to choose controls that align with identified risks and business requirements.
+3. **Develop an Implementation Plan:** Define how each control will be implemented, including timelines, responsibilities, and required resources.
+4. **Implement the Controls:** Integrate controls into the organization's IT infrastructure, policies, and procedures.
+5. **Validate Control Effectiveness:** Perform testing, monitoring, and assessments to ensure controls are functioning as intended.
+
+=== Challenges and Solutions
+
+- **Challenge:** Limited resources for control implementation.  
+  - *Solution:* Prioritize controls based on risk levels and criticality.
+
+- **Challenge:** Resistance to change within the organization.  
+  - *Solution:* Provide training and communicate the importance of cybersecurity.
+
+- **Challenge:** Keeping controls up to date with evolving threats.  
+  - *Solution:* Implement a continuous monitoring program to identify and address new risks.
+
+ifeval::["{artifact-type}" == "IG"]
+
+*Instructor note:* Discuss common implementation pitfalls and how to avoid them. Encourage participants to share their experiences with implementing security controls.
+endif::[]

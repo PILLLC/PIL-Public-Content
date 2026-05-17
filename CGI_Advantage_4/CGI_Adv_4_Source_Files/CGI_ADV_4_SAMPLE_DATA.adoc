@@ -1,0 +1,189 @@
+== Module {module-number}: Sample Data for FIN and HRM Modules in CGI Advantage 4
+
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+{SP}
+{SP}
+  
+=== Financial Management (FIN) Module
+
+==== 1. General Ledger Accounts (GL_ACCOUNT)
+
+[cols="2,4,2,2", options="header"]
+|===
+| Account ID | Account Description         | Account Type | Department Code
+
+| 4000       | Tuition Revenue             | Revenue      | EDU01
+| 5000       | Salaries Expense            | Expense      | HR01
+| 6000       | Office Supplies Expense     | Expense      | FIN02
+| 7000       | IT Equipment Expense        | Expense      | IT03
+| 8000       | Training Budget             | Expense      | HR01
+|===
+
+==== 2. Vendors (VENDOR_PROFILE)
+
+[cols="2,4,2,3", options="header"]
+|===
+| Vendor ID  | Vendor Name                 | Payment Terms | Contact Info
+
+| VEND001    | ABC Office Supplies Co.     | Net 30        | contact@abcoffice.com
+| VEND002    | XYZ Consulting Services     | Net 45        | billing@xyzconsult.com
+| VEND003    | Global IT Solutions         | Net 15        | it@globalitsolutions.com
+| VEND004    | Training Excellence Inc.    | Net 60        | info@trainingexcellence.com
+|===
+
+==== 3. Customers (CUSTOMER_PROFILE)
+
+[cols="2,4,3", options="header"]
+|===
+| Customer ID | Customer Name              | Contact Info
+
+| CUST001     | Springfield School District | billing@schools.org
+| CUST002     | Grant Foundation            | finance@grantfoundation.org
+| CUST003     | Education Sponsorship Fund  | payments@educationsponsors.org
+|===
+
+==== 4. Budget Structures (BUDGET_STRUCTURE)
+
+[cols="3,3,2,2,2", options="header"]
+|===
+| Budget ID | Fiscal Year | Fund Code | Department Code | Original Budget
+
+| BUD2024A  | 2024        | GF01      | HR01            | 500000.00
+| BUD2024B  | 2024        | GF02      | FIN02           | 250000.00
+| BUD2024C  | 2024        | GF03      | IT03            | 150000.00
+|===
+
+==== 5. Purchase Orders (PURCHASE_ORDER)
+
+[cols="2,4,3,2,3", options="header"]
+|===
+| PO Number | Vendor Name                 | Date       | Status   | Total Amount
+
+| PO1001    | ABC Office Supplies Co.     | 2024-01-10 | Approved | 2000.00
+| PO1002    | XYZ Consulting Services     | 2024-01-12 | Approved | 5000.00
+| PO1003    | Global IT Solutions         | 2024-01-15 | Pending  | 7500.00
+| PO1004    | Training Excellence Inc.    | 2024-01-18 | Rejected | 3000.00
+|===
+
+==== 6. Invoices (AP_INVOICE)
+
+[cols="2,4,3,2,3", options="header"]
+|===
+| Invoice ID | Vendor Name                 | Date       | Status   | Amount Due
+
+| INV1001    | ABC Office Supplies Co.     | 2024-01-05 | Paid     | 1000.00
+| INV1002    | XYZ Consulting Services     | 2024-01-07 | Pending  | 2500.00
+| INV1003    | Global IT Solutions         | 2024-01-10 | Approved | 1500.00
+|===
+
+==== 7. Payments (AP_PAYMENT)
+
+[cols="2,4,3,2", options="header"]
+|===
+| Payment ID | Invoice ID                  | Date       | Amount Paid
+
+| PAY1001    | INV1001                     | 2024-01-15 | 1000.00
+| PAY1002    | INV1002                     | 2024-01-20 | 2500.00
+| PAY1003    | INV1003                     | 2024-01-25 | 1500.00
+|===
+
+==== 8. Journal Entries (GL_JOURNAL)
+
+[cols="2,3,4,3", options="header"]
+|===
+| Journal ID | Date       | Description                     | Total Amount
+
+| JE1001     | 2024-01-03 | Office Supplies Expense Entry   | 2000.00
+| JE1002     | 2024-01-06 | Consulting Services Payment     | 5000.00
+| JE1003     | 2024-01-08 | IT Equipment Purchase           | 7500.00
+|===
+
+=== Human Resources Management (HRM) Module
+
+==== 1. Employee Profiles (EMPLOYEE_PROFILE)
+
+[cols="2,2,2,3,3", options="header"]
+|===
+| Employee ID | First Name | Last Name | Department Code | Job Title
+
+| 1001        | John       | Doe       | HR01            | HR Manager
+| 1002        | Jane       | Smith     | FIN02           | Finance Analyst
+| 1003        | Alice      | Johnson   | IT03            | IT Specialist
+| 1004        | Bob        | Lee       | HR01            | HR Assistant
+|===
+
+==== 2. Job Titles (JOB_TITLES)
+
+[cols="3,3", options="header"]
+|===
+| Job Code | Job Title
+
+| HRMGR    | HR Manager
+| FINAN    | Finance Analyst
+| ITSPC    | IT Specialist
+| HRASST   | HR Assistant
+|===
+
+==== 3. Payroll Data (PAY_CALCULATION)
+
+[cols="2,3,3,3,3", options="header"]
+|===
+| Employee ID | Pay Period Start | Pay Period End | Gross Pay | Deductions | Net Pay
+
+| 1001        | 2024-01-01       | 2024-01-15    | 3000.00   | 300.00     | 2700.00
+| 1002        | 2024-01-01       | 2024-01-15    | 4000.00   | 400.00     | 3600.00
+| 1003        | 2024-01-01       | 2024-01-15    | 3500.00   | 350.00     | 3150.00
+| 1004        | 2024-01-01       | 2024-01-15    | 2000.00   | 200.00     | 1800.00
+|===
+
+==== 4. Benefits Plans (BENEFIT_PLAN)
+
+[cols="2,3,3", options="header"]
+|===
+| Benefit Plan ID | Plan Description        | Premium
+
+| MED01           | Medical Insurance       | 200.00
+| DEN01           | Dental Insurance        | 50.00
+| VSN01           | Vision Insurance        | 20.00
+|===
+
+==== 5. Benefits Enrollment (BENEFIT_ENROLLMENT)
+
+[cols="2,2,3,2", options="header"]
+|===
+| Employee ID | Benefit Plan ID | Coverage Level | Enrollment Date
+
+| 1001        | MED01           | Family         | 2024-01-01
+| 1002        | DEN01           | Individual     | 2024-01-01
+| 1003        | VSN01           | Family         | 2024-01-01
+| 1004        | MED01           | Individual     | 2024-01-01
+|===
+
+==== 6. Time Entries (TIME_ENTRY)
+
+[cols="2,3,3,2,2", options="header"]
+|===
+| Time Entry ID | Employee ID | Date       | Hours Worked | Time Code
+
+| TE10001       | 1001        | 2024-01-10 | 8            | REG
+| TE10002       | 1002        | 2024-01-11 | 8            | REG
+| TE10003       | 1003        | 2024-01-12 | 6            | SICK
+| TE10004       | 1004        | 2024-01-13 | 4            | VAC
+|===
+
+==== 7. Leave Balances (LEAVE_BALANCE)
+
+[cols="2,3,2,2", options="header"]
+|===
+| Employee ID | Leave Type   | Accrued Leave | Used Leave
+
+| 1001        | Vacation     | 80            | 8
+| 1002        | Sick         | 40            | 6
+| 1003        | Vacation     | 60            | 4
+| 1004        | Sick         | 30            | 2
+|===

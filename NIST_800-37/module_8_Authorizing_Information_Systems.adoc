@@ -1,0 +1,412 @@
+== Module {module-number}: Authorizing Information Systems
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+{SP}
+
+[discrete]
+=== Learning Objectives
+
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::agenda.svg[align="left",pdfwidth=50%]|Upon completion of this module, students should be able to:
+ 
+- Comprehend the ATO process.
+- Make informed risk determination and acceptance decisions.
+- Understand the AO's role in system authorization.
+|
+|===
+
+<<<
+
+=== Lesson {module-number}.1: Steps and Documentation Required for ATO
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::bullseye.svg[align="left",pdfwidth=50%]|In this lesson, we'll comprehend the ATO process, including:
+
+* Steps for Achieving ATO
+* Essential Documentation for ATO
+* Best Practices for ATO Documentation
+* Key Takeaways
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+The Authorization to Operate (ATO) is a formal declaration issued by a senior official, the Authorizing Official (AO), that authorizes an information system to operate in a particular security environment. It signifies that the system meets the required security standards. This lesson outlines the essential steps and documentation required to achieve an ATO within the Risk Management Framework (RMF) process.
+
+endif::artifact-type[]
+
+<<<
+
+==== Steps for Achieving ATO
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+. Prepare the System and Environment
+
+. Conduct Security Control Assessment (SCA)
+
+. Remediate Identified Deficiencies
+
+. Compile the Security Authorization Package
+
+. Obtain ATO from the AO
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+
+. *Prepare the System and Environment*: Ensure the information system is fully implemented with all security controls in place and operational. This preparation aligns with the RMF Prepare step and includes establishing the security context of the system.
+
+. *Conduct Security Control Assessment (SCA)*: Perform a comprehensive assessment of the implemented security controls to validate their effectiveness. This step is critical for identifying any deficiencies that need remediation before the ATO can be granted.
+
+. *Remediate Identified Deficiencies*: Address any weaknesses or deficiencies identified during the security control assessment. Remediation efforts should be documented, including the actions taken and the results of re-assessment if necessary.
+
+. *Compile the Security Authorization Package*: The package includes essential documents that provide evidence of the system's security posture. Key components of the package are described below.
+
+. *Obtain ATO from the AO*: Present the security authorization package to the AO. The AO reviews the package, assesses the residual risk, and decides whether to grant the ATO based on the risk to organizational operations, assets, or individuals.
+
+endif::artifact-type[]
+
+<<<
+
+==== Essential Documentation for ATO
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- System Security Plan (SSP)
+
+- Security Assessment Report (SAR)
+
+- Plan of Action and Milestones (POA&M)
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+
+- *System Security Plan (SSP)*: Documents the system's security requirements, the security controls in place, and how they are implemented. It provides a comprehensive overview of the security posture of the information system.
+
+- *Security Assessment Report (SAR)*: Presents the findings from the security control assessment, including details of any weaknesses or deficiencies discovered and the outcomes of the remediation efforts.
+
+- *Plan of Action and Milestones (POA&M)*: Outlines plans for addressing any remaining weaknesses or deficiencies in the security controls. It includes specific actions, responsible parties, and targeted completion dates.
+
+endif::artifact-type[]
+
+<<<
+
+==== Best Practices for ATO Documentation
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- Maintain Accuracy and Completeness
+- Standardize Documentation Processes
+- Engage Stakeholders Early
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+- *Maintain Accuracy and Completeness*: Ensure all documentation is accurate, up-to-date, and provides a complete picture of the system's security controls and risk management efforts.
+- *Standardize Documentation Processes*: Use standardized formats and templates for ATO documentation to facilitate review and understanding by the AO and other stakeholders.
+- *Engage Stakeholders Early*: Involve all relevant stakeholders, including the AO, in the early stages of the ATO process to ensure alignment with organizational risk tolerance and to address any concerns promptly.
+
+endif::artifact-type[]
+
+<<<
+
+==== Key Takeaways
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- Achieving an ATO is a critical milestone in the RMF process, indicating that an information system meets the necessary security requirements to operate safely within the organization's environment.
+- The steps to achieve an ATO involve preparation, assessment, remediation, compilation of the security authorization package, and obtaining authorization from the AO.
+- Essential documentation for ATO includes the SSP, SAR, and POA&M, with best practices emphasizing accuracy, completeness, and stakeholder engagement throughout the process.
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+By following these steps and adhering to best practices for documentation, organizations can navigate the ATO process effectively, ensuring that information systems are authorized to operate with an acceptable level of residual risk.
+
+endif::artifact-type[]
+
+<<<
+
+=== Lesson {module-number}.2: Risk Determination, Acceptance, and Criteria for Authorization Decisions
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::bullseye.svg[align="left",pdfwidth=50%]|In this lesson, we'll make informed risk determination and acceptance decisions, including:
+
+* Understanding Risk Determination
+* Risk Acceptance
+* Criteria for Authorization Decisions
+* Best Practices for Authorization Decisions
+* Key Takeaways
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+The process of risk determination, acceptance, and establishing criteria for authorization decisions is a critical phase in the Risk Management Framework (RMF) and the Authorization to Operate (ATO) process. This lesson explores how organizations assess risks, decide on their acceptability, and determine the criteria for making informed authorization decisions regarding information system operations.
+
+endif::artifact-type[]
+
+<<<
+
+==== Understanding Risk Determination
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- Comprehensive Risk Assessment
+- Evaluating Control Effectiveness
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+- *Comprehensive Risk Assessment*: Conduct a thorough risk assessment to identify vulnerabilities, threats, and potential impacts to the organization's operations, assets, or individuals. This assessment should consider both internal and external risk factors.
+- *Evaluating Control Effectiveness*: Assess the effectiveness of implemented security controls in mitigating identified risks, using the results from the security control assessment phase.
+
+endif::artifact-type[]
+
+<<<
+
+==== Risk Acceptance
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- Defining Risk Acceptance Criteria
+- Making Risk Acceptance Decisions
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+- *Defining Risk Acceptance Criteria*: Establish clear criteria for accepting risks, which should align with the organization's risk tolerance and overall security strategy. These criteria help in deciding which risks are acceptable and which require further mitigation.
+- *Making Risk Acceptance Decisions*: The Authorizing Official (AO) plays a crucial role in accepting risks. Decisions should be based on a comprehensive understanding of the risk assessment findings and the effectiveness of security controls.
+
+endif::artifact-type[]
+
+<<<
+
+==== Criteria for Authorization Decisions
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- Residual Risk
+- Compliance with Policies and Standards
+- Operational Necessity
+- Continuous Monitoring Plan
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+- *Residual Risk*: Consider the level of residual risk after all security controls have been implemented and any planned risk mitigation strategies have been accounted for. The AO must determine if the residual risk is within the organization's risk tolerance.
+- *Compliance with Policies and Standards*: Assess the system's compliance with applicable laws, regulations, and organizational policies. Non-compliance can be a critical factor in authorization decisions.
+- *Operational Necessity*: Evaluate the importance of the system's functionality to the organization's mission and operational requirements. The operational necessity may influence the AO's willingness to accept higher levels of risk.
+- *Continuous Monitoring Plan*: Review the plan for continuous monitoring of security controls and risk posture. A robust continuous monitoring strategy can provide assurance that risks will be managed effectively over the system's lifecycle.
+
+endif::artifact-type[]
+
+<<<
+
+==== Best Practices for Authorization Decisions
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- Informed Decision-Making
+- Documenting Decisions
+- Stakeholder Communication
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+- *Informed Decision-Making*: Ensure that AOs have access to comprehensive and accurate information regarding the system's security posture and risk landscape.
+- *Documenting Decisions*: Document the rationale behind authorization decisions, including the consideration of risk determination, acceptance criteria, and any conditions attached to the ATO.
+- *Stakeholder Communication*: Communicate authorization decisions and the reasoning behind them to relevant stakeholders, ensuring transparency and understanding of the risk posture.
+
+endif::artifact-type[]
+
+<<<
+
+==== Key Takeaways
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- Risk determination, acceptance, and criteria for authorization decisions are central to the ATO process, guiding how risks are assessed, managed, and accepted.
+- Establishing clear risk acceptance criteria and making informed authorization decisions are essential for managing the security and risk posture of information systems within an organization.
+- Through informed decision-making and effective communication, organizations can ensure that authorization decisions are well-founded, transparent, and aligned with the organization's risk management strategy.
+
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+This lesson highlights the importance of a structured approach to risk determination, acceptance, and the criteria for making authorization decisions, ensuring that information systems operate within acceptable risk levels.
+
+endif::artifact-type[]
+
+<<<
+
+=== Lesson {module-number}.3: Insights Into the AO's Decision-making Process
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::bullseye.svg[align="left",pdfwidth=50%]|In this lesson, we'll understand the AO's role in system authorization, including:
+
+* The Role of the Authorizing Official (AO)
+* Factors Influencing the AO's Decisions
+* The Decision-Making Process
+* Best Practices for AOs
+* Key Takeaways
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+The Authorizing Official's (AO) decision-making process is pivotal in the Risk Management Framework (RMF) and the Authorization to Operate (ATO) process. This critical role involves evaluating the security posture of information systems and making risk-based decisions on whether or not they can operate within an organization's environment. This lesson delves into the complexities of the AO's decision-making process, offering insights into how AOs balance operational needs with security risks to make informed authorization decisions.
+
+endif::artifact-type[]
+
+<<<
+    
+==== The Role of the Authorizing Official (AO)
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- Overview
+- Responsibilities
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+- *Overview*: The AO is a senior official with the authority to formally assume responsibility for operating an information system at an acceptable level of risk to organizational operations, assets, individuals, other organizations, and the nation.
+- *Responsibilities*: Beyond granting the ATO, the AO is involved in overseeing the system's continuous monitoring strategy, ensuring that risks are managed effectively throughout the system's lifecycle.
+
+endif::artifact-type[]
+
+<<<
+
+==== Factors Influencing the AO's Decisions
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- System Categorization
+- Assessment Findings
+- Residual Risk
+- Operational Requirements
+- External Factors
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+
+- *System Categorization*: Understanding the system's impact level helps the AO gauge the potential consequences of security breaches, influencing the risk acceptance threshold.
+- *Assessment Findings*: The AO reviews the Security Assessment Report (SAR) to understand the effectiveness of implemented security controls and any existing vulnerabilities or weaknesses.
+- *Residual Risk*: The AO evaluates the level of residual risk after considering the effectiveness of the security controls and any planned or implemented mitigations.
+- *Operational Requirements*: The necessity of the system's functionality for mission-critical operations can influence the AO's risk tolerance, especially if the system supports essential services.
+- *External Factors*: Compliance requirements, emerging threats, and technological advancements can all impact the AO's decision-making process, requiring a balance between security and operational needs.
+
+
+endif::artifact-type[]
+
+<<<
+
+==== The Decision-Making Process
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+1. Comprehensive Review
+2. Consultation
+3. Risk Acceptance
+4. Authorization Decision
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+
+1. *Comprehensive Review*: The AO conducts a thorough review of all documentation, including the System Security Plan (SSP), SAR, and Plan of Actions and Milestones (POA&M), to get a full picture of the system's security posture.
+2. *Consultation*: The AO may consult with cybersecurity experts, system owners, and other stakeholders to gather additional insights and perspectives on the system's risks and operational importance.
+3. *Risk Acceptance*: Based on a holistic assessment of the information and consultations, the AO decides whether the residual risk is acceptable within the context of the organization's risk tolerance and mission requirements.
+4. *Authorization Decision*: The AO issues an ATO if the risks are deemed acceptable, or may deny authorization if the risks outweigh the benefits of operating the system. The decision is documented, along with any conditions or required actions.
+
+endif::artifact-type[]
+
+<<<
+
+==== Best Practices for AOs
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- Informed Risk Management
+- Dynamic Risk Assessment
+- Stakeholder Engagement
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+- *Informed Risk Management*: AOs should base their decisions on a comprehensive understanding of the risk landscape, security controls effectiveness, and the organization's risk management strategy.
+- *Dynamic Risk Assessment*: Recognize that risk assessments are not static and should be revisited as new information becomes available or as the operational environment changes.
+- *Stakeholder Engagement*: Maintain open lines of communication with stakeholders throughout the authorization process to ensure that decisions are informed by a wide range of perspectives.
+
+endif::artifact-type[]
+
+<<<
+
+==== Key Takeaways
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- The AO's decision-making process is a critical component of the RMF, requiring a careful balance between security requirements and operational needs.
+- AOs make risk-based decisions on system authorizations, considering a multitude of factors including security assessment findings, residual risk, and operational requirements.
+- By adhering to best practices and maintaining a holistic view of the organization's risk posture, AOs can ensure that their decisions support the organization's mission while managing risks effectively.
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+Understanding the complexities and responsibilities of the AO's role enhances the organization's ability to navigate the RMF process successfully, ensuring that information systems operate within acceptable risk levels.
+
+endif::artifact-type[]   

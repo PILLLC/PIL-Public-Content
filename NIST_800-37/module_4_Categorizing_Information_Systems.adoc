@@ -1,0 +1,334 @@
+== Module {module-number}:  Categorizing Information Systems
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+{SP}
+
+[discrete]
+=== Learning Objectives
+
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::agenda.svg[align="left",pdfwidth=50%]|Upon completion of this module, students should be able to: 
+
+- Understand system categorization criteria.
+- Apply FIPS 199 and NIST SP 800-60 for categorization.
+- Assess the impact of system categorization on security controls.
+|===
+
+<<<
+
+=== Lesson {module-number}.1: Criteria and Significance of Information System Categorization
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::bullseye.svg[align="left",pdfwidth=50%]|In this lesson, we'll understand system categorization criteria, including:
+
+* Criteria for Information System Categorization
+* Significance of Information System Categorization
+* Implementing Effective Categorization
+* Key Takeaways
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+Understanding the criteria for information system categorization and recognizing its significance are pivotal in the Risk Management Framework (RMF) process. This lesson delves into the foundational aspects of system categorization, outlining the criteria used to determine the security category of information systems and explaining why categorization is crucial for effective risk management.
+
+endif::artifact-type[]
+
+<<<
+
+==== Criteria for Information System Categorization
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- Impact Levels
+- Types of Information Processed
+- Regulatory and Compliance Requirements
+
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+- *Impact Levels*: Categorization is based on the potential impact to an organization if certain events occur, such as loss of confidentiality, integrity, or availability. These impact levels are defined in FIPS 199 as low, moderate, or high.
+- *Types of Information Processed*: The nature of the information processed by the system significantly influences its categorization. Systems handling sensitive personal data, financial records, or national security information may require higher categorization levels.
+- *Regulatory and Compliance Requirements*: Legal and regulatory obligations also play a critical role in categorization decisions. Systems must be categorized to ensure compliance with laws and regulations applicable to the organization's sector and operations.
+
+endif::artifact-type[]
+
+<<<
+
+==== Significance of Information System Categorization
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- Determines Security Control Baseline
+- Informs Risk Management Decisions
+- Facilitates Compliance and Reporting
+
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+- *Determines Security Control Baseline*: The categorization of an information system directly influences the selection of an appropriate set of baseline security controls, as outlined in NIST SP 800-53. Higher impact levels necessitate more stringent controls.
+- *Informs Risk Management Decisions*: Categorization helps organizations prioritize their risk management efforts based on the potential impact of security breaches, guiding the allocation of resources to where they are most needed.
+- *Facilitates Compliance and Reporting*: By categorizing systems in alignment with regulatory requirements, organizations can streamline compliance processes and simplify reporting to oversight bodies.
+
+endif::artifact-type[]
+
+<<<
+
+==== Implementing Effective Categorization
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- Stakeholder Engagement
+- Continuous Reassessment
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+- *Stakeholder Engagement*: Engaging stakeholders from across the organization ensures that all relevant factors, including operational needs and compliance obligations, are considered in the categorization process.
+- *Continuous Reassessment*: As organizational objectives, technologies, and threat landscapes evolve, the categorization of information systems should be periodically reassessed to ensure it remains accurate and relevant.
+
+endif::artifact-type[]
+
+<<<
+
+==== Key Takeaways
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- Information system categorization is a critical initial step in the RMF that sets the stage for the entire framework, determining the rigor of security controls and the focus of risk management activities.
+- The process of categorization is guided by the potential impact on the organization, the types of information processed, and compliance requirements, ensuring that security efforts are aligned with the system's risk profile.
+- Proper categorization is essential for effective risk management, enabling organizations to prioritize resources, ensure regulatory compliance, and enhance the overall security posture of their information systems.
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+By understanding the criteria and significance of system categorization, organizations can lay a solid foundation for the RMF process, ensuring that security measures are appropriately tailored to the risks faced by each information system.
+
+endif::artifact-type[]
+
+<<<
+
+=== Lesson {module-number}.2: Guidelines for Using FIPS 199 and NIST SP 800-60
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::bullseye.svg[align="left",pdfwidth=50%]|In this lesson, we'll apply FIPS 199 and NIST SP 800-60 for categorization, including:
+
+* Understanding FIPS 199
+* Utilizing NIST SP 800-60
+* Guidelines for Effective Use
+* Key Takeaways
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+Federal Information Processing Standards (FIPS) 199 and NIST Special Publication (SP) 800-60 are critical documents that guide the categorization of federal information systems based on risk levels. This lesson provides an overview of how these documents are used within the Risk Management Framework (RMF) to ensure effective and consistent categorization of information systems, aligning security efforts with the potential impact of loss.
+
+endif::artifact-type[]
+
+<<<
+
+==== Understanding FIPS 199
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- Purpose and Application
+- Categorization Process
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+- *Purpose and Application*: FIPS 199, "Standards for Security Categorization of Federal Information and Information Systems," establishes the criteria for categorizing information and information systems. The standard focuses on three security objectives: confidentiality, integrity, and availability (CIA).
+- *Categorization Process*: Organizations use FIPS 199 to assess the potential impact levels (low, moderate, or high) on each security objective if a breach occurs, leading to the overall categorization of the system.
+
+endif::artifact-type[]
+
+<<<
+
+==== Utilizing NIST SP 800-60
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- Guidance on Information Types
+- Volume I and II
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+- *Guidance on Information Types*: NIST SP 800-60, "Guide for Mapping Types of Information and Information Systems to Security Categories," provides detailed guidance on mapping types of information to the appropriate security categories as defined in FIPS 199.
+- *Volume I and II*: SP 800-60 is divided into two volumes. Volume I provides the guideline overview and instructions for applying the categorization process. Volume II offers appendices that contain mappings of information types to security categories.
+
+endif::artifact-type[]
+
+<<<
+
+==== Guidelines for Effective Use
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- Comprehensive Evaluation
+- Stakeholder Collaboration
+- Documentation and Justification
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+- *Comprehensive Evaluation*: When categorizing systems, conduct a thorough evaluation of all information processed and stored by the system, considering the potential impact on the organization of losing CIA.
+- *Stakeholder Collaboration*: Engage with stakeholders across the organization to accurately identify the types of information and understand their criticality and sensitivity, ensuring accurate categorization.
+- *Documentation and Justification*: Document the categorization process and decisions, including the rationale behind the impact levels assigned to each security objective. This documentation is vital for transparency and for informing subsequent steps in the RMF process.
+
+endif::artifact-type[]
+
+<<<
+
+==== Key Takeaways
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- FIPS 199 and NIST SP 800-60 are foundational documents that provide a standardized approach to categorizing information systems based on the potential impact on confidentiality, integrity, and availability.
+- The categorization process guided by these documents is crucial for determining the appropriate level of security controls and managing risks effectively within the RMF.
+- Organizations should apply these guidelines systematically, involving relevant stakeholders and documenting the process to ensure that information systems are categorized accurately and consistently.
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+
+By adhering to the guidelines provided in FIPS 199 and NIST SP 800-60, organizations can ensure that their information systems are categorized in a manner that reflects their true risk levels, facilitating targeted and effective risk management strategies.
+
+endif::artifact-type[]
+
+<<<
+
+=== Lesson {module-number}.3: Impact of Categorization on the Selection of Security Controls
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::bullseye.svg[align="left",pdfwidth=50%]|In this lesson, we'll assess the impact of system categorization on security controls, including:
+
+* The Role of Categorization in Security Control Selection
+* Guiding Principles for Control Selection
+* Impact on Risk Management
+* Key  Takeaways
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+The categorization of information systems, as guided by FIPS 199 and NIST SP 800-60, plays a crucial role in determining the appropriate set of security controls for those systems. This lesson explores how the impact level assigned during categorization influences the selection of security controls in the Risk Management Framework (RMF) process, ensuring that controls are tailored to meet the specific security requirements and risk levels of each system.
+
+endif::artifact-type[]
+
+<<<
+
+==== The Role of Categorization in Security Control Selection
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- Foundation for Control Selection
+- Tailoring Baseline Controls
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+- *Foundation for Control Selection*: Categorization establishes the baseline for selecting security controls by defining the system's impact level (low, moderate, or high). This impact level directly correlates with the baseline set of security controls outlined in NIST SP 800-53, "Security and Privacy Controls for Federal Information Systems and Organizations."
+- *Tailoring Baseline Controls*: Based on the categorization, organizations can tailor the baseline controls to address the specific security requirements and risk profile of the system. Tailoring may involve adding additional controls, adjusting control parameters, or, in some cases, removing controls that are not applicable.
+
+endif::artifact-type[]
+
+<<<
+
+==== Guiding Principles for Control Selection
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- Proportionality
+- Comprehensiveness
+- Flexibility
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+- *Proportionality*: The selected security controls should be proportional to the potential impact on the system as determined during the categorization process. Higher impact levels necessitate more robust and comprehensive controls.
+- *Comprehensiveness*: Ensure that the selected set of controls covers all aspects of security, including technical, operational, and management controls, to provide a holistic security posture.
+- *Flexibility*: The selection process should be flexible to accommodate changes in the system's environment, technology, and threat landscape, allowing for the adjustment of controls as necessary.
+
+endif::artifact-type[]
+
+<<<
+
+==== Impact on Risk Management
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- Aligning Controls with Risk
+- Efficiency in Resource Allocation
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+- *Aligning Controls with Risk*: The categorization-driven selection of security controls ensures that controls are aligned with the system's risk level, focusing efforts on mitigating the most significant threats and vulnerabilities.
+- *Efficiency in Resource Allocation*: By aligning the selection of controls with the system's categorization, organizations can allocate resources more efficiently, focusing on controls that offer the greatest impact on reducing risk.
+
+endif::artifact-type[]
+
+<<<
+    
+==== Key Takeaways
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- The impact level determined through system categorization is instrumental in guiding the selection and tailoring of security controls, ensuring that the controls are aligned with the system's risk profile.
+- A systematic approach to control selection, grounded in the principles of proportionality, comprehensiveness, and flexibility, enhances the effectiveness of the RMF process.
+- By ensuring that security controls are appropriately selected based on categorization, organizations can achieve a balanced approach to risk management, enhancing the security and resilience of their information systems.
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+The process of selecting security controls, informed by the system's categorization, is a critical step in the RMF that directly influences the effectiveness of an organization's cybersecurity strategy. Understanding the impact of categorization on this selection process is essential for developing a robust security posture tailored to the specific needs and risks of each information system.
+
+endif::artifact-type[]

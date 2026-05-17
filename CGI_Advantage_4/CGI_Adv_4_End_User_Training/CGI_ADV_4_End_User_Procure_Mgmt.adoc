@@ -1,0 +1,169 @@
+== Module {module-number}: Procurement Management in CGI Advantage 4
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+{SP}
+{SP}
+
+[discrete]
+=== Learning Objectives
+
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::agenda.svg[align="left",pdfwidth=50%]|Upon completion of this module, users will be able to:
+
+* Navigate and utilize the Procurement Management module in CGI Advantage 4.
+* Understand the procurement lifecycle, including requisitions, vendor selection, and purchase order creation.
+* Manage vendor profiles, contracts, and compliance requirements.
+* Utilize reporting tools to monitor procurement activities and vendor performance.
+|===
+
+<<<
+
+=== Overview of Procurement Management
+
+The Procurement Management module in CGI Advantage 4 streamlines the process of acquiring goods and services while ensuring compliance with organizational policies and regulatory requirements.
+
+- *Key Features:*
+  * Requisitioning and approvals.
+  * Vendor selection and performance tracking.
+  * Contract management and compliance monitoring.
+  * Purchase order creation and tracking.
+
+*Instructor Note:* Highlight the importance of automation in reducing procurement cycle times and ensuring accuracy.
+
+<<<
+
+=== Procurement Lifecycle
+
+==== Requisitioning
+The requisitioning process initiates procurement by identifying organizational needs and creating requests for goods or services.
+
+- **Steps to Create a Requisition:**
+  1. Navigate to the "Requisitions" page.
+  2. Select "New Requisition" and fill out required fields, including item descriptions, quantities, and cost estimates.
+  3. Attach supporting documentation (e.g., specifications or justifications).
+  4. Submit the requisition for approval.
+
+- **Approval Process:**
+  * Workflows route requisitions to the appropriate approvers based on thresholds or organizational policies.
+  * Track the status of requisitions in real-time.
+
+*Activity:* Create and submit a requisition for a new office supply order.
+
+<<<
+
+==== Vendor Selection
+Vendor selection ensures that purchases are made from approved suppliers who meet organizational and regulatory standards.
+
+- **Vendor Evaluation Criteria:**
+  * Cost competitiveness.
+  * Quality and reliability of goods or services.
+  * Vendor compliance with certifications or regulations.
+
+- **Vendor Selection Process:**
+  1. Access the "Vendor Directory" to identify approved vendors.
+  2. Compare vendor profiles and select the most suitable vendor.
+  3. Document the selection rationale in the system.
+
+*Instructor Tip:* Use a real-world scenario to demonstrate vendor comparison and selection.
+
+<<<
+
+==== Purchase Order Creation
+Purchase orders (POs) formalize procurement requests and provide a legal document for transactions.
+
+- **Steps to Create a PO:**
+  1. Navigate to the "Purchase Orders" page and select "New PO."
+  2. Populate fields such as vendor details, items, quantities, and delivery dates.
+  3. Link the PO to a previously approved requisition if applicable.
+  4. Submit the PO for approval and issue it to the vendor.
+
+- **Tracking and Monitoring:**
+  * Track the status of POs through their lifecycle, from creation to fulfillment.
+  * Update POs with receipt and payment information as necessary.
+
+*Activity:* Create a PO linked to an approved requisition and track its status.
+
+<<<
+
+=== Vendor and Contract Management
+
+==== Vendor Management
+Effective vendor management ensures reliable partnerships and compliance with organizational policies.
+
+- **Vendor Profiles:**
+  * Maintain detailed vendor profiles, including contact information, payment terms, and compliance documents.
+  * Monitor vendor performance metrics, such as delivery times and quality ratings.
+
+- **Vendor Onboarding:**
+  * Register new vendors in the system using a standardized onboarding process.
+  * Verify documentation, such as tax IDs, certifications, and insurance coverage.
+
+*Activity:* Create and update a vendor profile for a new supplier.
+
+<<<
+
+==== Contract Management
+The Contract Management feature enables organizations to create, manage, and monitor procurement contracts.
+
+- **Creating Contracts:**
+  1. Use pre-approved templates to draft contracts.
+  2. Include key details, such as terms, conditions, and expiration dates.
+
+- **Monitoring Contracts:**
+  * Track contract performance using system-generated metrics.
+  * Receive notifications for upcoming renewals or expirations.
+
+- **Amending Contracts:**
+  * Modify existing contracts to reflect changes in scope, pricing, or timelines.
+  * Document amendments for audit purposes.
+
+*Instructor Note:* Discuss the role of contracts in mitigating risks and ensuring accountability.
+
+<<<
+
+=== Compliance and Reporting
+
+==== Ensuring Compliance
+Compliance is critical in procurement to minimize risks and meet regulatory standards.
+
+- **Compliance Measures:**
+  * Ensure vendors meet certifications, such as minority-owned business certifications or environmental standards.
+  * Document compliance checks within the system for audit purposes.
+
+- **Audit Trails:**
+  * Enable audit trails for all procurement activities, including approvals, modifications, and payments.
+  * Generate compliance reports for internal and external audits.
+
+<<<
+
+==== Procurement Reporting
+Reporting tools in CGI Advantage 4 provide insights into procurement activities and help identify areas for improvement.
+
+- **Common Reports:**
+  * Procurement Activity Report: Summarizes requisitions, POs, and contracts.
+  * Vendor Performance Report: Tracks metrics like delivery accuracy and defect rates.
+  * Budget Impact Report: Analyzes procurement spending against budgets.
+
+- **Steps to Generate a Report:**
+  1. Navigate to the "Reports" section within the Procurement Management module.
+  2. Select the desired report type and apply relevant filters.
+  3. Export the report in the preferred format for review or distribution.
+
+*Activity:* Generate a Vendor Performance Report and interpret key metrics.
+
+<<<
+
+[appendix]
+=== Glossary
+- *Purchase Order (PO):* A document issued to a vendor to request goods or services.
+- *Requisition:* A formal request for the purchase of goods or services.
+- *Vendor Performance Metrics:* Quantifiable measures used to assess vendor reliability and quality.
+
+[discrete]
+=== Additional Notes
+*Instructor Tip:* Emphasize the importance of collaboration between procurement, finance, and compliance teams for effective procurement management.

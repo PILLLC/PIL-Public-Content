@@ -1,0 +1,83 @@
+== Module {module-number}: Requirements and Dependencies for Creating an RE Transaction for a Customer with Multiple Third-Party Billing Options in CGI Advantage 4
+
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+{SP}
+{SP}
+
+=== Overview
+In CGI Advantage 4, you can create an **RE (Receivable Entry) transaction** for a customer who requires multiple third-party billing options. This allows a primary customer to receive services while designated third-party entities are billed on their behalf. This setup involves specific configuration in customer profiles, billing profiles, and address tables. This document outlines the requirements, dependencies, and configuration steps to process RE transactions under this arrangement.
+
+=== Requirements and Dependencies
+
+[cols="3,4", options="header"]
+|===
+| Requirement/Dependency | Description
+
+| **Customer Profile Setup** | Create or verify a profile for the primary customer in **Vendor Customer Creation (VCC)**. This profile represents the customer receiving the service and links to the billing profiles and options for multiple third-party payers.
+
+| **Billing Profile Table** | Define multiple billing profiles in the **Billing Profile Table** for the customer. Each billing profile specifies a unique third-party payer and links to a corresponding Address ID for the designated billing recipient.
+
+| **Third-Party Customer Profiles** | Create profiles for each third-party customer responsible for paying bills on behalf of the primary customer. Each third-party customer should have a record in **VCC**, including address and contact information.
+
+| **Billing Rate Table (if applicable)** | If billing is based on rates, configure the **Billing Rate Table** with rate codes and applicable rates. These rates should align with the service or product codes and may vary by third-party customer as needed.
+
+| **Chart of Accounts (COA)** | Set up the **Chart of Accounts** to define revenue accounts impacted by the RE transaction. This ensures the receivables are accurately recorded in the general ledger.
+
+| **Revenue Codes** | Create and assign revenue codes to specific accounts within the **Revenue Module**. Revenue codes represent distinct income sources and will be referenced in the RE transaction.
+
+| **Service or Product Codes** | If billing varies by service or product, these codes must be established in the system and linked to the Billing Rate Table (if applicable). Each service or product code should map to an account code.
+
+| **Customer Account Options Table (CACT)** | Use the **Customer Account Options Table (CACT)** to define options for multiple billing addresses and payers. Each third-party payer must have an entry in the CACT table that links the primary customer to specific billing preferences and addresses.
+
+| **User Access and Permissions** | Ensure users have appropriate permissions to create and process RE transactions, access the Billing Profile Table, and set up CACT configurations for multiple billing options. Permissions should be managed through **User Management**.
+
+| **Fiscal Period Setup** | Define fiscal periods for the current fiscal year to ensure transactions are recorded in the correct accounting period.
+
+| **Approval Workflow Configuration** | Configure approval workflows, if required, for RE transactions involving third-party billing. Approval routing should be set up in the **Workflow and Approvals** section.
+
+| **Tax Codes (if applicable)** | If taxes apply to the transaction, tax codes must be created in alignment with relevant service or product codes.
+
+| **Payment Terms and Billing Frequency** | Define payment terms and billing frequencies within each billing profile for third-party customers. This setup determines the terms under which third parties will be billed and expected to pay.
+
+| **System Configuration Settings** | Confirm that system settings enable third-party billing for RE transactions. Ensure that dependencies such as CACT and Billing Profile configurations are activated.
+|===
+
+=== Process Overview
+
+Once all dependencies are met, follow these steps to create and process an RE transaction with multiple third-party billing options:
+
+1. **Create or Verify Customer Profile**:
+   Ensure the primary customer’s profile exists in VCC with relevant billing information, and confirm each third-party payer profile is complete with contact and billing address details.
+
+2. **Define Multiple Billing Profiles**:
+   In the **Billing Profile Table**, create separate billing profiles for each third-party customer linked to the primary customer. Specify unique billing addresses using the Address ID linked to each third party in the CACT table.
+
+3. **Link Third-Party Payers via CACT Table**:
+   Set up entries in the **Customer Account Options Table (CACT)** for each third-party payer. This configuration allows the system to infer the correct Address ID and billing preferences when creating the RE transaction.
+
+4. **Create RE Transaction**:
+   - Navigate to **Revenue Entry (RE)** and initiate a new transaction.
+   - Select the primary customer’s **Customer ID**.
+   - Apply the appropriate billing profile for each line item that reflects the designated third-party payer.
+   - Specify line item details such as revenue codes, service or product codes, and, if applicable, rate codes from the Billing Rate Table.
+
+5. **Verify Budget and Available Funds**:
+   Use Budget Inquiry to confirm available budget for accounts involved in the transaction.
+
+6. **Submit for Approval**:
+   If approval workflows are configured, submit the RE transaction to route it through the designated approvers.
+
+7. **Monitor and Complete Transaction**:
+   Upon approval, the RE transaction will be processed with each line item billed to the assigned third-party payer. Monitor transaction status for completion and invoice generation.
+
+=== Notes
+- **Billing Profile and CACT Linkage**: Ensure that each billing profile is linked accurately to the third-party customer’s Address ID in the CACT table to avoid billing errors.
+- **Role Permissions**: Verify that users have the necessary permissions to set up and view third-party billing profiles and access customer account options.
+- **Rate Calculations**: When using the Billing Rate Table, confirm that rate configurations align with the service or product being billed and are appropriate for each third-party payer.
+
+This configuration allows for flexible billing to multiple third-party customers on behalf of a primary customer, streamlining the receivables process in CGI Advantage 4.

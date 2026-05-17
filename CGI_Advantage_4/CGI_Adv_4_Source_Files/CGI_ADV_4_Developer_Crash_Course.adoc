@@ -1,0 +1,313 @@
+== Module {module-number}: CGI Advantage 4 Crash Course for Developers
+
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+{SP}
+{SP}
+
+=== Overview
+This crash course is designed for developers who are new to CGI Advantage 4. It provides an overview of core modules, architecture, development environment setup, common workflows, and customization methods. This guide serves as a quick reference to understand how to extend and maintain applications within CGI Advantage 4.
+
+=== 1. Understanding CGI Advantage 4 Architecture
+
+CGI Advantage 4 is a comprehensive ERP system with a modular architecture that caters to government and public sector organizations. Core components include:
+
+- **Modules**: CGI Advantage 4 has modules for Financial Management (FIN), Human Resources Management (HRM), Budgeting, Procurement, and more.
+- **Frameworks**: Built on Java EE, CGI Advantage 4 utilizes JSP, servlets, and EJBs for backend processing.
+- **Data Layer**: Typically integrated with Oracle databases, with tables and schemas customized for each client.
+- **Customizations**: Configurable through scripts, templates, and XML, supporting custom business rules and workflows.
+
+=== 2. Setting Up the Development Environment
+
+Follow these steps to set up the environment:
+
+. **Install Required Software**
+   - Java Development Kit (JDK) 1.8 or higher
+   - Apache Ant and Maven for build automation
+   - An Integrated Development Environment (IDE) such as Eclipse or IntelliJ IDEA
+   - Oracle SQL Developer or a similar database client for database management
+
+. **Set Up Project Repositories**
+   - Access the repository (e.g., Git, SVN) where your CGI Advantage project files are stored.
+   - Clone or check out the repository locally to set up your workspace.
+
+. **Configure Database Connection**
+   - Update database connection strings in the development configuration files, typically located in the `config` or `resources` directory.
+   - Test the database connection to ensure access to necessary tables and schemas.
+
+. **Set Up Build Scripts**
+   - Configure build scripts (Ant or Maven) to handle compilation, packaging, and deployment tasks.
+   - Common build targets include `clean`, `compile`, `package`, and `deploy`.
+
+=== 3. Key Modules and Tables
+
+Developers should be familiar with these primary modules and tables:
+
+==== Financial Management (FIN)
+- **General Ledger (GL)**: Core tables include `GL_ACCOUNT`, `GL_JOURNAL`.
+- **Accounts Payable (AP)**: Key tables are `AP_INVOICE`, `AP_PAYMENT`.
+- **Accounts Receivable (AR)**: Key tables include `AR_INVOICE`, `AR_PAYMENT`.
+- **Budgeting**: Tables like `BUDGET_STRUCTURE` and `BUDGET_ENTRY`.
+
+==== Human Resources Management (HRM)
+- **Employee Profile**: Core tables include `EMPLOYEE_PROFILE`, `EMPLOYEE_ADDRESS`.
+- **Payroll**: Tables like `PAYROLL_RUN` and `PAY_CALCULATION`.
+
+==== Common Tables
+- **Customer and Vendor**: Tables such as `CUSTOMER_PROFILE`, `VENDOR_PROFILE`.
+- **Account Options**: `ACCOUNT_OPTIONS` table, linking accounts to configurations.
+
+=== 4. Core Development Tasks and Processes
+
+==== Working with Pages and UI Components
+CGI Advantage 4’s UI is largely JSP-based, with HTML templates and CSS for styling.
+
+- **Page Customizations**: Locate and modify JSP files within the `webapps` directory.
+- **JavaScript Validation**: Use JavaScript files for field validations and UI enhancements.
+- **CSS Styling**: Modify CSS files for custom themes and styles.
+
+==== Customizing Business Rules
+Business rules in CGI Advantage can be modified or created using XML configurations and Java classes.
+
+- **Business Rule XMLs**: Found in `config` directories, these XML files define rule parameters.
+- **Java Classes**: Extend or override business rules using Java classes by creating custom logic in service layer files.
+
+==== Workflow and Approval Processes
+- **Workflow Configuration**: Located in `workflow` XML files, where you can define routing and approval hierarchies.
+- **Approval Process Customization**: Use the workflow engine to set rules and approvals by department, role, or transaction type.
+
+=== 5. Database Management and Table Customization
+
+- **Creating Custom Tables**: Use SQL scripts to create tables, ensuring naming conventions are followed.
+- **Modifying Core Tables**: Be cautious with core tables; ensure all changes are approved and follow CGI protocols.
+- **Database Indexing**: Index frequently queried columns to improve performance.
+
+=== 6. Security and Permissions
+
+- **Role-Based Access Control**: Define user roles and permissions using configuration files or database tables like `USER_PROFILE` and `ROLE_ASSIGNMENT`.
+- **Data Security**: Implement field-level encryption for sensitive data fields such as SSNs and financial data.
+- **Audit Logging**: Enable audit trails for critical transactions and maintain logging for security reviews.
+
+=== 7. Common Development Scenarios
+
+==== Scenario 1: Adding a Custom Field to a Page
+1. **Add Column to Database**: Alter the relevant table to include a new column.
+2. **Update JSP Page**: Modify the JSP file to include the new field.
+3. **Configure Validation**: Add JavaScript validation as needed.
+4. **Test and Deploy**: Test thoroughly to ensure the field displays and saves correctly.
+
+==== Scenario 2: Modifying an Approval Workflow
+1. **Open Workflow XML**: Locate the XML file for the desired workflow.
+2. **Edit Routing Rules**: Adjust routing conditions or add new approval steps.
+3. **Deploy and Test**: Ensure the workflow routes correctly through the approval chain.
+
+==== Scenario 3: Creating a Report
+1. **Define SQL Query**: Write an SQL query to pull data from relevant tables.
+2. **Create Report Template**: Develop the report layout using JasperReports or another reporting tool.
+3. **Integrate and Test**: Add the report to CGI Advantage and verify output.
+
+=== 8. Best Practices for Development
+
+- **Version Control**: Use version control for all changes, committing frequently and writing clear commit messages.
+- **Testing**: Test thoroughly in a development environment before pushing to production. Use test cases that cover both typical and edge-case scenarios.
+- **Documentation**: Document all customizations and code changes, including configuration details and scripts.
+- **Performance Optimization**: Avoid excessive database calls and leverage batch processing for large data sets.
+- **Error Handling**: Implement robust error handling, especially for transaction-related customizations.
+
+=== 9. Debugging and Troubleshooting Tips
+
+- **Logging**: Enable detailed logging for transactions, approvals, and business rules.
+- **Console Output**: Monitor the console output in your IDE or server logs for runtime errors.
+- **Database Checks**: Verify that all required data is present in the database, and query key tables directly for troubleshooting.
+
+=== 10. Deployment and Testing
+
+- **Build and Deploy**: Use build scripts to package and deploy your application to a staging environment.
+- **User Acceptance Testing (UAT)**: Involve end-users in testing to validate that changes meet business requirements.
+- **Production Release**: Coordinate with the system administrator to deploy changes to production during maintenance windows.
+
+=== Additional Resources
+
+- **CGI Advantage Documentation**: Refer to the official CGI Advantage documentation for in-depth guides.
+- **Community and Support**: Reach out to the CGI user community or CGI support for troubleshooting and advanced assistance.
+- **Code Repositories**: Maintain your code in a central repository for version control and team collaboration.
+
+=== Summary
+This crash course introduces developers to key aspects of CGI Advantage 4, covering architecture, customization, common workflows, and best practices. By following these guidelines, developers can effectively extend and maintain applications in CGI Advantage 4 to meet organizational needs.
+
+<<<
+
+=== Comprehensive Inventory for End-to-End Testing of CGI Advantage 4 - FIN and HRM Modules
+
+=== Overview
+This document outlines the core tables and required data elements for conducting an end-to-end test of CGI Advantage 4’s baseline functionality within the **Financial Management (FIN)** and **Human Resources Management (HRM)** modules. This setup assumes that all modules are configured with standard settings.
+
+=== 1. Core Tables and Data for Financial Management (FIN) Testing
+
+The **Financial Management** module includes General Ledger, Accounts Payable, Accounts Receivable, Budgeting, and other essential financial functions. Below are the primary tables and their required data.
+
+==== General Ledger (GL) Tables
+
+[cols="2,5", options="header"]
+|===
+| Table Name              | Description and Required Data
+
+| GL_ACCOUNT              | Stores account codes, descriptions, and account types (e.g., revenue, expense).
+| GL_JOURNAL              | Records journal entries, including transaction IDs, account codes, amounts, and dates.
+| GL_BALANCES             | Holds balance information by account, fund, and period. Essential for testing period-end processing.
+|===
+
+==== Accounts Payable (AP) Tables
+
+[cols="2,5", options="header"]
+|===
+| Table Name              | Description and Required Data
+
+| AP_INVOICE              | Stores details of vendor invoices, including vendor ID, amount, invoice date, and due date.
+| AP_PAYMENT              | Records payments made to vendors, with data on payment amount, date, and linked invoices.
+| AP_VENDOR               | Vendor profile table with data on vendor name, contact info, and payment terms.
+| AP_VOUCHER              | Vouchers for approved invoices, including vendor ID, amount, and linked invoice data.
+|===
+
+==== Accounts Receivable (AR) Tables
+
+[cols="2,5", options="header"]
+|===
+| Table Name              | Description and Required Data
+
+| AR_INVOICE              | Details customer invoices, including customer ID, amount, due date, and status.
+| AR_PAYMENT              | Stores received payments, linking payment details to specific invoices and customers.
+| AR_CASH_RECEIPT         | Cash receipt data for payments received, including payment method and receipt number.
+| CUSTOMER_PROFILE        | Customer profile details, including name, billing address, and contact information.
+|===
+
+==== Budgeting Tables
+
+[cols="2,5", options="header"]
+|===
+| Table Name              | Description and Required Data
+
+| BUDGET_STRUCTURE        | Budget structure and hierarchy definitions, including budget codes and fund allocations.
+| BUDGET_ENTRY            | Records budget entries, including original budget, adjustments, and allocations.
+| BUDGET_CONTROL          | Budget control limits and rules, ensuring spending stays within budgeted amounts.
+|===
+
+==== Procurement and Vendor Management Tables
+
+[cols="2,5", options="header"]
+|===
+| Table Name              | Description and Required Data
+
+| VENDOR_PROFILE          | Vendor profile details, similar to AP_VENDOR, but used across multiple modules.
+| PURCHASE_ORDER          | Stores purchase order data, including PO number, vendor, item details, and approval status.
+| CONTRACT                | Holds contract details, linking vendors to terms, amounts, and related POs.
+|===
+
+=== 2. Core Tables and Data for Human Resources Management (HRM) Testing
+
+The **HRM module** manages employee data, payroll, benefits, and timekeeping. Below are the core tables and necessary data.
+
+==== Employee Profile and Address Tables
+
+[cols="2,5", options="header"]
+|===
+| Table Name              | Description and Required Data
+
+| EMPLOYEE_PROFILE        | Basic employee data including employee ID, name, department, job title, and hire date.
+| EMPLOYEE_ADDRESS        | Stores employee addresses, including address type (home, work) and contact info.
+|===
+
+==== Payroll Tables
+
+[cols="2,5", options="header"]
+|===
+| Table Name              | Description and Required Data
+
+| PAYROLL_RUN             | Tracks payroll runs, including pay period start and end dates, total payroll amount, and status.
+| PAY_CALCULATION         | Stores calculated pay details per employee, such as gross pay, deductions, and net pay.
+| TAX_TABLE               | Tax withholding rates and brackets by jurisdiction and employee status.
+|===
+
+==== Benefits and Enrollment Tables
+
+[cols="2,5", options="header"]
+|===
+| Table Name              | Description and Required Data
+
+| BENEFIT_PLAN            | Details on available benefits plans, including coverage types and premium amounts.
+| BENEFIT_ENROLLMENT      | Enrollment records for employees, specifying benefits chosen, coverage levels, and effective dates.
+|===
+
+==== Time and Attendance Tables
+
+[cols="2,5", options="header"]
+|===
+| Table Name              | Description and Required Data
+
+| TIME_ENTRY              | Time entries for employees, tracking dates, hours worked, and time codes (e.g., REG, SICK, VAC).
+| LEAVE_BALANCE           | Leave balances per employee, showing accrued and used leave by type (e.g., vacation, sick).
+|===
+
+=== 3. Supporting and Common Tables for FIN and HRM Modules
+
+==== User and Security Tables
+
+[cols="2,5", options="header"]
+|===
+| Table Name              | Description and Required Data
+
+| USER_PROFILE            | User login information, including username, role, and department.
+| ROLE_ASSIGNMENT         | Maps users to roles, defining access permissions across modules.
+| WORKFLOW_CONFIG         | Workflow rules for approvals, specifying approver levels and routing paths for various transactions.
+|===
+
+==== Fiscal Period and Budget Period Tables
+
+[cols="2,5", options="header"]
+|===
+| Table Name              | Description and Required Data
+
+| FISCAL_PERIOD           | Defines fiscal periods, including start and end dates for each accounting period.
+| BUDGET_PERIOD           | Tracks the budget periods for use in budget and financial transactions.
+|===
+
+=== 4. Required Data for Testing
+
+For a comprehensive end-to-end test, populate the following data:
+
+==== Financial Management Data
+- **Accounts and Budgets**: Complete account hierarchy, with active accounts in `GL_ACCOUNT` and linked budgets in `BUDGET_ENTRY`.
+- **Vendors and Invoices**: Create vendors in `VENDOR_PROFILE` and populate with sample invoices in `AP_INVOICE` and payments in `AP_PAYMENT`.
+- **Customer and Receivables**: Populate customers in `CUSTOMER_PROFILE`, with sample receivables in `AR_INVOICE` and payments in `AR_PAYMENT`.
+
+==== Human Resources Data
+- **Employees and Payroll**: Populate employee profiles in `EMPLOYEE_PROFILE` and assign payroll details in `PAY_CALCULATION`.
+- **Benefits**: Create benefits plans in `BENEFIT_PLAN` and enroll employees in `BENEFIT_ENROLLMENT`.
+- **Time Entries**: Populate `TIME_ENTRY` with sample work hours and time-off entries, and set leave balances in `LEAVE_BALANCE`.
+
+=== 5. Testing Scenarios
+
+Use the following testing scenarios for a full functional review:
+
+==== General Ledger Testing
+1. **Post Journal Entries**: Test journal entry creation, editing, and posting in `GL_JOURNAL`.
+2. **Verify Balances**: Check updated balances in `GL_BALANCES` after transactions.
+
+==== Accounts Payable and Receivable Testing
+1. **Create AP Invoice**: Generate invoices in `AP_INVOICE` and process payments in `AP_PAYMENT`.
+2. **Generate AR Invoice**: Create receivable entries in `AR_INVOICE` and test payments in `AR_PAYMENT`.
+
+==== Payroll and Benefits Testing
+1. **Run Payroll**: Execute payroll in `PAYROLL_RUN` and verify calculations in `PAY_CALCULATION`.
+2. **Enroll Benefits**: Test benefit enrollment and verify deductions in payroll.
+
+==== Budget Testing
+1. **Set Budget Control**: Test budget constraints by entering data in `BUDGET_CONTROL` and attempting transactions that exceed limits.
+2. **Budget Adjustments**: Make budget adjustments in `BUDGET_ENTRY` and verify updates.
+
+=== Summary
+This inventory provides the foundational tables, data, and test scenarios necessary for a comprehensive end-to-end test of CGI Advantage 4's baseline functionality in the Financial Management and Human Resources Management modules. Ensure all data is populated as specified and use the test scenarios to validate field, function, and feature performance across modules.

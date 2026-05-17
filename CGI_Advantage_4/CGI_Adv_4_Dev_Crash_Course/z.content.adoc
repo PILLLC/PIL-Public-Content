@@ -1,0 +1,33 @@
+:module-number: 00
+include:
+
+:module-number: 01
+include::CGI_ADV_4_Dev_CGI_ADV_4_Architecture.adoc[]
+
+:module-number: 02
+include::CGI_ADV_4_Dev_ Setting_Up_Dev_Env.adoc[]
+
+:module-number: 03
+include::CGI_ADV_4_Dev_ Key_Mods_Tables.adoc[]
+
+:module-number: 04
+include::CGI_ADV_4_Dev_ Core_Dev_Tasks_Processes.adoc[]
+
+:module-number: 05
+include::CGI_ADV_4_Dev_ DB_Mgmt_Table_Maint.adoc[]
+
+:module-number: 06
+include::CGI_ADV_4_Dev_ Security_Permissions.adoc[]
+
+:module-number: 07
+include::CGI_ADV_4_Dev_ Common_Dev_Scenarios.adoc[]
+
+:module-number: 08
+include::CGI_ADV_4_Dev_ Best_Practices_Dev.adoc[]
+
+:module-number: 09
+include::CGI_ADV_4_Dev_ Debug_Troubleshoot.adoc[]
+
+:module-number: 10
+include::CGI_ADV_4_Dev_ Deploy_Test.adoc[]
+

@@ -1,0 +1,184 @@
+== Module {module-number}: CGI Advantage 4 End-User Cheat Sheet
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+{SP}
+{SP}
+
+=== Overview
+
+This cheat sheet provides quick reference guides, shortcuts, and key workflows to help end-users efficiently navigate and utilize CGI Advantage 4. It is designed as a compact resource for daily operations.
+
+<<<
+
+=== General Navigation Tips
+
+- **Logging In:**
+  * Navigate to the login page: `[Organization_URL]/cgiadv`.
+  * Enter your username and password.
+  * Use multi-factor authentication (MFA) if enabled.
+
+- **Menu Navigation:**
+  * Access modules via the navigation pane on the left.
+  * Use the search bar at the top for quick access to forms and reports.
+  * Pin frequently used modules for faster access.
+
+- **Saving Work:**
+  * Always click "Save" or "Submit" before navigating away to avoid losing changes.
+  * Use "Save as Draft" for incomplete tasks.
+
+- **Shortcuts:**
+  * `Ctrl + S`: Save changes.
+  * `Ctrl + F`: Open the search dialog for filtering data.
+  * `Tab`: Move between fields in forms.
+  * `Esc`: Close pop-ups or modal windows.
+
+<<<
+
+=== Key Workflows by Module
+
+==== Financial Management (FIN)
+- **Entering a Journal Entry:**
+  1. Navigate to *General Ledger > Journal Entry > Create New*.
+  2. Select the fiscal year and period.
+  3. Enter debit and credit amounts with account codes.
+  4. Save and submit for approval.
+
+- **Approving Invoices:**
+  1. Navigate to *Accounts Payable > Invoice Approval*.
+  2. Review invoice details and supporting documents.
+  3. Click "Approve" or "Reject" with a reason.
+
+- **Generating a Trial Balance:**
+  1. Navigate to *Reports > Trial Balance*.
+  2. Select the fiscal period and filters (e.g., department, fund).
+  3. Click "Generate" and download the report.
+
+==== Procurement
+- **Creating a Purchase Order (PO):**
+  1. Navigate to *Procurement > Purchase Order > Create New*.
+  2. Select the vendor and add line items with quantities and costs.
+  3. Attach supporting documents, if applicable.
+  4. Save and submit for approval.
+
+- **Vendor Lookup:**
+  1. Navigate to *Vendor Management > Vendor Search*.
+  2. Enter search criteria (e.g., vendor name or ID).
+  3. Review vendor details and status.
+
+==== Human Resources and Payroll (HRM)
+- **Updating Employee Information:**
+  1. Navigate to *HR > Employee Profile > Search*.
+  2. Select the employee record and click "Edit."
+  3. Update fields such as address, job title, or department.
+  4. Save changes.
+
+- **Processing Payroll:**
+  1. Navigate to *Payroll > Run Payroll*.
+  2. Select the pay period and employee group.
+  3. Review calculations and click "Run."
+  4. Generate payroll reports for review.
+
+==== Performance Budgeting (PB)
+- **Inputting Budget Data:**
+  1. Navigate to *Budgeting > Budget Entry > Create New*.
+  2. Select the budget structure and fiscal year.
+  3. Enter amounts for each account and line item.
+  4. Save and validate entries.
+
+- **Running Variance Reports:**
+  1. Navigate to *Reports > Budget Variance*.
+  2. Apply filters (e.g., department, date range).
+  3. Generate and download the report.
+
+<<<
+
+=== Troubleshooting Common Issues
+
+- **Forgot Password:**
+  * Click "Forgot Password" on the login page and follow prompts.
+  * Contact the system administrator if the issue persists.
+
+- **Slow System Performance:**
+  * Clear your browser cache and refresh the page.
+  * Avoid running multiple reports simultaneously.
+
+- **Access Denied:**
+  * Verify your role and permissions with the administrator.
+  * Ensure you are assigned to the correct module.
+
+<<<
+
+=== Reporting and Analytics
+
+- **Generating Standard Reports:**
+  * Navigate to *Reports > Standard Reports*.
+  * Select the report type, apply filters, and click "Generate."
+
+- **Creating Ad Hoc Reports:**
+  1. Navigate to *Reports > Ad Hoc Reporting*.
+  2. Select the data source and columns to include.
+  3. Apply filters and sort criteria.
+  4. Save the report for future use.
+
+- **Data Visualization Tips:**
+  * Use dashboards for quick insights into key metrics.
+  * Select the right chart type based on your data (e.g., pie charts for proportions, bar charts for comparisons).
+
+<<<
+
+=== Best Practices
+
+- **Data Accuracy:**
+  * Double-check entries for typos or mismatched codes.
+  * Use templates for bulk data uploads to reduce errors.
+
+- **Workflow Adherence:**
+  * Follow established approval workflows to maintain audit trails.
+  * Use system notifications to track pending tasks.
+
+- **Security Awareness:**
+  * Never share login credentials.
+  * Report suspicious activity to the administrator immediately.
+
+<<<
+
+=== Frequently Used Codes and Terms
+
+|===
+|**Code/Term** |**Description** 
+|GL |General Ledger
+|AP |Accounts Payable
+|AR |Accounts Receivable
+|PB |Performance Budgeting
+|HRM |Human Resources Management
+|PO |Purchase Order
+|===
+
+<<<
+
+=== Additional Resources
+
+- **User Manuals and Guides:**
+  * Access comprehensive documentation under *Help > User Manuals*.
+
+- **Video Tutorials:**
+  * Watch step-by-step tutorials on the *Training Portal*.
+
+- **Support:**
+  * Contact the Helpdesk at `[Support_Email]` or `[Support_Number]`.
+
+<<<
+
+[appendix]
+=== Quick Links
+- *Login Page:* `[Organization_URL]/cgiadv`
+- *Help Center:* `[Help_Center_URL]`
+- *Training Portal:* `[Training_Portal_URL]`
+
+[discrete]
+=== Additional Notes
+*Instructor Tip:* Distribute printed cheat sheets for easy reference during training sessions or daily operations.

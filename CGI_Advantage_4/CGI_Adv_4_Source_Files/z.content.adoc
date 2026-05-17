@@ -1,0 +1,96 @@
+
+
+:module-number: 00
+include::CGI_ADV_4_course_intro.adoc[]
+
+:module-number: 01
+include::CGI_ADV_4_Introduction to CGI Advantage 4.adoc[]
+
+:module-number: 02
+include::CGI_ADV_4_Core Functionalities.adoc[]
+
+:module-number: 03
+include::CGI_ADV_4_Advanced Functionalities.adoc[]
+
+:module-number: 04 
+include::CGI_ADV_4_Best Practices and Future Directions.adoc[]
+
+:module-number: 05
+include::CGI_ADV_4_Certification and Final Project.adoc[]
+
+:module-number: 06
+include::CGI_ADV_4_System Administration and Maintenance.adoc[]
+
+:module-number: 07
+include::CGI_ADV_4_System Setup and Configuration.adoc[]
+
+:module-number:
+include::CGI_ADV_4_Practical Applications and Case Studies.adoc[]
+
+
+
+:module-number: 5
+include::CGI_ADV_4_ASSORTED.adoc[]
+
+
+
+:module-number: 
+include::CGI_ADV_4_extensibility.adoc[]
+
+:module-number: 20
+include::CGI_ADV_4_Reporting and Analytics.adoc[]
+
+:module-number:
+include::CGI_ADV_4_25_CORE_TRNS.adoc[]
+
+:module-number: 
+include::CGI_ADV_4_CORE_TRNS.adoc[]
+
+:module-number:
+include::CGI_ADV_4_CORE_TBLS.adoc[]
+include::CGI_4_INV.adoc[]
+
+:module-number: 12
+include::CGI_ADV_4_CR_with_RE_Reference.adoc[]
+
+:module-number: 13
+include::CGI_ADV_4_create_lcrr.adoc[]
+
+:module-number: 15
+include::CGI_ADV_4_end_user_pages_fields_etc.adoc[]
+
+:module-number: 19
+include::CGI_ADV_4_RE_TABLES.adoc[]
+
+:module-number: 23
+include::CGI_ADV_4_SAMPLE_DATA.adoc[]
+
+
+
+
+:module-number: 21
+include::CGI_ADV_4_Reqs_and_Deps_Creating_Processing_RE_w_Billing_Rate.adoc[]
+
+:module-number: 22
+include::CGI_ADV_4_Reqs_Dep_RE_w_Multiple_Third-Party_Billing.adoc[]
+
+
+:module-number: 
+include::CGI_4_RE_BILLING_RATE.adoc[]
+
+
+
+
+
+
+
+
+
+
+:module-number: 99
+include::CGI_ADV_4_Developer_Crash_Course.adoc[]
+
+
+
+:module-number: 99
+include::CGI_ADV_4_Training_Plan.adoc[]

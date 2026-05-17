@@ -1,0 +1,144 @@
+== Module {module-number}: Comprehensive End-User Training Architecture, Strategy, and Plan for CGI Advantage 4 - FIN and HRM Modules
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+{SP}
+{SP}
+
+=== Overview
+This document details the architecture, strategy, and plan for implementing end-user training for CGI Advantage 4’s **Financial Management (FIN)** and **Human Resources Management (HRM)** modules. The goal is to equip end-users with the skills and knowledge required to perform their job functions effectively within the system. The training plan covers foundational knowledge, role-specific workflows, and practical application through hands-on exercises.
+
+=== 1. Training Architecture
+
+The training architecture is structured around a blended learning model, combining **classroom training**, **e-learning modules**, **hands-on labs**, and **reference materials**.
+
+==== Training Delivery Modes
+[cols="2,5", options="header"]
+|===
+| Delivery Mode         | Description
+
+| Classroom Training    | Instructor-led sessions focusing on core concepts, system navigation, and basic functionalities. Ideal for onboarding and introducing key concepts.
+| E-Learning Modules    | Self-paced online modules covering each function in detail. Allows users to revisit content as needed and provides flexibility for remote users.
+| Hands-On Labs         | Practical exercises where users perform tasks in a sandbox environment. Enables application of knowledge in a low-risk setting.
+| Job Aids and Manuals  | Reference materials including quick reference guides, job aids, and user manuals. Supports users in the workplace with quick look-up resources.
+|===
+
+==== Training Curriculum Design
+The curriculum is designed to align with core functional areas of the FIN and HRM modules, organized into **foundation training**, **role-specific training**, and **advanced feature training**:
+
+1. **Foundation Training**: Core functionalities, navigation, and common features across FIN and HRM modules.
+2. **Role-Specific Training**: Tailored to roles such as finance officers, HR managers, payroll clerks, and departmental administrators.
+3. **Advanced Features**: Covers complex functions such as budgeting adjustments, multi-entity financial reporting, payroll reconciliation, and benefit management.
+
+=== 2. Training Strategy
+
+The training strategy is focused on maximizing user engagement, reinforcing learning through hands-on practice, and ensuring knowledge retention over time. This includes:
+
+==== Objectives
+- **Knowledge Transfer**: Ensure users understand system functionality and core processes.
+- **Skill Development**: Build user confidence and proficiency in executing specific tasks.
+- **Retention and Application**: Reinforce learning through job aids, practice, and ongoing support.
+
+==== Key Elements
+1. **Targeted Needs Assessment**: Conduct a needs assessment to identify knowledge gaps, job-specific requirements, and user proficiency levels.
+2. **Curriculum Customization**: Tailor training modules based on assessment findings and align content with actual workflows and job requirements.
+3. **Evaluation and Feedback**: Implement pre- and post-assessments, quizzes, and surveys to measure user progress and adapt training as necessary.
+
+==== Learning Paths by Role
+[cols="3,5", options="header"]
+|===
+| Role              | Learning Path
+
+| Finance Officer   | Foundational FIN training, AP/AR functions, reporting, and financial reconciliation.
+| HR Manager        | Foundational HRM training, employee records management, benefits administration, and reporting.
+| Payroll Clerk     | Payroll setup, payroll processing, tax configuration, and payroll reconciliation.
+| Departmental Admin | Navigation, report generation, basic data entry, and cross-departmental workflows.
+|===
+
+=== 3. Training Plan
+
+The training plan includes preparation, delivery, and post-training support to ensure successful adoption. Each phase is designed to build knowledge, reinforce skills, and provide continuous support for optimal system utilization.
+
+==== Phase 1: Training Preparation
+
+1. **Develop Training Materials**:
+   - Prepare e-learning modules, slides, job aids, and user manuals.
+   - Customize materials for CGI Advantage 4 FIN and HRM modules to reflect specific workflows and configurations.
+   
+2. **Set Up Training Environment**:
+   - Establish a sandbox or training environment in CGI Advantage 4 for hands-on exercises.
+   - Load realistic sample data for end-to-end testing of functions like invoice processing, payroll, and reporting.
+
+3. **Assign Training Schedules**:
+   - Schedule sessions according to role and proficiency level.
+   - Notify users of their assigned training sessions and provide pre-training resources to set expectations.
+
+==== Phase 2: Training Delivery
+
+===== Module 1: System Navigation and Foundation Training
+1. **Objective**: Familiarize users with CGI Advantage 4 interface, navigation, and general system functionality.
+2. **Topics**:
+   - Basic navigation: accessing modules, searching, and managing records.
+   - Common fields, forms, and data entry standards across modules.
+   - Overview of workflow and approval processes.
+
+===== Module 2: Financial Management (FIN) Training
+1. **Objective**: Train users on key financial functions within CGI Advantage 4.
+2. **Topics**:
+   - Accounts Payable: invoice entry, payment processing, and voucher reconciliation.
+   - Accounts Receivable: billing, cash receipts, and customer account management.
+   - General Ledger: journal entries, trial balance, and financial statement generation.
+   - Budgeting: setting up budget structures, entering budgets, and monitoring budget controls.
+3. **Hands-On Labs**: Practice entering invoices, creating journal entries, generating reports, and adjusting budgets.
+
+===== Module 3: Human Resources Management (HRM) Training
+1. **Objective**: Equip HR and payroll staff with skills for managing employee records, payroll, and benefits.
+2. **Topics**:
+   - Employee Profile: creating and updating employee records, managing personal and job data.
+   - Payroll Processing: payroll run setup, tax configuration, and payroll calculation.
+   - Benefits Management: enrolling employees, managing benefit plans, and handling benefit deductions.
+   - Time and Attendance: entering time records, tracking leave balances, and leave request processing.
+3. **Hands-On Labs**: Practice entering employee data, processing payroll, and managing benefits.
+
+===== Module 4: Reporting and Advanced Functions
+1. **Objective**: Teach users to generate, interpret, and analyze reports for informed decision-making.
+2. **Topics**:
+   - Standard Reports: financial statements, budget reports, payroll summaries, and HR reports.
+   - Custom Reporting: using report tools to customize reports for specific needs.
+   - Advanced Features: complex functions such as budget transfers, leave accruals, and benefits reconciliation.
+
+==== Phase 3: Post-Training Support and Reinforcement
+
+1. **Ongoing Support**:
+   - Provide support through helpdesk resources, dedicated trainers, or designated "power users."
+   - Offer drop-in sessions or “office hours” for users needing additional guidance.
+
+2. **Job Aids and Manuals**:
+   - Distribute quick reference guides, troubleshooting checklists, and workflow summaries to all users.
+   - Make digital versions of all training materials accessible in an online repository.
+
+3. **Evaluation and Feedback**:
+   - Conduct follow-up assessments to gauge knowledge retention.
+   - Collect user feedback on training effectiveness and areas for improvement.
+
+4. **Refresher Courses**:
+   - Offer periodic refresher courses and updates as CGI Advantage 4 is upgraded or as new features are added.
+
+=== 4. Success Metrics and Evaluation
+
+Evaluate training success based on user proficiency, system adoption, and feedback.
+
+==== Key Metrics
+- **User Proficiency**: Measured by post-training assessments and task completion rates.
+- **System Adoption**: Observed through system usage metrics, such as the number of transactions processed.
+- **Feedback Scores**: Gathered from surveys and user feedback, providing insight into training quality and areas for improvement.
+
+==== Continuous Improvement
+- Use evaluation data to continuously improve training materials and methods.
+- Update training as CGI Advantage 4 features or modules are enhanced, ensuring training remains relevant and effective.
+
+=== Summary
+This training architecture, strategy, and plan are designed to enable end-users to leverage the full functionality of CGI Advantage 4’s FIN and HRM modules. Through structured learning paths, hands-on practice, and ongoing support, users will develop the skills necessary for efficient, accurate, and effective system utilization.

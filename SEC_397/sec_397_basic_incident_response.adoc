@@ -1,0 +1,92 @@
+== Module 5: Basic Incident Response
+:artifact-type: IG
+
+=== Lesson 5.1: Incident Response Lifecycle
+
+==== Overview of NIST Incident Response Framework
+
+The NIST Incident Response Framework provides a structured approach to handling security incidents effectively. It consists of the following key phases:f
+
+- **Preparation**:
+  - Establish an incident response plan.
+  - Train employees and set up necessary tools (e.g., monitoring systems, forensic tools).
+  - Conduct regular drills and simulations.
+
+- **Detection and Analysis**:
+  - Identify potential security events through monitoring systems.
+  - Validate incidents by analyzing logs, alerts, and reports.
+  - Categorize incidents based on severity and impact.
+
+- **Containment, Eradication, and Recovery**:
+  - **Containment**: Limit the spread of the threat (e.g., isolate affected systems).
+  - **Eradication**: Remove the root cause (e.g., delete malware, patch vulnerabilities).
+  - **Recovery**: Restore normal operations and monitor for residual threats.
+
+- **Post-Incident Activities**:
+  - Conduct a lessons-learned session.
+  - Update response plans based on insights gained.
+  - Enhance detection and prevention measures.
+
+<<<
+
+==== Role-Playing Exercise: Responding to a Simulated Breach
+
+**Objective**: Apply the Incident Response Lifecycle in a simulated environment.
+
+1. **Scenario**: A simulated ransomware attack targeting a fictional organization.
+2. **Teams**:
+   - **Incident Response Team**: Handles detection, containment, and recovery.
+   - **Management Team**: Makes critical decisions (e.g., communications, resource allocation).
+3. **Steps**:
+   - Identify the breach and determine its impact.
+   - Implement containment measures (e.g., disconnecting infected systems).
+   - Develop an eradication and recovery strategy.
+   - Document actions and create a post-incident report.
+4. **Expected Outcome**:
+   - Hands-on experience managing an incident.
+   - Understanding the importance of communication and documentation during a breach.
+
+<<<
+
+=== Lesson 5.2: Reporting and Documentation
+
+==== Importance of Maintaining Incident Logs
+
+Incident logs serve as the foundation for effective incident management and compliance. Key benefits include:
+
+- **Record Keeping**: Provides a timeline of events and actions taken.
+- **Compliance**: Demonstrates adherence to regulatory requirements.
+- **Post-Incident Analysis**: Identifies gaps in response and areas for improvement.
+
+**What to Include in an Incident Log**:
+- Date and time of detection.
+- Description of the incident.
+- Actions taken (e.g., containment, mitigation).
+- Names of involved personnel.
+- Resolution steps and outcomes.
+
+<<<
+   
+==== Templates for Basic Incident Reporting
+
+Structured incident reports ensure consistency and completeness in documentation.
+
+1. **Basic Incident Report Template**:
+   - **Incident ID**: Unique identifier for tracking.
+   - **Date/Time**: When the incident occurred and was detected.
+   - **Description**: Summary of the event.
+   - **Impact**: Affected systems, data, and business operations.
+   - **Root Cause**: Explanation of how the incident occurred.
+   - **Actions Taken**: Steps for containment, eradication, and recovery.
+   - **Recommendations**: Preventative measures for the future.
+
+2. **Post-Incident Review Template**:
+   - **Timeline of Events**: Key milestones and actions.
+   - **Effectiveness of Response**: Evaluation of team performance.
+   - **Lessons Learned**: Insights for improving future responses.
+   - **Plan Updates**: Revisions to the Incident Response Plan.
+
+3. **Lab Activity**:
+   - Practice filling out an incident report based on the breach simulation from Lesson 5.1.
+   - Review and critique reports with peers to identify strengths and weaknesses.
+

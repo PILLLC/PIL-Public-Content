@@ -1,0 +1,91 @@
+== Module {module-number}: Requirements and Dependencies for Processing an RE Transaction Using the Billing Rate Table in CGI Advantage 4
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+{SP}
+{SP}
+
+
+To create and process a **Revenue Entry (RE)** transaction using the **Billing Rate Table** in CGI Advantage 4, ensure the following requirements and dependencies are configured. This setup allows the RE transaction to reference billing rates accurately, calculate charges, and complete the transaction workflow.
+
+=== 1. Set Up Customer and Billing Profiles
+
+* **Customer Profile**: Ensure the customer receiving the service has an entry in the Vendor/Customer Creation (VCC) table.
+  ** Steps:
+  ** Ensure Customer ID, Customer Type, Tax ID, and Contact Information are complete.
+  
+* **Billing Profile**: Configure a Billing Profile for the customer in the Billing Profile Table.
+  ** Link the profile to the Customer ID.
+  ** Set the Billing Method to use the Billing Rate Table for rate-based billing.
+
+=== 2. Billing Rate Table Configuration
+
+* **Billing Rate Table**: Define rates for services or items in the Billing Rate Table.
+  ** Rate Type: Define rate types (e.g., hourly, per unit).
+  ** Effective Dates: Set date ranges for each rate’s validity.
+  ** Rate Amounts: Enter amounts based on service, product, or unit.
+  ** Unit of Measure: Specify per-hour, per-unit, etc.
+  ** Service Codes: Associate service codes with rates to apply in RE transactions.
+  
+* **Validation**: Ensure no missing or conflicting entries to avoid transaction errors.
+
+=== 3. Chart of Accounts and Budget Control Setup
+
+* **Chart of Accounts (COA)**: Verify necessary accounts for revenue recognition, receivables, and costs.
+* **Budget Controls**: Ensure budget availability for accounts used in RE transactions.
+  ** Confirm Budget Structure and levels are active.
+  ** Confirm appropriation for revenue accounts is available.
+
+=== 4. Customer Account Options and Address Configuration
+
+* **Customer Account Options Table (CACT)**: Set billing preferences like address inference and payment terms.
+  ** Billing Address: If Address ID needs to be inferred, configure in CACT.
+  ** Payment Terms: Set terms (e.g., Net 30, Net 60).
+  
+* **Multiple Address Support**: Configure multiple billing addresses and define Address Type in CACT or Customer Address table if needed.
+
+=== 5. Revenue Entry (RE) Transaction Configuration
+
+* **Revenue Entry Form Access**: Ensure access to the RE form in the Revenue module.
+* **Transaction Defaults**: Set up common field defaults:
+  ** Service Date, Customer ID, Service Codes, Units.
+* **Calculation Rules**: Configure to ensure correct charge calculations from rate and unit data.
+
+=== 6. Workflow and Approval Setup
+
+* **Workflow Configuration**: Set up approval workflows for RE transactions.
+* **Role-Based Approvals**: Configure levels of authorization as needed.
+* **Email Notifications**: Optionally, set notifications for approvers.
+
+=== 7. System Configuration and User Permissions
+
+* **User Permissions**: Verify access for users involved in creating, processing, and approving RE transactions.
+* **System Configuration**: Set parameters to support rate-based billing.
+  ** Fiscal Year Setup: Ensure the current period is open.
+  ** Currency Configuration: Set default currency if using multiple currencies.
+
+=== 8. Testing and Validation of Configuration
+
+* **Test RE Transaction**: Run test transactions to verify calculations and references.
+* **Error Checking**: Address any configuration issues flagged during testing.
+
+=== Summary of Requirements
+
+[cols="2,3", options="header"]
+|===
+| Requirement                  | Purpose
+
+| Customer Profile & Billing Profile | To define customer and billing preferences
+| Billing Rate Table               | To establish rate structures for services or products
+| Chart of Accounts (COA)          | For revenue recognition and cost tracking
+| Budget Control                   | Ensures availability of budget if necessary
+| Customer Account Options (CACT)  | To define billing addresses and payment terms
+| RE Form Access and Defaults      | To streamline RE transaction creation
+| Workflow and Approvals           | For authorizing RE transactions
+| User Permissions                 | Grants access to necessary forms and transactions
+| System Configuration             | Ensures parameters support billing rate processing
+| Testing and Validation           | Confirms all configurations work as expected
+|===

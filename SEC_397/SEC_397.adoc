@@ -1,0 +1,74 @@
+= SEC397: Intermediate Cybersecurity Fundamentals
+
+== Course Overview
+SEC397 is an intermediate-level course tailored for professionals seeking to enhance their foundational cybersecurity knowledge before advancing to more sophisticated topics covered in SEC497. Through theoretical and hands-on modules, students will gain the skills necessary to understand core cybersecurity concepts, tools, and practices essential for defending against common threats.
+
+== Objectives
+Upon completion, participants will be able to:
+
+- Identify and mitigate common cyber threats.
+- Understand core principles of network security and cryptography.
+- Use industry-standard tools for vulnerability assessment and monitoring.
+- Develop basic incident response and risk management plans.
+
+== Modules
+
+=== Module 1: Introduction to Cybersecurity
+==== Lesson 1.1: Understanding Cybersecurity Basics
+- Defining cybersecurity and its importance.
+- Key terminologies and concepts.
+
+==== Lesson 1.2: Cyber Threats and Attack Vectors
+- Overview of malware, phishing, and social engineering attacks.
+- Case studies of common attack scenarios.
+
+=== Module 2: Network Security Fundamentals
+==== Lesson 2.1: Network Architecture and Protocols
+- Key components of secure networks.
+- TCP/IP and common network vulnerabilities.
+
+==== Lesson 2.2: Firewalls and Intrusion Detection Systems (IDS)
+- Introduction to firewall configuration.
+- Overview of IDS and IPS systems.
+
+=== Module 3: Cryptography Basics
+==== Lesson 3.1: Symmetric and Asymmetric Encryption
+- Fundamentals of encryption techniques.
+- Use cases of symmetric vs. asymmetric encryption.
+
+==== Lesson 3.2: Digital Signatures and Certificates
+- Importance of digital certificates in securing communications.
+- Lab: Implementing SSL/TLS certificates.
+
+=== Module 4: Vulnerability and Risk Management
+==== Lesson 4.1: Vulnerability Scanning Tools
+- Overview of tools like Nessus and OpenVAS.
+- Hands-on: Performing a basic scan.
+
+==== Lesson 4.2: Introduction to Risk Management
+- Concepts of risk assessment and mitigation.
+- Developing simple risk management plans.
+
+=== Module 5: Basic Incident Response
+==== Lesson 5.1: Incident Response Lifecycle
+- Overview of NIST Incident Response Framework.
+- Role-playing exercise: Responding to a simulated breach.
+
+==== Lesson 5.2: Reporting and Documentation
+- Importance of maintaining incident logs.
+- Templates for basic incident reporting.
+
+== Assessment Methods
+- Quizzes (20%)
+- Hands-on Labs (40%)
+- Final Project: Risk Assessment Plan (30%)
+- Participation (10%)
+
+== Target Audience
+- IT professionals seeking to transition into cybersecurity roles.
+- Recent graduates in IT or related fields.
+- Individuals preparing to enroll in SEC497.
+
+== Prerequisites
+- Basic understanding of IT concepts.
+- Familiarity with operating systems and basic networking.

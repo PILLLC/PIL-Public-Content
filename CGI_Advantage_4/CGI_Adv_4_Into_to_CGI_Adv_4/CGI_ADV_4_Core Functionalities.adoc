@@ -1,0 +1,178 @@
+== Module {module-number}: Core Functionalities
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+{SP}
+{SP}
+
+[discrete]
+=== Learning Objectives
+
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::agenda.svg[align="left",pdfwidth=50%]|Upon completion of this module, students should be able to:
+
+* Set up and manage the General Ledger, Accounts Payable, and Accounts Receivable modules in CGI Advantage 4.
+* Create, analyze, and monitor budgets and forecasts for effective financial planning.
+* Navigate procurement processes, including vendor and contract management.
+* Manage human resources operations, including payroll, employee data, and compliance.
+|===
+
+<<<
+
+=== Financial Management
+
+==== General Ledger Setup and Management
+The General Ledger (GL) serves as the financial backbone of CGI Advantage 4, consolidating data for accurate reporting and decision-making.
+
+- *Setting Up the General Ledger:*
+  * **Chart of Accounts:** Define account structures, categories, and hierarchies for clear organization.
+  * **Financial Periods:** Configure fiscal years and accounting calendars to align with reporting requirements.
+  * **Journal Entries:** Establish rules for automated postings, including recurring transactions and error correction.
+
+- *Managing the General Ledger:*
+  * **Posting Transactions:** Automate approval workflows to ensure timely and accurate postings.
+  * **Reconciliation:** Utilize reconciliation tools for accounts like bank and credit balances.
+  * **Financial Reporting:** Generate key financial reports, including balance sheets, income statements, and trial balances.
+
+*Activity Suggestion:* Provide a scenario where learners reconcile discrepancies between the General Ledger and subledgers.
+
+<<<
+
+==== Accounts Payable and Receivable
+Effective AP and AR management ensures financial transparency and operational liquidity.
+
+- *Accounts Payable:*
+  * **Vendor Profiles:** Set up vendor details, payment terms, and banking information.
+  * **Invoice Processing:** Automate invoice approvals to expedite payment workflows.
+  * **Payment Runs:** Use batch processes to manage high-volume payments while ensuring accuracy.
+
+- *Accounts Receivable:*
+  * **Customer Setup:** Configure customer records, including credit terms and contact details.
+  * **Invoicing:** Automate invoice generation based on contractual terms or completed deliveries.
+  * **Collections Management:** Track overdue payments and implement reminders or collection strategies.
+
+*Case Study:* Analyze how an organization streamlined its AP/AR processes to reduce processing errors by 30%.
+
+<<<
+
+==== Budgeting and Forecasting
+CGI Advantage 4 equips organizations with advanced tools for financial planning.
+
+- *Budget Setup:*
+  * **Structures and Hierarchies:** Define categories, from departmental to project-specific budgets.
+  * **Entry and Tracking:** Automate data entry for recurring budgets.
+
+- *Forecasting Tools:*
+  * **Revenue Projections:** Leverage historical data for predictive analysis.
+  * **Scenario Planning:** Develop multiple forecasts for diverse economic conditions.
+
+- *Monitoring and Reporting:*
+  * **Variance Analysis:** Generate reports to compare actual versus budgeted spending.
+  * **Real-Time Alerts:** Implement automated notifications for over-budget conditions.
+
+*Instructor Note:* Emphasize the importance of forecasting for decision-making in volatile fiscal environments.
+
+<<<
+
+=== Procurement Management
+
+==== Procurement Process Overview
+Efficient procurement management reduces costs while ensuring compliance.
+
+- *Procurement Lifecycle:*
+  * **Requisitioning:** Create, submit, and approve purchase requests.
+  * **Vendor Selection:** Use evaluation criteria and RFQs (Request for Quotes).
+  * **Contract Management:** Oversee renewals, compliance, and budget alignment.
+  * **Purchase Orders:** Automate PO generation for approved requisitions.
+
+*Real-World Scenario:* Explore how a public sector organization automated requisitions, saving 20% in processing costs.
+
+<<<
+
+==== Vendor Management
+Robust vendor management strengthens supplier relationships and compliance.
+
+- *Vendor Profiles:*
+  * Store certifications, tax documentation, and insurance details.
+  * Track contract performance against KPIs.
+
+- *Performance Metrics:*
+  * Monitor delivery schedules, quality ratings, and costs.
+
+*Activity Suggestion:* Students simulate vendor approval based on case-specific criteria.
+
+<<<
+
+==== Contract and Purchase Order Management
+Effective contract and PO oversight is essential for procurement efficiency.
+
+- *Contracts:*
+  * Draft, approve, and monitor performance using CGI Advantage templates.
+  * Automate notifications for expiration or renewal.
+
+- *PO Management:*
+  * Use three-way matching (PO, invoice, receipt) to prevent overpayment.
+  * Generate and track POs throughout the fulfillment process.
+
+*Instructor Note:* Illustrate how efficient PO workflows reduce errors and save time.
+
+<<<
+
+=== Human Resources and Payroll
+
+==== HR Module Overview
+The HR module in CGI Advantage 4 centralizes employee management.
+
+- *Core Features:*
+  * Maintain employee records for personal and professional data.
+  * Manage benefits enrollment, updates, and eligibility audits.
+  * Track compliance to ensure adherence to labor laws.
+
+*Case Study:* Evaluate how automating compliance tracking improved employee satisfaction.
+
+<<<
+
+==== Employee Data Management
+Accurate employee data is vital for smooth HR operations.
+
+- *Employee Profiles:*
+  * Store and update roles, departments, and salary information.
+  * Manage life cycle changes, including promotions and terminations.
+
+- *Compliance Reports:*
+  * Automate generation for labor audits or governmental reporting.
+
+*Practical Exercise:* Configure profiles for a new department, including role hierarchies.
+
+<<<
+
+==== Payroll Processing and Compliance
+Payroll operations in CGI Advantage 4 ensure accuracy and timeliness.
+
+- *Payroll Setup:*
+  * Establish schedules and compliance with state, federal, and union laws.
+
+- *Processing Steps:*
+  * **Earnings and Deductions:** Configure tax, benefits, and voluntary deductions.
+  * **Auditing:** Automate pre-run validation checks to catch errors before processing.
+
+- *Compliance Integration:*
+  * Produce mandatory forms like W-2s or tax filings with minimal manual effort.
+
+*Instructor Note:* Use a payroll error scenario to teach debugging techniques.
+
+<<<
+
+[appendix]
+=== Glossary
+- **General Ledger (GL):** Central accounting system for all financial transactions.
+- **Variance Analysis:** A process to identify the difference between expected and actual results.
+- **Three-Way Matching:** Cross-verifying POs, invoices, and receipts for accuracy.
+
+[discrete]
+=== Additional Notes
+*Instructor Tip:* Encourage hands-on practice to build confidence in module setup and management.

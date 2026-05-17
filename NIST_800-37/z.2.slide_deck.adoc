@@ -1,0 +1,13 @@
+:course-tag: 1.0.0-v0.0.0
+= Mastering the NIST Risk Management Framework (RMF) - SP 800-37: Course Slides
+:revnumber: {course-tag}
+:toc:
+:toclevels: 1
+:source-highlighter: rouge
+:icons: font
+//:artifact-type:
+:doctype: book
+:table-stripes: even
+
+
+include::z.content_slide_deck.adoc[]

@@ -1,0 +1,90 @@
+== Module {module-number}: Introduction to CGI Advantage 4
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+{SP}
+
+{SP}
+
+[discrete]
+=== Learning Objectives
+
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::agenda.svg[align="left",pdfwidth=50%]|Upon completion of this module, students should be able to:
+
+* Understand the basic concepts and functionalities of CGI Advantage 4.
+* Gain an overview of the system architecture and core components.
+* Learn about the history and evolution of CGI Advantage 4, including key features and * benefits.
+|===
+
+<<<
+
+=== Overview of CGI Advantage
+
+==== Introduction to Enterprise Resource Planning (ERP)
+Enterprise Resource Planning (ERP) systems are integrated software platforms that manage core business processes, including finance, procurement, HR, and supply chain operations. ERP systems centralize data and processes, allowing organizations to operate more efficiently by improving communication, streamlining processes, and providing real-time insights.
+
+- *Key Benefits of ERP Systems:*
+  * Integrated Business Processes
+  * Improved Data Accuracy
+  * Enhanced Reporting and Analysis
+  * Better Decision-Making Support
+
+<<<
+
+==== History and Evolution of CGI Advantage
+CGI Advantage is a comprehensive ERP solution designed specifically for government agencies and public sector organizations. Originally developed by CGI Group, the software has evolved over decades, incorporating advancements in technology and addressing the unique needs of the public sector.
+
+- *Milestones in CGI Advantage History:*
+  * 1990s: Initial release of CGI Advantage
+  * 2000s: Introduction of web-based interfaces and integration capabilities
+  * 2010s: Enhanced modular design and cloud deployment options
+  * 2020s: Release of CGI Advantage 4 with modernized architecture and advanced features
+
+<<<
+
+==== Key Features and Benefits of CGI Advantage 4
+CGI Advantage 4 is the latest version of CGI's ERP solution, offering a robust and flexible platform tailored for public sector organizations. Its features are designed to improve operational efficiency, enhance service delivery, and ensure compliance with government regulations.
+
+- *Key Features of CGI Advantage 4:*
+  * Modular Design: Easily customizable modules for finance, procurement, HR, and more.
+  * Cloud Deployment: Scalable cloud options to reduce infrastructure costs and improve accessibility.
+  * Enhanced Security: Advanced security measures to protect sensitive government data.
+  * Reporting and Analytics: Powerful tools for real-time reporting and data-driven decision-making.
+
+<<<
+  
+=== System Architecture and Components
+
+==== Understanding the System Architecture
+The architecture of CGI Advantage 4 is designed to be modular, scalable, and flexible, enabling public sector organizations to implement the software according to their specific needs. The system is built on a service-oriented architecture (SOA) that supports integration with other systems and allows for easy updates and enhancements.
+
+- *Core Components of the Architecture:*
+  * Application Layer: Handles business logic and operations.
+  * Data Layer: Manages data storage, retrieval, and processing.
+  * Integration Layer: Facilitates communication between different modules and external systems.
+
+<<<
+
+==== Overview of Core Components and Modules
+CGI Advantage 4 is composed of several core modules that cover a wide range of functions necessary for public sector operations. These modules can be implemented individually or as part of an integrated system, depending on the organization's needs.
+
+- *Core Modules:*
+  * Financial Management: General Ledger, Accounts Payable/Receivable, Budgeting.
+  * Procurement Management: Vendor Management, Contract Management, Purchase Orders.
+  * Human Resources and Payroll: Employee Data Management, Payroll Processing, Benefits Administration.
+  * Workflow Automation: Automated processes for approvals, notifications, and task management.
+
+<<<
+
+==== Integration with Other Systems
+One of the key strengths of CGI Advantage 4 is its ability to integrate with other systems, both within and outside the organization. This capability is crucial for ensuring seamless operations and data consistency across different departments and external partners.
+
+- *Integration Capabilities:*
+  * API Integration: Allows for custom integrations with third-party software.
+  * Data Exchange: Supports standard data formats for easy exchange between systems.
+  * Real-Time Syncing: Ensures that data is updated in real-time across integrated systems.

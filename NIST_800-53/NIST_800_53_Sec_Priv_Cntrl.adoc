@@ -1,0 +1,30 @@
+== Module {module-number}: Security and Privacy Controls Overview
+
+=== Summary
+Explanation of the different families of security and privacy controls in NIST 800-53.
+
+=== Objectives
+
+- Identify the 20 major families of controls.
+- Explain the importance of each control family in safeguarding information assets.
+
+=== NIST 800-53 Control Categories
+NIST 800-53 organizes controls into categories such as Access Control (AC), Audit and Accountability (AU), Configuration Management (CM), and more. Each family is designed to address specific aspects of cybersecurity and privacy.
+
+The 20 control families are structured to cover various security objectives and are further divided into control enhancements that provide additional guidance and strengthening measures. Examples include:
+
+1. **Access Control (AC):** Ensures that only authorized users can access information systems and data.
+2. **Audit and Accountability (AU):** Focuses on recording and reviewing audit logs to detect and investigate security incidents.
+3. **Configuration Management (CM):** Ensures that system configurations adhere to security best practices and are continuously monitored for unauthorized changes.
+4. **System and Communications Protection (SC):** Protects data in transit and at rest through encryption and secure communication protocols.
+5. **Incident Response (IR):** Provides guidelines for detecting, responding to, and recovering from security incidents.
+
+Each control family is essential for building a comprehensive security program. Organizations are encouraged to select and implement controls based on their risk assessments, operational environments, and regulatory requirements.
+
+=== Importance of Control Families
+By implementing controls from each family, organizations can reduce vulnerabilities, enhance threat detection and response capabilities, and improve overall resilience against cyberattacks. These controls also support compliance efforts by addressing various legal and regulatory requirements.
+
+ifeval::["{artifact-type}" == "IG"]
+
+*Instructor note:* Provide real-world examples of how specific control families have been used to prevent or mitigate cybersecurity incidents. Encourage participants to discuss which control families are most relevant to their organizations.
+endif::[]

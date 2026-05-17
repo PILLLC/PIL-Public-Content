@@ -1,0 +1,140 @@
+== Module {module-number}: Introduction to Developing CGI Advantage 4 Applications
+
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+{SP}
+{SP}
+
+=== Overview
+This crash course is designed for developers who are new to CGI Advantage 4. It provides an overview of core modules, architecture, development environment setup, common workflows, and customization methods. This guide serves as a quick reference to understand how to extend and maintain applications within CGI Advantage 4.
+
+=== 1. Understanding CGI Advantage 4 Architecture
+
+CGI Advantage 4 is a comprehensive ERP system with a modular architecture that caters to government and public sector organizations. Core components include:
+
+- **Modules**: CGI Advantage 4 has modules for Financial Management (FIN), Human Resources Management (HRM), Budgeting, Procurement, and more.
+- **Frameworks**: Built on Java EE, CGI Advantage 4 utilizes JSP, servlets, and EJBs for backend processing.
+- **Data Layer**: Typically integrated with Oracle databases, with tables and schemas customized for each client.
+- **Customizations**: Configurable through scripts, templates, and XML, supporting custom business rules and workflows.
+
+=== 2. Setting Up the Development Environment
+
+Follow these steps to set up the environment:
+
+. **Install Required Software**
+   - Java Development Kit (JDK) 1.8 or higher
+   - Apache Ant and Maven for build automation
+   - An Integrated Development Environment (IDE) such as Eclipse or IntelliJ IDEA
+   - Oracle SQL Developer or a similar database client for database management
+
+. **Set Up Project Repositories**
+   - Access the repository (e.g., Git, SVN) where your CGI Advantage project files are stored.
+   - Clone or check out the repository locally to set up your workspace.
+
+. **Configure Database Connection**
+   - Update database connection strings in the development configuration files, typically located in the `config` or `resources` directory.
+   - Test the database connection to ensure access to necessary tables and schemas.
+
+. **Set Up Build Scripts**
+   - Configure build scripts (Ant or Maven) to handle compilation, packaging, and deployment tasks.
+   - Common build targets include `clean`, `compile`, `package`, and `deploy`.
+
+=== 3. Key Modules and Tables
+
+Developers should be familiar with these primary modules and tables:
+
+==== Financial Management (FIN)
+- **General Ledger (GL)**: Core tables include `GL_ACCOUNT`, `GL_JOURNAL`.
+- **Accounts Payable (AP)**: Key tables are `AP_INVOICE`, `AP_PAYMENT`.
+- **Accounts Receivable (AR)**: Key tables include `AR_INVOICE`, `AR_PAYMENT`.
+- **Budgeting**: Tables like `BUDGET_STRUCTURE` and `BUDGET_ENTRY`.
+
+==== Human Resources Management (HRM)
+- **Employee Profile**: Core tables include `EMPLOYEE_PROFILE`, `EMPLOYEE_ADDRESS`.
+- **Payroll**: Tables like `PAYROLL_RUN` and `PAY_CALCULATION`.
+
+==== Common Tables
+- **Customer and Vendor**: Tables such as `CUSTOMER_PROFILE`, `VENDOR_PROFILE`.
+- **Account Options**: `ACCOUNT_OPTIONS` table, linking accounts to configurations.
+
+=== 4. Core Development Tasks and Processes
+
+==== Working with Pages and UI Components
+CGI Advantage 4’s UI is largely JSP-based, with HTML templates and CSS for styling.
+
+- **Page Customizations**: Locate and modify JSP files within the `webapps` directory.
+- **JavaScript Validation**: Use JavaScript files for field validations and UI enhancements.
+- **CSS Styling**: Modify CSS files for custom themes and styles.
+
+==== Customizing Business Rules
+Business rules in CGI Advantage can be modified or created using XML configurations and Java classes.
+
+- **Business Rule XMLs**: Found in `config` directories, these XML files define rule parameters.
+- **Java Classes**: Extend or override business rules using Java classes by creating custom logic in service layer files.
+
+==== Workflow and Approval Processes
+- **Workflow Configuration**: Located in `workflow` XML files, where you can define routing and approval hierarchies.
+- **Approval Process Customization**: Use the workflow engine to set rules and approvals by department, role, or transaction type.
+
+=== 5. Database Management and Table Customization
+
+- **Creating Custom Tables**: Use SQL scripts to create tables, ensuring naming conventions are followed.
+- **Modifying Core Tables**: Be cautious with core tables; ensure all changes are approved and follow CGI protocols.
+- **Database Indexing**: Index frequently queried columns to improve performance.
+
+=== 6. Security and Permissions
+
+- **Role-Based Access Control**: Define user roles and permissions using configuration files or database tables like `USER_PROFILE` and `ROLE_ASSIGNMENT`.
+- **Data Security**: Implement field-level encryption for sensitive data fields such as SSNs and financial data.
+- **Audit Logging**: Enable audit trails for critical transactions and maintain logging for security reviews.
+
+=== 7. Common Development Scenarios
+
+==== Scenario 1: Adding a Custom Field to a Page
+1. **Add Column to Database**: Alter the relevant table to include a new column.
+2. **Update JSP Page**: Modify the JSP file to include the new field.
+3. **Configure Validation**: Add JavaScript validation as needed.
+4. **Test and Deploy**: Test thoroughly to ensure the field displays and saves correctly.
+
+==== Scenario 2: Modifying an Approval Workflow
+1. **Open Workflow XML**: Locate the XML file for the desired workflow.
+2. **Edit Routing Rules**: Adjust routing conditions or add new approval steps.
+3. **Deploy and Test**: Ensure the workflow routes correctly through the approval chain.
+
+==== Scenario 3: Creating a Report
+1. **Define SQL Query**: Write an SQL query to pull data from relevant tables.
+2. **Create Report Template**: Develop the report layout using JasperReports or another reporting tool.
+3. **Integrate and Test**: Add the report to CGI Advantage and verify output.
+
+=== 8. Best Practices for Development
+
+- **Version Control**: Use version control for all changes, committing frequently and writing clear commit messages.
+- **Testing**: Test thoroughly in a development environment before pushing to production. Use test cases that cover both typical and edge-case scenarios.
+- **Documentation**: Document all customizations and code changes, including configuration details and scripts.
+- **Performance Optimization**: Avoid excessive database calls and leverage batch processing for large data sets.
+- **Error Handling**: Implement robust error handling, especially for transaction-related customizations.
+
+=== 9. Debugging and Troubleshooting Tips
+
+- **Logging**: Enable detailed logging for transactions, approvals, and business rules.
+- **Console Output**: Monitor the console output in your IDE or server logs for runtime errors.
+- **Database Checks**: Verify that all required data is present in the database, and query key tables directly for troubleshooting.
+
+=== 10. Deployment and Testing
+
+- **Build and Deploy**: Use build scripts to package and deploy your application to a staging environment.
+- **User Acceptance Testing (UAT)**: Involve end-users in testing to validate that changes meet business requirements.
+- **Production Release**: Coordinate with the system administrator to deploy changes to production during maintenance windows.
+
+=== Additional Resources
+
+- **CGI Advantage Documentation**: Refer to the official CGI Advantage documentation for in-depth guides.
+- **Community and Support**: Reach out to the CGI user community or CGI support for troubleshooting and advanced assistance.
+- **Code Repositories**: Maintain your code in a central repository for version control and team collaboration.
+
+=== Summary
+This crash course introduces developers to key aspects of CGI Advantage 4, covering architecture, customization, common workflows, and best practices. By following these guidelines, developers can effectively extend and maintain applications in CGI Advantage 4 to meet organizational needs.

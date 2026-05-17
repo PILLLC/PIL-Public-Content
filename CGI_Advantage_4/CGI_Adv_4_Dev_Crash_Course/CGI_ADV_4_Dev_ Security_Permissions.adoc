@@ -1,0 +1,150 @@
+== Module {module-number}: Security and Permissions
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+{SP}
+{SP}
+
+[discrete]
+=== Learning Objectives
+
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::agenda.svg[align="left",pdfwidth=50%]|Upon completion of this module, students should be able to:
+
+* Understand the principles of role-based access control (RBAC) and how to define user roles and permissions in CGI Advantage 4.
+* Implement robust data security measures, including field-level encryption for sensitive information.
+* Configure audit logging to create detailed trails of system activities for security reviews and compliance.
+|===
+
+<<<
+
+=== Role-Based Access Control (RBAC)
+
+RBAC is a security mechanism that restricts system access to authorized users based on their roles and responsibilities. In CGI Advantage 4, RBAC is implemented through configuration files and database tables.
+
+==== Defining User Roles
+- **Role Creation:**
+  * Define roles such as `Admin`, `Finance Manager`, `HR Specialist`, or `Vendor Coordinator`.
+  * Use the `ROLE_ASSIGNMENT` table or configuration files to assign permissions.
+
+- **Assigning Roles to Users:**
+  * Link roles to users through the `USER_PROFILE` table.
+  * Example:
+
+  ```sql
+    INSERT INTO ROLE_ASSIGNMENT (USER_ID, ROLE_ID) VALUES ('12345', 'FINANCE_MANAGER');
+  ```
+
+==== Managing Permissions
+- **Module Permissions:**
+  * Grant or restrict access to specific modules (e.g., Financial Management, Procurement).
+- **Field-Level Permissions:**
+  * Use fine-grained controls to restrict access to sensitive fields, such as salaries or Social Security Numbers (SSNs).
+
+==== Best Practices for RBAC
+- Regularly audit roles and permissions to ensure they align with job responsibilities.
+- Avoid assigning excessive permissions to a single role (principle of least privilege).
+
+*Activity Suggestion:* Assign learners to create a role hierarchy and define the permissions for a new role based on a business scenario.
+
+<<<
+
+=== Data Security
+
+Protecting sensitive data is crucial for compliance and maintaining user trust. CGI Advantage 4 provides features such as encryption and data masking to safeguard information.
+
+==== Field-Level Encryption
+Encrypting sensitive data fields ensures that even if the database is compromised, the information remains secure.
+
+- **Fields to Encrypt:**
+  * Social Security Numbers (SSNs)
+  * Financial account details
+  * Passwords and authentication tokens
+
+- **Implementing Encryption:**
+  * Use built-in database encryption functions or external libraries.
+  * Example:
+    ```sql
+    CREATE TABLE CUSTOMER_PROFILE (
+        CUSTOMER_ID NUMBER PRIMARY KEY,
+        SSN RAW(256) ENCRYPT USING 'AES256',
+        FIRST_NAME VARCHAR2(50),
+        LAST_NAME VARCHAR2(50)
+    );
+    ```
+
+==== Data Masking
+Mask sensitive data in reports and user interfaces to prevent unauthorized access.
+
+- **Dynamic Masking:**
+  * Mask data based on user roles or contexts. For example, show only the last four digits of SSNs to general users.
+
+- **Static Masking:**
+  * Mask data in non-production environments to secure test and development systems.
+
+<<<
+
+=== Audit Logging
+
+Audit logging tracks user actions and system events, creating a record that can be reviewed for compliance and security purposes.
+
+==== Configuring Audit Logs
+- **Enable Logging:**
+  * Activate logging in the system’s configuration files to track critical operations, such as login attempts, data modifications, and workflow changes.
+
+- **Database-Level Logging:**
+  * Create a dedicated `AUDIT_LOG` table to store logs.
+  * Example schema:
+    ```sql
+    CREATE TABLE AUDIT_LOG (
+        LOG_ID NUMBER PRIMARY KEY,
+        USER_ID NUMBER,
+        ACTION_TYPE VARCHAR2(50),
+        ACTION_TIMESTAMP TIMESTAMP,
+        DETAILS CLOB
+    );
+    ```
+
+==== Monitoring and Reviewing Logs
+- **Regular Reviews:**
+  * Schedule periodic log reviews to identify unusual activity or potential breaches.
+- **Automated Alerts:**
+  * Set up triggers to send alerts for specific events, such as failed login attempts or unauthorized data access.
+
+==== Retention Policies
+- Retain logs for a specified duration to comply with regulatory requirements.
+- Archive older logs to reduce database load while maintaining compliance.
+
+<<<
+
+=== Security Best Practices
+
+Adopting security best practices ensures that your CGI Advantage 4 environment remains secure and compliant.
+
+==== Access Control
+- Enforce strong password policies, including length, complexity, and expiration.
+- Use multi-factor authentication (MFA) to add an extra layer of security.
+
+==== Regular Updates
+- Apply security patches and updates promptly to address known vulnerabilities.
+- Use a staging environment to test updates before applying them to production.
+
+==== User Training
+- Train users on secure system usage, including recognizing phishing attempts and avoiding weak passwords.
+- Encourage reporting of suspicious activities or potential security issues.
+
+<<<
+
+[appendix]
+=== Glossary
+- *Role-Based Access Control (RBAC):* A security mechanism that restricts access to resources based on user roles.
+- *Encryption:* The process of converting data into a secure format that can only be read by authorized entities.
+- *Audit Logging:* Recording user actions and system events for review and compliance purposes.
+
+[discrete]
+=== Additional Notes
+*Instructor Tip:* Encourage participants to think about potential security threats and how they would mitigate them using CGI Advantage 4 features.

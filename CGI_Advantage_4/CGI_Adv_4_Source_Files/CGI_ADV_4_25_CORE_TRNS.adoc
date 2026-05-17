@@ -1,0 +1,241 @@
+== Module {module-number}: CGI Advantage 4 Core Transaction Documentation
+
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+{SP}
+{SP}
+
+This document provides comprehensive details for 25 core transactions within CGI Advantage 4. Each transaction includes an overview, prerequisites, dependencies, process steps, validation checks, reporting, and troubleshooting.
+
+=== 1. AP Invoice (Accounts Payable Invoice)
+
+* **Module**: Accounts Payable
+* **Purpose**: Used to record vendor invoices for expenses incurred.
+* **Usage**: Primarily used by Accounts Payable departments to track vendor invoices.
+
+==== Prerequisites and Dependencies
+
+[cols="3,3", options="header"]
+|===
+| Table | Description
+| Vendor Profile (VEN) | Stores vendor information.
+| Budget Control Table | Checks budget availability.
+|===
+
+==== Key Fields and Data Elements
+
+[cols="3,3,4", options="header"]
+|===
+| Field Name | Required/Optional | Description
+| Invoice Number | Required | Unique identifier for each invoice.
+| Vendor ID | Required | Links the transaction to a vendor profile.
+| Account Code | Required | GL account used for the expense.
+|===
+
+==== Process for Creating and Processing AP Invoice
+
+. **Navigate to AP Invoice**: Go to `Accounts Payable` > `Invoice`.
+. **Enter Header Information**: Include Invoice Number, Date, and Amount.
+. **Link to Vendor**: Enter Vendor ID.
+. **Enter Line Items**: Specify account codes and amounts.
+. **Submit for Approval**: Submit the transaction.
+. **Post Transaction**: Finalize and post.
+
+==== Validation and Troubleshooting
+
+* **Budget Errors**: Check the Budget Control Table for availability.
+* **Vendor Profile Missing**: Ensure Vendor ID is set up.
+
+=== 2. AP Payment
+
+* **Module**: Accounts Payable
+* **Purpose**: Processes payments for recorded invoices.
+* **Usage**: Used by AP departments to issue payments to vendors.
+
+...
+
+=== 3. AR Invoice (Accounts Receivable Invoice)
+
+* **Module**: Accounts Receivable
+* **Purpose**: Records receivables and customer invoices.
+* **Usage**: AR departments use it to manage billing and incoming payments.
+
+...
+
+=== 4. AR Payment
+
+* **Module**: Accounts Receivable
+* **Purpose**: Applies customer payments to outstanding invoices.
+* **Usage**: Used by AR departments for cash receipts and payment application.
+
+...
+
+=== 5. RE (Revenue Entry)
+
+* **Module**: Revenue
+* **Purpose**: Records revenue transactions.
+* **Usage**: Finance departments use it for income tracking.
+
+...
+
+=== 6. PO (Purchase Order)
+
+* **Module**: Procurement
+* **Purpose**: Creates purchase orders for goods and services.
+* **Usage**: Procurement teams use it to initiate purchase agreements.
+
+...
+
+=== 7. PO Amendment
+
+* **Module**: Procurement
+* **Purpose**: Modifies existing purchase orders.
+* **Usage**: Used when changes to quantity or terms are needed.
+
+...
+
+=== 8. Contract
+
+* **Module**: Procurement
+* **Purpose**: Manages contracts with vendors.
+* **Usage**: Used by procurement and legal for vendor agreements.
+
+...
+
+==== 9. GL Journal (General Ledger Journal)
+
+* **Module**: General Ledger
+* **Purpose**: Records adjustments and journal entries in GL.
+* **Usage**: Finance teams use it for financial reconciliation.
+
+...
+
+=== 10. Budget Entry (BJE)
+
+* **Module**: Budget
+* **Purpose**: Enters budget allocations.
+* **Usage**: Budgeting departments use it for planning and control.
+
+...
+
+=== 11. Budget Adjustment
+
+* **Module**: Budget
+* **Purpose**: Modifies existing budget entries.
+* **Usage**: Used for budget reallocations or adjustments.
+
+...
+
+=== 12. Payroll Run (PRR)
+
+* **Module**: Payroll
+* **Purpose**: Processes payroll for employees.
+* **Usage**: Payroll departments use it to manage salaries.
+
+...
+
+=== 13. Payroll Adjustment
+
+* **Module**: Payroll
+* **Purpose**: Adjusts payroll entries.
+* **Usage**: Used for corrections or re-calculations.
+
+...
+
+=== 14. Asset Management Entry
+
+* **Module**: Asset Management
+* **Purpose**: Records assets in the system.
+* **Usage**: Finance uses it to track physical assets.
+
+...
+
+=== 15. Asset Depreciation
+
+* **Module**: Asset Management
+* **Purpose**: Calculates depreciation for assets.
+* **Usage**: Used in financial reporting.
+
+...
+
+=== 16. Vendor Profile Creation (VCC)
+
+* **Module**: Vendor/Customer
+* **Purpose**: Adds vendor information to the system.
+* **Usage**: AP and Procurement departments use it for vendor records.
+
+...
+
+=== 17. Customer Profile Creation (CPC)
+
+* **Module**: Vendor/Customer
+* **Purpose**: Adds customer information.
+* **Usage**: AR and Revenue departments use it for customer records.
+
+...
+
+=== 18. Billing Profile Setup
+
+* **Module**: Vendor/Customer
+* **Purpose**: Defines customer billing preferences.
+* **Usage**: Linked to AR for customer billing.
+
+...
+
+=== 19. Cash Receipt (CR)
+
+* **Module**: Accounts Receivable
+* **Purpose**: Records incoming cash.
+* **Usage**: Used to track payments received.
+
+...
+
+=== 20. Time Entry (TME)
+
+* **Module**: Payroll
+* **Purpose**: Logs employee time for payroll.
+* **Usage**: Used by HR and Payroll for time tracking.
+
+...
+
+=== 21. Leave Request (LVR)
+
+* **Module**: Payroll
+* **Purpose**: Manages employee leave requests.
+* **Usage**: HR departments use it for leave tracking.
+
+...
+
+=== 22. Benefits Enrollment (BEN)
+
+* **Module**: HR
+* **Purpose**: Enrolls employees in benefits plans.
+* **Usage**: HR uses it for benefits administration.
+
+...
+
+=== 23. Budget Control Inquiry (BCI)
+
+* **Module**: Budget
+* **Purpose**: Checks budget controls.
+* **Usage**: Used by Finance to monitor budget adherence.
+
+...
+
+=== 24. Procurement Bid (BID)
+
+* **Module**: Procurement
+* **Purpose**: Manages bids for procurement.
+* **Usage**: Procurement uses it to evaluate suppliers.
+
+...
+
+=== 25. Revenue Recognition Entry (RRE)
+
+* **Module**: Revenue
+* **Purpose**: Records revenue recognition.
+* **Usage**: Used in compliance and reporting.

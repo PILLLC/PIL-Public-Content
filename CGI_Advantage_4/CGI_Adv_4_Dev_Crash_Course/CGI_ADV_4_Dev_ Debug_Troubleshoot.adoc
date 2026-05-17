@@ -1,0 +1,137 @@
+== Module {module-number}: Debugging and Troubleshooting Tips
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+{SP}
+{SP}
+
+[discrete]
+=== Learning Objectives
+
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::agenda.svg[align="left",pdfwidth=50%]|Upon completion of this module, students should be able to:
+
+* Utilize logging and debugging tools to identify and resolve system issues.
+* Leverage console output and server logs to troubleshoot runtime errors effectively.
+* Perform database-level checks to verify data integrity and troubleshoot inconsistencies.
+|===
+
+<<<
+
+=== Debugging Techniques
+
+==== Logging
+Logging is one of the most effective tools for debugging, providing insights into system operations, errors, and unexpected behaviors.
+
+- *Types of Logs:*
+  * **Application Logs**: Record system events, such as transactions, user actions, and workflow processes.
+  * **Error Logs**: Capture exceptions and errors for detailed analysis.
+  * **Audit Logs**: Track changes to critical data and configurations for security reviews.
+
+- *Best Practices for Logging:*
+  * Use appropriate log levels (e.g., INFO, DEBUG, ERROR) based on the context.
+  * Log key inputs and outputs in critical operations like approvals and transactions.
+  * Avoid logging sensitive information (e.g., passwords or PII) to maintain security.
+
+- *Example Logging Setup (Java):*
+  ```java
+  private static final Logger logger = LoggerFactory.getLogger(MyService.class);
+
+  public void processTransaction() {
+      try {
+          logger.info("Starting transaction processing.");
+          // Processing logic
+          logger.info("Transaction processed successfully.");
+      } catch (Exception e) {
+          logger.error("Error during transaction processing: {}", e.getMessage());
+      }
+  }
+Instructor Note: Emphasize the importance of enabling logging in production environments while ensuring logs do not expose sensitive data.
+
+<<<
+
+==== Console Output and Server Logs Monitoring console output and server logs provides real-time insights into application behavior and errors during runtime.
+
+Using Console Output:
+
+Monitor the console output in your IDE during local development for immediate feedback.
+Add debug print statements to validate variables and intermediate results.
+Analyzing Server Logs:
+
+Access server logs located in directories such as /logs or /var/logs.
+Look for stack traces and error codes that point to issues in the application logic or environment.
+Common Issues Detected in Logs:
+
+Database connectivity errors (e.g., timeout, invalid credentials).
+Missing configuration files or incorrect paths.
+Null pointer exceptions or unhandled exceptions in the code.
+<<<
+
+==== Debugging Tools and Strategies Using debugging tools can streamline the process of identifying and resolving issues.
+
+IDE Debugging Features:
+
+Set breakpoints in your code to pause execution and inspect variables.
+Step through the code line by line to identify logical errors.
+Use watch expressions to monitor specific variables during execution.
+Remote Debugging:
+
+Enable remote debugging on the application server for live systems.
+Attach your IDE to the remote application to debug directly in the production-like environment.
+Third-Party Tools:
+
+Use tools like Splunk or ELK Stack for advanced log analysis and visualization.
+Integrate error tracking tools like Sentry or Rollbar to capture and analyze application errors.
+<<<
+
+=== Database Troubleshooting
+
+==== Database Checks Verifying data integrity and consistency at the database level is crucial for troubleshooting application-level issues.
+
+Key Database Debugging Steps:
+
+Query relevant tables directly to validate data integrity.
+Check for missing, duplicated, or corrupted records in critical tables.
+Verify that database constraints, such as foreign keys and unique indexes, are functioning correctly.
+Example SQL Debugging Query:
+
+sql
+Copy
+Edit
+SELECT * FROM GL_JOURNAL WHERE JOURNAL_STATUS = 'PENDING' AND CREATED_DATE > SYSDATE - 1;
+Identifying Database Issues:
+
+Data Mismatch: Ensure application inputs are correctly mapped to database fields.
+Transaction Errors: Check for incomplete or rolled-back transactions.
+Performance Bottlenecks: Identify slow queries using the database’s performance monitoring tools.
+<<<
+
+==== Common Database Issues and Resolutions Understanding common database problems and their resolutions can save significant debugging time.
+
+Issue: Missing Data
+
+Resolution: Check the application’s data insertion logic and verify triggers or stored procedures.
+Issue: Deadlocks or Locks
+
+Resolution: Identify locked resources using database diagnostic tools and terminate problematic sessions.
+Issue: Poor Query Performance
+
+Resolution: Optimize queries by adding indexes or rewriting inefficient joins.
+<<<
+
+=== Summary and Best Practices Recap
+
+Logging: Implement structured and secure logging to capture critical system events and errors.
+Console and Server Logs: Monitor logs for real-time and historical insights into application performance.
+Debugging Tools: Leverage IDE features and third-party tools to streamline the debugging process.
+Database Checks: Use SQL queries and database diagnostics to troubleshoot and resolve data-related issues.
+[appendix] === Glossary
+
+Logging: Capturing application events for monitoring and troubleshooting.
+Breakpoints: Debugging tool to pause code execution at specific points.
+Deadlock: A database issue where two or more transactions are waiting for each other to release resources.
+[discrete] === Additional Notes Instructor Tip: Encourage learners to create a debugging checklist tailored to their projects for faster issue resolution.

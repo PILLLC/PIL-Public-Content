@@ -1,0 +1,82 @@
+= Steps to Create an LCRR (Labor Cost Redistribution Request) in CGI Advantage 4
+
+== Overview
+The **LCRR (Labor Cost Redistribution Request)** transaction is used to reallocate labor costs from one account or project to another. This guide walks you through the steps to create, validate, and submit an LCRR transaction in CGI Advantage 4.
+
+== Steps to Create an LCRR
+
+=== 1. Access the LCRR Transaction Page
+
+1. Navigate to **Financials** > **Labor Management** > **Labor Cost Redistribution Request (LCRR)**.
+2. Click on **Create New** to open a new LCRR transaction.
+
+=== 2. Enter Header Information
+
+1. **Transaction Code**:
+   - Select the appropriate transaction code for the redistribution request, e.g., **LCRR**.
+2. **Transaction Date**:
+   - Enter the date the transaction will take effect.
+   - This should align with the accounting period for the redistribution.
+3. **Description**:
+   - Provide a brief description of the redistribution request (e.g., "Reallocate labor costs for Q1").
+4. **Reason Code**:
+   - Choose a reason code that explains the purpose of the redistribution (e.g., **Correction**, **Budget Adjustment**, etc.).
+
+=== 3. Enter Line Item Details
+
+1. **Source Line Items**:
+   - Click on **Add Line** to specify the original cost(s) to be redistributed.
+   - **Fields to Complete**:
+     - **Account Code**: Enter the account code from which labor costs are being moved.
+     - **Fund Code**: Enter the associated fund code for the original account.
+     - **Amount**: Specify the amount to be redistributed (can be a partial or full amount).
+     - **Reference Employee ID**: Enter the employee ID whose labor costs are being adjusted.
+2. **Target Line Items**:
+   - Click on **Add Line** to specify where the labor costs are being moved.
+   - **Fields to Complete**:
+     - **Account Code**: Enter the account code to which the labor costs are being moved.
+     - **Fund Code**: Enter the associated fund code for the target account.
+     - **Amount**: Specify the redistributed amount.
+     - **Reference Employee ID**: Enter the same employee ID to maintain labor tracking.
+
+=== 4. Validate the Transaction
+
+1. **Run Validation**:
+   - Click on the **Validate** button to ensure that all fields are correctly entered and comply with system rules.
+2. **Resolve Errors**:
+   - If any validation errors appear, correct them as specified (e.g., mismatched funds, unavailable budget).
+
+=== 5. Submit the LCRR for Approval
+
+1. **Review**:
+   - Carefully review the transaction details, including all source and target line items, to ensure accuracy.
+2. **Submit**:
+   - Click on **Submit** to route the LCRR transaction through the approval workflow.
+   - The system will assign the transaction to the appropriate approver(s) based on configured workflows.
+
+=== 6. Monitor the Approval Process
+
+1. **Check Status**:
+   - Navigate to the **Transaction Inquiry** page to monitor the status of your LCRR transaction.
+   - Use the **Transaction ID** to search for updates.
+2. **Approval Workflow**:
+   - If approvals are required, follow up with approvers to ensure timely processing.
+
+=== 7. Finalize the Transaction
+
+1. **Post the Transaction**:
+   - Once approved, the LCRR transaction will be posted automatically or manually, depending on your system configuration.
+2. **Verify Redistribution**:
+   - Use reporting tools such as the **Labor Redistribution Report** or the **General Ledger Inquiry** to confirm that the labor costs were correctly reallocated.
+
+== Additional Notes
+
+- **Budget Compliance**:
+  - Ensure that the target accounts have sufficient budget availability before submitting the transaction.
+- **Audit Trail**:
+  - The LCRR transaction includes an audit trail to track changes and approvals. Ensure all comments and justifications are entered in the system for future reference.
+- **Recurring Redistributions**:
+  - For frequent redistributions, consider using templates or predefined entries to save time.
+
+== Summary
+The LCRR transaction in CGI Advantage 4 enables precise reallocation of labor costs, ensuring accurate accounting and budget alignment. Following these steps will help you create, validate, and process LCRR transactions efficiently while maintaining compliance with organizational policies.

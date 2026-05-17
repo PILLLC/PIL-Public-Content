@@ -1,0 +1,171 @@
+== Module {module-number}: Human Resources Management in CGI Advantage 4
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+{SP}
+{SP}
+
+[discrete]
+=== Learning Objectives
+
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::agenda.svg[align="left",pdfwidth=50%]|Upon completion of this module, users will be able to:
+
+* Navigate the Human Resources Management (HRM) module in CGI Advantage 4.
+* Manage employee profiles, including hiring, promotions, and terminations.
+* Utilize payroll functionalities to process employee payments and maintain compliance.
+* Generate reports to monitor HR activities, track workforce metrics, and ensure compliance.
+|===
+
+<<<
+
+=== Overview of HR Management in CGI Advantage 4
+
+The HRM module in CGI Advantage 4 streamlines workforce management by integrating employee data, payroll processing, and compliance reporting into a single platform.
+
+- *Key Features:*
+  * Employee lifecycle management, including hiring, onboarding, and terminations.
+  * Payroll automation for accurate and timely employee compensation.
+  * Benefits administration and compliance reporting.
+
+*Instructor Note:* Highlight the importance of centralized HR data in reducing redundancy and improving decision-making.
+
+<<<
+
+=== Employee Lifecycle Management
+
+==== Employee Profile Management
+The Employee Profile feature is a centralized repository for managing employee data.
+
+- **Adding a New Employee:**
+  1. Navigate to the "Employee Profiles" section.
+  2. Select "Add New Employee" and enter required information, such as name, job title, department, and start date.
+  3. Attach necessary documents, such as offer letters or ID proof.
+
+- **Updating Employee Information:**
+  * Edit employee profiles to reflect changes, such as promotions or department transfers.
+  * Maintain records of certifications, performance reviews, and training completions.
+
+- **Terminating Employees:**
+  1. Select the employee profile and choose "Terminate Employment."
+  2. Specify the termination reason and effective date.
+  3. Ensure all final payroll and benefits actions are completed.
+
+*Activity:* Add a new employee profile and simulate a promotion process.
+
+<<<
+
+==== Onboarding and Offboarding
+Streamlined onboarding and offboarding processes ensure a smooth transition for employees joining or leaving the organization.
+
+- **Onboarding:**
+  * Automate tasks such as assigning roles, providing system access, and scheduling training sessions.
+  * Track onboarding progress through checklists and automated notifications.
+
+- **Offboarding:**
+  * Manage exit interviews, return of company assets, and final paychecks.
+  * Generate reports on attrition rates and exit trends.
+
+*Instructor Note:* Discuss how effective onboarding improves employee retention.
+
+<<<
+
+=== Payroll Management
+
+==== Payroll Configuration
+Payroll configuration ensures accurate and timely processing of employee wages.
+
+- **Setting Up Payroll Schedules:**
+  * Define pay periods (e.g., weekly, bi-weekly, monthly) and payment dates.
+  * Assign pay schedules to specific employee groups.
+
+- **Defining Payroll Rules:**
+  * Configure pay elements such as base salary, overtime, bonuses, and deductions.
+  * Set up tax calculations and compliance requirements based on local regulations.
+
+*Activity:* Configure a payroll schedule and add deductions for a specific employee group.
+
+<<<
+
+==== Payroll Processing
+Automating payroll processes reduces errors and ensures compliance with labor laws.
+
+- **Steps for Payroll Processing:**
+  1. Verify employee work hours and attendance records.
+  2. Run payroll calculations to determine gross pay, deductions, and net pay.
+  3. Generate payroll reports for approval.
+  4. Process payments via direct deposit or checks.
+
+- **Generating Payroll Reports:**
+  * Create reports on payroll trends, tax withholdings, and benefits disbursement.
+  * Use these reports for internal audits and compliance purposes.
+
+*Activity:* Simulate a payroll run for a specific pay period and generate a summary report.
+
+<<<
+
+=== Benefits Administration
+
+==== Managing Employee Benefits
+The HRM module simplifies the administration of employee benefits, such as health insurance, retirement plans, and leave policies.
+
+- **Benefits Configuration:**
+  * Define benefit plans, including eligibility criteria and contribution structures.
+  * Assign benefit plans to employee groups or individuals.
+
+- **Tracking Benefits Usage:**
+  * Monitor leave balances, retirement contributions, and insurance claims.
+  * Generate reports to analyze benefits utilization trends.
+
+*Instructor Note:* Discuss the importance of aligning benefits with employee needs and organizational goals.
+
+<<<
+
+=== HR Analytics and Reporting
+
+==== Workforce Metrics
+HR analytics provides insights into workforce trends, helping organizations make data-driven decisions.
+
+- **Common Metrics:**
+  * Employee turnover and retention rates.
+  * Training and development participation.
+  * Average time to fill open positions.
+
+- **Steps to Generate Workforce Reports:**
+  1. Navigate to the "Reports" section within the HRM module.
+  2. Select a report type, such as "Turnover Analysis" or "Training Completion."
+  3. Apply filters for specific departments, locations, or time periods.
+
+*Activity:* Generate a turnover analysis report and interpret the results.
+
+<<<
+
+==== Compliance Reporting
+Compliance reporting ensures adherence to labor laws and regulations.
+
+- **Common Compliance Reports:**
+  * Equal Employment Opportunity (EEO) compliance reports.
+  * Wage and Hour compliance summaries.
+  * Tax filings and statutory contributions.
+
+- **Automated Alerts:**
+  * Set up notifications for upcoming compliance deadlines.
+  * Automate the submission of regulatory filings where applicable.
+
+*Activity:* Create a compliance report for EEO requirements and discuss potential areas for improvement.
+
+<<<
+
+[appendix]
+=== Glossary
+- *Onboarding:* The process of integrating a new employee into the organization.
+- *Payroll Schedule:* A predefined timeline for processing and distributing employee wages.
+- *Workforce Metrics:* Quantitative measures used to assess HR performance and trends.
+
+[discrete]
+=== Additional Notes
+*Instructor Tip:* Encourage participants to explore the self-service options available in the HRM module, empowering employees to update personal information and manage leave requests independently.

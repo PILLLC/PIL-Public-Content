@@ -1,0 +1,176 @@
+== Module {module-number}: Certification and Final Project
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+{SP}
+{SP}
+
+[discrete]
+=== Learning Objectives
+
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::agenda.svg[align="left",pdfwidth=50%]|Upon completion of this module, students should be able to:
+
+* Prepare for CGI Advantage 4 certification by understanding the exam format and key topics.
+* Develop a study plan and utilize practice exams to assess readiness for certification.
+* Complete a final project that demonstrates mastery of CGI Advantage 4, including configuration, reporting, and workflow automation.
+* Present the final project and participate in peer and instructor reviews to refine skills and knowledge.
+* Understand the professional opportunities available post-certification and plan future learning paths.
+|===
+
+<<<
+
+=== Preparation for CGI Advantage Certification
+
+==== Overview of Certification Requirements
+Certification in CGI Advantage 4 is a testament to proficiency in managing and optimizing ERP systems. This section provides an overview of certification pathways, including key topics and formats.
+
+- *Certification Levels:*
+  * Associate Level: Focused on foundational knowledge of CGI Advantage 4.
+  * Professional Level: Advanced mastery, requiring in-depth understanding of configurations, workflows, and integration.
+
+- *Exam Format:*
+  * Multiple-choice, scenario-based, and simulation tasks.
+  * 50–75 questions to be completed in 90 minutes.
+  * Passing score: 70% for Associate and 80% for Professional certifications.
+
+- *Core Exam Topics:*
+  * Financial Management: General Ledger, Budgeting, and Reporting.
+  * Procurement: Vendor Management, Contracts, and Workflow Automation.
+  * Data Analytics: Reporting tools and dashboards.
+  * Security: User roles, permissions, and compliance standards.
+
+*Instructor Note:* Emphasize practical application over rote memorization.
+
+<<<
+
+==== Exam Preparation Tips
+Success in certification exams requires thorough preparation and practical experience. This section offers strategies to maximize readiness.
+
+- *Building a Study Plan:*
+  * Identify key areas of strength and weakness.
+  * Allocate study hours based on topic complexity and familiarity.
+
+- *Utilizing Resources:*
+  * Leverage CGI Advantage 4 official documentation, training videos, and sandbox environments.
+  * Join online communities or study groups to discuss challenging concepts.
+
+- *Practice Exams:*
+  * Regularly take timed practice tests to simulate real exam conditions.
+  * Review explanations for both correct and incorrect answers.
+
+- *Managing Exam Anxiety:*
+  * Practice mindfulness and relaxation techniques.
+  * Focus on one question at a time during the exam.
+
+*Activity Suggestion:* Instructors can host a mock exam session and review results with participants.
+
+<<<
+
+==== Practice Exams and Sample Questions
+Practice tests and sample questions are invaluable for familiarizing learners with the exam format and identifying knowledge gaps.
+
+- *Sample Questions:*
+  1. "What steps are involved in configuring user roles in CGI Advantage 4?"
+  2. "Which reporting tool would you use for variance analysis and why?"
+  3. "Describe the workflow configuration for multi-level purchase approvals."
+
+- *Using Simulated Environments:*
+  * Access sandbox systems to practice hands-on tasks, such as creating reports or setting up workflows.
+  * Test system navigation, data entry, and troubleshooting skills.
+
+- *Feedback Mechanisms:*
+  * Analyze performance in practice exams to adjust the study plan.
+  * Seek feedback from instructors on weak areas.
+
+<<<
+
+=== Final Project
+
+==== Project Guidelines and Expectations
+The final project is a capstone assignment that consolidates all the skills learned throughout the course. It provides a platform for learners to demonstrate mastery in a practical context.
+
+- *Project Objectives:*
+  * Address a simulated organizational challenge using CGI Advantage 4.
+  * Incorporate workflows, reporting, and system configurations into the solution.
+
+- *Scope and Deliverables:*
+  * Design and configure a complete module (e.g., Financial Management or Procurement).
+  * Submit supporting documentation, including screenshots, diagrams, and an implementation narrative.
+
+- *Creative Problem-Solving:*
+  * Encourage learners to propose innovative solutions, such as automating repetitive tasks or improving data visualization.
+
+<<<
+
+==== Submission and Evaluation Criteria
+A structured evaluation process ensures fairness and provides constructive feedback to learners.
+
+- *Submission Guidelines:*
+  * Projects must be submitted via the learning portal by the deadline.
+  * Include all required materials in PDF or ZIP format.
+
+- *Evaluation Rubric:*
+  * Technical Accuracy: 40%
+  * Problem-Solving and Creativity: 30%
+  * Documentation and Presentation: 20%
+  * Adherence to Project Guidelines: 10%
+
+- *Feedback Process:*
+  * Receive detailed feedback on strengths and areas for improvement within 5 business days.
+  * Option to revise and resubmit if necessary.
+
+<<<
+
+==== Final Presentation and Peer Review
+Presentations allow learners to articulate their project approach and receive constructive feedback.
+
+- *Presentation Guidelines:*
+  * Prepare a concise 10-minute presentation summarizing project goals, methods, and outcomes.
+  * Use visuals, such as workflow diagrams, charts, and screenshots, to enhance clarity.
+
+- *Peer Review Process:*
+  * Present projects in small groups and provide feedback to peers based on evaluation criteria.
+  * Focus on constructive criticism and actionable suggestions.
+
+- *Instructor Assessment:*
+  * Conduct a comprehensive review, focusing on technical execution and innovative thinking.
+  * Highlight exemplary projects during the final session.
+
+<<<
+
+=== Celebrating Achievement and Future Steps
+
+==== Certification Recognition
+Recognition of learners’ efforts is crucial to motivating further growth and professional advancement.
+
+- *Certificate of Completion:*
+  * Participants receive a certificate showcasing their expertise in CGI Advantage 4.
+  * Highlight key accomplishments, such as the final project.
+
+- *Showcasing Skills:*
+  * Include certification on resumes and professional profiles, such as LinkedIn.
+  * Use project work as a portfolio piece for job applications or promotions.
+
+<<<
+
+==== Post-Certification Opportunities
+Certification unlocks new professional paths and learning opportunities.
+
+- *Career Advancement:*
+  * Explore roles such as ERP System Administrator, Financial Analyst, or Procurement Specialist.
+  * Use certification to qualify for advanced ERP consulting or leadership roles.
+
+- *Continued Learning:*
+  * Enroll in advanced modules or attend CGI webinars and conferences.
+  * Explore emerging technologies like AI or blockchain for ERP systems.
+
+- *Community Engagement:*
+  * Join CGI user groups and forums to network with peers.
+  * Participate in mentorship programs to help others preparing for certification.
+
+<<<

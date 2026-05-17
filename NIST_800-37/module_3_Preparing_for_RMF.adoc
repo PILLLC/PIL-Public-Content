@@ -1,0 +1,425 @@
+== Module {module-number}: Preparing for RMF
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+{SP}
+
+[discrete]
+=== Learning Objectives
+
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::agenda.svg[align="left",pdfwidth=50%]|Upon completion of this module, students should be able to:
+ 
+- Prepare organizations and systems for RMF.
+- Outline roles and responsibilities in RMF.
+- Establish a risk management context.
+|
+|===
+
+<<<
+
+=== Lesson {module-number}.1: Steps for Organizational and System-level RMF Preparation
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::bullseye.svg[align="left",pdfwidth=50%]|In this lesson, we'll prepare organizations and systems for RMF, including:
+
+* Organizational Preparation Steps
+* System-level Preparation Steps
+* Engaging Stakeholders
+* Key Takeaways
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+Effective implementation of the Risk Management Framework (RMF) requires thorough preparation at both the organizational and system levels. This foundational step ensures that the necessary groundwork is laid for a successful RMF process, aligning organizational objectives with security requirements. This lesson outlines the critical steps involved in preparing for RMF, focusing on strategic planning, stakeholder engagement, and resource allocation.
+
+endif::artifact-type[]
+
+<<<
+
+==== Organizational Preparation Steps
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+. Establish Organizational Context
+
+. Develop Governance Structure
+
+. Allocate Resources
+
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+. *Establish Organizational Context*: Define the mission, vision, and objectives of the organization. Understand how information systems support these goals and the potential risks that could impact them.
+
+. *Develop Governance Structure*: Create a governance structure that supports RMF activities, including defining roles, responsibilities, and the decision-making process for managing risks.
+
+. *Allocate Resources*: Identify and allocate necessary resources for RMF implementation, including budget, personnel, and tools. Ensure that the team has the skills required to carry out RMF tasks.
+
+endif::artifact-type[]
+
+<<<
+
+==== System-Level Preparation Steps
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+. System Categorization
+
+. Select Initial Security Controls
+
+. Document the System Environment
+
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+. *System Categorization*: Determine the system's impact level based on the types of information processed and the potential impact of security incidents on organizational operations.
+
+. *Select Initial Security Controls*: Based on the system categorization, select initial security controls from NIST SP 800-53. Consider organizational policies and applicable regulations in this selection.
+
+. *Document the System Environment*: Create documentation that describes the system architecture, data flows, and external dependencies. This documentation will support subsequent RMF steps.
+
+endif::artifact-type[]
+
+<<<
+
+==== Engaging Stakeholders
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- Engage stakeholders early in the process to ensure their buy-in and to understand their security concerns and expectations. Stakeholder engagement is critical for addressing security from a holistic perspective.
+
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+
+endif::artifact-type[]
+
+<<<
+
+==== Key Takeaways
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- Preparing for RMF at both the organizational and system levels is crucial for a successful implementation. It sets the stage for a structured and effective risk management process.
+- The preparation phase involves strategic planning, defining roles and responsibilities, allocating resources, and engaging stakeholders. These activities are foundational for navigating the RMF process.
+- By thoroughly preparing for RMF, organizations can ensure that their risk management efforts are aligned with their strategic objectives and that the information systems are adequately protected against cyber threats.
+
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+The steps outlined in this lesson provide a roadmap for organizations to prepare for RMF implementation effectively. By following these steps, organizations can lay a solid foundation for managing cybersecurity risks and enhancing the security of their information systems.
+endif::artifact-type[]
+
+<<<
+
+=== Lesson {module-number}.2: Overview of Key Roles and Responsibilities in the RMF Process
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::bullseye.svg[align="left",pdfwidth=50%]|In this lesson, we'll outline roles and responsibilities in RMF, including:
+
+* The Authorizing Official (AO)
+* The Information System Owner
+* The Information Security Officer (ISO)
+* The Security Control Assessor (SCA)
+* Other Stakeholders
+* Key Takeaways
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+The Risk Management Framework (RMF) involves various roles and responsibilities, each contributing to the framework's effectiveness in managing cybersecurity risks. This lesson provides an overview of these key roles within the RMF process, highlighting their responsibilities and the importance of collaboration among them for successful RMF implementation.
+
+endif::artifact-type[]
+
+<<<
+
+==== The Authorizing Official (AO)
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- Responsibilities
+- Importance
+
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+- *Responsibilities*: The AO is ultimately responsible for the risk decision on whether to authorize the system to operate. This includes reviewing the security package, understanding the risks, and determining if they are acceptable.
+- *Importance*: The AO's decision impacts the organization's risk posture and its ability to fulfill its mission securely.
+
+endif::artifact-type[]
+
+<<<
+
+==== The Information System Owner
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- Responsibilities
+- Importance
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+- *Responsibilities*: Responsible for the overall procurement, development, integration, modification, operation, maintenance, and disposal of the information system. They ensure the system meets the organization's security requirements.
+- *Importance*: The system owner's commitment to integrating security into the system lifecycle is crucial for maintaining the system's authorization to operate.
+
+endif::artifact-type[]
+
+<<<
+
+==== The Information Security Officer (ISO)
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- Responsibilities
+- Importance
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+- *Responsibilities*: The ISO oversees the organization's information security program, including implementing and maintaining security policies, procedures, and control techniques to address various security requirements.
+- *Importance*: ISOs play a critical role in ensuring continuous monitoring and compliance with applicable security standards and regulations.
+
+endif::artifact-type[]
+
+<<<
+
+==== The Security Control Assessor (SCA)
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- Responsibilities
+- Importance
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+- *Responsibilities*: SCAs conduct assessments of the security controls to determine their effectiveness and compliance with the security requirements. They provide an objective evaluation of the security posture of the information system.
+- *Importance*: Their assessments inform the AO's authorization decision by providing a thorough analysis of the risks and security control effectiveness.
+
+endif::artifact-type[]
+
+<<<
+
+==== Other Stakeholders
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- Roles
+- Responsibilities
+- Importance
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+- *Roles*: Include project managers, system and security engineers, privacy officers, and end-users.
+- *Responsibilities*: Collaborate to ensure the system's security requirements are met, providing input and feedback throughout the RMF process.
+- *Importance*: Their involvement ensures that security and privacy considerations are integrated across all aspects of the system development lifecycle.
+
+endif::artifact-type[]
+
+<<<
+
+==== Key Takeaways
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- Effective RMF implementation requires clear understanding and execution of roles and responsibilities by all stakeholders involved.
+- Collaboration among roles, such as the AO, system owner, ISO, and SCA, is crucial for a holistic approach to risk management and security.
+- By clearly defining and fulfilling these roles, organizations can ensure a comprehensive and effective approach to managing cybersecurity risks, leading to more secure information systems and operations.
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+
+This lesson underscores the collaborative nature of the RMF process, highlighting how the integration of efforts among various roles contributes to the overall security and risk management posture of an organization.
+endif::artifact-type[]
+
+<<<
+    
+=== Lesson {module-number}.3: Techniques for Establishing and Understanding the Risk Management Context
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::bullseye.svg[align="left",pdfwidth=50%]|In this lesson, we'll establish a risk management, including:
+
+* Identifying Organizational Objectives and Requirements
+* Assessing the External Environment
+* Analyzing the Internal Environment
+* Defining Risk Criteria
+* Establishing the Risk Management Context
+* Key Takeaways
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+Establishing and understanding the risk management context is a critical initial step in the Risk Management Framework (RMF) process. It involves defining the external and internal parameters that organizations must consider to manage risk effectively. This lesson explores various techniques for establishing this context, ensuring that risk management efforts are aligned with organizational objectives and the broader operational environment.
+
+endif::artifact-type[]
+
+<<<
+
+==== Identifying Organizational Objectives and Requirements
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- Technique
+- Importance
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+- *Technique*: Conduct workshops and interviews with key stakeholders to identify and document organizational objectives, priorities, and security requirements.
+- *Importance*: Understanding organizational objectives ensures that the RMF process supports the organization's mission and operational goals, aligning risk management strategies with business outcomes.
+
+endif::artifact-type[]
+
+<<<
+
+==== Assessing the External Environment
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- Technique
+- Importance
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+- *Technique*: Perform an environmental scan to identify external factors that could impact the organization's risk posture, including regulatory, technological, and market trends.
+- *Importance*: Awareness of the external environment helps organizations anticipate and respond to changes that could introduce new risks or alter the effectiveness of existing security controls.
+
+endif::artifact-type[]
+
+<<<
+
+==== Analyzing the Internal Environment
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- Technique
+- Importance
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+- *Technique*: Review internal policies, procedures, resources, and existing security measures to assess the organization's current risk management capabilities and limitations.
+- *Importance*: A thorough analysis of the internal environment enables organizations to leverage strengths and address weaknesses in their approach to risk management.
+
+endif::artifact-type[]
+
+<<<
+
+==== Defining Risk Criteria
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- Technique
+- Importance
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+- *Technique*: Develop risk criteria that include risk appetite, tolerance levels, and prioritization guidelines. This involves collaboration between risk managers, executives, and other stakeholders.
+- *Importance*: Clearly defined risk criteria guide decision-making throughout the RMF process, ensuring consistent and objective evaluation of risks.
+
+endif::artifact-type[]
+
+<<<
+
+==== Establishing the Risk Management Context
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- Technique
+- Importance
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+- *Technique*: Compile the information gathered from the above techniques into a comprehensive risk management context document. This document should outline the scope, boundaries, and assumptions of the organization's risk management activities.
+- *Importance*: A well-defined risk management context provides a foundation for the entire RMF process, ensuring that all subsequent activities are focused and aligned with organizational goals.
+
+endif::artifact-type[]
+
+<<<
+    
+==== Key Takeaways
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+
+- Establishing the risk management context is a foundational step that influences the effectiveness of the RMF process.
+- Techniques such as stakeholder engagement, environmental scanning, internal analysis, and defining risk criteria are essential for understanding the broader risk landscape.
+- By clearly establishing and understanding the risk management context, organizations can ensure that their risk management efforts are strategic, focused, and aligned with their operational objectives and compliance requirements.
+
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+This lesson highlights the importance of a comprehensive approach to establishing the risk management context, setting the stage for a successful and aligned RMF process.
+
+endif::artifact-type[]

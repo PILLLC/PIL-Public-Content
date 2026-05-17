@@ -1,0 +1,167 @@
+== Module {module-number}: Common Development Scenarios
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+{SP}
+{SP}
+
+[discrete]
+=== Learning Objectives
+
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::agenda.svg[align="left",pdfwidth=50%]|Upon completion of this module, students should be able to:
+
+* Add custom fields to CGI Advantage 4 pages, including database and UI modifications.
+* Modify and customize approval workflows to meet organizational requirements.
+* Create, integrate, and test custom reports using SQL and reporting tools.
+|===
+
+<<<
+
+=== Scenario 1: Adding a Custom Field to a Page
+
+Adding custom fields allows you to tailor CGI Advantage 4 to specific organizational needs. This process involves database modifications, UI updates, and validation configurations.
+
+==== Steps to Add a Custom Field
+
+1. **Add Column to Database**
+   - Identify the relevant table in the database.
+   - Use an `ALTER TABLE` statement to add the new column.
+   - Example:
+     ```sql
+     ALTER TABLE CUSTOMER_PROFILE ADD COLUMN CUSTOM_FIELD VARCHAR2(50);
+     ```
+
+2. **Update JSP Page**
+   - Locate the JSP file for the desired page in the `webapps` directory.
+   - Add the new field using appropriate HTML input elements.
+   - Example:
+     ```html
+     <tr>
+         <td>Custom Field:</td>
+         <td><input type="text" name="customField" id="customField"></td>
+     </tr>
+     ```
+
+3. **Configure Validation**
+   - Add JavaScript to validate the field in the UI.
+   - Example:
+     ```javascript
+     function validateCustomField() {
+         var customField = document.getElementById('customField').value;
+         if (customField.length > 50) {
+             alert("Custom Field cannot exceed 50 characters.");
+             return false;
+         }
+         return true;
+     }
+     ```
+
+4. **Test and Deploy**
+   - Verify that the field displays correctly on the page and integrates seamlessly with the backend.
+   - Test edge cases, such as empty values and invalid input.
+
+*Instructor Activity:* Assign students to add a custom field to a sample page and test the integration.
+
+<<<
+
+=== Scenario 2: Modifying an Approval Workflow
+
+Approval workflows in CGI Advantage 4 can be customized to align with organizational policies. This involves modifying routing rules and testing the approval chain.
+
+==== Steps to Modify an Approval Workflow
+
+1. **Open Workflow XML**
+   - Locate the XML file defining the workflow in the `workflow` directory.
+   - Example snippet:
+     ```xml
+     <workflow>
+         <step id="approvalStep1">
+             <action>APPROVE</action>
+             <nextStep>approvalStep2</nextStep>
+         </step>
+     </workflow>
+     ```
+
+2. **Edit Routing Rules**
+   - Adjust conditions or add new steps to the workflow.
+   - Example: Add a new step for a "Manager Approval."
+     ```xml
+     <step id="managerApproval">
+         <action>APPROVE</action>
+         <nextStep>finalApproval</nextStep>
+     </step>
+     ```
+
+3. **Deploy and Test**
+   - Deploy the updated XML to the staging environment.
+   - Test the workflow to ensure it routes correctly through all approval steps.
+   - Validate edge cases, such as rejected approvals or missing approvers.
+
+*Activity Suggestion:* Have learners modify an existing workflow to include an additional approval step and test it.
+
+<<<
+
+=== Scenario 3: Creating a Report
+
+Custom reports in CGI Advantage 4 provide insights tailored to organizational needs. This scenario involves SQL queries, report templates, and system integration.
+
+==== Steps to Create a Report
+
+1. **Define SQL Query**
+   - Identify the tables and columns needed for the report.
+   - Write an optimized SQL query to retrieve the required data.
+   - Example:
+     ```sql
+     SELECT CUSTOMER_ID, CUSTOMER_NAME, TOTAL_ORDERS
+     FROM CUSTOMER_PROFILE
+     WHERE ACTIVE_STATUS = 'Y';
+     ```
+
+2. **Create Report Template**
+   - Use a reporting tool like JasperReports to design the layout.
+   - Include headers, footers, and data tables.
+   - Example snippet:
+     ```xml
+     <textField>
+         <reportElement x="0" y="0" width="100" height="20"/>
+         <textFieldExpression><![CDATA[$F{CUSTOMER_NAME}]]></textFieldExpression>
+     </textField>
+     ```
+
+3. **Integrate and Test**
+   - Add the report to CGI Advantage by uploading it to the report management module.
+   - Configure access permissions and test the report for accuracy.
+   - Example: Ensure correct data population and layout rendering.
+
+*Instructor Note:* Discuss best practices for optimizing SQL queries and designing reports for clarity and usability.
+
+<<<
+
+=== Best Practices for Common Scenarios
+
+==== General Recommendations
+- Always test changes in a staging environment before deploying them to production.
+- Document all modifications, including database changes, workflow updates, and report configurations.
+- Follow naming conventions for new fields, workflows, and reports to maintain consistency.
+
+==== Troubleshooting Tips
+- Use system logs to identify errors during workflow execution or report generation.
+- Validate SQL queries for performance issues, such as slow execution or incorrect joins.
+- Test thoroughly with sample data to ensure all edge cases are handled.
+
+<<<
+
+[appendix]
+=== Glossary
+- *JSP (JavaServer Pages):* Technology used for creating dynamic web pages in Java.
+- *XML (eXtensible Markup Language):* A markup language used to define workflow configurations and other system settings.
+- *Audit Trail:* A chronological record of system activities for review and compliance.
+
+[discrete]
+=== Additional Notes
+*Instructor Tip:* Highlight the importance of aligning development tasks with organizational goals to maximize the value of customization efforts.

@@ -1,0 +1,140 @@
+== Module {module-number}: CGI Advantage 4 Data Setup for RE Transaction with Multiple Third-Party Billing Addresses
+
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+{SP}
+{SP}
+
+=== Overview
+This dataset covers the necessary tables and dependencies to configure an RE transaction where a primary customer receives services, but billing is directed to multiple third-party customers, each with their own billing address. The setup includes customer profiles, billing profiles, billing rate tables, and other related tables to ensure that all dependencies are met.
+
+=== 1. Vendor Customer Creation (VCC) - Customer Profile
+
+[cols="1,1,2,1,1,2", options="header"]
+|===
+| Customer ID | Customer Name       | Customer Type   | Tax ID     | Default Billing Address | Contact Info
+
+| CUST001     | Main School District | Public Entity   | 99-9999999 | ADDR01                  | main@schools.org
+| CUST002     | Grant Organization 1 | Third-Party Org | 55-5555555 | ADDR02                  | billing@grant1.org
+| CUST003     | Grant Organization 2 | Third-Party Org | 44-4444444 | ADDR03                  | billing@grant2.org
+| CUST004     | Sponsoring Foundation | Third-Party Org | 33-3333333 | ADDR04                 | billing@foundation.org
+|===
+
+=== 2. Vendor Customer Address (VAD) - Customer Address Information
+
+[cols="1,1,2,1,1,1", options="header"]
+|===
+| Address ID | Customer ID | Address Line 1          | City          | State | Zip Code
+
+| ADDR01     | CUST001     | 123 Education St.       | Springfield   | IL    | 62701
+| ADDR02     | CUST002     | 456 Grant Blvd.         | Big City      | NY    | 10010
+| ADDR03     | CUST003     | 789 Sponsorship Rd.     | Metropolis    | CA    | 90001
+| ADDR04     | CUST004     | 321 Foundation Ave.     | Capital City  | DC    | 20001
+|===
+
+=== 3. Billing Profile Table (BP) - Setting Up Billing Profiles for Multiple Third-Party Customers
+
+[cols="1,1,1,2,1,1", options="header"]
+|===
+| Billing Profile ID | Customer ID | Third-Party Customer | Address ID | Payment Terms | Rate Table ID
+
+| BP001             | CUST001     | CUST002              | ADDR02     | Net 30        | RATE01
+| BP002             | CUST001     | CUST003              | ADDR03     | Net 45        | RATE02
+| BP003             | CUST001     | CUST004              | ADDR04     | Net 60        | RATE03
+|===
+
+=== 4. Customer Account Options Table (CACT) - Linking Customers to Third-Party Billing Options
+
+[cols="1,1,1,1,2", options="header"]
+|===
+| Account Option ID | Primary Customer | Third-Party Customer | Address ID | Billing Instructions
+
+| CACT01            | CUST001          | CUST002              | ADDR02     | Bill Grant Org 1 for tuition services
+| CACT02            | CUST001          | CUST003              | ADDR03     | Bill Grant Org 2 for training sessions
+| CACT03            | CUST001          | CUST004              | ADDR04     | Bill Foundation for equipment rental
+|===
+
+=== 5. Billing Rate Table (BRT) - Defining Rates Based on Services and Third-Party Customers
+
+[cols="1,2,1,1,1,1", options="header"]
+|===
+| Rate Table ID | Service Description     | Rate Code | Rate Amount | Unit of Measure | Effective Date
+
+| RATE01        | Tuition per student     | RT01      | 500.00      | Student         | 2024-01-01
+| RATE02        | Training Session        | RT02      | 2000.00     | Session         | 2024-01-01
+| RATE03        | Equipment Rental        | RT03      | 150.00      | Day             | 2024-01-01
+|===
+
+=== 6. Revenue Codes Table - Defining Revenue Codes for Different Services
+
+[cols="1,2,2", options="header"]
+|===
+| Revenue Code | Revenue Description | Account Code
+
+| REV001       | Tuition Revenue     | 4000
+| REV002       | Training Revenue    | 4100
+| REV003       | Equipment Rental    | 4200
+|===
+
+=== 7. General Ledger Account (GAC) - Linking Accounts for Revenue Recording
+
+[cols="1,2,1,1", options="header"]
+|===
+| Account ID | Account Name         | Account Type | Department Code
+
+| 4000       | Tuition Revenue      | Revenue      | EDU01
+| 4100       | Training Revenue     | Revenue      | EDU01
+| 4200       | Equipment Rental     | Revenue      | EDU01
+|===
+
+=== 8. Chart of Accounts (COA) - Department and Fund Setup
+
+[cols="1,1,1,1", options="header"]
+|===
+| Department Code | Fund Code | Account Code | Account Description
+
+| EDU01           | GF01      | 4000         | Tuition Revenue for Education Department
+| EDU01           | GF01      | 4100         | Training Revenue for Education Department
+| EDU01           | GF01      | 4200         | Equipment Rental Revenue for Education Department
+|===
+
+=== 9. Fiscal Period Table - Setting Up Fiscal Periods
+
+[cols="1,1,1,1", options="header"]
+|===
+| Fiscal Year | Period ID | Start Date   | End Date
+
+| 2024        | 01        | 2024-01-01   | 2024-01-31
+| 2024        | 02        | 2024-02-01   | 2024-02-29
+| 2024        | 03        | 2024-03-01   | 2024-03-31
+|===
+
+=== 10. Receivable Entry (RE) - Example RE Transaction with Multiple Third-Party Billing
+
+[cols="1,1,2,1,1,2", options="header"]
+|===
+| Transaction ID | Customer ID | Billing Profile ID | Revenue Code | Quantity | Description
+
+| RE1001         | CUST001     | BP001             | REV001       | 10       | Tuition billing for Grant Org 1
+| RE1002         | CUST001     | BP002             | REV002       | 1        | Training session for Grant Org 2
+| RE1003         | CUST001     | BP003             | REV003       | 5        | Equipment rental for Sponsoring Foundation
+|===
+
+=== Process Overview
+
+1. **Set Up Customer Profiles**: Create profiles for the primary customer and all third-party customers involved in the RE transaction.
+2. **Define Billing Addresses**: Set up addresses for each third-party customer in the VAD table to ensure proper billing locations.
+3. **Create Billing Profiles**: Define separate billing profiles in the Billing Profile Table, linking each third-party customer to the primary customer.
+4. **Establish Customer Account Options**: Use CACT entries to specify third-party billing relationships and instructions.
+5. **Set Rates in Billing Rate Table**: Define service rates and effective dates for billing calculations.
+6. **Generate RE Transaction**: In the RE table, assign the billing profile ID for each line item to bill the correct third-party payer on behalf of the primary customer.
+
+=== Notes
+
+- Ensure that each billing profile in the Billing Profile Table references the correct third-party customer and address ID to prevent billing errors.
+- Fiscal periods and account structures must be verified to ensure transactions align with reporting requirements.
+- The Billing Rate Table should reflect updated rates to avoid miscalculations in the RE transaction.

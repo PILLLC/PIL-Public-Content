@@ -1,0 +1,181 @@
+== Module {module-number}: Extensibility in CGI Advantage 4
+
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+{SP}
+{SP}
+
+=== Module Overview
+
+This module explores the concept of extensibility in CGI Advantage 4, providing insights into how the platform can be customized and extended to meet specific organizational requirements. Key topics include the extensibility framework, customization capabilities, and best practices.
+
+==== Learning Objectives
+
+- Understand the extensibility framework in CGI Advantage 4.
+- Identify key areas where customization and extension are possible.
+- Apply best practices for maintaining and upgrading customizations.
+- Explore real-world examples of extensibility in action.
+
+=== Lesson 1: Introduction to Extensibility in CGI Advantage 4
+
+==== Lesson Summary
+
+Extensibility in CGI Advantage 4 allows organizations to tailor the software to their unique business needs without compromising the core functionality. This lesson provides an overview of the extensibility framework and its importance.
+
+==== Key Topics
+
+- Overview of the extensibility framework.
+- Benefits of extensibility.
+- Introduction to extensibility tools and techniques.
+
+==== Detailed Content
+
+CGI Advantage 4 provides a robust extensibility framework that includes:
+
+- **Configuration Options:** Modify system settings, workflows, and processes through user-friendly interfaces.
+- **Extension Points:** Add new functionality using APIs, event hooks, and modular designs.
+- **Custom Development:** Develop bespoke solutions using supported programming languages and tools.
+- **Integration Frameworks:** Connect CGI Advantage with third-party systems via standard protocols like REST and SOAP.
+
+==== Exercises
+
+1. List three benefits of leveraging extensibility in CGI Advantage 4.
+2. Identify one business process in your organization that could benefit from customization.
+
+=== Lesson 2: Areas of Extensibility
+
+==== Lesson Summary
+
+This lesson delves into the specific areas within CGI Advantage 4 that support customization and extensibility.
+
+==== Key Topics
+
+- Workflow customization.
+- Screen and UI extensions.
+- Business rule configuration.
+- Integration with external systems.
+
+==== Detailed Content
+
+===== Workflow Customization
+- Use the Workflow Designer to modify or create new approval workflows.
+- Add custom logic to workflows using predefined triggers.
+
+===== Screen and UI Extensions
+- Modify existing screens or create new ones using the UI Designer.
+- Add custom fields, dropdowns, or tabs to enhance user experience.
+
+===== Business Rule Configuration
+- Use the Rules Engine to define or override default business rules.
+- Create custom validation or calculation rules.
+
+===== Integration with External Systems
+- Utilize Integration Manager to set up and manage external system connections.
+- Leverage APIs and web services for data exchange.
+
+==== Exercises
+
+1. Design a simple workflow for a new approval process.
+2. Identify which screen in your organization would benefit from additional fields or tabs.
+
+=== Lesson 3: Tools and Techniques for Extensibility
+
+==== Lesson Summary
+
+CGI Advantage 4 offers a suite of tools and techniques for implementing extensibility. This lesson covers the tools available and their use cases.
+
+==== Key Topics
+
+- Configuration tools.
+- Development tools.
+- Testing and deployment practices.
+
+==== Detailed Content
+
+===== Configuration Tools
+- Admin Console: Used for configuring system settings, workflows, and user roles.
+- UI Designer: Enables screen modifications.
+
+===== Development Tools
+- Extension Manager: Manage and deploy extensions.
+- Developer Toolkit: Provides APIs, SDKs, and sample code.
+
+===== Testing and Deployment Practices
+- Test customizations in a sandbox environment.
+- Use version control systems to manage changes.
+- Deploy extensions incrementally to minimize disruptions.
+
+==== Exercises
+
+1. Use the Admin Console to create a test configuration for a new role.
+2. Explore the Developer Toolkit to create a sample extension.
+
+=== Lesson 4: Best Practices for Extensibility
+
+==== Lesson Summary
+
+This lesson highlights best practices to ensure maintainable and upgrade-friendly extensibility.
+
+==== Key Topics
+
+- Planning extensibility projects.
+- Documentation and version control.
+- Maintaining upgrade compatibility.
+
+==== Detailed Content
+
+===== Planning Extensibility Projects
+- Define clear objectives for customization.
+- Identify stakeholders and involve them in the design process.
+
+===== Documentation and Version Control
+- Maintain detailed documentation for all customizations.
+- Use version control systems to track changes.
+
+===== Maintaining Upgrade Compatibility
+- Follow CGI's guidelines for customizations.
+- Avoid modifying core code to ensure compatibility with future updates.
+
+==== Exercises
+
+1. Create a checklist for planning an extensibility project.
+2. Document a sample customization using version control.
+
+=== Lesson 5: Case Studies and Real-World Applications
+
+==== Lesson Summary
+
+This lesson showcases how extensibility is used in real-world scenarios to address unique business challenges.
+
+==== Key Topics
+
+- Case study: Customizing a procurement workflow.
+- Case study: Integrating with a financial management system.
+
+==== Detailed Content
+
+===== Customizing a Procurement Workflow
+- Scenario: An organization requires an additional approval step for high-value purchases.
+- Solution: Using Workflow Designer to add a custom approval step.
+
+===== Integrating with a Financial Management System
+- Scenario: Automating data exchange between CGI Advantage and an external financial system.
+- Solution: Leveraging Integration Manager to implement a REST API connection.
+
+==== Exercises
+
+1. Analyze the provided case study and suggest additional enhancements.
+2. Develop a simple integration plan for a hypothetical system.
+
+=== Module Summary
+
+In this module, we explored the extensibility framework in CGI Advantage 4, including key areas, tools, and best practices. By understanding and applying these concepts, organizations can maximize the value of CGI Advantage while ensuring maintainability and upgradeability.
+
+==== Next Steps
+
+- Practice using the extensibility tools in a sandbox environment.
+- Explore additional case studies to deepen your understanding of real-world applications.

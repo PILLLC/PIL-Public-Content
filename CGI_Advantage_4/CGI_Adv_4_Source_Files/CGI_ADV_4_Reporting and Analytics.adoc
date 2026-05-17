@@ -1,0 +1,129 @@
+== Module {module-number}: Reporting and Analytics
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+{SP}
+{SP}
+
+[discrete]
+=== Learning Objectives
+
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::agenda.svg[align="left",pdfwidth=50%]|Upon completion of this module, students should be able to:
+
+* Master the use of reporting tools within CGI Advantage 4 to create, customize, and distribute reports.
+* Gain skills in data analytics and business intelligence to drive data-driven decision-making.
+* Learn how to implement and utilize data visualization techniques to effectively present business insights.
+|===
+
+<<<
+
+=== Reporting Tools and Features
+
+==== Overview of Reporting Tools
+CGI Advantage 4 offers a comprehensive set of reporting tools that allow users to generate, customize, and distribute reports across various modules. These tools support both standard and ad hoc reporting needs, enabling users to extract actionable insights from the system.
+
+- *Key Reporting Tools:*
+  * Standard Reports: Pre-built reports covering common financial, procurement, and HR scenarios.
+  * Custom Reports: Tools for designing and building reports tailored to specific business requirements.
+  * Ad Hoc Reporting: On-the-fly report generation based on user-defined criteria.
+
+- *Report Formats:*
+  * Generate reports in multiple formats, including PDF, Excel, CSV, and HTML.
+  * Schedule automated report generation and delivery via email or system notifications.
+
+- *Report Distribution:*
+  * Share reports securely with stakeholders through the system’s distribution features.
+  * Set up report access controls to ensure only authorized users can view or modify reports.
+
+<<<
+
+==== Creating and Customizing Reports
+Creating and customizing reports in CGI Advantage 4 allows organizations to meet their specific reporting needs. This topic covers the steps to design, customize, and refine reports using the system’s reporting tools.
+
+- *Report Design:*
+  * Use the report designer interface to select data sources, fields, and layout options.
+  * Implement sorting, grouping, and filtering options to organize report data effectively.
+
+- *Customizing Reports:*
+  * Add custom calculations, formulas, and conditional formatting to enhance report functionality.
+  * Modify report templates to align with the organization’s branding and style guidelines.
+
+- *Report Templates:*
+  * Save customized reports as templates for reuse across the organization.
+  * Create a library of report templates for different departments or use cases.
+
+<<<
+
+==== Scheduled and Ad Hoc Reporting
+Scheduled and ad hoc reporting features in CGI Advantage 4 allow users to automate regular report generation and quickly produce reports on demand. This topic explains how to configure and manage these reporting options.
+
+- *Scheduled Reporting:*
+  * Set up recurring reports to be generated at specific intervals (daily, weekly, monthly).
+  * Configure report delivery options, including email, system notifications, and secure file transfer.
+
+- *Ad Hoc Reporting:*
+  * Use the ad hoc reporting tool to create custom reports in response to immediate needs.
+  * Save ad hoc reports for future reference or modification.
+
+- *Managing Reports:*
+  * Monitor scheduled report jobs to ensure timely execution and delivery.
+  * Archive old reports to maintain system performance and comply with data retention policies.
+
+<<<
+  
+=== Data Analytics and Business Intelligence
+
+==== Introduction to Data Analytics
+Data analytics involves examining data sets to draw conclusions about the information they contain. CGI Advantage 4 integrates data analytics tools that help organizations make data-driven decisions by identifying trends, patterns, and insights within their operational data.
+
+- *Types of Data Analytics:*
+  * Descriptive Analytics: Summarizes historical data to understand what has happened.
+  * Predictive Analytics: Uses historical data to predict future outcomes.
+  * Prescriptive Analytics: Recommends actions based on data-driven insights.
+
+- *Data Sources:*
+  * Leverage data from various CGI Advantage 4 modules, including financial, HR, and procurement.
+  * Integrate external data sources to enrich analysis and provide a more comprehensive view.
+
+- *Analytical Tools:*
+  * Use built-in tools for data visualization, trend analysis, and forecasting.
+  * Implement advanced analytical techniques using third-party tools integrated with CGI Advantage 4.
+
+<<<
+
+==== Implementing Business Intelligence Solutions
+Business Intelligence (BI) solutions in CGI Advantage 4 empower organizations to transform data into actionable insights. This topic covers the implementation of BI tools and techniques within the system.
+
+- *BI Tools Overview:*
+  * Explore built-in BI tools for creating dashboards, scorecards, and KPIs.
+  * Integrate with external BI platforms (e.g., Power BI, Tableau) for enhanced analytics.
+
+- *Setting Up Dashboards:*
+  * Design and configure dashboards that provide real-time insights into key performance indicators (KPIs).
+  * Customize dashboards to reflect the specific needs of different departments or roles.
+
+- *Data Warehousing:*
+  * Implement data warehousing strategies to centralize and standardize data for analysis.
+  * Use ETL (Extract, Transform, Load) processes to prepare data for BI applications.
+
+<<<
+
+==== Data Visualization Techniques
+Data visualization is a critical component of data analytics, allowing users to see trends and patterns that might not be immediately apparent in raw data. CGI Advantage 4 provides a variety of data visualization tools and techniques.
+
+- *Choosing the Right Visualization:*
+  * Select appropriate visualization types (e.g., charts, graphs, heatmaps) based on the data and analysis goals.
+  * Use dashboards to combine multiple visualizations for a comprehensive view of business metrics.
+
+- *Designing Effective Visualizations:*
+  * Apply design principles to create clear, informative, and visually appealing charts and graphs.
+  * Use color, labeling, and interactive elements to enhance the user experience.
+
+- *Sharing Visualizations:*
+  * Embed visualizations in reports, dashboards, and presentations for easy sharing with stakeholders.
+  * Export visualizations in various formats for use in external documents or systems.

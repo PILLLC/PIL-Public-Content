@@ -1,0 +1,165 @@
+== Module {module-number}: Key Modules and Tables
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+{SP}
+{SP}
+
+[discrete]
+=== Learning Objectives
+
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::agenda.svg[align="left",pdfwidth=50%]|Upon completion of this module, students should be able to:
+
+* Identify and understand the key modules of CGI Advantage 4 and their primary functionalities.
+* Familiarize themselves with core tables within the Financial Management, Human Resources Management, and common modules.
+* Understand how these tables interconnect and support key business processes.
+|===
+
+<<<
+
+=== Overview of Key Modules
+
+CGI Advantage 4 is organized into a series of interconnected modules, each with its own dedicated tables that manage specific business processes. A thorough understanding of these modules and their core tables is essential for efficient development and customization.
+
+<<<
+
+=== Financial Management (FIN)
+
+The Financial Management module encompasses the General Ledger, Accounts Payable, Accounts Receivable, and Budgeting. These components form the backbone of financial operations in CGI Advantage 4.
+
+==== General Ledger (GL)
+The General Ledger is the central repository for financial transactions and provides the foundation for financial reporting.
+
+- **Core Tables:**
+  * `GL_ACCOUNT`: Stores information about accounts, including account numbers, descriptions, and types.
+  * `GL_JOURNAL`: Tracks journal entries, including transaction details and source references.
+
+- **Use Cases:**
+  * Generating financial reports such as balance sheets and income statements.
+  * Managing journal entries for auditing and reconciliation.
+
+*Activity Suggestion:* Have students query the `GL_JOURNAL` table to retrieve transactions for a specific period.
+
+<<<
+
+==== Accounts Payable (AP)
+The Accounts Payable module handles outgoing payments to vendors and suppliers, ensuring timely and accurate disbursements.
+
+- **Key Tables:**
+  * `AP_INVOICE`: Tracks vendor invoices, including amounts, due dates, and statuses.
+  * `AP_PAYMENT`: Stores payment details, such as check numbers, payment methods, and amounts.
+
+- **Use Cases:**
+  * Automating invoice approvals and payment processing.
+  * Generating reports on outstanding invoices and vendor payments.
+
+*Instructor Note:* Highlight common relationships between `AP_INVOICE` and `AP_PAYMENT`.
+
+<<<
+
+==== Accounts Receivable (AR)
+The Accounts Receivable module manages incoming payments from customers and other entities.
+
+- **Core Tables:**
+  * `AR_INVOICE`: Tracks customer invoices, including amounts and due dates.
+  * `AR_PAYMENT`: Stores details of payments received, such as methods and dates.
+
+- **Use Cases:**
+  * Generating aging reports for overdue receivables.
+  * Reconciling payments with invoices for financial accuracy.
+
+<<<
+
+==== Budgeting
+The Budgeting component enables organizations to plan, allocate, and monitor financial resources.
+
+- **Important Tables:**
+  * `BUDGET_STRUCTURE`: Defines the hierarchy and structure of budgets, including categories and levels.
+  * `BUDGET_ENTRY`: Tracks budget entries, including allocated and used amounts.
+
+- **Use Cases:**
+  * Monitoring budget adherence for specific departments or projects.
+  * Analyzing variances between budgeted and actual amounts.
+
+*Activity Suggestion:* Assign students to create sample queries to extract budget variance data from `BUDGET_ENTRY`.
+
+<<<
+
+=== Human Resources Management (HRM)
+
+The Human Resources Management module provides tools for managing employee data, payroll, and benefits. These tables are critical for streamlining HR operations.
+
+==== Employee Profile
+Employee profile management involves maintaining personal and job-related information for all employees.
+
+- **Core Tables:**
+  * `EMPLOYEE_PROFILE`: Stores key employee data, including names, IDs, and employment statuses.
+  * `EMPLOYEE_ADDRESS`: Maintains employee address information.
+
+- **Use Cases:**
+  * Generating employee directories and headcount reports.
+  * Tracking employee status for compliance and reporting.
+
+<<<
+
+==== Payroll
+Payroll management involves calculating and processing employee compensation, including taxes, benefits, and deductions.
+
+- **Key Tables:**
+  * `PAYROLL_RUN`: Logs payroll runs, including periods, totals, and statuses.
+  * `PAY_CALCULATION`: Stores detailed payroll calculations, including individual earnings and deductions.
+
+- **Use Cases:**
+  * Analyzing payroll trends over time.
+  * Ensuring compliance with tax regulations and labor laws.
+
+*Instructor Note:* Discuss the integration between `PAYROLL_RUN` and `EMPLOYEE_PROFILE`.
+
+<<<
+
+=== Common Tables
+
+Common tables in CGI Advantage 4 support multiple modules, providing shared data for streamlined operations.
+
+==== Customer and Vendor Management
+Customer and vendor tables centralize the profiles and interactions for these key stakeholders.
+
+- **Key Tables:**
+  * `CUSTOMER_PROFILE`: Stores customer data, including contact details and payment terms.
+  * `VENDOR_PROFILE`: Maintains vendor information, such as names, addresses, and payment preferences.
+
+- **Use Cases:**
+  * Generating vendor performance reports.
+  * Automating invoice generation for customers.
+
+<<<
+
+==== Account Options
+The `ACCOUNT_OPTIONS` table plays a pivotal role in linking accounts with specific configurations, supporting customized financial operations.
+
+- **Core Table:**
+  * `ACCOUNT_OPTIONS`: Stores configuration settings tied to financial accounts.
+
+- **Use Cases:**
+  * Defining account-specific rules, such as tax codes or payment terms.
+  * Customizing reporting views based on account configurations.
+
+*Activity Suggestion:* Have students analyze the relationships between `ACCOUNT_OPTIONS` and other financial tables.
+
+<<<
+
+[appendix]
+=== Glossary
+- *General Ledger (GL):* A central system for managing financial transactions and reporting.
+- *Accounts Payable (AP):* Tracks outgoing payments to vendors.
+- *Accounts Receivable (AR):* Tracks incoming payments from customers.
+- *Budgeting:* The process of planning and monitoring financial resources.
+
+[discrete]
+=== Additional Notes
+*Instructor Tip:* Use visual diagrams to show table relationships and data flows between modules to help students grasp the interconnected nature of CGI Advantage 4.

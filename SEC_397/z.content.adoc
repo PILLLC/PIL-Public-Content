@@ -1,0 +1,19 @@
+:module-number: 0
+include::sec_397_course_front_matter.adoc[]
+
+:module-number: 1
+include::sec_397_foundations_of_advanced_cyber_sec.adoc[]
+
+:module-number: 2
+include::sec_397_network_security_fundamentals.adoc[]
+
+:module-number: 3
+include::sec_397_cryptography_basics.adoc[]
+
+:module-number: 4
+include::sec_397_vulnerability_and_risk_mgmt.adoc[]
+
+:module-number: 5
+include::sec_397_basic_incident_response.adoc[]
+
+

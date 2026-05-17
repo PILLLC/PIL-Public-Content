@@ -1,0 +1,185 @@
+== Module {module-number}: Performance Budgeting (PB) in CGI Advantage 4
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+{SP}
+{SP}
+
+[discrete]
+=== Learning Objectives
+
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::agenda.svg[align="left",pdfwidth=50%]|Upon completion of this module, users will be able to:
+
+* Navigate and utilize the Performance Budgeting (PB) module in CGI Advantage 4.
+* Create and manage budget structures, scenarios, and versions.
+* Input, review, and adjust budget data for various organizational units.
+* Generate and analyze performance reports to monitor budget compliance and resource allocation.
+|===
+
+<<<
+
+=== Overview of Performance Budgeting (PB)
+
+The Performance Budgeting module provides tools for planning, managing, and monitoring organizational budgets. It aligns financial resources with performance objectives, enabling data-driven decisions.
+
+- **Key Features:**
+  * Define budget structures and allocate resources by department, program, or project.
+  * Develop multiple budget scenarios for strategic planning.
+  * Monitor budget performance through real-time reports and dashboards.
+  * Adjust budgets dynamically to reflect changing organizational priorities.
+
+*Instructor Note:* Emphasize the module's role in aligning budgets with strategic objectives.
+
+<<<
+
+=== Budget Structures and Scenarios
+
+==== Creating Budget Structures
+Budget structures define the framework for resource allocation and reporting. Proper setup ensures that budgets align with organizational goals.
+
+- **Steps to Create a Budget Structure:**
+  1. Navigate to "Budget Structure Setup" under the PB module.
+  2. Define structure elements, such as department, program, or fund.
+  3. Set up budget hierarchies, including parent-child relationships.
+
+- **Best Practices:**
+  * Use consistent naming conventions for clarity.
+  * Align structure elements with organizational reporting needs.
+
+*Activity:* Create a budget structure for a new department and add child elements for specific programs.
+
+<<<
+
+==== Developing Budget Scenarios
+Budget scenarios allow organizations to plan for different outcomes by simulating changes in revenue, expenses, or priorities.
+
+- **Steps to Create a Scenario:**
+  1. Select "Budget Scenarios" from the PB module.
+  2. Define scenario parameters, such as revenue growth or cost reduction.
+  3. Input assumptions and calculate scenario outcomes.
+
+- **Scenario Examples:**
+  * Best-case scenario: Increased funding for key projects.
+  * Worst-case scenario: Budget cuts affecting non-essential programs.
+
+*Instructor Note:* Encourage users to create multiple scenarios for robust planning.
+
+<<<
+
+=== Budget Entry and Adjustment
+
+==== Inputting Budget Data
+Users can input budget data manually or import it from external systems, ensuring all organizational units are accounted for.
+
+- **Manual Data Entry:**
+  1. Access "Budget Entry" in the PB module.
+  2. Select the relevant budget structure and period.
+  3. Enter amounts for each line item.
+
+- **Data Import:**
+  * Use predefined templates to import bulk data into the system.
+  * Validate imported data to ensure accuracy.
+
+*Activity:* Input budget amounts for a new fiscal year and validate entries.
+
+<<<
+
+==== Adjusting Budgets
+Budget adjustments accommodate changes in funding, priorities, or unexpected expenses.
+
+- **Steps for Budget Adjustments:**
+  1. Navigate to "Budget Adjustments" in the PB module.
+  2. Select the budget and line items to adjust.
+  3. Specify adjustment amounts and reasons.
+  4. Submit for approval based on organizational workflows.
+
+- **Approval Workflow:**
+  * Adjustments follow a predefined workflow for review and approval.
+  * Notifications are sent to approvers for action.
+
+*Instructor Note:* Highlight the importance of documenting adjustment reasons for audit trails.
+
+<<<
+
+=== Monitoring and Reporting
+
+==== Generating Budget Reports
+Reports provide insights into budget performance, helping organizations monitor resource allocation and compliance.
+
+- **Common Reports:**
+  * Budget vs. Actual: Compare planned and actual expenditures.
+  * Variance Analysis: Identify discrepancies between budgeted and actual amounts.
+  * Departmental Performance: Monitor spending by department or program.
+
+- **Steps to Generate a Report:**
+  1. Navigate to the "Reports" section in the PB module.
+  2. Select the report type and apply filters (e.g., date range, department).
+  3. Export the report in your preferred format (PDF, Excel).
+
+*Activity:* Generate a Budget vs. Actual report for a specific department and review variances.
+
+<<<
+
+==== Data Visualization and Dashboards
+Dashboards provide a visual summary of budget performance, allowing users to identify trends and make informed decisions.
+
+- **Using Dashboards:**
+  * Access real-time data on budget utilization and variances.
+  * Customize dashboards to reflect specific metrics or organizational needs.
+
+- **Visualization Types:**
+  * Bar Charts: Display spending trends over time.
+  * Pie Charts: Show resource allocation by category or department.
+  * Heatmaps: Highlight areas of concern, such as overspending.
+
+*Instructor Note:* Discuss how visual data aids in communicating budget performance to stakeholders.
+
+<<<
+
+=== Advanced Features
+
+==== Performance Metrics
+Link budgets to performance metrics to evaluate the effectiveness of resource allocation.
+
+- **Setting Up Metrics:**
+  1. Define key performance indicators (KPIs) aligned with strategic goals.
+  2. Assign metrics to budget elements for tracking.
+
+- **Example Metrics:**
+  * Percentage of budget spent on essential services.
+  * ROI for specific programs or projects.
+
+*Instructor Note:* Highlight the importance of performance metrics in justifying budget decisions.
+
+<<<
+
+==== Budget Forecasting
+Forecasting tools in the PB module help predict future financial performance based on historical data.
+
+- **Steps for Forecasting:**
+  1. Select "Forecasting Tools" in the PB module.
+  2. Input historical data and adjust assumptions (e.g., inflation rates).
+  3. Generate forecasts and compare scenarios.
+
+- **Applications:**
+  * Plan for future funding needs.
+  * Identify potential budget shortfalls early.
+
+*Activity:* Create a forecast for the next fiscal year using historical expenditure data.
+
+<<<
+
+[appendix]
+=== Glossary
+- *Budget Structure:* The framework for organizing and managing budget data.
+- *Scenario Planning:* A method for simulating different budget outcomes.
+- *Variance Analysis:* A comparison of planned and actual expenditures to identify discrepancies.
+
+[discrete]
+=== Additional Notes
+*Instructor Tip:* Encourage users to explore self-service features within the PB module, such as automated alerts for budget variances and real-time data access.

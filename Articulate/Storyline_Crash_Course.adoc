@@ -1,0 +1,93 @@
+:toc:
+:toclevels: 3
+:source-highlighter: highlightjs
+:icons: font
+//:artifact-type: ig
+:doctype: book
+:table-stripes: even
+:imagesdir: images
+
+= Articulate Storyline Quick Start Course
+
+
+
+== Day 1: Getting Started with Articulate Storyline
+
+=== Module 1: Introduction to Articulate Storyline
+- 1.1 Welcome and Course Overview
+- 1.2 Understanding the Storyline Interface
+  - 1.2.1 The Ribbon
+  - 1.2.2 Slide View
+  - 1.2.3 Timeline
+  - 1.2.4 Scenes
+- 1.3 Creating a New Project
+  - 1.3.1 Setting Project Properties
+  - 1.3.2 Choosing Story Size
+- 1.4 Saving and Publishing Options
+  - 1.4.1 Saving Your Work
+  - 1.4.2 Publishing Options Overview
+
+==== Hands-On Exercise 1: Create a Blank Project and Explore the Interface
+
+
+=== Module 2: Building Your First Slide
+- 2.1 Adding and Formatting Text
+- 2.2 Inserting Images and Media
+  - 2.2.1 Importing Images
+  - 2.2.2 Adding Audio and Video
+- 2.3 Working with Shapes and Buttons
+- 2.4 Layers and States
+
+==== Hands-On Exercise 2: Create a Simple Interactive Slide
+
+=== Module 3: Storyline's Powerful Features
+- 3.1 Triggers and Actions
+  - 3.1.1 Understanding Triggers
+  - 3.1.2 Common Actions
+- 3.2 Variables
+  - 3.2.1 Introduction to Variables
+  - 3.2.2 Variable Types
+- 3.3 Slide Transitions and Animation
+  - 3.3.1 Applying Slide Transitions
+  - 3.3.2 Animating Objects
+
+==== Hands-On Exercise 3: Create an Interactive Scenario Using Triggers, Actions, and Variables
+
+=== Module 4: Assessments and Quizzes
+- 4.1 Building Quizzes
+  - 4.1.1 Question Types
+  - 4.1.2 Question Banks
+- 4.2 Result Slides
+- 4.3 Custom Feedback
+
+==== Hands-On Exercise 4: Create a Quiz with Result Feedback
+
+=== Module 5: Publishing and Deployment
+- 5.1 Previewing Your Project
+- 5.2 Publishing for Web and LMS
+  - 5.2.1 SCORM Settings
+- 5.3 Exporting for Offline Viewing
+- 5.4 Accessibility Considerations
+
+==== Hands-On Exercise 5: Publish Your Project for Web and Explore Accessibility Options
+
+=== Module 6: Advanced Tips and Resources
+- 6.1 Best Practices and Tips
+- 6.2 Troubleshooting and Common Issues
+- 6.3 Community and Online Resources
+- 6.4 Next Steps and Advanced Training
+
+==== Hands-On Exercise 6: Share Your Project with Peers for Feedback
+
+=== Wrap-Up and Q&A Session
+- Recap of Key Concepts
+- Open Q&A for Participants
+- Course Evaluation and Feedback
+
+=== Course Materials and Resources
+- Course Workbook
+- Sample Project Files
+- Access to Online Tutorials and Documentation
+- Recommended Reading and Additional Resources
+
+By the end of this 1-day quick start course, participants should have a solid understanding of Articulate Storyline and be able to create interactive eLearning courses with confidence. The hands-on exercises throughout the day will reinforce the concepts learned in each module, and participants will leave with a completed project and the skills to continue exploring and creating in Articulate Storyline.

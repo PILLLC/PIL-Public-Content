@@ -1,0 +1,336 @@
+== Module {module-number}: Selecting Security Controls
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+{SP}
+
+[discrete]
+=== Learning Objectives
+
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::agenda.svg[align="left",pdfwidth=50%]|Upon completion of this module, students should be able to: 
+
+- Identify appropriate security controls.
+- Tailor controls to organizational needs.
+- Document control selections effectively.
+|===
+
+<<<
+
+=== Lesson {module-number}.1: Process for Selecting Baseline Security Controls
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::bullseye.svg[align="left",pdfwidth=50%]|In this lesson, we'll identify appropriate security controls, including:
+
+* Understanding Baseline Security Controls
+* The Selection Process
+* Factors Influencing Control Selection
+* Key Takeaways
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+Selecting baseline security controls is a critical step in the Risk Management Framework (RMF) process, laying the foundation for safeguarding information systems against threats. This lesson outlines the structured process for selecting these baseline controls, following the categorization of the information system, to ensure that the controls are appropriately aligned with the system's risk level and the organization's security requirements.
+
+endif::artifact-type[]
+
+<<<
+
+==== Understanding Baseline Security Controls
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- Definition
+- Purpose
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+- *Definition*: Baseline security controls are the minimum set of controls required for protecting information systems, based on their categorization. These controls are outlined in NIST SP 800-53, providing a comprehensive set of security and privacy controls for federal information systems and organizations.
+- *Purpose*: The baseline controls serve as a starting point for securing the system, ensuring that a standardized level of security is applied across all systems within an organization.
+
+endif::artifact-type[]
+
+<<<
+
+==== The Selection Process
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+. Review Categorization
+. Apply Tailoring Guidance
+. Consider Legal and Regulatory Requirements
+. Document the Selection Process
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+. *Review Categorization*: Begin by reviewing the system's categorization to understand the potential impact on confidentiality, integrity, and availability (CIA). The categorization determines the initial set of baseline controls.
+. *Apply Tailoring Guidance*: Use NIST SP 800-53's tailoring guidance to adjust the baseline controls based on organizational requirements, operational needs, and the specific risk environment. This may involve adding additional controls or control enhancements, and in some cases, removing controls that are not applicable or are addressed by other means.
+. *Consider Legal and Regulatory Requirements*: Ensure that the selection of baseline controls also aligns with any applicable legal, regulatory, and policy requirements, incorporating controls necessary to meet these obligations.
+. *Document the Selection Process*: Thoroughly document the process of selecting and tailoring the baseline security controls, including the rationale behind adding or modifying controls. This documentation is crucial for future assessments and audits.
+
+endif::artifact-type[]
+
+<<<
+
+==== Factors Influencing Control Selection
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- Threat Landscape
+- Technological Environment
+- Organizational Factors
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+- *Threat Landscape*: Consider the current and anticipated threat environment, selecting controls that effectively mitigate identified threats.
+- *Technological Environment*: The system's technological environment, including the use of cloud services, mobile technologies, and emerging technologies, may influence the selection and tailoring of controls.
+- *Organizational Factors*: Organizational factors, such as the culture of security, existing security practices, and the maturity of the information security program, can impact the selection of baseline controls.
+
+endif::artifact-type[]
+
+<<<
+
+==== Key Takeaways
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- The selection of baseline security controls is a systematic process informed by the system's categorization, operational requirements, and the prevailing threat and regulatory environment.
+- Tailoring the baseline controls ensures that the security posture is both standardized across the organization and customized to address the specific risks and requirements of each system.
+- Proper documentation of the control selection and tailoring process supports organizational transparency, compliance efforts, and the overall effectiveness of the RMF process.
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+By adhering to this structured process, organizations can ensure that their information systems are protected by a robust set of baseline security controls, tailored to the specific needs and risk profile of each system, thereby enhancing the organization's overall security posture.
+
+endif::artifact-type[]
+
+<<<
+
+=== Lesson {module-number}.2: Strategies for Tailoring and Supplementing Security Controls
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::bullseye.svg[align="left",pdfwidth=50%]|In this lesson, we'll identify appropriate security controls, including:
+
+* Tailoring Baseline Security Controls
+* Supplementing Security Controls
+* Documenting Tailoring and Supplementing Decisions
+* Key Takeaways
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+Tailoring and supplementing baseline security controls are essential steps in the Risk Management Framework (RMF) to ensure that the security measures are effectively aligned with the specific needs, risks, and conditions of the information system and organization. This lesson discusses strategies for customizing these controls beyond the initial baseline selection, enhancing the security posture and addressing unique organizational challenges.
+
+endif::artifact-type[]
+
+<<<
+
+==== Tailoring Baseline Security Controls
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- Assess Organizational Context
+- Evaluate System-specific Factors
+- Incorporate Stakeholder Input
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+- *Assess Organizational Context*: Understand the organization's mission, operational environment, and security policies to ensure that tailored controls support organizational goals and comply with policy requirements.
+- *Evaluate System-specific Factors*: Consider the specific attributes of the system, including its architecture, technologies used, data flows, and connections to other systems. Tailoring decisions should reflect these factors to ensure controls are effective and practicable.
+- *Incorporate Stakeholder Input*: Engage with stakeholders, including system owners, users, and IT staff, to gather insights on operational requirements and potential security concerns. Stakeholder feedback is invaluable for making informed tailoring decisions.
+
+endif::artifact-type[]
+
+<<<
+
+==== Supplementing Security Controls
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- Conduct a Risk Assessment
+- Leverage Threat Intelligence
+- Review Industry Best Practices
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+- *Conduct a Risk Assessment*: Identify and analyze risks that may not be adequately addressed by the tailored baseline controls. Supplementing controls should target these identified risks.
+- *Leverage Threat Intelligence*: Utilize current threat intelligence to understand emerging threats and vulnerabilities. Supplemental controls may be needed to address new or evolving threats not covered by the baseline controls.
+- *Review Industry Best Practices*: Consider cybersecurity best practices and benchmarks within the industry. Supplemental controls that are widely adopted in the industry may offer additional protection and compliance benefits.
+
+endif::artifact-type[]
+
+<<<
+
+==== Documenting Tailoring and Supplementing Decisions
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- Maintain Comprehensive Documentation
+- Update Security Plan
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+- *Maintain Comprehensive Documentation*: Document all decisions related to tailoring and supplementing security controls, including the rationale behind each decision and how it aligns with the risk management strategy.
+- *Update Security Plan*: Ensure the System Security Plan (SSP) reflects the tailored and supplemental controls, providing a clear and current overview of the system's security posture.
+
+endif::artifact-type[]
+
+<<<
+
+==== Key Takeaways
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- Tailoring and supplementing security controls are critical for customizing the RMF to the unique needs and risk profile of each information system.
+- Effective tailoring requires a deep understanding of the organizational context, system-specific factors, and stakeholder needs, ensuring that controls are both effective and aligned with operational requirements.
+- Supplementing controls based on risk assessments, threat intelligence, and industry best practices ensures that the security posture remains robust against evolving threats and vulnerabilities.
+- Comprehensive documentation of tailoring and supplementing decisions supports transparency, facilitates compliance, and enhances the overall security governance process.
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+By adopting these strategies, organizations can ensure that their security controls are not only compliant with baseline requirements but are also optimized for the specific security challenges they face, thereby enhancing their resilience against cyber threats.
+endif::artifact-type[]
+
+<<<
+    
+=== Lesson {module-number}.3: Documentation Practices for Security Control Selection
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::bullseye.svg[align="left",pdfwidth=50%]|In this lesson, we'll document control selections effectively, including:
+
+* Importance of Documentation in RMF
+* Best Practices for Documenting Security Control Selection
+* Documenting Changes and Updates
+* Key Takeaways
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+Effective documentation is a cornerstone of the Risk Management Framework (RMF) process, providing a clear record of how security controls are selected, tailored, and supplemented to protect information systems. This lesson focuses on best practices for documenting the selection of security controls, ensuring accountability, compliance, and facilitating ongoing risk management activities.
+
+endif::artifact-type[]
+
+<<<
+
+==== Importance of Documentation in RMF
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- Facilitates Communication
+- Supports Compliance Efforts
+- Enables Continuous Monitoring and Improvement
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+- *Facilitates Communication*: Proper documentation ensures that all stakeholders, including system owners, security personnel, and auditors, have a clear understanding of the security controls in place and the rationale behind their selection.
+- *Supports Compliance Efforts*: Comprehensive documentation helps demonstrate compliance with internal policies and external regulations by providing evidence of due diligence in selecting and implementing security controls.
+- *Enables Continuous Monitoring and Improvement*: Well-documented security control selections are essential for effective continuous monitoring and provide a basis for reviewing and updating controls as the threat landscape evolves.
+
+endif::artifact-type[]
+
+<<<
+
+==== Best Practices for Documenting Security Control Selection
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+. Use a Standardized Format
+. Detail the Selection Process
+. Justify Tailoring and Supplementing Decisions*
+. Record Review and Approval
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+. *Use a Standardized Format*: Adopting a standardized format for documentation, such as templates provided in NIST SP 800-53A, ensures consistency and completeness across the organization.
+. *Detail the Selection Process*: Document the process used to select baseline controls, including considerations for the system's categorization, organizational context, system-specific factors, and stakeholder input.
+. *Justify Tailoring and Supplementing Decisions*: Clearly articulate the rationale for tailoring baseline controls and for selecting supplemental controls, including how specific risks or requirements are addressed by these decisions.
+. *Record Review and Approval*: Document the review and approval of the security control selection by relevant authorities, such as the Information Security Officer or Authorizing Official, to ensure accountability and oversight.
+
+endif::artifact-type[]
+
+<<<
+
+==== Documenting Changes and Updates
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- Maintain a Change Log
+- Update Documentation Regularly
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+- *Maintain a Change Log*: Keep a record of changes to security control selections over time, including the addition or removal of controls and adjustments to control parameters. This log supports traceability and informs future security assessments.
+- *Update Documentation Regularly*: Regular updates to documentation ensure that it accurately reflects the current security posture of the information system, incorporating changes due to re-categorizations, technology updates, or shifts in the threat landscape.
+
+endif::artifact-type[]
+
+<<<
+
+==== Key Takeaways
+[grid=none,frame=none,cols="50%a,50%a"]
+|===
+|
+- Comprehensive documentation of security control selection is critical for transparency, compliance
+|image::good-check.svg[pdfheight=50%,pdfwidth=50%]
+|
+|===
+
+ifdef::artifact-type[]
+
+---
+
+endif::artifact-type[]

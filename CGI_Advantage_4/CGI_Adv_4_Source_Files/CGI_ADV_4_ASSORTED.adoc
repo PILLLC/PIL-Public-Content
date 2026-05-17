@@ -1,0 +1,372 @@
+== Module {module-number}: Assorted Topics
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+{SP}
+{SP}
+ 
+=== 1. Accounts Receivable
+* **Module**: Accounts Receivable
+* **Purpose**: Used to record amounts owed by customers, creating a receivable for services rendered or goods provided.
+* **Usage**: Primarily used by Accounts Receivable departments to manage and track outstanding amounts due from customers.
+
+==== Prerequisites and Dependencies
+
+[cols="3,3", options="header"]
+|===
+| Table | Description
+| Customer Profile (CPC) | Stores customer information required for billing.
+| Billing Profile Table | Specifies customer billing terms and preferences.
+| Revenue Account (RA) | Defines GL accounts used to record receivable amounts.
+|===
+
+==== Key Fields and Data Elements
+
+[cols="3,3", options="header"]
+|===
+| Field Name | Required/Optional | Description
+| Invoice Number | Required | Unique identifier for each customer invoice.
+| Customer ID | Required | Links the transaction to a customer profile.
+| Account Code | Required | GL receivable account used to track outstanding amounts.
+| Transaction Date | Required | The date the receivable is recorded.
+| Amount | Required | Total amount due from the customer.
+| Payment Terms | Optional | Specifies payment terms for the customer.
+|===
+
+==== Step-by-Step Process for Creating and Processing RE (Receivable Entry)
+
+. **Navigate to Receivable Entry**: Go to `Accounts Receivable` > `Receivable Entry (RE)`.
+. **Enter Header Information**: Include Invoice Number, Date, and Amount.
+. **Link to Customer**: Enter the Customer ID associated with the receivable.
+. **Enter Line Items**: Specify account codes and amounts for each receivable line item.
+. **Save and Validate**: Click **Save** to validate entries. Resolve any validation errors that arise.
+. **Submit for Approval**: If approval is required, submit the transaction through the workflow.
+. **Post Transaction**: Once approved, finalize and post to update the receivable records.
+
+==== Validation Checks and Error Messages
+
+* **Customer Profile Missing**: Ensure that the Customer ID is active in the Customer Profile Table.
+* **Account Code Validation**: Confirm that account codes are set up correctly in the Chart of Accounts.
+* **Billing Profile Missing**: Verify that the billing profile is complete for third-party billing scenarios.
+
+==== Reporting and Monitoring Requirements
+
+* **Transaction Inquiry (TI)**: Use this to track and monitor the status of the receivable.
+* **Aging Report**: Monitors outstanding receivables and due dates.
+* **Approval History**: Check the approval workflow for transaction history and status.
+
+==== Troubleshooting Common Issues
+
+* **Customer Profile Missing**: Ensure customer records are complete in the VCC table.
+* **Account Code Validation Errors**: Ensure valid account codes in COA.
+* **Approval Delays**: Confirm that approvers are available for review.
+
+=== 2. AP Invoice (Accounts Payable Invoice)
+
+* **Module**: Accounts Payable
+* **Purpose**: Records vendor invoices for expenses.
+* **Usage**: Used by Accounts Payable for tracking vendor payments.
+
+==== Prerequisites and Dependencies
+
+[cols="3,3", options="header"]
+|===
+| Table | Description
+| Vendor Profile (VEN) | Stores vendor information.
+| Budget Control Table | Checks budget availability for expenses.
+| Chart of Accounts (COA) | Defines GL accounts for AP transactions.
+|===
+
+...
+
+=== 3. AP Payment
+
+...
+
+=== 4. AR Invoice (Accounts Receivable Invoice)
+
+...
+
+=== 5. PO (Purchase Order)
+
+...
+
+=== 6. PO Amendment
+
+...
+
+=== 7. Contract
+
+...
+
+=== 8. GL Journal (General Ledger Journal)
+
+...
+
+=== 9. Budget Entry (BJE)
+
+...
+
+=== 10. Budget Adjustment
+
+...
+
+=== 11. Payroll Run (PRR)
+
+...
+
+=== 12. Payroll Adjustment
+
+...
+
+=== 13. Asset Management Entry
+
+...
+
+=== 14. Asset Depreciation
+
+...
+
+=== 15. Vendor Profile Creation (VCC)
+
+...
+
+=== 16. Customer Profile Creation (CPC)
+
+...
+
+=== 17. Billing Profile Setup
+
+...
+
+=== 18. Cash Receipt (CR)
+
+...
+
+=== 19. Time Entry (TME)
+
+...
+
+=== 20. Leave Request (LVR)
+
+...
+
+=== 21. Benefits Enrollment (BEN)
+
+...
+
+=== 22. Budget Control Inquiry (BCI)
+
+...
+
+=== 23. Procurement Bid (BID)
+
+...
+
+=== 24. Revenue Recognition Entry (RRE)
+
+...
+
+=== 25. Receivable Adjustment Entry (RAE)
+
+* **Module**: Accounts Receivable
+* **Purpose**: Adjusts previously recorded receivables for corrections or updates.
+* **Usage**: Used by AR departments to correct or adjust outstanding receivables.
+
+==== Prerequisites and Dependencies
+
+[cols="3,3", options="header"]
+|===
+| Table | Description
+| Customer Profile (CPC) | Ensures accurate customer information.
+| Receivable Entry (RE) | Links to existing receivables for adjustment.
+| Chart of Accounts (COA) | Verifies valid account codes.
+|===
+
+==== Key Fields and Data Elements
+
+[cols="3,3", options="header"]
+|===
+| Field Name | Required/Optional | Description
+| Adjustment ID | Required | Unique identifier for the adjustment.
+| Original RE ID | Required | References the original Receivable Entry.
+| Adjustment Date | Required | The date the adjustment is recorded.
+| Amount | Required | The adjustment amount.
+|===
+
+==== Step-by-Step Process for Creating and Processing Receivable Adjustment Entry
+
+. **Navigate to Receivable Adjustment Entry**: Go to `Accounts Receivable` > `Adjustment Entry`.
+. **Select Original Receivable**: Find and select the RE to be adjusted.
+. **Enter Adjustment Details**: Provide Adjustment ID, Date, and Amount.
+. **Save and Validate**: Click **Save** to check entries.
+. **Submit for Approval**: If required, submit for approval.
+. **Post Adjustment**: Once approved, finalize and post to update receivable records.
+
+==== Validation Checks and Error Messages
+
+* **Invalid Adjustment Amount**: Ensure that adjustment does not exceed original amount.
+* **Missing Original Receivable**: Confirm the original RE ID is accurate and valid.
+
+==== Reporting and Monitoring Requirements
+
+* **Adjustment History Report**: Tracks adjustments made to receivables.
+* **Transaction Inquiry (TI)**: Monitor the adjustment status.
+
+==== Troubleshooting Common Issues
+
+* **Original RE Missing**: Verify that the referenced RE exists and is active.
+* **Approval Delays**: Confirm that assigned approvers are available.
+
+<<<
+
+=== Requirements and Dependencies for Creating and Processing an RE Receivable Transaction Using the Billing Rate Table in CGI Advantage 4
+
+==== Overview
+To create and process an **RE (Receivable Entry) transaction** that uses the **Billing Rate Table** in CGI Advantage 4, there are several system requirements and dependencies. These dependencies ensure that billing rates are applied accurately based on predefined tables, customer profiles, and account structures. This document outlines the requirements, prerequisites, and setup dependencies necessary for successful RE transaction processing.
+
+==== Requirements and Dependencies
+
+[cols="3,4", options="header"]
+|===
+| Requirement/Dependency | Description
+
+| **Customer Profile Setup** | A customer profile must be created in the **Vendor Customer Creation (VCC)** module. This profile includes essential customer information such as name, address, Tax ID, and any billing relationships or payment terms specific to the customer.
+
+| **Billing Profile Table** | The **Billing Profile Table** must contain a record for each customer requiring third-party billing or special rate applications. The profile should specify the rate schedule and, if applicable, the address ID associated with each customer’s billing details.
+
+| **Billing Rate Table** | The **Billing Rate Table** must be configured with rate codes, rate types, and applicable rate amounts. This table determines the billing rate calculations applied to the RE transaction based on service, customer, or other criteria.
+
+| **Chart of Accounts (COA)** | The **Chart of Accounts** must be set up with the necessary account codes that correspond to the revenue accounts being billed. This ensures that the receivable entries are allocated correctly within the general ledger.
+
+| **Revenue Codes** | Revenue codes must be created and linked to specific accounts in the **Revenue Module**. Each revenue code represents a distinct income source and determines how receivable transactions are recorded in the general ledger.
+
+| **Budget Control and Structure** | The budget structure and control settings should be defined for accounts impacted by RE transactions. This may involve setting up budget controls and ensuring that funds are available for the services billed.
+
+| **Service or Product Codes** | If billing is based on specific services or products, these codes must be established and linked to rates in the Billing Rate Table. Each service code should map to a rate and, if applicable, an account code for tracking revenue accurately.
+
+| **Customer Account Options (CACT Table)** | The **Customer Account Options Table (CACT)** must define specific billing options for each customer. If Address ID inference is required, the CACT table should include entries that link customers to particular billing addresses and preferences.
+
+| **User Access and Permissions** | Users must have appropriate access rights to create and process RE transactions, view the Billing Rate Table, and access the Billing Profile Table. Role-based permissions should be configured in **User Management**.
+
+| **Fiscal Period Setup** | The fiscal periods must be defined for the current fiscal year. This ensures that all transactions are recorded in the correct accounting period and that revenue can be tracked accurately over time.
+
+| **Approval Workflow Configuration** | If approvals are required for RE transactions, the approval workflow must be configured to route RE transactions to designated approvers. The workflow should be established in **Workflow and Approvals** settings.
+
+| **Tax Codes (if applicable)** | If taxes are applied to the receivable transactions, tax codes must be defined. Tax codes should align with the relevant billing rate and service/product codes.
+
+| **Billing Frequency and Payment Terms** | Billing frequency (e.g., monthly, quarterly) and payment terms should be set up within the **Billing Profile** associated with each customer. This helps determine the timing and terms under which the customer will be billed and expected to pay.
+
+| **System Configuration Settings** | System settings must allow for the use of the Billing Rate Table in RE transactions. This may include enabling specific modules or transaction types and ensuring that dependencies like Rate Codes are active.
+|===
+
+==== Process Overview
+
+Once all dependencies are met, the following steps outline the process for creating and processing an RE transaction with the Billing Rate Table:
+
+1. **Create or Verify Customer Profile**:
+   Ensure the customer profile exists in VCC with relevant billing information and payment terms.
+
+2. **Set Up Billing Profile**:
+   Define or verify the billing profile in the Billing Profile Table, specifying the Billing Rate Table reference.
+
+3. **Create RE Transaction**:
+   - Go to **Revenue Entry (RE)** and start a new transaction.
+   - Select the **Customer ID** and apply the **Billing Rate Table** for rate calculations.
+   - Enter required line items, specifying revenue codes, service/product codes, and rate codes as needed.
+
+4. **Verify Budget and Funds**:
+   Use the Budget Inquiry to confirm available budget for accounts affected by the transaction.
+
+5. **Submit for Approval**:
+   If approvals are configured, submit the RE transaction for routing through the established workflow.
+
+6. **Monitor and Complete Transaction**:
+   Upon approval, the RE transaction is processed and recorded. Monitor transaction status to ensure completion.
+
+==== Notes
+- **Dependencies Verification**: Confirm all tables, profiles, and rate codes are updated and accurate before initiating an RE transaction.
+- **Role Permissions**: Ensure users have the necessary access to the Billing Rate Table and related RE transaction components.
+- **Rate Calculation**: Billing Rate Table settings determine the calculation method for applying rates in RE transactions. Verify that rate configurations align with organizational billing practices.
+
+Here’s the documentation for creating an **RE (Receivable Entry) transaction** for a customer with multiple third-party billing options in CGI Advantage 4, formatted as an `.adoc` file.
+
+<<<
+
+=== Requirements and Dependencies for Creating an RE Transaction for a Customer with Multiple Third-Party Billing Options in CGI Advantage 4
+
+==== Overview
+In CGI Advantage 4, you can create an **RE (Receivable Entry) transaction** for a customer who requires multiple third-party billing options. This allows a primary customer to receive services while designated third-party entities are billed on their behalf. This setup involves specific configuration in customer profiles, billing profiles, and address tables. This document outlines the requirements, dependencies, and configuration steps to process RE transactions under this arrangement.
+
+==== Requirements and Dependencies
+
+[cols="3,4", options="header"]
+|===
+| Requirement/Dependency | Description
+
+| **Customer Profile Setup** | Create or verify a profile for the primary customer in **Vendor Customer Creation (VCC)**. This profile represents the customer receiving the service and links to the billing profiles and options for multiple third-party payers.
+
+| **Billing Profile Table** | Define multiple billing profiles in the **Billing Profile Table** for the customer. Each billing profile specifies a unique third-party payer and links to a corresponding Address ID for the designated billing recipient.
+
+| **Third-Party Customer Profiles** | Create profiles for each third-party customer responsible for paying bills on behalf of the primary customer. Each third-party customer should have a record in **VCC**, including address and contact information.
+
+| **Billing Rate Table (if applicable)** | If billing is based on rates, configure the **Billing Rate Table** with rate codes and applicable rates. These rates should align with the service or product codes and may vary by third-party customer as needed.
+
+| **Chart of Accounts (COA)** | Set up the **Chart of Accounts** to define revenue accounts impacted by the RE transaction. This ensures the receivables are accurately recorded in the general ledger.
+
+| **Revenue Codes** | Create and assign revenue codes to specific accounts within the **Revenue Module**. Revenue codes represent distinct income sources and will be referenced in the RE transaction.
+
+| **Service or Product Codes** | If billing varies by service or product, these codes must be established in the system and linked to the Billing Rate Table (if applicable). Each service or product code should map to an account code.
+
+| **Customer Account Options Table (CACT)** | Use the **Customer Account Options Table (CACT)** to define options for multiple billing addresses and payers. Each third-party payer must have an entry in the CACT table that links the primary customer to specific billing preferences and addresses.
+
+| **User Access and Permissions** | Ensure users have appropriate permissions to create and process RE transactions, access the Billing Profile Table, and set up CACT configurations for multiple billing options. Permissions should be managed through **User Management**.
+
+| **Fiscal Period Setup** | Define fiscal periods for the current fiscal year to ensure transactions are recorded in the correct accounting period.
+
+| **Approval Workflow Configuration** | Configure approval workflows, if required, for RE transactions involving third-party billing. Approval routing should be set up in the **Workflow and Approvals** section.
+
+| **Tax Codes (if applicable)** | If taxes apply to the transaction, tax codes must be created in alignment with relevant service or product codes.
+
+| **Payment Terms and Billing Frequency** | Define payment terms and billing frequencies within each billing profile for third-party customers. This setup determines the terms under which third parties will be billed and expected to pay.
+
+| **System Configuration Settings** | Confirm that system settings enable third-party billing for RE transactions. Ensure that dependencies such as CACT and Billing Profile configurations are activated.
+|===
+
+==== Process Overview
+
+Once all dependencies are met, follow these steps to create and process an RE transaction with multiple third-party billing options:
+
+1. **Create or Verify Customer Profile**:
+   Ensure the primary customer’s profile exists in VCC with relevant billing information, and confirm each third-party payer profile is complete with contact and billing address details.
+
+2. **Define Multiple Billing Profiles**:
+   In the **Billing Profile Table**, create separate billing profiles for each third-party customer linked to the primary customer. Specify unique billing addresses using the Address ID linked to each third party in the CACT table.
+
+3. **Link Third-Party Payers via CACT Table**:
+   Set up entries in the **Customer Account Options Table (CACT)** for each third-party payer. This configuration allows the system to infer the correct Address ID and billing preferences when creating the RE transaction.
+
+4. **Create RE Transaction**:
+   - Navigate to **Revenue Entry (RE)** and initiate a new transaction.
+   - Select the primary customer’s **Customer ID**.
+   - Apply the appropriate billing profile for each line item that reflects the designated third-party payer.
+   - Specify line item details such as revenue codes, service or product codes, and, if applicable, rate codes from the Billing Rate Table.
+
+5. **Verify Budget and Available Funds**:
+   Use Budget Inquiry to confirm available budget for accounts involved in the transaction.
+
+6. **Submit for Approval**:
+   If approval workflows are configured, submit the RE transaction to route it through the designated approvers.
+
+7. **Monitor and Complete Transaction**:
+   Upon approval, the RE transaction will be processed with each line item billed to the assigned third-party payer. Monitor transaction status for completion and invoice generation.
+
+==== Notes
+- **Billing Profile and CACT Linkage**: Ensure that each billing profile is linked accurately to the third-party customer’s Address ID in the CACT table to avoid billing errors.
+- **Role Permissions**: Verify that users have the necessary permissions to set up and view third-party billing profiles and access customer account options.
+- **Rate Calculations**: When using the Billing Rate Table, confirm that rate configurations align with the service or product being billed and are appropriate for each third-party payer.
+
+This configuration allows for flexible billing to multiple third-party customers on behalf of a primary customer, streamlining the receivables process in CGI Advantage 4.

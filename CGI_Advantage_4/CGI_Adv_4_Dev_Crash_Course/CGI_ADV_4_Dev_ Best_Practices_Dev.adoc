@@ -1,0 +1,148 @@
+== Module {module-number}: Best Practices for Development
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+{SP}
+{SP}
+
+[discrete]
+=== Learning Objectives
+
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::agenda.svg[align="left",pdfwidth=50%]|Upon completion of this module, students should be able to:
+
+* Implement version control effectively for CGI Advantage 4 development projects.
+* Test code and configurations thoroughly to ensure reliability and quality.
+* Create and maintain detailed documentation for all customizations and changes.
+* Apply performance optimization techniques to enhance system efficiency.
+* Design robust error-handling mechanisms for transactional and non-transactional processes.
+|===
+
+<<<
+
+=== Best Practices for Effective Development
+
+==== Version Control
+Version control is essential for managing changes in code and configurations, enabling teams to track modifications, collaborate effectively, and prevent conflicts.
+
+- *Key Practices for Version Control:*
+  * Use tools like Git, SVN, or Mercurial for managing source code.
+  * Commit frequently to ensure changes are saved incrementally.
+  * Write clear, concise commit messages that describe the purpose of the change.
+  * Create branches for new features, bug fixes, and experiments to isolate changes.
+  * Regularly merge branches into the main codebase after thorough testing.
+
+- _Example Commit Message:_
+  ```text
+Added validation for custom field 'CustomField' in customer profile page.
+  ```
+
+*Instructor Tip:* Discuss strategies for managing repository access and resolving merge conflicts.
+
+<<<
+
+==== Testing Thorough testing ensures that customizations and configurations work as intended and meet organizational requirements.
+
+*Testing Strategies:*
+
+_Develop unit tests for individual components, such as Java classes or SQL queries.
+Conduct integration tests to verify that modules and workflows function seamlessly together.
+Perform regression testing to ensure new changes do not break existing functionality.
+Test edge cases, including invalid inputs and unusual user behavior.
+Testing Environments:
+
+Use a staging environment that mirrors production for realistic testing scenarios.
+Populate test environments with anonymized or mock data to simulate real-world conditions.
+Test Case Example:
+
+Scenario: Validate custom field input.
+Test Steps: Enter valid, invalid, and boundary values into the field.
+Expected Outcome: The field accepts valid input and displays error messages for invalid input.
+<<<
+
+==== Documentation Comprehensive documentation is vital for maintaining consistency, supporting team collaboration, and easing future troubleshooting efforts.
+
+Documentation Best Practices:
+
+Document all changes, including database modifications, workflow configurations, and UI customizations.
+Use clear and consistent naming conventions for files, variables, and tables.
+Include inline comments in code to explain logic and intent.
+Maintain a centralized repository for documentation accessible to all team members.
+Documentation Format:
+
+Change Logs: Record details of updates, including timestamps and author information.
+Configuration Details: Document configurations in a structured format, such as tables or checklists.
+User Guides: Provide step-by-step instructions for using new or modified features.
+Instructor Activity: Assign learners to create documentation for a simple customization task.
+
+<<<
+
+==== Performance Optimization Optimizing performance ensures the system remains efficient and responsive, even under heavy workloads.
+
+Optimization Techniques:
+
+Minimize database calls by using batch processing and efficient queries.
+Optimize SQL queries by indexing frequently used columns and avoiding unnecessary joins.
+Cache frequently accessed data to reduce repeated database calls.
+Limit the use of nested loops and other resource-intensive operations in code.
+Example SQL Optimization: Before:
+
+sql
+Copy
+Edit
+SELECT * FROM CUSTOMER_PROFILE WHERE ACTIVE_STATUS = 'Y';
+After (with indexing):
+
+sql
+Copy
+Edit
+CREATE INDEX idx_active_status ON CUSTOMER_PROFILE(ACTIVE_STATUS);
+SELECT * FROM CUSTOMER_PROFILE WHERE ACTIVE_STATUS = 'Y';
+System Monitoring:
+
+Use performance monitoring tools to track metrics like response time and resource usage.
+Identify and address performance bottlenecks proactively.
+<<<
+
+==== Error Handling Robust error handling improves system reliability and user experience by managing unexpected issues gracefully.
+
+Error-Handling Techniques:
+
+Use try-catch blocks in code to handle exceptions and log error details.
+Display user-friendly error messages while logging detailed technical information for debugging.
+Implement transaction rollback mechanisms to maintain data integrity during failures.
+Set up alerts and notifications for critical errors to enable quick resolution.
+Example Java Error Handling:
+
+java
+Copy
+Edit
+try {
+    // Database operation
+} catch (SQLException e) {
+    log.error("Database error: " + e.getMessage());
+    throw new CustomException("An error occurred while processing your request.");
+}
+Best Practices:
+
+Test error scenarios to ensure error-handling mechanisms work as intended.
+Regularly review error logs to identify recurring issues and refine code accordingly.
+<<<
+
+=== Summary and Best Practices Recap
+
+Version Control: Maintain a structured and collaborative approach to managing code changes.
+Testing: Test thoroughly across all scenarios to ensure functionality and reliability.
+Documentation: Create clear, accessible documentation for all customizations and configurations.
+Performance Optimization: Focus on efficient database queries and resource usage.
+Error Handling: Implement robust mechanisms to detect, manage, and log errors effectively.
+[appendix] === Glossary
+
+Version Control: A system that records changes to files over time.
+Unit Testing: Testing individual components in isolation.
+Batch Processing: Processing data in large chunks to reduce resource overhead.
+[discrete] === Additional Notes Instructor Tip: Emphasize the importance of a structured development process to enhance the quality and maintainability of customizations.

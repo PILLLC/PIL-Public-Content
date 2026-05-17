@@ -1,0 +1,29 @@
+:module-number: 00
+include::CGI_ADV_4_Course_Info.adoc[]
+
+:module-number: 01
+include::CGI_ADV_4_Introduction to CGI Advantage 4.adoc[]
+
+:module-number: 02
+include::CGI_ADV_4_System Setup and Configuration.adoc[]
+
+:module-number: 03
+include::CGI_ADV_4_Core Functionalities.adoc[]
+
+:module-number: 04
+include::CGI_ADV_4_Advanced Functionalities.adoc[]
+
+:module-number: 05
+include::CGI_ADV_4_System Administration and Maintenance.adoc[]
+
+:module-number: 06
+include::CGI_ADV_4_Reporting and Analytics.adoc[]
+
+:module-number: 07
+include::CGI_ADV_4_Practical Applications and Case Studies.adoc[]
+
+:module-number: 08
+include::CGI_ADV_4_Best Practices and Future Directions.adoc[]
+
+:module-number: 09
+include::CGI_ADV_4_Certification and Final Project.adoc[]

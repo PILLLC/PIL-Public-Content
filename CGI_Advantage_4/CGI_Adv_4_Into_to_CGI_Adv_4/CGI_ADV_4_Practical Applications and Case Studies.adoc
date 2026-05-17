@@ -1,0 +1,164 @@
+== Module {module-number}: Practical Applications and Case Studies
+:imagesdir: images
+:source-highlighter: rouge
+:icons: font
+
+image::PIL_Logo_2023.png[align="left", pdfwidth=25%]
+
+{SP}
+{SP}
+
+[discrete]
+=== Learning Objectives
+
+[grid=none,frame=none,cols="25%a,75%a"]
+|===
+|image::agenda.svg[align="left",pdfwidth=50%]|Upon completion of this module, students should be able to:
+
+* Apply the knowledge and skills gained in real-world scenarios through hands-on exercises and case studies.
+* Understand how CGI Advantage 4 is implemented in different sectors, including financial management, procurement, and HR automation.
+* Learn how to design, optimize, and monitor workflows through practical exercises.
+* Develop strategies to troubleshoot and refine existing processes based on real-world challenges.
+|===
+
+<<<
+
+=== Real-World Case Studies
+
+==== Case Study 1: Financial Management Implementation
+Financial management forms the backbone of many public sector organizations. This case study explores how CGI Advantage 4 improved operational efficiency and compliance for a state government agency.
+
+- *Background:*
+  * Agency faced challenges with budget overruns, inconsistent reporting, and regulatory compliance.
+  * Need for an integrated system to unify financial management processes.
+
+- *Implementation Process:*
+  * Configured General Ledger, Accounts Payable, and Budgeting modules to align with state policies.
+  * Integrated legacy systems with CGI Advantage 4 for seamless data migration.
+
+- *Outcomes:*
+  * Streamlined budget approvals, reducing processing time by 40%.
+  * Improved audit readiness and reduced errors in financial reporting.
+  * Enabled real-time financial monitoring, leading to proactive decision-making.
+
+- *Lessons Learned:*
+  * Importance of involving finance teams early in the configuration process.
+  * Need for comprehensive user training to ensure proper system adoption.
+
+<<<
+
+==== Case Study 2: Procurement and Vendor Management
+Efficient procurement management can significantly reduce costs and improve vendor relationships. This case study examines how CGI Advantage 4 transformed procurement workflows for a large municipal government.
+
+- *Background:*
+  * Challenges with long procurement cycles and vendor compliance tracking.
+  * Objective to modernize procurement processes and improve transparency.
+
+- *Implementation Process:*
+  * Configured Procurement and Vendor Management modules, including automated approval workflows.
+  * Established a vendor performance tracking system integrated with compliance dashboards.
+
+- *Outcomes:*
+  * Reduced procurement cycle time by 30% through automated workflows.
+  * Enhanced vendor compliance tracking, leading to higher contract adherence rates.
+  * Achieved cost savings of 15% by leveraging bulk purchasing and better vendor negotiations.
+
+- *Lessons Learned:*
+  * Importance of designing workflows that adapt to changing procurement needs.
+  * Value of centralized vendor data for long-term relationship management.
+
+<<<
+
+==== Case Study 3: HR and Payroll Automation
+HR and payroll automation can reduce administrative burdens and ensure compliance with labor laws. This case study highlights how CGI Advantage 4 streamlined HR processes for a mid-sized public sector organization.
+
+- *Background:*
+  * Frequent payroll errors and manual data entry were causing compliance issues.
+  * Need for an integrated system to automate HR and payroll processes.
+
+- *Implementation Process:*
+  * Configured HR and Payroll modules, including payroll rules and employee data synchronization.
+  * Integrated time and attendance systems for accurate payroll calculations.
+
+- *Outcomes:*
+  * Reduced payroll errors by 60%, improving employee satisfaction.
+  * Automated compliance reporting, ensuring adherence to labor regulations.
+  * Increased HR team productivity by 25% through streamlined processes.
+
+- *Lessons Learned:*
+  * Importance of mapping payroll rules accurately during configuration.
+  * Role of integration in ensuring data consistency across HR systems.
+
+<<<
+
+=== Hands-On Exercises
+
+==== Simulated Scenarios
+Simulated scenarios provide a safe environment to practice real-world applications of CGI Advantage 4 features. These exercises focus on solving practical challenges.
+
+- *Exercise 1: Financial Reconciliation Process*
+  * Objective: Reconcile monthly financial transactions using the General Ledger module.
+  * Instructions: Use reporting tools to identify discrepancies and correct errors.
+  * Expected Outcome: A reconciled ledger with balanced transactions.
+
+- *Exercise 2: Vendor Compliance Audit*
+  * Objective: Conduct a compliance audit for all active vendors.
+  * Instructions: Use the Vendor Management module to generate compliance reports and identify gaps.
+  * Expected Outcome: An actionable report highlighting vendor compliance status.
+
+- *Exercise 3: Employee Onboarding Workflow*
+  * Objective: Design an automated workflow for onboarding new employees.
+  * Instructions: Configure steps for document submission, role assignment, and payroll setup.
+  * Expected Outcome: A fully automated onboarding process improving HR efficiency.
+
+<<<
+
+==== System Configuration Exercises
+These exercises guide learners through configuring key modules in CGI Advantage 4 to meet organizational needs.
+
+- *Exercise 1: Setting Up a Departmental Budget*
+  * Objective: Create and allocate a budget for a specific department.
+  * Instructions: Define budget categories, enter amounts, and set variance thresholds.
+  * Expected Outcome: A departmental budget ready for monitoring and adjustments.
+
+- *Exercise 2: Configuring Approval Hierarchies*
+  * Objective: Set up hierarchical approval workflows for procurement requests.
+  * Instructions: Define roles, assign approvers, and test the workflow.
+  * Expected Outcome: An operational approval hierarchy ensuring proper oversight.
+
+- *Exercise 3: Customizing Reports for Stakeholders*
+  * Objective: Design a financial report tailored to a specific stakeholder group.
+  * Instructions: Select relevant fields, apply filters, and format the report layout.
+  * Expected Outcome: A stakeholder-specific report that meets reporting requirements.
+
+<<<
+
+==== Workflow Creation and Optimization
+Optimized workflows drive efficiency and improve accuracy. These exercises help learners practice creating and refining workflows.
+
+- *Exercise 1: Designing a Procurement Workflow*
+  * Objective: Automate the procurement request process from requisition to vendor payment.
+  * Instructions: Define workflow triggers, approval stages, and notifications.
+  * Expected Outcome: A streamlined procurement process with fewer bottlenecks.
+
+- *Exercise 2: Optimizing Budget Approval Processes*
+  * Objective: Review and enhance an existing budget approval workflow.
+  * Instructions: Identify bottlenecks, apply changes, and test the updated workflow.
+  * Expected Outcome: A faster, more efficient budget approval process.
+
+- *Exercise 3: Workflow Analytics and Improvements*
+  * Objective: Use analytics tools to monitor workflow performance and suggest improvements.
+  * Instructions: Analyze metrics such as completion time and error rates, then implement changes.
+  * Expected Outcome: Improved workflow performance and reduced processing times.
+
+<<<
+
+[appendix]
+=== Glossary
+- **Procurement Cycle:** The series of steps involved in acquiring goods and services.
+- **Workflow Automation:** The use of technology to automate repeatable tasks and processes.
+- **Compliance Reporting:** Reports generated to demonstrate adherence to regulations and standards.
+
+[discrete]
+=== Additional Notes
+*Instructor Tip:* Encourage learners to discuss real-world challenges they face and brainstorm solutions using CGI Advantage 4.
