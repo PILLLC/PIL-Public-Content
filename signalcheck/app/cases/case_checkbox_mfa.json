@@ -1,0 +1,28 @@
+{
+  "id": "case_checkbox_mfa",
+  "title": "Multifactor Authentication Methods",
+  "briefing": "Select all authentication methods that qualify as valid multifactor authentication factors.",
+  "type": "checkbox",
+  "options": [
+    "Password",
+    "Security token",
+    "Biometric scan",
+    "PIN"
+  ],
+  "answer": [
+    "Security token",
+    "Biometric scan"
+  ],
+  "feedback": {
+    "Password": "Incorrect. A password alone is a single authentication factor and does not provide multifactor protection.",
+    "Security token": "Correct. A hardware or software token represents something the user possesses and is a valid MFA factor.",
+    "Biometric scan": "Correct. Biometrics represent something the user is and are commonly used as an authentication factor.",
+    "PIN": "Incorrect. A PIN is another knowledge factor and does not qualify as a separate MFA factor when paired with a password."
+  },
+  "style_tags": {
+    "Password": "careless",
+    "Security token": "analytical",
+    "Biometric scan": "analytical",
+    "PIN": "careless"
+  }
+}

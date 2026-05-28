@@ -1,0 +1,28 @@
+{
+  "id": "case_text_input_firewall",
+  "title": "Firewall Rule Response",
+  "briefing": "A suspicious external IP address is repeatedly attempting connections to internal systems. Provide a short response describing the firewall action that should be taken.",
+  "type": "text",
+  "prompt": "Describe the firewall rule or action that should be implemented to mitigate this activity.",
+  "keywords": [
+    "block",
+    "deny",
+    "ip",
+    "firewall",
+    "rule",
+    "monitor"
+  ],
+  "feedback": {
+    "success": "Correct. Blocking or denying the malicious IP address and monitoring activity is an appropriate containment step.",
+    "partial": "Your response suggests some mitigation but could be clearer about implementing a firewall block or rule.",
+    "failure": "The response does not clearly describe using firewall controls to mitigate the suspicious activity."
+  },
+  "style_tags": {
+    "block": "decisive",
+    "deny": "decisive",
+    "ip": "analytical",
+    "firewall": "analytical",
+    "rule": "governance",
+    "monitor": "cautious"
+  }
+}

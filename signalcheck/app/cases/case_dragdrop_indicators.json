@@ -1,0 +1,35 @@
+{
+  "id": "case_dragdrop_indicators",
+  "title": "Security Indicator Classification",
+  "briefing": "Classify each item as either a sign of compromise or a normal system behavior.",
+  "type": "drag_drop",
+  "instructions": "Drag each indicator into the correct category.",
+  "items": [
+    "Unexpected outbound traffic",
+    "Repeated login failures",
+    "Routine software update",
+    "Known system backup process"
+  ],
+  "targets": [
+    "Potential Compromise",
+    "Normal Activity"
+  ],
+  "correct_mapping": {
+    "Unexpected outbound traffic": "Potential Compromise",
+    "Repeated login failures": "Potential Compromise",
+    "Routine software update": "Normal Activity",
+    "Known system backup process": "Normal Activity"
+  },
+  "feedback": {
+    "Unexpected outbound traffic": "Correct. Unexpected outbound connections may indicate data exfiltration or command-and-control communication.",
+    "Repeated login failures": "Correct. Multiple login failures may signal brute-force attempts or credential attacks.",
+    "Routine software update": "Correct. Normal update processes are expected system activity.",
+    "Known system backup process": "Correct. Scheduled backups are standard operational behavior."
+  },
+  "style_tags": {
+    "Unexpected outbound traffic": "analytical",
+    "Repeated login failures": "analytical",
+    "Routine software update": "careful",
+    "Known system backup process": "careful"
+  }
+}

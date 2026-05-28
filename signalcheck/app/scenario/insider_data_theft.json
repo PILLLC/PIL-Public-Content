@@ -1,0 +1,187 @@
+{
+  "id": "example_branching_incident",
+  "title": "Branching Incident Example",
+  "briefing": "A suspicious security event begins to unfold across the environment.",
+  "role": "SOC Analyst",
+  "difficulty": "medium",
+  "tags": [
+    "branching",
+    "phishing",
+    "incident response",
+    "investigation",
+    "containment"
+  ],
+  "initial_state": {
+    "attacker_advantage": 10,
+    "user_confidence": 50,
+    "operational_impact": 5,
+    "investigation_clarity": 20
+  },
+  "injects": [
+    {
+      "id": "threat_intel_update",
+      "trigger_after_step": "step1",
+      "trigger_on": "incorrect",
+      "title": "Threat Intelligence Update",
+      "message": "External reporting suggests the phishing pattern matches a known campaign associated with credential theft and rapid follow-on activity.",
+      "state_changes": {
+        "operational_impact": 5,
+        "investigation_clarity": 5
+      }
+    },
+    {
+      "id": "leadership_pressure",
+      "trigger_after_step": "step2_slow",
+      "trigger_on": "any",
+      "title": "Leadership Pressure",
+      "message": "Business leaders request an immediate status update and ask whether additional teams should prepare for operational disruption.",
+      "state_changes": {
+        "user_confidence": -5,
+        "operational_impact": 5
+      }
+    },
+    {
+      "id": "identity_control_review",
+      "trigger_after_step": "step2_fast",
+      "trigger_on": "correct",
+      "title": "Identity Control Review",
+      "message": "IAM confirms recent suspicious sign-in activity tied to the same users involved in the initial reports.",
+      "state_changes": {
+        "investigation_clarity": 5,
+        "attacker_advantage": -5
+      }
+    }
+  ],
+  "start_step": "step1",
+  "steps": {
+    "step1": {
+      "id": "step1",
+      "case_file": "case_radio_phishing_email.json",
+      "situation": "A suspicious email is reported by multiple users.",
+      "if_correct": {
+        "consequence": "The email is escalated quickly and investigation begins early.",
+        "state_changes": {
+          "investigation_clarity": 20,
+          "attacker_advantage": -5
+        },
+        "next_step": "step2_fast"
+      },
+      "if_incorrect": {
+        "consequence": "The threat is underestimated and spreads further.",
+        "state_changes": {
+          "attacker_advantage": 10,
+          "operational_impact": 10
+        },
+        "next_step": "step2_slow"
+      }
+    },
+    "step2_fast": {
+      "id": "step2_fast",
+      "case_file": "case_checkbox_phishing_indicators.json",
+      "situation": "The team validates suspicious indicators while containment begins.",
+      "if_correct": {
+        "consequence": "Indicators are confirmed and the threat is narrowed quickly.",
+        "state_changes": {
+          "investigation_clarity": 15,
+          "attacker_advantage": -5
+        },
+        "next_step": "step3_contained"
+      },
+      "if_incorrect": {
+        "consequence": "Investigation loses clarity and threat confidence drops.",
+        "state_changes": {
+          "investigation_clarity": -10,
+          "operational_impact": 5
+        },
+        "next_step": "step3_partial"
+      }
+    },
+    "step2_slow": {
+      "id": "step2_slow",
+      "case_file": "case_timed_social.json",
+      "situation": "Delayed escalation creates confusion across the organization.",
+      "if_correct": {
+        "consequence": "The team recovers some control through faster communication.",
+        "state_changes": {
+          "investigation_clarity": 5,
+          "user_confidence": 5
+        },
+        "next_step": "step3_partial"
+      },
+      "if_incorrect": {
+        "consequence": "The incident escalates and disrupts more business units.",
+        "state_changes": {
+          "attacker_advantage": 10,
+          "operational_impact": 10
+        },
+        "next_step": "step3_outbreak"
+      }
+    },
+    "step3_contained": {
+      "id": "step3_contained",
+      "case_file": "case_checkbox_mfa.json",
+      "situation": "Identity protections are reviewed as part of successful containment.",
+      "if_correct": {
+        "consequence": "Identity controls reinforce recovery and reduce further abuse.",
+        "state_changes": {
+          "attacker_advantage": -5,
+          "user_confidence": 5
+        },
+        "next_step": null
+      },
+      "if_incorrect": {
+        "consequence": "Weak identity handling leaves some residual risk.",
+        "state_changes": {
+          "attacker_advantage": 5,
+          "operational_impact": 5
+        },
+        "next_step": null
+      }
+    },
+    "step3_partial": {
+      "id": "step3_partial",
+      "case_file": "case_text_input_policy.json",
+      "situation": "Leadership requests a formal policy response during partial containment.",
+      "if_correct": {
+        "consequence": "Governance response improves organizational discipline.",
+        "state_changes": {
+          "user_confidence": 10
+        },
+        "next_step": null
+      },
+      "if_incorrect": {
+        "consequence": "Lack of policy clarity weakens response coordination.",
+        "state_changes": {
+          "user_confidence": -10,
+          "operational_impact": 5
+        },
+        "next_step": null
+      }
+    },
+    "step3_outbreak": {
+      "id": "step3_outbreak",
+      "case_file": "case_timed_response.json",
+      "situation": "The incident has now spread enough to affect business continuity.",
+      "if_correct": {
+        "consequence": "A strong late response limits further escalation.",
+        "state_changes": {
+          "attacker_advantage": -5,
+          "operational_impact": -5
+        },
+        "next_step": null
+      },
+      "if_incorrect": {
+        "consequence": "Containment fails and the incident becomes a major outage.",
+        "state_changes": {
+          "operational_impact": 20,
+          "user_confidence": -10
+        },
+        "next_step": null
+      }
+    }
+  },
+  "success_thresholds": {
+    "attacker_advantage_max": 25,
+    "operational_impact_max": 25
+  }
+}

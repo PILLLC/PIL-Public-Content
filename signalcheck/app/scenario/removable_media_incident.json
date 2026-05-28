@@ -1,0 +1,178 @@
+{
+  "id": "removable_media_incident",
+  "title": "Removable Media Security Incident",
+  "briefing": "A removable USB drive has been discovered connected to a workstation in a restricted environment. The security team must determine whether the device was used for legitimate purposes or if it represents a potential data exfiltration or malware risk.",
+  "role": "Security Operations Analyst",
+  "difficulty": "easy",
+  "tags": [
+    "removable media",
+    "insider risk",
+    "data exfiltration",
+    "endpoint security",
+    "policy enforcement"
+  ],
+  "initial_state": {
+    "attacker_advantage": 5,
+    "user_confidence": 50,
+    "operational_impact": 0,
+    "investigation_clarity": 20
+  },
+  "injects": [
+    {
+      "id": "endpoint_alert",
+      "trigger_after_step": "step_1",
+      "trigger_on": "correct",
+      "title": "Endpoint Alert",
+      "message": "Endpoint protection tools report that the USB device attempted to execute an unknown binary when inserted.",
+      "state_changes": {
+        "investigation_clarity": 10,
+        "attacker_advantage": 5
+      }
+    },
+    {
+      "id": "device_uncertainty",
+      "trigger_after_step": "step_1",
+      "trigger_on": "incorrect",
+      "title": "Unverified Device Activity",
+      "message": "Security monitoring shows the device accessed multiple directories before being disconnected.",
+      "state_changes": {
+        "attacker_advantage": 10,
+        "investigation_clarity": -5
+      }
+    },
+    {
+      "id": "management_inquiry",
+      "trigger_after_step": "step_3",
+      "trigger_on": "any",
+      "title": "Management Inquiry",
+      "message": "Management asks whether removable media policies were followed and whether additional systems may be at risk.",
+      "state_changes": {
+        "user_confidence": -5,
+        "operational_impact": 5
+      }
+    },
+    {
+      "id": "policy_review",
+      "trigger_after_step": "step_4",
+      "trigger_on": "incorrect",
+      "title": "Policy Compliance Concern",
+      "message": "Security governance staff note that removable media usage logs appear incomplete for the affected workstation.",
+      "state_changes": {
+        "operational_impact": 5,
+        "investigation_clarity": -5
+      }
+    }
+  ],
+  "start_step": "step_1",
+  "steps": {
+    "step_1": {
+      "id": "step_1",
+      "case_file": "case_checkbox_risk_factors.json",
+      "situation": "A USB drive is discovered attached to a workstation in a restricted network environment. The security team must identify the key indicators that suggest whether the device poses a security risk.",
+      "if_correct": {
+        "consequence": "The team identifies the most relevant indicators and begins investigating the device’s origin and activity.",
+        "state_changes": {
+          "investigation_clarity": 20,
+          "attacker_advantage": -5
+        },
+        "next_step": "step_2"
+      },
+      "if_incorrect": {
+        "consequence": "Important warning signs are overlooked, increasing uncertainty about the device's purpose.",
+        "state_changes": {
+          "attacker_advantage": 10,
+          "investigation_clarity": -10
+        },
+        "next_step": "step_2"
+      }
+    },
+    "step_2": {
+      "id": "step_2",
+      "case_file": "case_text_input_firewall.json",
+      "situation": "The team reviews endpoint protections and device control policies to determine whether unauthorized media should have been blocked.",
+      "if_correct": {
+        "consequence": "Security policies and endpoint controls are reviewed, helping determine whether policy violations occurred.",
+        "state_changes": {
+          "investigation_clarity": 15,
+          "attacker_advantage": -5
+        },
+        "next_step": "step_3"
+      },
+      "if_incorrect": {
+        "consequence": "Failure to evaluate device control mechanisms leaves uncertainty about enforcement gaps.",
+        "state_changes": {
+          "attacker_advantage": 10,
+          "investigation_clarity": -5
+        },
+        "next_step": "step_3"
+      }
+    },
+    "step_3": {
+      "id": "step_3",
+      "case_file": "case_timed_response.json",
+      "situation": "Management asks whether the USB device should be treated as a security incident requiring escalation or simply a policy violation.",
+      "if_correct": {
+        "consequence": "A structured response clarifies risk while preserving investigative flexibility.",
+        "state_changes": {
+          "user_confidence": 10,
+          "investigation_clarity": 10
+        },
+        "next_step": "step_4"
+      },
+      "if_incorrect": {
+        "consequence": "Unclear guidance creates confusion between security and operational teams.",
+        "state_changes": {
+          "user_confidence": -10,
+          "operational_impact": 5
+        },
+        "next_step": "step_4"
+      }
+    },
+    "step_4": {
+      "id": "step_4",
+      "case_file": "case_checkbox_mfa.json",
+      "situation": "The team evaluates whether stronger endpoint protections and device restrictions could prevent similar incidents in the future.",
+      "if_correct": {
+        "consequence": "Improved device controls and monitoring reduce the likelihood of future removable media incidents.",
+        "state_changes": {
+          "attacker_advantage": -5,
+          "investigation_clarity": 5
+        },
+        "next_step": "step_5"
+      },
+      "if_incorrect": {
+        "consequence": "Failure to strengthen endpoint controls increases the risk of repeated device-related security issues.",
+        "state_changes": {
+          "attacker_advantage": 10,
+          "operational_impact": 5
+        },
+        "next_step": "step_5"
+      }
+    },
+    "step_5": {
+      "id": "step_5",
+      "case_file": "case_timed_social.json",
+      "situation": "Security considers how to communicate the findings internally and reinforce removable media policy awareness.",
+      "if_correct": {
+        "consequence": "Clear internal communication strengthens policy adherence and reinforces security culture.",
+        "state_changes": {
+          "user_confidence": 10,
+          "operational_impact": -5
+        },
+        "next_step": null
+      },
+      "if_incorrect": {
+        "consequence": "Poor communication weakens policy awareness and leaves uncertainty about proper device usage.",
+        "state_changes": {
+          "user_confidence": -10,
+          "operational_impact": 10
+        },
+        "next_step": null
+      }
+    }
+  },
+  "success_thresholds": {
+    "attacker_advantage_max": 15,
+    "operational_impact_max": 15
+  }
+}

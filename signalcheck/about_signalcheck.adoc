@@ -1,0 +1,154 @@
+= SignalCheck: Cyber Readiness Through Decision-Based Simulation
+Erik Lawrence Herman
+:doctype: article
+:toc: macro
+:icons: font
+:source-highlighter: rouge
+:image: images
+
+[IMPORTANT]
+====
+Train decisions, not slides.
+====
+
+toc::[]
+
+== Overview
+
+SignalCheck is a lightweight, scenario-driven cyber readiness platform designed to simulate real-world security incidents and evaluate decision-making under pressure.
+
+Built for speed, flexibility, and realism, SignalCheck enables organizations to move beyond static training into interactive, outcome-driven learning.
+
+== Key Value Proposition
+
+* Transform cybersecurity training into active decision-making
+* Reinforce critical thinking under realistic conditions
+* Provide measurable insight into user behavior and response patterns
+* Deliver lightweight, deployable simulations without heavy infrastructure
+
+== How It Works
+
+SignalCheck presents users with structured incident scenarios, each composed of sequential steps requiring decisions that impact the outcome.
+
+Each choice dynamically affects:
+
+* Attacker Advantage
+* Operational Impact
+* Investigation Clarity
+* User Confidence
+
+Scenarios evolve in real time, incorporating injects and branching paths based on user actions.
+
+== Example Scenario Flow
+
+[cols="1,3", grid=none]
+|===
+|Step 1:
+|Initial alert received (e.g., vendor compromise)
+
+|Step 2:
+|User selects investigative or dismissive action
+
+|Step 3:
+|Scenario branches based on decision
+
+|Step 4:
+|Inject introduced (new intelligence or escalation)
+
+|Step 5:
+|Outcome and scoring calculated
+|===
+
+== Platform Features
+
+* Scenario-based cyber incident simulations
+* JSON-driven case architecture for rapid scenario development
+* Dynamic scoring engine with multi-dimensional metrics
+* Role-based perspectives (Analyst, Manager, Ethical Hacker)
+* Inject system for real-time escalation and realism
+* Lightweight web-based interface (Flask + JavaScript)
+
+== Sample Interface
+
+[NOTE]
+====
+For portability (PDF, GitHub, sharing), replace absolute file paths with relative paths such as:
+
+image::images/filename.png[]
+====
+
+=== Scenario Selection
+
+image::scenario_selection.png[SignalCheck Scenario Selection, width=800]
+
+=== Active Scenario View
+
+image::images/active_scenario.png[SignalCheck Active Scenario, width=800]
+
+=== Decision Interface
+
+image::images/decision_interface.png[SignalCheck Decision Interface, width=800]
+
+=== Results and Scoring
+
+image::images/results_scoring.png[SignalCheck Results and Scoring, width=800]
+
+== Technical Architecture
+
+[cols="1,3"]
+|===
+|Frontend
+|HTML, CSS, JavaScript
+
+|Backend
+|Flask (Python)
+
+|Data Layer
+|JSON-based scenario and case definitions
+
+|Scoring Engine
+|Custom JavaScript scoring module
+
+|Deployment
+|Container-ready (Docker-compatible)
+|===
+
+== Use Cases
+
+* Cybersecurity awareness training
+* Incident response simulation
+* Tabletop exercise augmentation
+* Analyst skill development
+* Organizational readiness assessment
+
+== Differentiators
+
+* Lightweight and rapidly deployable
+* Highly customizable scenario framework
+* Focus on decision-making, not passive learning
+* Designed for both technical and non-technical audiences
+* Expandable into gamified and competitive environments
+
+== Roadmap
+
+* Leaderboard and scoring analytics
+* Expanded scenario library
+* Multi-user simulation mode
+* Admin dashboard for scenario management
+* Integration with LMS and enterprise training platforms
+
+== About Public Information Limited (PIL)
+
+SignalCheck is developed under Public Information Limited (PIL), a boutique consultancy focused on:
+
+* Cybersecurity training and readiness
+* Data and AI education
+* Enterprise system adoption
+* Signal, Story, Systems methodology
+
+== Contact
+
+Erik Lawrence Herman  
+Public Information Limited (PIL), LLC  
+erikherman@publicinformationlimited.com  
+https://www.publicinformationlimited.com

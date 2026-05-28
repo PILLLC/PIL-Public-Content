@@ -1,0 +1,180 @@
+{
+  "id": "phishing_breach",
+  "title": "Phishing-Induced Security Breach",
+  "briefing": "Multiple employees report suspicious emails requesting credential verification through a link to an external website. The security team must determine whether the campaign has already resulted in account compromise and how to respond.",
+  "role": "SOC Analyst",
+  "difficulty": "medium",
+  "tags": [
+    "phishing",
+    "credential theft",
+    "email security",
+    "account compromise",
+    "incident response"
+  ],
+  "initial_state": {
+    "attacker_advantage": 10,
+    "user_confidence": 45,
+    "operational_impact": 5,
+    "investigation_clarity": 20,
+    "public_exposure_risk": 0
+  },
+  "injects": [
+    {
+      "id": "additional_reports",
+      "trigger_after_step": "step_1",
+      "trigger_on": "incorrect",
+      "title": "More Reports Surface",
+      "message": "Several additional employees report receiving the same email, suggesting the campaign may be larger than initially believed.",
+      "state_changes": {
+        "attacker_advantage": 10,
+        "operational_impact": 5
+      }
+    },
+    {
+      "id": "credential_activity",
+      "trigger_after_step": "step_2",
+      "trigger_on": "correct",
+      "title": "Suspicious Login Activity",
+      "message": "Identity monitoring tools detect login attempts using credentials associated with users who reported the phishing email.",
+      "state_changes": {
+        "investigation_clarity": 10,
+        "attacker_advantage": 5
+      }
+    },
+    {
+      "id": "executive_concern",
+      "trigger_after_step": "step_3",
+      "trigger_on": "any",
+      "title": "Executive Concern",
+      "message": "Executives request confirmation on whether employee accounts may already be compromised.",
+      "state_changes": {
+        "user_confidence": -5,
+        "operational_impact": 5
+      }
+    },
+    {
+      "id": "customer_notification_question",
+      "trigger_after_step": "step_4",
+      "trigger_on": "incorrect",
+      "title": "Customer Impact Question",
+      "message": "Customer-facing teams ask whether compromised employee accounts could expose sensitive data.",
+      "state_changes": {
+        "user_confidence": -10,
+        "operational_impact": 10
+      }
+    }
+  ],
+  "start_step": "step_1",
+  "steps": {
+    "step_1": {
+      "id": "step_1",
+      "case_file": "case_radio_phishing_email.json",
+      "situation": "Multiple users report a suspicious email that asks them to verify account credentials using an external link.",
+      "if_correct": {
+        "consequence": "The security team recognizes the phishing indicators and begins investigating the campaign.",
+        "state_changes": {
+          "investigation_clarity": 20,
+          "attacker_advantage": -5
+        },
+        "next_step": "step_2"
+      },
+      "if_incorrect": {
+        "consequence": "The email is initially dismissed as harmless, allowing the campaign to continue.",
+        "state_changes": {
+          "attacker_advantage": 15,
+          "investigation_clarity": -10
+        },
+        "next_step": "step_2"
+      }
+    },
+    "step_2": {
+      "id": "step_2",
+      "case_file": "case_checkbox_phishing_indicators.json",
+      "situation": "Security teams review the email content and infrastructure used by the phishing campaign.",
+      "if_correct": {
+        "consequence": "Key phishing indicators are identified, helping confirm that the campaign is malicious.",
+        "state_changes": {
+          "investigation_clarity": 20,
+          "attacker_advantage": -5
+        },
+        "next_step": "step_3"
+      },
+      "if_incorrect": {
+        "consequence": "Failure to recognize key indicators delays the response.",
+        "state_changes": {
+          "attacker_advantage": 10,
+          "investigation_clarity": -10
+        },
+        "next_step": "step_3"
+      }
+    },
+    "step_3": {
+      "id": "step_3",
+      "case_file": "case_text_input_firewall.json",
+      "situation": "Security considers whether to restrict access to the phishing domain and block related network traffic.",
+      "if_correct": {
+        "consequence": "Blocking malicious infrastructure reduces the campaign’s effectiveness.",
+        "state_changes": {
+          "attacker_advantage": -10,
+          "investigation_clarity": 10
+        },
+        "next_step": "step_4"
+      },
+      "if_incorrect": {
+        "consequence": "Incomplete blocking allows additional employees to access the phishing site.",
+        "state_changes": {
+          "attacker_advantage": 10,
+          "operational_impact": 5
+        },
+        "next_step": "step_4"
+      }
+    },
+    "step_4": {
+      "id": "step_4",
+      "case_file": "case_checkbox_mfa.json",
+      "situation": "The team evaluates whether stronger authentication controls could reduce the impact of stolen credentials.",
+      "if_correct": {
+        "consequence": "Additional authentication protections help prevent attackers from accessing compromised accounts.",
+        "state_changes": {
+          "attacker_advantage": -5,
+          "investigation_clarity": 5
+        },
+        "next_step": "step_5"
+      },
+      "if_incorrect": {
+        "consequence": "Weak authentication protections increase the risk of credential abuse.",
+        "state_changes": {
+          "attacker_advantage": 10,
+          "operational_impact": 5
+        },
+        "next_step": "step_5"
+      }
+    },
+    "step_5": {
+      "id": "step_5",
+      "case_file": "case_timed_social.json",
+      "situation": "Security teams prepare internal communications to warn employees about the phishing campaign.",
+      "if_correct": {
+        "consequence": "Timely warnings help employees avoid the phishing attempt and report suspicious messages.",
+        "state_changes": {
+          "user_confidence": 10,
+          "operational_impact": -5
+        },
+        "next_step": null
+      },
+      "if_incorrect": {
+        "consequence": "Delayed communication increases the chance that more employees fall for the phishing email.",
+        "state_changes": {
+          "user_confidence": -10,
+          "operational_impact": 10
+        },
+        "next_step": null
+      }
+    }
+  },
+  "success_thresholds": {
+    "attacker_advantage_max": 20,
+    "operational_impact_max": 20,
+    "public_exposure_risk_max": 15
+  }
+}

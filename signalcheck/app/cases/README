@@ -1,0 +1,15 @@
+SignalCheck Case Library
+
+Cases represent reusable decision prompts.
+
+Supported types:
+- radio
+- checkbox
+- text_input
+- timed
+- dragdrop
+- codechoice
+
+Cases are referenced by scenarios using:
+
+"case_file": "case_radio_phishing_email.json"

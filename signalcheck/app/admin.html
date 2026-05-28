@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SignalCheck Admin</title>
+  <link rel="stylesheet" href="assets/admin.css">
+</head>
+<body>
+  <h1>🧭 SignalCheck Admin Dashboard</h1>
+
+  {% for case in cases %}
+    <div class="case">
+      <div class="case-title">{{ case.id }} — {{ case.title }}</div>
+      <div class="case-links">
+        <a href="/cases/{{ case.filename }}" target="_blank">📂 View JSON</a>
+        <a href="/editor?id={{ case.filename.replace('.json','') }}">✏️ Edit</a>
+        <button onclick="deleteCase('{{ case.filename }}')">🗑 Delete</button>
+      </div>
+    </div>
+  {% endfor %}
+
+  <script>
+    function deleteCase(filename) {
+      if (confirm(`Delete ${filename}? This cannot be undone.`)) {
+        fetch(`/api/delete_case/${filename}`, {
+          method: 'DELETE'
+        })
+        .then(res => res.json())
+        .then(data => {
+          if (data.status === 'deleted') {
+            alert(`Deleted ${data.file}`);
+            location.reload();
+          } else {
+            alert('Error deleting file.');
+          }
+        });
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "id": "case_radio_phishing_email",
+  "title": "Suspicious Email Report",
+  "briefing": "Several employees report receiving an email asking them to urgently reset their corporate passwords using a provided link.",
+  "type": "radio",
+  "options": [
+    "Ignore the reports",
+    "Ask employees to follow the reset link",
+    "Escalate the email to the security team"
+  ],
+  "answer": "Escalate the email to the security team",
+  "feedback": {
+    "Ignore the reports": "Incorrect. Ignoring multiple user reports can allow a phishing campaign to continue spreading inside the organization.",
+    "Ask employees to follow the reset link": "Dangerous. The link may lead to a credential harvesting site designed to steal user passwords.",
+    "Escalate the email to the security team": "Correct. Escalation allows security teams to analyze the email, block malicious domains, and warn other users."
+  },
+  "style_tags": {
+    "Ignore the reports": "careless",
+    "Ask employees to follow the reset link": "impulsive",
+    "Escalate the email to the security team": "decisive"
+  }
+}

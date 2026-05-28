@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SignalCheck</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🛰️ SignalCheck: Cyber Readiness Microgame</h1>
+    <div class="case">
+      <p><strong>Scenario:</strong> Suspicious Login Detected</p>
+      <p>You receive an alert about a login from a foreign IP at 3:42 AM on an inactive user account.</p>
+      <form id="responseForm">
+        <label><input type="radio" name="action" value="block"> Block immediately</label><br>
+        <label><input type="radio" name="action" value="escalate"> Escalate to Tier 2 SOC</label><br>
+        <label><input type="radio" name="action" value="ignore"> Ignore for now</label><br>
+        <label><input type="radio" name="action" value="investigate"> Investigate first</label><br><br>
+        <button type="submit">Submit Decision</button>
+      </form>
+      <div id="feedback"></div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('responseForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const value = document.querySelector('input[name="action"]:checked')?.value;
+      const feedback = {
+        block: "Caution: Blocking without confirmation could cause false positives.",
+        escalate: "Smart. Escalation with context is often best on inactive accounts.",
+        ignore: "Risky. Ignoring could let a breach unfold.",
+        investigate: "Best practice. Validate the signal before action."
+      };
+      document.getElementById('feedback').innerHTML = \`<p><strong>Feedback:</strong> \${feedback[value] || 'Please choose an actio

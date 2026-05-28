@@ -1,0 +1,169 @@
+{
+  "id": "ransomware_outbreak",
+  "title": "Ransomware Outbreak",
+  "briefing": "Multiple systems begin displaying encryption warnings and ransom notes. The organization must quickly determine how far the infection has spread and whether containment measures can limit the damage.",
+  "role": "Incident Response Lead",
+  "difficulty": "medium",
+  "tags": [
+    "ransomware",
+    "malware outbreak",
+    "incident response",
+    "containment",
+    "business continuity"
+  ],
+  "initial_state": {
+    "attacker_advantage": 20,
+    "user_confidence": 40,
+    "operational_impact": 15,
+    "investigation_clarity": 15,
+    "public_exposure_risk": 5
+  },
+  "injects": [
+    {
+      "id": "encryption_spread",
+      "trigger_after_step": "step_1",
+      "trigger_on": "incorrect",
+      "title": "Encryption Spreading",
+      "message": "Monitoring systems report additional hosts beginning to encrypt files across multiple departments.",
+      "state_changes": {
+        "attacker_advantage": 15,
+        "operational_impact": 10
+      }
+    },
+    {
+      "id": "backup_uncertainty",
+      "trigger_after_step": "step_2",
+      "trigger_on": "any",
+      "title": "Backup Integrity Question",
+      "message": "Infrastructure teams warn that backup systems may also have been accessed before the ransomware triggered.",
+      "state_changes": {
+        "investigation_clarity": -5,
+        "operational_impact": 10
+      }
+    },
+    {
+      "id": "media_attention",
+      "trigger_after_step": "step_4",
+      "trigger_on": "incorrect",
+      "title": "Media Attention",
+      "message": "Industry journalists begin asking questions about possible outages linked to your organization.",
+      "state_changes": {
+        "public_exposure_risk": 15,
+        "user_confidence": -10
+      }
+    }
+  ],
+  "start_step": "step_1",
+  "steps": {
+    "step_1": {
+      "id": "step_1",
+      "case_file": "case_checkbox_risk_factors.json",
+      "situation": "Several users report that files have become inaccessible and ransom notes appear on their desktops.",
+      "if_correct": {
+        "consequence": "The team correctly recognizes signs of ransomware activity and begins containment procedures.",
+        "state_changes": {
+          "investigation_clarity": 20,
+          "attacker_advantage": -5
+        },
+        "next_step": "step_2"
+      },
+      "if_incorrect": {
+        "consequence": "The issue is initially misdiagnosed, allowing the ransomware to continue spreading.",
+        "state_changes": {
+          "attacker_advantage": 15,
+          "operational_impact": 10
+        },
+        "next_step": "step_2"
+      }
+    },
+    "step_2": {
+      "id": "step_2",
+      "case_file": "case_checkbox_phishing_indicators.json",
+      "situation": "Security teams attempt to determine how the ransomware entered the network.",
+      "if_correct": {
+        "consequence": "Initial infection vectors are identified and further compromise paths begin to narrow.",
+        "state_changes": {
+          "investigation_clarity": 20,
+          "attacker_advantage": -10
+        },
+        "next_step": "step_3"
+      },
+      "if_incorrect": {
+        "consequence": "Failure to identify the infection vector slows containment and allows lateral movement.",
+        "state_changes": {
+          "attacker_advantage": 10,
+          "investigation_clarity": -10
+        },
+        "next_step": "step_3"
+      }
+    },
+    "step_3": {
+      "id": "step_3",
+      "case_file": "case_text_input_firewall.json",
+      "situation": "The team evaluates network segmentation and system isolation to prevent additional encryption events.",
+      "if_correct": {
+        "consequence": "Isolation procedures limit the ability of the ransomware to reach additional systems.",
+        "state_changes": {
+          "attacker_advantage": -15,
+          "operational_impact": -5
+        },
+        "next_step": "step_4"
+      },
+      "if_incorrect": {
+        "consequence": "Weak containment measures allow ransomware to continue spreading internally.",
+        "state_changes": {
+          "attacker_advantage": 15,
+          "operational_impact": 10
+        },
+        "next_step": "step_4"
+      }
+    },
+    "step_4": {
+      "id": "step_4",
+      "case_file": "case_timed_response.json",
+      "situation": "Executives ask whether the organization should negotiate with attackers, restore from backups, or shut down systems entirely.",
+      "if_correct": {
+        "consequence": "A balanced recovery strategy limits operational damage while restoring key services.",
+        "state_changes": {
+          "user_confidence": 10,
+          "operational_impact": -5
+        },
+        "next_step": "step_5"
+      },
+      "if_incorrect": {
+        "consequence": "Unclear recovery strategy delays response and increases operational disruption.",
+        "state_changes": {
+          "operational_impact": 15,
+          "user_confidence": -10
+        },
+        "next_step": "step_5"
+      }
+    },
+    "step_5": {
+      "id": "step_5",
+      "case_file": "case_timed_social.json",
+      "situation": "The organization prepares to communicate publicly about the incident while continuing recovery operations.",
+      "if_correct": {
+        "consequence": "Transparent communication and recovery planning preserve customer confidence.",
+        "state_changes": {
+          "user_confidence": 15,
+          "public_exposure_risk": -5
+        },
+        "next_step": null
+      },
+      "if_incorrect": {
+        "consequence": "Poor communication increases reputational damage and public scrutiny.",
+        "state_changes": {
+          "public_exposure_risk": 15,
+          "user_confidence": -10
+        },
+        "next_step": null
+      }
+    }
+  },
+  "success_thresholds": {
+    "attacker_advantage_max": 30,
+    "operational_impact_max": 30,
+    "public_exposure_risk_max": 20
+  }
+}

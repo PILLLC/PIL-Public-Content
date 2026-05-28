@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SignalCheck Editor</title>
+  <link rel="stylesheet" href="assets/editor.css">
+</head>
+<body>
+  <h1>✏️ Create or Edit a Case</h1>
+
+  <form id="caseForm">
+    <label>Case ID:<br><input type="text" id="id" name="id"></label><br><br>
+    <label>Title:<br><input type="text" id="title" name="title"></label><br><br>
+    <label>Briefing:<br><textarea id="briefing" name="briefing"></textarea></label><br><br>
+    <label>Options (comma separated):<br><input type="text" id="options" name="options"></label><br><br>
+    <label>Correct Answer:<br><input type="text" id="answer" name="answer"></label><br><br>
+    <label>Feedback (JSON object):<br><textarea id="feedback" name="feedback"></textarea></label><br><br>
+    <label>Style Tags (JSON object):<br><textarea id="style_tags" name="style_tags"></textarea></label><br><br>
+    <button type="submit">Save</button>
+  </form>
+
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const caseId = urlParams.get('id');
+
+    if (caseId) {
+      fetch(`/cases/${caseId}.json`)
+        .then(res => res.json())
+        .then(data => {
+          document.getElementById('id').value = data.id;
+          document.getElementById('title').value = data.title;
+          document.getElementById('briefing').value = data.briefing;
+          document.getElementById('options').value = data.options.join(', ');
+          document.getElementById('answer').value = data.answer;
+          document.getElementById('feedback').value = JSON.stringify(data.feedback, null, 2);
+          document.getElementById('style_tags').value = JSON.stringify(data.style_tags, null, 2);
+        });
+    }
+
+    document.getElementById('caseForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const payload = {
+        id: document.getElementById('id').value,
+        title: document.getElementById('title').value,
+        briefing: document.getElementById('briefing').value,
+        options: document.getElementById('options').value.split(',').map(o => o.trim()),
+        answer: document.getElementById('answer').value,
+        feedback: JSON.parse(document.getElementById('feedback').value),
+        style_tags: JSON.parse(document.getElementById('style_tags').value)
+      };
+
+      fetch('/api/save_case', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      })
+      .then(res => res.json())
+      .then(data => {
+        alert(`Saved: ${data.file}`);
+        window.location.href = "/admin";
+      });
+    });
+  </script>
+</body>
+</html>

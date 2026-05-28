@@ -1,0 +1,178 @@
+{
+  "id": "remote_access_alert",
+  "title": "Unexpected Remote Access Alert",
+  "briefing": "Security monitoring detects a remote login to a sensitive internal system outside of normal working hours. The team must determine whether this activity is legitimate or an indicator of unauthorized access.",
+  "role": "Security Operations Analyst",
+  "difficulty": "easy",
+  "tags": [
+    "remote access",
+    "authentication",
+    "account security",
+    "login anomaly",
+    "incident triage"
+  ],
+  "initial_state": {
+    "attacker_advantage": 5,
+    "user_confidence": 50,
+    "operational_impact": 0,
+    "investigation_clarity": 20
+  },
+  "injects": [
+    {
+      "id": "geo_location_alert",
+      "trigger_after_step": "step_1",
+      "trigger_on": "correct",
+      "title": "Geolocation Alert",
+      "message": "Authentication logs reveal that the login originated from a foreign IP address inconsistent with the user’s normal login patterns.",
+      "state_changes": {
+        "investigation_clarity": 10,
+        "attacker_advantage": 5
+      }
+    },
+    {
+      "id": "additional_login_activity",
+      "trigger_after_step": "step_1",
+      "trigger_on": "incorrect",
+      "title": "Multiple Login Attempts",
+      "message": "Security monitoring detects additional login attempts associated with the same account across multiple systems.",
+      "state_changes": {
+        "attacker_advantage": 10,
+        "operational_impact": 5
+      }
+    },
+    {
+      "id": "management_notification",
+      "trigger_after_step": "step_3",
+      "trigger_on": "any",
+      "title": "Management Notification",
+      "message": "Management becomes aware of the unusual login and asks whether immediate containment actions are necessary.",
+      "state_changes": {
+        "user_confidence": -5,
+        "operational_impact": 5
+      }
+    },
+    {
+      "id": "account_integrity_warning",
+      "trigger_after_step": "step_4",
+      "trigger_on": "incorrect",
+      "title": "Account Integrity Concern",
+      "message": "Identity monitoring detects password reset activity associated with the same account shortly after the suspicious login.",
+      "state_changes": {
+        "attacker_advantage": 10,
+        "investigation_clarity": -5
+      }
+    }
+  ],
+  "start_step": "step_1",
+  "steps": {
+    "step_1": {
+      "id": "step_1",
+      "case_file": "case_checkbox_risk_factors.json",
+      "situation": "A remote login to a sensitive system occurs late at night. The security team must identify the key indicators that suggest whether the login represents suspicious activity.",
+      "if_correct": {
+        "consequence": "The team identifies important indicators and begins a focused investigation into the login source and activity.",
+        "state_changes": {
+          "investigation_clarity": 20,
+          "attacker_advantage": -5
+        },
+        "next_step": "step_2"
+      },
+      "if_incorrect": {
+        "consequence": "The login is initially treated as benign, delaying deeper investigation into possible unauthorized access.",
+        "state_changes": {
+          "attacker_advantage": 10,
+          "investigation_clarity": -10
+        },
+        "next_step": "step_2"
+      }
+    },
+    "step_2": {
+      "id": "step_2",
+      "case_file": "case_text_input_firewall.json",
+      "situation": "The team evaluates authentication logs, session activity, and network access controls to determine whether the login should be restricted or monitored.",
+      "if_correct": {
+        "consequence": "Security monitoring and access controls help narrow the scope of the investigation and prevent potential misuse.",
+        "state_changes": {
+          "investigation_clarity": 15,
+          "attacker_advantage": -5
+        },
+        "next_step": "step_3"
+      },
+      "if_incorrect": {
+        "consequence": "Weak review of authentication activity leaves uncertainty about whether the login may represent compromise.",
+        "state_changes": {
+          "attacker_advantage": 10,
+          "investigation_clarity": -5
+        },
+        "next_step": "step_3"
+      }
+    },
+    "step_3": {
+      "id": "step_3",
+      "case_file": "case_timed_response.json",
+      "situation": "Leadership asks whether the login should be treated as a confirmed security incident or simply a suspicious but inconclusive event.",
+      "if_correct": {
+        "consequence": "A clear explanation of the situation maintains confidence while allowing the investigation to proceed.",
+        "state_changes": {
+          "user_confidence": 10,
+          "investigation_clarity": 10
+        },
+        "next_step": "step_4"
+      },
+      "if_incorrect": {
+        "consequence": "Uncertain communication creates confusion about the severity of the situation.",
+        "state_changes": {
+          "user_confidence": -10,
+          "operational_impact": 5
+        },
+        "next_step": "step_4"
+      }
+    },
+    "step_4": {
+      "id": "step_4",
+      "case_file": "case_checkbox_mfa.json",
+      "situation": "Security reviews whether authentication controls such as multi-factor authentication could reduce the likelihood of unauthorized account access.",
+      "if_correct": {
+        "consequence": "Stronger authentication controls improve account protection and reduce future login risk.",
+        "state_changes": {
+          "attacker_advantage": -5,
+          "investigation_clarity": 5
+        },
+        "next_step": "step_5"
+      },
+      "if_incorrect": {
+        "consequence": "Failure to consider stronger authentication protections increases exposure to account compromise.",
+        "state_changes": {
+          "attacker_advantage": 10,
+          "operational_impact": 5
+        },
+        "next_step": "step_5"
+      }
+    },
+    "step_5": {
+      "id": "step_5",
+      "case_file": "case_timed_social.json",
+      "situation": "Security prepares to communicate findings and reinforce best practices for account access monitoring.",
+      "if_correct": {
+        "consequence": "Clear communication reinforces secure login practices and improves organizational awareness.",
+        "state_changes": {
+          "user_confidence": 10,
+          "operational_impact": -5
+        },
+        "next_step": null
+      },
+      "if_incorrect": {
+        "consequence": "Poor communication leaves staff uncertain about account security expectations.",
+        "state_changes": {
+          "user_confidence": -10,
+          "operational_impact": 10
+        },
+        "next_step": null
+      }
+    }
+  },
+  "success_thresholds": {
+    "attacker_advantage_max": 15,
+    "operational_impact_max": 15
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "case_checkbox_phishing_indicators",
+  "title": "Phishing Indicators",
+  "briefing": "Select all signs that an email may be part of a phishing attempt.",
+  "type": "checkbox",
+  "options": [
+    "Unexpected attachments",
+    "Urgent language",
+    "From known sender",
+    "Mismatched URLs"
+  ],
+  "answer": [
+    "Unexpected attachments",
+    "Urgent language",
+    "Mismatched URLs"
+  ],
+  "feedback": {
+    "Unexpected attachments": "Correct. Unexpected attachments are a common phishing indicator and may contain malware.",
+    "Urgent language": "Correct. Phishing emails frequently use urgency to pressure recipients into acting quickly.",
+    "From known sender": "Incorrect. Display names can be spoofed and should not be trusted as proof of legitimacy.",
+    "Mismatched URLs": "Correct. A link that points somewhere different than what it displays is a strong phishing indicator."
+  },
+  "style_tags": {
+    "Unexpected attachments": "analytical",
+    "Urgent language": "analytical",
+    "From known sender": "careless",
+    "Mismatched URLs": "thorough"
+  }
+}

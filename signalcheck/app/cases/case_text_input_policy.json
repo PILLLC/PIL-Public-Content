@@ -1,0 +1,28 @@
+{
+  "id": "case_text_input_policy",
+  "title": "Policy Response Draft",
+  "briefing": "Leadership requests a short policy response regarding acceptable handling of suspicious emails. Provide a concise policy statement.",
+  "type": "text",
+  "prompt": "Write a short policy statement describing how employees should respond to suspicious emails.",
+  "keywords": [
+    "report",
+    "security",
+    "do not click",
+    "phishing",
+    "verify",
+    "attachments"
+  ],
+  "feedback": {
+    "success": "Good response. The policy emphasizes reporting and safe handling of suspicious emails.",
+    "partial": "Your response includes some correct ideas but could be clearer about reporting and avoiding interaction with suspicious messages.",
+    "failure": "The response does not sufficiently address reporting or safe handling of suspicious emails."
+  },
+  "style_tags": {
+    "report": "governance",
+    "security": "governance",
+    "do not click": "preventive",
+    "phishing": "analytical",
+    "verify": "analytical",
+    "attachments": "analytical"
+  }
+}

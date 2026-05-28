@@ -1,0 +1,22 @@
+{
+  "id": "case_radio_usb",
+  "title": "Unknown USB Device",
+  "briefing": "An employee finds an unknown USB drive in the office parking lot and brings it inside. What is the safest response?",
+  "type": "radio",
+  "options": [
+    "Plug it into a workstation to identify the owner",
+    "Turn it in to the security team",
+    "Leave it at the reception desk"
+  ],
+  "answer": "Turn it in to the security team",
+  "feedback": {
+    "Plug it into a workstation to identify the owner": "Incorrect. Unknown USB devices can contain malware and should never be connected to organizational systems.",
+    "Turn it in to the security team": "Correct. Security teams can safely analyze the device using controlled procedures.",
+    "Leave it at the reception desk": "Risky. Reception staff are unlikely to follow secure handling procedures for suspicious hardware."
+  },
+  "style_tags": {
+    "Plug it into a workstation to identify the owner": "impulsive",
+    "Turn it in to the security team": "decisive",
+    "Leave it at the reception desk": "careless"
+  }
+}

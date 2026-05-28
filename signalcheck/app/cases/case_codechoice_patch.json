@@ -1,0 +1,22 @@
+{
+  "id": "case_codechoice_patch",
+  "title": "Apply Security Patch",
+  "briefing": "A vulnerability has been identified in a critical system component. Choose the correct command to apply the security patch.",
+  "type": "code_choice",
+  "options": [
+    "apt update && apt upgrade",
+    "apt install security-patch",
+    "apt-get upgrade --security-only"
+  ],
+  "answer": "apt update && apt upgrade",
+  "feedback": {
+    "apt update && apt upgrade": "Correct. Updating package lists and applying upgrades is the standard approach to applying security patches on Debian-based systems.",
+    "apt install security-patch": "Incorrect. This command assumes a specific package name that may not exist.",
+    "apt-get upgrade --security-only": "Incorrect. This is not a standard command and would likely fail."
+  },
+  "style_tags": {
+    "apt update && apt upgrade": "analytical",
+    "apt install security-patch": "guessing",
+    "apt-get upgrade --security-only": "careless"
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "id": "vendor_compromise",
+  "title": "Third-Party Vendor Compromise",
+  "briefing": "A trusted software vendor notifies customers of a potential security incident affecting their systems. Your organization relies heavily on this vendor's platform for daily operations. The security team must determine whether internal systems may be affected and how to respond.",
+  "role": "Security Operations Analyst",
+  "difficulty": "medium",
+  "tags": [
+    "vendor risk",
+    "supply chain",
+    "third party",
+    "incident response"
+  ],
+  "initial_state": {
+    "attacker_advantage": 10,
+    "user_confidence": 50,
+    "operational_impact": 5,
+    "investigation_clarity": 20,
+    "public_exposure_risk": 5
+  },
+  "injects": [
+    {
+      "id": "vendor_followup_notice",
+      "trigger_after_step": "step_1",
+      "trigger_on": "any",
+      "title": "Vendor Follow-Up Notice",
+      "message": "The vendor issues a second advisory stating that the scope of the incident is still under investigation and that some customer integrations may require immediate review.",
+      "state_changes": {
+        "investigation_clarity": 5,
+        "operational_impact": 5
+      }
+    },
+    {
+      "id": "integration_uncertainty",
+      "trigger_after_step": "step_2",
+      "trigger_on": "incorrect",
+      "title": "Integration Uncertainty",
+      "message": "Internal teams discover undocumented dependencies tied to the vendor platform, making it harder to determine which business processes may be exposed.",
+      "state_changes": {
+        "attacker_advantage": 10,
+        "investigation_clarity": -5
+      }
+    },
+    {
+      "id": "executive_pressure",
+      "trigger_after_step": "step_3",
+      "trigger_on": "any",
+      "title": "Executive Pressure",
+      "message": "Leadership requests a more definitive recommendation on whether to continue operating with the vendor platform while customer-facing teams prepare for possible service disruption.",
+      "state_changes": {
+        "user_confidence": -5,
+        "operational_impact": 5
+      }
+    },
+    {
+      "id": "customer_concern",
+      "trigger_after_step": "step_4",
+      "trigger_on": "incorrect",
+      "title": "Customer Concern Increases",
+      "message": "Customers begin asking whether vendor-related authentication weaknesses could expose their information or interrupt service reliability.",
+      "state_changes": {
+        "user_confidence": -10,
+        "operational_impact": 5,
+        "public_exposure_risk": 10
+      }
+    }
+  ],
+  "start_step": "step_1",
+  "steps": {
+    "step_1": {
+      "id": "step_1",
+      "case_file": "case_checkbox_risk_factors.json",
+      "situation": "The vendor announces that attackers may have accessed internal systems. Security must quickly identify the key risk factors that determine whether your environment may be affected.",
+      "if_correct": {
+        "consequence": "The team correctly identifies the main exposure points between the vendor system and internal infrastructure.",
+        "state_changes": {
+          "investigation_clarity": 20,
+          "attacker_advantage": -5
+        },
+        "next_step": "step_2"
+      },
+      "if_incorrect": {
+        "consequence": "Important integration points are overlooked, increasing uncertainty about possible compromise paths.",
+        "state_changes": {
+          "attacker_advantage": 10,
+          "investigation_clarity": -10
+        },
+        "next_step": "step_2"
+      }
+    },
+    "step_2": {
+      "id": "step_2",
+      "case_file": "case_text_input_firewall.json",
+      "situation": "Security evaluates whether temporary network restrictions or connection reviews should be implemented between internal systems and the vendor platform.",
+      "if_correct": {
+        "consequence": "Connections are reviewed and limited appropriately, reducing exposure while investigation continues.",
+        "state_changes": {
+          "attacker_advantage": -10,
+          "operational_impact": -5
+        },
+        "next_step": "step_3"
+      },
+      "if_incorrect": {
+        "consequence": "Unrestricted connectivity continues while the incident evolves, increasing possible attack surface.",
+        "state_changes": {
+          "attacker_advantage": 10,
+          "operational_impact": 10
+        },
+        "next_step": "step_3"
+      }
+    },
+    "step_3": {
+      "id": "step_3",
+      "case_file": "case_timed_response.json",
+      "situation": "Executives want immediate guidance: should the organization disconnect from the vendor, continue operations, or wait for more vendor updates?",
+      "if_correct": {
+        "consequence": "A balanced recommendation protects the organization while avoiding unnecessary operational disruption.",
+        "state_changes": {
+          "user_confidence": 10,
+          "investigation_clarity": 10
+        },
+        "next_step": "step_4"
+      },
+      "if_incorrect": {
+        "consequence": "Delayed or poorly reasoned guidance creates confusion and reduces leadership confidence.",
+        "state_changes": {
+          "user_confidence": -10,
+          "operational_impact": 5
+        },
+        "next_step": "step_4"
+      }
+    },
+    "step_4": {
+      "id": "step_4",
+      "case_file": "case_checkbox_mfa.json",
+      "situation": "Security reviews whether identity protections and authentication controls could limit the impact of vendor credential compromise.",
+      "if_correct": {
+        "consequence": "Stronger authentication controls reduce the likelihood that compromised vendor credentials can be used internally.",
+        "state_changes": {
+          "attacker_advantage": -5,
+          "investigation_clarity": 10
+        },
+        "next_step": "step_5"
+      },
+      "if_incorrect": {
+        "consequence": "Weak assumptions about authentication leave the organization exposed to vendor-related access abuse.",
+        "state_changes": {
+          "attacker_advantage": 10,
+          "investigation_clarity": -5,
+          "public_exposure_risk": 5
+        },
+        "next_step": "step_5"
+      }
+    },
+    "step_5": {
+      "id": "step_5",
+      "case_file": "case_timed_social.json",
+      "situation": "Customers and employees begin asking questions about the vendor incident. Internal communication now becomes part of the security response.",
+      "if_correct": {
+        "consequence": "Clear communication maintains confidence while acknowledging the evolving situation.",
+        "state_changes": {
+          "user_confidence": 15,
+          "operational_impact": -5,
+          "public_exposure_risk": -5
+        },
+        "next_step": null
+      },
+      "if_incorrect": {
+        "consequence": "Poor communication creates unnecessary alarm and weakens confidence in the response.",
+        "state_changes": {
+          "user_confidence": -15,
+          "operational_impact": 10,
+          "public_exposure_risk": 10
+        },
+        "next_step": null
+      }
+    }
+  },
+  "success_thresholds": {
+    "attacker_advantage_max": 20,
+    "operational_impact_max": 20,
+    "public_exposure_risk_max": 20
+  }
+}

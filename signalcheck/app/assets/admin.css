@@ -1,0 +1,58 @@
+/* admin.css – SignalCheck Admin Dashboard */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f0f2f5;
+    color: #222;
+    margin: 0;
+    padding: 2rem;
+  }
+  
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #111;
+    margin-bottom: 2rem;
+  }
+  
+  .case {
+    background: white;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+    border-left: 5px solid #00cccc;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .case-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #222;
+  }
+  
+  a {
+    text-decoration: none;
+    margin-right: 1rem;
+    color: #0077cc;
+    font-weight: 500;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  button {
+    background: #cc3333;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.95rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #aa2222;
+  }
+  

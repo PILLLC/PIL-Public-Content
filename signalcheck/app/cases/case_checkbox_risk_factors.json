@@ -1,0 +1,25 @@
+{
+  "id": "case_checkbox_risk_factors",
+  "title": "System Risk Evaluation",
+  "briefing": "Select all potential risk factors present in the following scenario: A remote login was attempted using default credentials.",
+  "type": "checkbox",
+  "options": [
+    "Use of default credentials",
+    "Remote access",
+    "Multifactor authentication"
+  ],
+  "answer": [
+    "Use of default credentials",
+    "Remote access"
+  ],
+  "feedback": {
+    "Use of default credentials": "Correct. Default credentials are a serious vulnerability and commonly exploited by attackers.",
+    "Remote access": "Correct. Remote access increases the attack surface and requires strong controls to prevent unauthorized entry.",
+    "Multifactor authentication": "Incorrect. Multifactor authentication is a protective control, not a risk factor in this scenario."
+  },
+  "style_tags": {
+    "Use of default credentials": "analytical",
+    "Remote access": "analytical",
+    "Multifactor authentication": "careless"
+  }
+}

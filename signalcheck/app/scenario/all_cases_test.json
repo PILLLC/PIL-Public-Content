@@ -1,0 +1,100 @@
+{
+    "id": "all_cases_test",
+    "title": "All Cases Test Harness",
+    "briefing": "Runs every available case in sequence for QA and regression testing.",
+    "role": "Tester",
+    "difficulty": "easy",
+    "initial_state": {
+      "attacker_advantage": 0,
+      "user_confidence": 50,
+      "operational_impact": 0,
+      "investigation_clarity": 50
+    },
+    "start_step": "step1",
+    "steps": {
+      "step1": {
+        "id": "step1",
+        "case_file": "case_checkbox_mfa.json",
+        "situation": "QA test case 1.",
+        "if_correct": { "consequence": "Proceeding.", "state_changes": {}, "next_step": "step2" },
+        "if_incorrect": { "consequence": "Proceeding.", "state_changes": {}, "next_step": "step2" }
+      },
+      "step2": {
+        "id": "step2",
+        "case_file": "case_checkbox_phishing_indicators.json",
+        "situation": "QA test case 2.",
+        "if_correct": { "consequence": "Proceeding.", "state_changes": {}, "next_step": "step3" },
+        "if_incorrect": { "consequence": "Proceeding.", "state_changes": {}, "next_step": "step3" }
+      },
+      "step3": {
+        "id": "step3",
+        "case_file": "case_checkbox_risk_factors.json",
+        "situation": "QA test case 3.",
+        "if_correct": { "consequence": "Proceeding.", "state_changes": {}, "next_step": "step4" },
+        "if_incorrect": { "consequence": "Proceeding.", "state_changes": {}, "next_step": "step4" }
+      },
+      "step4": {
+        "id": "step4",
+        "case_file": "case_codechoice_patch.json",
+        "situation": "QA test case 4.",
+        "if_correct": { "consequence": "Proceeding.", "state_changes": {}, "next_step": "step5" },
+        "if_incorrect": { "consequence": "Proceeding.", "state_changes": {}, "next_step": "step5" }
+      },
+      "step5": {
+        "id": "step5",
+        "case_file": "case_dragdrop_indicators.json",
+        "situation": "QA test case 5.",
+        "if_correct": { "consequence": "Proceeding.", "state_changes": {}, "next_step": "step6" },
+        "if_incorrect": { "consequence": "Proceeding.", "state_changes": {}, "next_step": "step6" }
+      },
+      "step6": {
+        "id": "step6",
+        "case_file": "case_radio_password_sharing.json",
+        "situation": "QA test case 6.",
+        "if_correct": { "consequence": "Proceeding.", "state_changes": {}, "next_step": "step7" },
+        "if_incorrect": { "consequence": "Proceeding.", "state_changes": {}, "next_step": "step7" }
+      },
+      "step7": {
+        "id": "step7",
+        "case_file": "case_radio_phishing_email.json",
+        "situation": "QA test case 7.",
+        "if_correct": { "consequence": "Proceeding.", "state_changes": {}, "next_step": "step8" },
+        "if_incorrect": { "consequence": "Proceeding.", "state_changes": {}, "next_step": "step8" }
+      },
+      "step8": {
+        "id": "step8",
+        "case_file": "case_radio_usb.json",
+        "situation": "QA test case 8.",
+        "if_correct": { "consequence": "Proceeding.", "state_changes": {}, "next_step": "step9" },
+        "if_incorrect": { "consequence": "Proceeding.", "state_changes": {}, "next_step": "step9" }
+      },
+      "step9": {
+        "id": "step9",
+        "case_file": "case_text_input_firewall.json",
+        "situation": "QA test case 9.",
+        "if_correct": { "consequence": "Proceeding.", "state_changes": {}, "next_step": "step10" },
+        "if_incorrect": { "consequence": "Proceeding.", "state_changes": {}, "next_step": "step10" }
+      },
+      "step10": {
+        "id": "step10",
+        "case_file": "case_text_input_policy.json",
+        "situation": "QA test case 10.",
+        "if_correct": { "consequence": "Proceeding.", "state_changes": {}, "next_step": "step11" },
+        "if_incorrect": { "consequence": "Proceeding.", "state_changes": {}, "next_step": "step11" }
+      },
+      "step11": {
+        "id": "step11",
+        "case_file": "case_timed_response.json",
+        "situation": "QA test case 11.",
+        "if_correct": { "consequence": "Proceeding.", "state_changes": {}, "next_step": "step12" },
+        "if_incorrect": { "consequence": "Proceeding.", "state_changes": {}, "next_step": "step12" }
+      },
+      "step12": {
+        "id": "step12",
+        "case_file": "case_timed_social.json",
+        "situation": "QA test case 12.",
+        "if_correct": { "consequence": "End of harness.", "state_changes": {}, "next_step": null },
+        "if_incorrect": { "consequence": "End of harness.", "state_changes": {}, "next_step": null }
+      }
+    }
+  }

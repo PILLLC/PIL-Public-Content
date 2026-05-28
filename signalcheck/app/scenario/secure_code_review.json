@@ -1,0 +1,177 @@
+{
+  "id": "secure_code_review",
+  "title": "Secure Code Review Alert",
+  "briefing": "A routine application security scan reveals potential vulnerabilities in recently deployed code. The security and development teams must determine whether the findings represent exploitable weaknesses or benign false positives.",
+  "role": "Application Security Analyst",
+  "difficulty": "medium",
+  "tags": [
+    "application security",
+    "secure coding",
+    "vulnerability assessment",
+    "software review",
+    "development security"
+  ],
+  "initial_state": {
+    "attacker_advantage": 5,
+    "user_confidence": 50,
+    "operational_impact": 0,
+    "investigation_clarity": 20
+  },
+  "injects": [
+    {
+      "id": "scan_results_expand",
+      "trigger_after_step": "step_1",
+      "trigger_on": "incorrect",
+      "title": "Additional Scan Findings",
+      "message": "The automated scanner reveals additional potential issues in related components, raising concern that the vulnerability may affect multiple modules.",
+      "state_changes": {
+        "attacker_advantage": 10,
+        "investigation_clarity": -5
+      }
+    },
+    {
+      "id": "developer_pushback",
+      "trigger_after_step": "step_2",
+      "trigger_on": "any",
+      "title": "Developer Pushback",
+      "message": "Developers argue that the scanner result is likely a false positive and request that the security team validate the issue before recommending remediation.",
+      "state_changes": {
+        "user_confidence": -5,
+        "investigation_clarity": 5
+      }
+    },
+    {
+      "id": "compliance_attention",
+      "trigger_after_step": "step_3",
+      "trigger_on": "incorrect",
+      "title": "Compliance Review Triggered",
+      "message": "Internal compliance staff flag the issue as potentially affecting regulatory obligations if customer data exposure cannot be ruled out.",
+      "state_changes": {
+        "operational_impact": 5,
+        "user_confidence": -5
+      }
+    },
+    {
+      "id": "security_advisory",
+      "trigger_after_step": "step_4",
+      "trigger_on": "any",
+      "title": "Security Advisory Consideration",
+      "message": "Product leadership asks whether a security advisory should be prepared in case customers need to update their systems.",
+      "state_changes": {
+        "operational_impact": 5
+      }
+    }
+  ],
+  "start_step": "step_1",
+  "steps": {
+    "step_1": {
+      "id": "step_1",
+      "case_file": "case_checkbox_risk_factors.json",
+      "situation": "Security scanning tools report a possible injection vulnerability in a recently deployed service endpoint. The team begins by identifying which indicators truly suggest exploitable risk.",
+      "if_correct": {
+        "consequence": "The team correctly identifies the most relevant security indicators and begins focused validation of the code path.",
+        "state_changes": {
+          "investigation_clarity": 20,
+          "attacker_advantage": -5
+        },
+        "next_step": "step_2"
+      },
+      "if_incorrect": {
+        "consequence": "Misinterpreting the scan results leads to confusion and delays targeted analysis.",
+        "state_changes": {
+          "attacker_advantage": 10,
+          "investigation_clarity": -10
+        },
+        "next_step": "step_2"
+      }
+    },
+    "step_2": {
+      "id": "step_2",
+      "case_file": "case_text_input_firewall.json",
+      "situation": "The team evaluates how application-layer protections and input validation mechanisms affect the likelihood of successful exploitation.",
+      "if_correct": {
+        "consequence": "Security engineers verify whether existing controls mitigate the vulnerability risk.",
+        "state_changes": {
+          "investigation_clarity": 15,
+          "attacker_advantage": -5
+        },
+        "next_step": "step_3"
+      },
+      "if_incorrect": {
+        "consequence": "Assumptions about defensive controls lead to an incomplete understanding of the vulnerability.",
+        "state_changes": {
+          "attacker_advantage": 10,
+          "investigation_clarity": -5
+        },
+        "next_step": "step_3"
+      }
+    },
+    "step_3": {
+      "id": "step_3",
+      "case_file": "case_timed_response.json",
+      "situation": "Leadership asks whether the issue represents a confirmed vulnerability requiring urgent remediation or simply a theoretical risk.",
+      "if_correct": {
+        "consequence": "The team provides a clear explanation of risk and recommended remediation timelines.",
+        "state_changes": {
+          "user_confidence": 10,
+          "investigation_clarity": 10
+        },
+        "next_step": "step_4"
+      },
+      "if_incorrect": {
+        "consequence": "Unclear communication causes confusion between engineering and security teams.",
+        "state_changes": {
+          "user_confidence": -10,
+          "operational_impact": 5
+        },
+        "next_step": "step_4"
+      }
+    },
+    "step_4": {
+      "id": "step_4",
+      "case_file": "case_checkbox_mfa.json",
+      "situation": "The team evaluates whether additional authentication or authorization controls could mitigate risk until a permanent code fix is deployed.",
+      "if_correct": {
+        "consequence": "Interim security controls reduce exposure while developers prepare a patch.",
+        "state_changes": {
+          "attacker_advantage": -5,
+          "investigation_clarity": 5
+        },
+        "next_step": "step_5"
+      },
+      "if_incorrect": {
+        "consequence": "Failure to consider mitigation controls increases potential exposure if exploitation occurs.",
+        "state_changes": {
+          "attacker_advantage": 10,
+          "operational_impact": 5
+        },
+        "next_step": "step_5"
+      }
+    },
+    "step_5": {
+      "id": "step_5",
+      "case_file": "case_timed_social.json",
+      "situation": "The organization considers whether public disclosure or customer notification might eventually be required.",
+      "if_correct": {
+        "consequence": "Responsible communication planning preserves customer trust while remediation progresses.",
+        "state_changes": {
+          "user_confidence": 10,
+          "operational_impact": -5
+        },
+        "next_step": null
+      },
+      "if_incorrect": {
+        "consequence": "Poor communication planning creates risk of reputational damage if the vulnerability becomes public.",
+        "state_changes": {
+          "user_confidence": -10,
+          "operational_impact": 10
+        },
+        "next_step": null
+      }
+    }
+  },
+  "success_thresholds": {
+    "attacker_advantage_max": 15,
+    "operational_impact_max": 15
+  }
+}

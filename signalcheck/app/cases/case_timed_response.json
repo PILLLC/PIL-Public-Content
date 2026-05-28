@@ -1,0 +1,23 @@
+{
+  "id": "case_timed_response",
+  "title": "Critical Incident Escalation",
+  "briefing": "A security monitoring system detects suspicious lateral movement across several internal servers. You must decide quickly how to respond.",
+  "type": "timed",
+  "time_limit": 8,
+  "options": [
+    "Ignore the alert",
+    "Investigate the alert",
+    "Immediately isolate affected systems"
+  ],
+  "answer": "Immediately isolate affected systems",
+  "feedback": {
+    "Ignore the alert": "Incorrect. Ignoring signs of lateral movement allows attackers to expand their foothold and increase operational impact.",
+    "Investigate the alert": "Partially correct. Investigation is important, but delaying containment may allow the attacker to continue moving across systems.",
+    "Immediately isolate affected systems": "Correct. Rapid containment limits attacker mobility and reduces the potential for wider compromise."
+  },
+  "style_tags": {
+    "Ignore the alert": "careless",
+    "Investigate the alert": "analytical",
+    "Immediately isolate affected systems": "decisive"
+  }
+}

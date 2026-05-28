@@ -1,0 +1,178 @@
+{
+  "id": "suspicious_network_activity",
+  "title": "Suspicious Network Activity Investigation",
+  "briefing": "Unusual outbound traffic and irregular connection patterns have been detected from an internal system. The security team must determine whether this is benign noise, misconfiguration, or signs of active compromise.",
+  "role": "SOC Analyst",
+  "difficulty": "medium",
+  "tags": [
+    "network activity",
+    "anomaly detection",
+    "triage",
+    "containment",
+    "investigation"
+  ],
+  "initial_state": {
+    "attacker_advantage": 10,
+    "user_confidence": 45,
+    "operational_impact": 5,
+    "investigation_clarity": 20
+  },
+  "injects": [
+    {
+      "id": "threat_intel_correlation",
+      "trigger_after_step": "step_1",
+      "trigger_on": "correct",
+      "title": "Threat Intelligence Correlation",
+      "message": "Threat intelligence feeds report similar outbound traffic patterns associated with recently observed command-and-control infrastructure.",
+      "state_changes": {
+        "investigation_clarity": 10,
+        "attacker_advantage": 5
+      }
+    },
+    {
+      "id": "activity_expands",
+      "trigger_after_step": "step_1",
+      "trigger_on": "incorrect",
+      "title": "Additional Suspicious Traffic Detected",
+      "message": "Monitoring tools begin flagging similar outbound traffic patterns from another internal system, suggesting the activity may not be isolated.",
+      "state_changes": {
+        "attacker_advantage": 10,
+        "operational_impact": 5
+      }
+    },
+    {
+      "id": "executive_visibility",
+      "trigger_after_step": "step_3",
+      "trigger_on": "any",
+      "title": "Executive Visibility",
+      "message": "Leadership becomes aware of the investigation and asks whether additional systems may need monitoring or containment measures.",
+      "state_changes": {
+        "user_confidence": -5,
+        "operational_impact": 5
+      }
+    },
+    {
+      "id": "identity_risk_signal",
+      "trigger_after_step": "step_4",
+      "trigger_on": "incorrect",
+      "title": "Account Abuse Concern",
+      "message": "Identity monitoring systems flag unusual login activity associated with the same system involved in the network anomaly.",
+      "state_changes": {
+        "attacker_advantage": 10,
+        "investigation_clarity": -5
+      }
+    }
+  ],
+  "start_step": "step_1",
+  "steps": {
+    "step_1": {
+      "id": "step_1",
+      "case_file": "case_checkbox_risk_factors.json",
+      "situation": "Monitoring tools detect unusual outbound traffic from an internal host outside expected business hours. The team begins by identifying the most important risk indicators.",
+      "if_correct": {
+        "consequence": "The team correctly identifies the major warning signs and treats the activity as a potentially meaningful security event.",
+        "state_changes": {
+          "investigation_clarity": 20,
+          "attacker_advantage": -5
+        },
+        "next_step": "step_2"
+      },
+      "if_incorrect": {
+        "consequence": "The event is treated as a minor anomaly, delaying containment and allowing suspicious activity to continue.",
+        "state_changes": {
+          "attacker_advantage": 15,
+          "investigation_clarity": -10
+        },
+        "next_step": "step_2"
+      }
+    },
+    "step_2": {
+      "id": "step_2",
+      "case_file": "case_text_input_firewall.json",
+      "situation": "Security reviews whether network controls, segmentation, and boundary protections can reduce exposure while the host is investigated.",
+      "if_correct": {
+        "consequence": "Containment actions reduce the chance of additional outbound communication and help narrow the scope of analysis.",
+        "state_changes": {
+          "attacker_advantage": -10,
+          "operational_impact": -5
+        },
+        "next_step": "step_3"
+      },
+      "if_incorrect": {
+        "consequence": "Weak containment planning leaves the environment exposed to continued suspicious traffic and possible expansion.",
+        "state_changes": {
+          "attacker_advantage": 10,
+          "operational_impact": 10
+        },
+        "next_step": "step_3"
+      }
+    },
+    "step_3": {
+      "id": "step_3",
+      "case_file": "case_timed_response.json",
+      "situation": "Leadership asks for an immediate answer: is this harmless, policy-related, or evidence of active compromise requiring escalation?",
+      "if_correct": {
+        "consequence": "A timely and structured response improves confidence while preserving room for deeper technical review.",
+        "state_changes": {
+          "user_confidence": 10,
+          "investigation_clarity": 10
+        },
+        "next_step": "step_4"
+      },
+      "if_incorrect": {
+        "consequence": "Slow or unclear communication creates confusion and increases pressure on the response team.",
+        "state_changes": {
+          "user_confidence": -10,
+          "operational_impact": 5
+        },
+        "next_step": "step_4"
+      }
+    },
+    "step_4": {
+      "id": "step_4",
+      "case_file": "case_checkbox_mfa.json",
+      "situation": "The team considers whether identity controls and account protections reduce the likelihood that suspicious network activity is tied to broader account abuse.",
+      "if_correct": {
+        "consequence": "Stronger identity controls help narrow the risk picture and reduce the likelihood of uncontrolled access expansion.",
+        "state_changes": {
+          "attacker_advantage": -5,
+          "investigation_clarity": 10
+        },
+        "next_step": "step_5"
+      },
+      "if_incorrect": {
+        "consequence": "Weak assumptions about access controls make it harder to distinguish isolated activity from broader compromise.",
+        "state_changes": {
+          "attacker_advantage": 10,
+          "investigation_clarity": -5
+        },
+        "next_step": "step_5"
+      }
+    },
+    "step_5": {
+      "id": "step_5",
+      "case_file": "case_timed_social.json",
+      "situation": "Business stakeholders begin asking whether staff should be notified and whether operations may be affected if network restrictions expand.",
+      "if_correct": {
+        "consequence": "Communication remains measured and credible, helping preserve trust while the investigation continues.",
+        "state_changes": {
+          "user_confidence": 10,
+          "operational_impact": -5
+        },
+        "next_step": null
+      },
+      "if_incorrect": {
+        "consequence": "Poor stakeholder communication increases uncertainty and complicates the response environment.",
+        "state_changes": {
+          "user_confidence": -10,
+          "operational_impact": 10
+        },
+        "next_step": null
+      }
+    }
+  },
+  "success_thresholds": {
+    "attacker_advantage_max": 20,
+    "operational_impact_max": 15
+  }
+}

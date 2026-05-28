@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SignalCheck</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <span class="brand">🛰️ SignalCheck</span>
+      <button
+        id="hamburger"
+        class="hamburger"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+        aria-controls="navLinks"
+      >
+        ☰
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/">Home</a></li>
+        <li><a href="/leaderboard">Leaderboard</a></li>
+        <li><a href="/admin">Admin</a></li>
+        <li><a href="/editor">Editor</a></li>
+        <li><a href="#" id="toggleDark">Toggle Theme</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="spinner" class="spinner-container" aria-hidden="true">
+    <div class="spinner"></div>
+  </div>
+
+  <main class="container">
+    <header class="hero">
+      <img src="assets/logo.png" alt="SignalCheck Logo" class="hero-logo">
+      <h1>🛰️ SignalCheck: Cyber Incident Simulator</h1>
+      <p class="hero-subtitle">
+        Decision-driven tabletop-style scenarios for cyber readiness, incident response, and operational judgment.
+      </p>
+    </header>
+
+    <section class="case intro-panel">
+      <h2>Mission Overview</h2>
+      <p>
+        SignalCheck simulates cyber incidents through branching decisions, injects, timed responses, and operational consequences.
+        Select a scenario, assess the situation, respond under pressure, and review the outcome.
+      </p>
+    </section>
+
+    <section class="case" id="scenario-picker">
+      <h2>Select Scenario</h2>
+      <p>Choose a scenario manually or load one at random.</p>
+
+      <label for="scenarioSelect">Scenario Library</label>
+      <select id="scenarioSelect" aria-label="Scenario Library">
+        <option value="">Loading scenarios...</option>
+      </select>
+
+      <div class="scenario-actions">
+        <button id="loadScenarioBtn" type="button">Load Selected Scenario</button>
+        <button id="randomScenarioBtn" type="button">Load Random Scenario</button>
+      </div>
+    </section>
+
+    <section class="status-strip" aria-label="Session status">
+      <div class="status-item">
+        <span class="status-label">Timer</span>
+        <div id="timer" class="timer" aria-live="polite"></div>
+      </div>
+
+      <div class="status-item">
+        <span class="status-label">Session</span>
+        <div id="sessionStatus" class="session-status" aria-live="polite">
+          Awaiting scenario load.
+        </div>
+      </div>
+    </section>
+
+    <section id="caseContainer" aria-live="polite" aria-atomic="false">
+      <div class="case">
+        <h2>Ready to Begin</h2>
+        <p>Select a scenario to start the simulation.</p>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="assets/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "id": "case_timed_social",
+  "title": "Urgent CEO Call",
+  "briefing": "You get a call from someone claiming to be the CEO demanding gift cards for a client. Decide in 7 seconds.",
+  "type": "timed",
+  "time_limit": 7,
+  "options": [
+    "Buy the cards",
+    "Ask for confirmation by email",
+    "Report as suspicious"
+  ],
+  "answer": "Report as suspicious",
+  "feedback": {
+    "Buy the cards": "Incorrect. This is a classic social engineering scam. Acting immediately on the request creates financial and security risk.",
+    "Ask for confirmation by email": "Risky. Email alone is not a reliable validation method because the sender identity could also be spoofed or compromised.",
+    "Report as suspicious": "Correct. Escalating the request as suspicious is the safest response and allows verification through proper channels."
+  },
+  "style_tags": {
+    "Buy the cards": "impulsive",
+    "Ask for confirmation by email": "cautious",
+    "Report as suspicious": "decisive"
+  }
+}

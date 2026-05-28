@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SignalCheck Leaderboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <span class="brand">🛰️ SignalCheck</span>
+
+      <button id="hamburger"
+              class="hamburger"
+              aria-label="Toggle navigation"
+              aria-expanded="false"
+              aria-controls="navLinks">
+        ☰
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/">Home</a></li>
+        <li><a href="/leaderboard">Leaderboard</a></li>
+        <li><a href="/admin">Admin</a></li>
+        <li><a href="/editor">Editor</a></li>
+        <li><a href="#" id="toggleDark">Toggle Theme</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <header class="hero">
+      <img src="assets/logo.png" alt="SignalCheck Logo" class="hero-logo">
+
+      <h1>🛰️ SignalCheck Leaderboard</h1>
+
+      <p class="hero-subtitle">
+        Best scenario results and recent simulation history stored locally in the browser.
+      </p>
+    </header>
+
+    <section class="case">
+      <h2>Best Results by Scenario</h2>
+
+      <div id="bestResultsContainer">
+        <p>Loading leaderboard...</p>
+      </div>
+    </section>
+
+    <section class="case">
+      <h2>Recent Sessions</h2>
+
+      <div id="recentHistoryContainer">
+        <p>Loading recent sessions...</p>
+      </div>
+    </section>
+
+    <section class="case">
+      <h2>Controls</h2>
+
+      <div class="scenario-actions">
+        <button id="clearHistoryBtn" type="button">
+          Clear Recent History
+        </button>
+
+        <button id="clearBestBtn" type="button">
+          Clear Best Results
+        </button>
+
+        <button id="clearAllBtn" type="button">
+          Clear All Leaderboard Data
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="assets/leaderboard.js"></script>
+
+  <script>
+    const hamburgerBtn = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
+
+    hamburgerBtn.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+
+      const expanded = navLinks.classList.contains("show");
+      hamburgerBtn.setAttribute("aria-expanded", expanded);
+    });
+
+    const toggleDark = document.getElementById("toggleDark");
+
+    toggleDark.addEventListener("click", (e) => {
+      e.preventDefault();
+      document.body.classList.toggle("dark");
+    });
+  </script>
+
+</body>
+</html>
